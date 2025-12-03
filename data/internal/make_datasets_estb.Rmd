@@ -1,0 +1,62 @@
+```{r}
+library(rio)
+library(dplyr)
+library(usethis)
+path_i <- "~/Documents/Estadistica/estadisticaFcaUnl/data/internal"
+```
+
+
+
+## Pesada terneros
+```{r}
+pesada_terneros <- import(file.path(path_i, "pesada_terneros.xlsx"))
+str(pesada_terneros)
+```
+```{r}
+use_data(pesada_terneros, overwrite = TRUE)
+```
+
+## superficies_EAP
+```{r}
+superficies_EAP <- import(file.path(path_i, "superficies_EAP.txt"))
+str(superficies_EAP)
+```
+```{r}
+use_data(superficies_EAP, overwrite = TRUE)
+```
+
+## pesada_novillos
+```{r}
+pesada_novillos <- import(file.path(path_i, "pesada_novillos.xlsx"))
+str(pesada_novillos)
+```
+```{r}
+use_data(pesada_novillos, overwrite = TRUE)
+```
+
+## tambos_2008_2015
+```{r}
+tambos_2008_2015 <- import(file.path(path_i, "tambos_2008-2015.xls"))
+str(tambos_2008_2015)
+```
+```{r}
+use_data(tambos_2008_2015, overwrite = TRUE)
+```
+
+## lotes_BA
+```{r}
+lotes_BA <- import(file.path(path_i, "Lotes_BA.xls"))
+str(lotes_BA)
+```
+```{r}
+use_data(lotes_BA, overwrite = TRUE)
+```
+
+## riesgo_arbolado
+```{r}
+riesgo_arbolado <- import(file.path(path_i, "riesgo_arbolado.xlsx"))
+str(riesgo_arbolado)
+```
+```{r}
+use_data(riesgo_arbolado, overwrite = TRUE)
+```

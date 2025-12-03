@@ -1,0 +1,1058 @@
+---
+title: "Importación y guardado de datasets"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(rio)
+library(dplyr)
+library(usethis)
+
+path_i <- "~/Documents/Estadistica/estadisticaFcaUnl/data/internal"
+```
+
+## 1. vitA_vaquillas
+```{r}
+name <- "vitA_vaquillas"
+vitA_vaquillas <- import(paste0(path_i, "/", name, ".xlsx"))
+str(vitA_vaquillas)
+```
+```{r}
+vitA_vaquillas <- vitA_vaquillas %>%
+  mutate(
+    Tratamiento = as.factor(Tratamiento)
+  )
+str(vitA_vaquillas)
+```
+```{r}
+use_data(vitA_vaquillas)
+```
+
+## 2. dms_ensilaje
+```{r}
+name <- "dms_ensilaje"
+dms_ensilaje <- import(paste0(path_i, "/", name, ".xlsx"))
+str(dms_ensilaje)
+```
+```{r}
+dms_ensilaje <- dms_ensilaje %>%
+  mutate(
+    Trat = as.factor(Trat)
+  )
+str(dms_ensilaje)
+```
+```{r}
+use_data(dms_ensilaje)
+```
+
+## 3. guayule
+```{r}
+name <- "guayule"
+guayule <- import(paste0(path_i, "/", name, ".xlsx"))
+str(guayule)
+```
+```{r}
+guayule <- guayule %>%
+  mutate(
+    Tipo = as.factor(Tipo)
+  )
+str(guayule)
+```
+```{r}
+use_data(guayule)
+```
+
+## 4. ace_codornices
+```{r}
+name <- "ace_codornices"
+ace_codornices <- import(paste0(path_i, "/", name, ".xlsx"))
+str(ace_codornices)
+```
+```{r}
+ace_codornices <- ace_codornices %>%
+  mutate(
+    Momento = as.factor(Momento)
+  )
+str(ace_codornices)
+```
+```{r}
+use_data(ace_codornices)
+```
+
+## 5. nectar_trebol_rojo
+```{r}
+name <- "nectar_trebol_rojo"
+nectar_trebol_rojo <- import(paste0(path_i, "/", name, ".xlsx"))
+str(nectar_trebol_rojo)
+```
+```{r}
+nectar_trebol_rojo <- nectar_trebol_rojo %>%
+  mutate(
+    Cabeza = as.factor(Cabeza),
+    Presion = as.factor(Presion)
+  )
+str(nectar_trebol_rojo)
+```
+```{r}
+use_data(nectar_trebol_rojo)
+```
+
+## 6. trebol_rizhobium
+```{r}
+name <- "trebol_rizhobium"
+trebol_rizhobium <- import(paste0(path_i, "/", name, ".xlsx"))
+str(trebol_rizhobium)
+```
+```{r}
+trebol_rizhobium <- trebol_rizhobium %>%
+  mutate(
+    Tratamiento = as.factor(Tratamiento)
+  )
+str(trebol_rizhobium)
+```
+```{r}
+use_data(trebol_rizhobium)
+```
+
+## 7. dieta_cerdos
+```{r}
+name <- "dieta_cerdos"
+dieta_cerdos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(dieta_cerdos)
+```
+```{r}
+dieta_cerdos <- dieta_cerdos %>%
+  mutate(
+    D = as.factor(D)
+  )
+str(dieta_cerdos)
+```
+```{r}
+use_data(dieta_cerdos)
+```
+
+## 8. caballos
+```{r}
+name <- "caballos"
+caballos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(caballos)
+```
+```{r}
+caballos <- caballos %>%
+  mutate(
+    TR = as.factor(TR)
+  )
+str(caballos)
+```
+```{r}
+use_data(caballos)
+```
+
+## 9. tomate
+```{r}
+name <- "tomate"
+tomate <- import(paste0(path_i, "/", name, ".xlsx"))
+str(tomate)
+```
+```{r}
+tomate <- tomate %>%
+  mutate(
+    Tejido = as.factor(Tejido),
+    TR = as.factor(TR)
+  )
+str(tomate)
+```
+```{r}
+use_data(tomate)
+```
+
+## 10. peso_vaquillonas
+```{r}
+name <- "peso_vaquillonas"
+peso_vaquillonas <- import(paste0(path_i, "/", name, ".xlsx"))
+str(peso_vaquillonas)
+```
+```{r}
+peso_vaquillonas <- peso_vaquillonas %>%
+  mutate(
+    AN = as.factor(AN)
+  )
+str(peso_vaquillonas)
+```
+```{r}
+use_data(peso_vaquillonas)
+```
+
+## 11. estrogeno
+```{r}
+name <- "estrogeno"
+estrogeno <- import(paste0(path_i, "/", name, ".xlsx"))
+str(estrogeno)
+```
+```{r}
+estrogeno <- estrogeno %>%
+  mutate(
+    SO = as.factor(SO)
+  )
+str(estrogeno)
+```
+```{r}
+use_data(estrogeno)
+```
+
+## 12. lechuga
+```{r}
+name <- "lechuga"
+lechuga <- import(paste0(path_i, "/", name, ".xlsx"))
+str(lechuga)
+```
+```{r}
+lechuga <- lechuga %>%
+  mutate(
+    Dosis_ord = as.ordered(Dosis),
+    Dosis_chr = as.factor(Dosis_chr)
+  ) %>%
+  select(Dosis, Dosis_ord, everything())
+str(lechuga)
+```
+```{r}
+use_data(lechuga)
+```
+
+## 13. gallinas
+```{r}
+name <- "gallinas"
+gallinas <- import(paste0(path_i, "/", name, ".xlsx"))
+str(gallinas)
+```
+```{r}
+gallinas <- gallinas %>%
+  mutate(
+    TR = as.factor(TR)
+  )
+str(gallinas)
+```
+```{r}
+use_data(gallinas)
+```
+
+## 14. pH_laboratorio
+```{r}
+name <- "pH_laboratorio"
+pH_laboratorio <- import(paste0(path_i, "/", name, ".xlsx"))
+str(pH_laboratorio)
+```
+```{r}
+pH_laboratorio <- pH_laboratorio %>%
+  mutate(
+    Dispositivo = as.factor(Dispositivo),
+    Muestra = as.factor(Muestra)
+  )
+str(pH_laboratorio)
+```
+```{r}
+use_data(pH_laboratorio)
+```
+
+## 15. conservante_frutilla
+```{r}
+name <- "conservante_frutilla"
+conservante_frutilla <- import(paste0(path_i, "/", name, ".xlsx"))
+str(conservante_frutilla)
+```
+```{r}
+conservante_frutilla <- conservante_frutilla %>%
+  mutate(
+    Tratamiento = as.factor(Tratamiento)
+  )
+str(conservante_frutilla)
+```
+```{r}
+use_data(conservante_frutilla)
+```
+
+## 16. hibridos_maiz
+```{r}
+name <- "hibridos_maiz"
+hibridos_maiz <- import(paste0(path_i, "/", name, ".xlsx"))
+str(hibridos_maiz)
+```
+```{r}
+hibridos_maiz <- hibridos_maiz %>%
+  mutate(
+    Hibrido = as.factor(Hibrido)
+  )
+str(hibridos_maiz)
+```
+```{r}
+use_data(hibridos_maiz)
+```
+
+## 17. dieta_pavos
+```{r}
+name <- "dieta_pavos"
+dieta_pavos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(dieta_pavos)
+```
+```{r}
+dieta_pavos <- dieta_pavos %>%
+  mutate(
+    Dieta = as.factor(Dieta)
+  )
+str(dieta_pavos)
+```
+```{r}
+use_data(dieta_pavos)
+```
+
+## 18. nematodes_durazno
+```{r}
+name <- "nematodes_durazno"
+nematodes_durazno <- import(paste0(path_i, "/", name, ".xlsx"))
+str(nematodes_durazno)
+```
+```{r}
+nematodes_durazno <- nematodes_durazno %>%
+  mutate(
+    Tratamiento = as.factor(Tratamiento)
+  )
+str(nematodes_durazno)
+```
+```{r}
+use_data(nematodes_durazno)
+```
+
+## 19. dietas_novillos
+```{r}
+name <- "dietas_novillos"
+dietas_novillos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(dietas_novillos)
+```
+```{r}
+dietas_novillos <- dietas_novillos %>%
+  mutate(
+    Dieta = as.factor(Dieta),
+    Animal = as.factor(Animal)
+  )
+str(dietas_novillos)
+```
+```{r}
+use_data(dietas_novillos)
+```
+
+## 20. fertilizante_pastizal
+```{r}
+name <- "fertilizante_pastizal"
+fertilizante_pastizal <- import(paste0(path_i, "/", name, ".xlsx"))
+str(fertilizante_pastizal)
+```
+```{r}
+fertilizante_pastizal <- fertilizante_pastizal %>%
+  mutate(
+    Bloque = as.factor(Bloque),
+    Tratamiento = as.factor(Tratamiento)
+  )
+str(fertilizante_pastizal)
+```
+```{r}
+use_data(fertilizante_pastizal)
+```
+
+## 21. fibra_quimico
+```{r}
+name <- "fibra_quimico"
+fibra_quimico <- import(paste0(path_i, "/", name, ".xlsx"))
+str(fibra_quimico)
+```
+```{r}
+fibra_quimico <- fibra_quimico %>%
+  mutate(
+    BL = as.factor(BL),
+    CQ = as.factor(CQ)
+  )
+str(fibra_quimico)
+```
+```{r}
+use_data(fibra_quimico)
+```
+
+## 22. gladiolos
+```{r}
+name <- "gladiolos"
+gladiolos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(gladiolos)
+```
+```{r}
+gladiolos <- gladiolos %>%
+  mutate(
+    BL = as.factor(BL),
+    TR = as.factor(TR)
+  )
+str(gladiolos)
+```
+```{r}
+use_data(gladiolos)
+```
+
+## 23. invernadero_spartina
+```{r}
+name <- "invernadero_spartina"
+invernadero_spartina <- import(paste0(path_i, "/", name, ".xlsx"))
+str(invernadero_spartina)
+```
+```{r}
+invernadero_spartina <- invernadero_spartina %>%
+  mutate(
+    TR = as.factor(TR),
+    BL = as.factor(BL)
+  )
+str(invernadero_spartina)
+```
+```{r}
+use_data(invernadero_spartina)
+```
+
+## 24. irrigacion_naranjo
+```{r}
+name <- "irrigacion_naranjo"
+irrigacion_naranjo <- import(paste0(path_i, "/", name, ".xlsx"))
+str(irrigacion_naranjo)
+```
+```{r}
+irrigacion_naranjo <- irrigacion_naranjo %>%
+  mutate(
+    BL = as.factor(BL),
+    TR = as.factor(TR)
+  )
+str(irrigacion_naranjo)
+```
+```{r}
+use_data(irrigacion_naranjo)
+```
+
+## 25. nabos
+```{r}
+name <- "nabos"
+nabos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(nabos)
+```
+```{r}
+nabos <- nabos %>%
+  mutate(
+    BL = as.factor(BL),
+    TR = as.factor(TR)
+  )
+str(nabos)
+```
+```{r}
+use_data(nabos)
+```
+
+## 26. resist_algodon
+```{r}
+name <- "resist_algodon"
+resist_algodon <- import(paste0(path_i, "/", name, ".xlsx"))
+str(resist_algodon)
+```
+```{r}
+resist_algodon <- resist_algodon %>%
+  mutate(
+    BL = as.factor(BL),
+    AL_ord = as.ordered(AL)
+  ) %>%
+  select(BL, AL, AL_ord, everything())
+str(resist_algodon)
+```
+```{r}
+use_data(resist_algodon)
+```
+
+## 27. rollos_tela
+```{r}
+name <- "rollos_tela"
+rollos_tela <- import(paste0(path_i, "/", name, ".xlsx"))
+str(rollos_tela)
+```
+```{r}
+rollos_tela <- rollos_tela %>%
+  mutate(
+    BL = as.factor(BL),
+    AQ = as.factor(AQ)
+  )
+str(rollos_tela)
+```
+```{r}
+use_data(rollos_tela)
+```
+
+## 28. sorgo_urea
+```{r}
+name <- "sorgo_urea"
+sorgo_urea <- import(paste0(path_i, "/", name, ".xlsx"))
+str(sorgo_urea)
+```
+```{r}
+sorgo_urea <- sorgo_urea %>%
+  mutate(
+    BL = as.factor(BL),
+    DO_ord = as.ordered(DO)
+  ) %>%
+  select(BL, DO, DO_ord, everything())
+str(sorgo_urea)
+```
+```{r}
+use_data(sorgo_urea)
+```
+
+## 29. insecticida_poroto
+```{r}
+name <- "insecticida_poroto"
+insecticida_poroto <- import(paste0(path_i, "/", name, ".xlsx"))
+str(insecticida_poroto)
+```
+```{r}
+insecticida_poroto <- insecticida_poroto %>%
+  mutate(
+    Bloque = as.factor(Bloque),
+    Insecticida = as.factor(Insecticida)
+  )
+str(insecticida_poroto)
+```
+```{r}
+use_data(insecticida_poroto)
+```
+
+## 30. larvas_cesped
+```{r}
+name <- "larvas_cesped"
+larvas_cesped <- import(paste0(path_i, "/", name, ".xlsx"))
+str(larvas_cesped)
+```
+```{r}
+larvas_cesped <- larvas_cesped %>%
+  mutate(
+    Sitio = as.factor(Sitio),
+    Tratamiento = as.factor(Tratamiento),
+    Parcela = as.factor(Parcela),
+    Muestra = as.factor(Muestra)
+  )
+str(larvas_cesped)
+```
+```{r}
+use_data(larvas_cesped)
+```
+
+## 31. cana_azucar
+```{r}
+name <- "cana_azucar"
+cana_azucar <- import(paste0(path_i, "/", name, ".xlsx"))
+str(cana_azucar)
+```
+```{r}
+cana_azucar <- cana_azucar %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    VAR = as.factor(VAR),
+    RTO = as.numeric(RTO)
+  )
+str(cana_azucar)
+```
+```{r}
+use_data(cana_azucar)
+```
+
+## 32. hormona_ovario
+```{r}
+name <- "hormona_ovario"
+hormona_ovario <- import(paste0(path_i, "/", name, ".xlsx"))
+str(hormona_ovario)
+```
+```{r}
+hormona_ovario <- hormona_ovario %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    HORMONA = as.factor(HORMONA),
+    PESO = as.numeric(PESO)
+  )
+str(hormona_ovario)
+```
+```{r}
+use_data(hormona_ovario)
+```
+
+## 33. inyeccion_vaquillas
+```{r}
+name <- "inyeccion_vaquillas"
+inyeccion_vaquillas <- import(paste0(path_i, "/", name, ".xlsx"))
+str(inyeccion_vaquillas)
+```
+```{r}
+inyeccion_vaquillas <- inyeccion_vaquillas %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    D = as.factor(D),
+    RTA = as.numeric(RTA),
+    D_num = as.numeric(D_num),
+    D_ord = as.ordered(D_num)
+  )
+str(inyeccion_vaquillas)
+```
+```{r}
+use_data(inyeccion_vaquillas)
+```
+
+## 34. prolactina_vacas
+```{r}
+name <- "prolactina_vacas"
+prolactina_vacas <- import(paste0(path_i, "/", name, ".xlsx"))
+str(prolactina_vacas)
+```
+```{r}
+prolactina_vacas <- prolactina_vacas %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    DOSIS = as.factor(DOSIS),
+    PICO = as.numeric(PICO),
+    DOSIS_num = as.numeric(DOSIS_num),
+    DOSIS_ord = as.ordered(DOSIS_num)
+  )
+str(prolactina_vacas)
+```
+```{r}
+use_data(prolactina_vacas)
+```
+
+## 35. tiempo_reaccion
+```{r}
+name <- "tiempo_reaccion"
+tiempo_reaccion <- import(paste0(path_i, "/", name, ".xlsx"))
+str(tiempo_reaccion)
+```
+```{r}
+tiempo_reaccion <- tiempo_reaccion %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    INGREDIENTE = as.factor(INGREDIENTE),
+    TIEMPO = as.numeric(TIEMPO)
+  )
+str(tiempo_reaccion)
+```
+```{r}
+use_data(tiempo_reaccion)
+```
+
+## 36. variedad_trigo
+```{r}
+name <- "variedad_trigo"
+variedad_trigo <- import(paste0(path_i, "/", name, ".xlsx"))
+str(variedad_trigo)
+```
+```{r}
+variedad_trigo <- variedad_trigo %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    VAR = as.factor(VAR),
+    REND = as.numeric(REND)
+  )
+str(variedad_trigo)
+```
+```{r}
+use_data(variedad_trigo)
+```
+
+## 37. labores_remolacha
+```{r}
+name <- "labores_remolacha"
+labores_remolacha <- import(paste0(path_i, "/", name, ".xlsx"))
+str(labores_remolacha)
+```
+```{r}
+labores_remolacha <- labores_remolacha %>%
+  mutate(
+    F = as.factor(F),
+    C = as.factor(C),
+    LAB = as.factor(LAB),
+    RTO = as.numeric(RTO)
+  )
+str(labores_remolacha)
+```
+```{r}
+use_data(labores_remolacha)
+```
+
+## 38. raciones_pollos
+```{r}
+name <- "raciones_pollos"
+raciones_pollos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(raciones_pollos)
+```
+```{r}
+raciones_pollos <- raciones_pollos %>%
+  mutate(
+    Pisos = as.factor(Pisos),
+    Casilleros = as.factor(Casilleros),
+    Racion = as.factor(Racion),
+    Peso = as.numeric(Peso)
+  )
+str(raciones_pollos)
+```
+```{r}
+use_data(raciones_pollos)
+```
+
+## 39. semillas_trigo
+```{r}
+name <- "semillas_trigo"
+semillas_trigo <- import(paste0(path_i, "/", name, ".xlsx"))
+str(semillas_trigo)
+```
+```{r}
+semillas_trigo <- semillas_trigo %>%
+  mutate(
+    Abonos = as.factor(Abonos),
+    Insecticidas = as.factor(Insecticidas),
+    Semilla = as.factor(Semilla),
+    Rendimiento = as.numeric(Rendimiento)
+  )
+str(semillas_trigo)
+```
+```{r}
+use_data(semillas_trigo)
+```
+
+## 40. conc_glucosa
+```{r}
+name <- "Conc_glucosa"
+conc_glucosa <- import(paste0(path_i, "/", name, ".xlsx"))
+str(conc_glucosa)
+```
+```{r}
+conc_glucosa <- conc_glucosa %>%
+  mutate(
+    Metodo = as.factor(Metodo),
+    Nivel = as.factor(Nivel),
+    Concentracion = as.numeric(Concentracion),
+    repeticion = as.factor(repeticion)
+  )
+str(conc_glucosa)
+```
+```{r}
+use_data(conc_glucosa)
+```
+
+## 41. energia_abejas
+```{r}
+name <- "Energia_abejas"
+energia_abejas <- import(paste0(path_i, "/", name, ".xlsx"))
+str(energia_abejas)
+```
+```{r}
+energia_abejas <- energia_abejas %>%
+  mutate(
+    Temp = as.numeric(Temp),
+    Visc = as.numeric(Visc),
+    Energia = as.numeric(Energia),
+    Temp_ord = as.ordered(Temp),
+    Visc_ord = as.ordered(Visc),
+    repeticion = as.factor(repeticion)
+  )
+str(energia_abejas)
+```
+```{r}
+use_data(energia_abejas)
+```
+
+## 42. fijacion_N
+```{r}
+name <- "Fijacion_N"
+fijacion_N <- import(paste0(path_i, "/", name, ".xlsx"))
+str(fijacion_N)
+```
+```{r}
+fijacion_N <- fijacion_N %>%
+  mutate(
+    Cultivo = as.factor(Cultivo),
+    N = as.numeric(N),
+    acetileno = as.numeric(acetileno),
+    N_ord = as.ordered(N),
+    repeticion = as.factor(repeticion)
+  )
+str(fijacion_N)
+```
+```{r}
+use_data(fijacion_N)
+```
+
+## 43. met_pesados
+```{r}
+name <- "Met_pesados"
+met_pesados <- import(paste0(path_i, "/", name, ".xlsx"))
+str(met_pesados)
+```
+```{r}
+met_pesados <- met_pesados %>%
+  mutate(
+    Ciudad = as.factor(Ciudad),
+    Dosis = as.numeric(Dosis),
+    zinc = as.numeric(zinc),
+    Dosis_ord = as.ordered(Dosis),
+    repeticion = as.factor(repeticion)
+  )
+str(met_pesados)
+```
+```{r}
+use_data(met_pesados)
+```
+
+## 44. sal_cebada
+```{r}
+name <- "Sal_cebada"
+sal_cebada <- import(paste0(path_i, "/", name, ".xlsx"))
+str(sal_cebada)
+```
+```{r}
+sal_cebada <- sal_cebada %>%
+  mutate(
+    Salinidad = as.numeric(Salinidad),
+    Edad = as.numeric(Edad),
+    Consumo = as.numeric(Consumo),
+    Salinidad_ord = as.ordered(Salinidad),
+    Edad_ord = as.ordered(Edad),
+    repeticion = as.factor(repeticion)
+  )
+str(sal_cebada)
+```
+```{r}
+use_data(sal_cebada)
+```
+
+## 45. sal_suelo
+```{r}
+name <- "Sal_suelo"
+sal_suelo <- import(paste0(path_i, "/", name, ".xlsx"))
+str(sal_suelo)
+```
+```{r}
+sal_suelo <- sal_suelo %>%
+  mutate(
+    Salinidad = as.numeric(Salinidad),
+    Salinidad_ord = as.ordered(Salinidad),
+    Agua = as.numeric(Agua),
+    Agua_ord = as.ordered(Agua),
+    Textura = as.factor(Textura),
+    EC = as.numeric(EC),
+    repeticion = as.factor(repeticion)
+  )
+str(sal_suelo)
+```
+```{r}
+use_data(sal_suelo)
+```
+
+## 46. fert_melon
+```{r}
+name <- "fert_melon"
+fert_melon <- import(paste0(path_i, "/", name, ".xlsx"))
+str(fert_melon)
+```
+```{r}
+fert_melon <- fert_melon %>%
+  mutate(
+    Fila = as.factor(Fila),
+    Column = as.factor(Column),
+    Tratamiento = as.factor(Tratamiento),
+    rend = as.numeric(rend)
+  )
+str(fert_melon)
+```
+```{r}
+use_data(fert_melon)
+```
+
+## 47. inhibidor_N
+```{r}
+name <- "inhibidor_N"
+inhibidor_N <- import(paste0(path_i, "/", name, ".xlsx"))
+str(inhibidor_N)
+```
+```{r}
+inhibidor_N <- inhibidor_N %>%
+  mutate(
+    bloque = as.factor(bloque),
+    inhibidor = as.factor(inhibidor),
+    Nsuelo = as.factor(Nsuelo),
+    Nabsorbido = as.numeric(Nabsorbido)
+  )
+str(inhibidor_N)
+```
+```{r}
+use_data(inhibidor_N)
+```
+
+## 48. soja_pd
+En parcelas divididas no se agrego la columna parcela aun, queda pendiente
+```{r}
+name <- "soja_pd"
+soja_pd <- import(paste0(path_i, "/", name, ".xlsx"))
+str(soja_pd)
+```
+```{r}
+soja_pd <- soja_pd %>%
+  mutate(
+    variedad = as.factor(variedad),
+    espaciamiento = as.numeric(espaciamiento),
+    bloque = as.factor(bloque),
+    rendimiento = as.numeric(rendimiento),
+    espaciamiento_ord = as.ordered(espaciamiento)
+  )
+str(soja_pd)
+```
+```{r}
+use_data(soja_pd)
+```
+
+## 49. semillas_pd
+```{r}
+name <- "semillas_pd"
+semillas_pd <- import(paste0(path_i, "/", name, ".xlsx"))
+str(semillas_pd)
+```
+```{r}
+semillas_pd <- semillas_pd %>%
+  mutate(
+    lote = as.factor(lote),
+    bloque = as.factor(bloque),
+    tratamiento = as.factor(tratamiento),
+    rendimiento = as.numeric(rendimiento)
+  )
+str(semillas_pd)
+```
+```{r}
+use_data(semillas_pd)
+```
+
+## 50. arroz_pd
+```{r}
+name <- "arroz_pd"
+arroz_pd <- import(paste0(path_i, "/", name, ".xlsx"))
+str(arroz_pd)
+```
+```{r}
+arroz_pd <- arroz_pd %>%
+  mutate(
+    Lamina = as.factor(Lamina),
+    Variedad = as.factor(Variedad),
+    Repetición = as.factor(Repetición),
+    Rend = as.numeric(Rend)
+  )
+str(arroz_pd)
+```
+```{r}
+use_data(arroz_pd)
+```
+
+## 51. cana_pd
+```{r}
+name <- "caña_pd"
+cana_pd <- import(paste0(path_i, "/", name, ".xlsx"))
+str(cana_pd)
+```
+```{r}
+cana_pd <- cana_pd %>%
+  mutate(
+    Fecha = as.factor(Fecha),
+    Método = as.factor(Método),
+    Bloque = as.factor(Bloque),
+    Rend = as.numeric(Rend)
+  )
+str(cana_pd)
+```
+```{r}
+use_data(cana_pd)
+```
+
+## 52. maiz2_pd
+```{r}
+name <- "maiz2_pd"
+maiz2_pd <- import(paste0(path_i, "/", name, ".xlsx"))
+str(maiz2_pd)
+```
+```{r}
+maiz2_pd <- maiz2_pd %>%
+  mutate(
+    Bloque = as.factor(Bloque),
+    Aplicacion = as.factor(Aplicacion),
+    Abono = as.factor(Abono),
+    Rend = as.numeric(Rend)
+  )
+str(maiz2_pd)
+```
+```{r}
+use_data(maiz2_pd)
+```
+
+## 53. trigo_zona_ciclo
+```{r}
+name <- "trigo_zona_ciclo"
+trigo_zona_ciclo <- import(paste0(path_i, "/", name, ".xlsx"))
+str(trigo_zona_ciclo)
+```
+```{r}
+trigo_zona_ciclo <- trigo_zona_ciclo %>%
+  mutate(
+    Zona = as.factor(Zona),
+    Ciclo = as.factor(Ciclo),
+    Rep = as.factor(Rep),
+    Rinde = as.numeric(Rinde)
+  )
+str(trigo_zona_ciclo)
+```
+```{r}
+use_data(trigo_zona_ciclo)
+```
+
+## 54. trigo_fungicidas_momentos
+```{r}
+name <- "trigo_fungicidas_momentos"
+trigo_fungicidas_momentos <- import(paste0(path_i, "/", name, ".xlsx"))
+str(trigo_fungicidas_momentos)
+```
+```{r}
+trigo_fungicidas_momentos <- trigo_fungicidas_momentos %>%
+  mutate(
+    Fungicida = as.factor(Fungicida),
+    Momento = as.factor(Momento),
+    Bloque = as.factor(Bloque),
+    y = as.numeric(y)
+  )
+str(trigo_fungicidas_momentos)
+```
+```{r}
+use_data(trigo_fungicidas_momentos)
+```
+
+## 55. digest_in_vitro
+```{r}
+name <- "digest_in_vitro"
+digest_in_vitro <- import(paste0(path_i, "/", name, ".xlsx"))
+str(digest_in_vitro)
+```
+```{r}
+digest_in_vitro <- digest_in_vitro %>%
+  mutate(
+    Dosis = as.numeric(Dosis),
+    Tubo = as.factor(Tubo),
+    dig48 = as.numeric(dig48),
+    Dosis_ord = as.ordered(Dosis)
+  )
+str(digest_in_vitro)
+```
+```{r}
+use_data(digest_in_vitro)
+```

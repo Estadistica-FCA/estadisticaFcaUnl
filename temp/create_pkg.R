@@ -1,0 +1,9 @@
+library(devtools)
+document()
+?gallinas
+build()
+install()
+uninstall()
+library(estadisticaFcaUnl)
+library(usethis)
+?mean

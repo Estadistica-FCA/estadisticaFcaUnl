@@ -1,0 +1,20 @@
+Departamento           Cant_EAP  Sup_promedio
+Belgrano               1121      211.46
+Caseros"               2576      140.05
+Castellanos            1954      341.43
+Constitucion           1610      157.77
+Garay                  541       478.32
+General Lopez          2387      371.53
+General Obligado       2043      503.74
+Iriondo                1417      208.66
+La Capital             662       273.30
+Las Colonias           1794      296.14
+9 de Julio             1001      1223.89
+Rosario                1205      117.06
+San Cristobal          1855      665.70
+San Javier             862       527.44
+San Jeronimo           1341      296.06
+San Justo              861       460.53
+San Lorenzo            870       191.86
+San Martin             1477      325.88
+Vera                   1130      1468.69
