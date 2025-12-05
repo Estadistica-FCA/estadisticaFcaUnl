@@ -1,3 +1,4 @@
+# 1 pesada_terneros----
 #' Pesaje de 1598 terneros que ingresaron al sistema de engorde de la estancia "La Escondida S.A."
 #' @docType data
 #' @usage data(pesada_terneros)
@@ -16,6 +17,7 @@
 #' @source Gentileza Ing. Agr. Marcón
 "pesada_terneros"
 
+# 2 superficies_EAP----
 #' Cantidad de empresas agropecuarias y la superficie promedio de la provincia de Santa Fe registradas en el Censo Nacional Agropecuario 2008.
 #' @docType data
 #' @usage data(superficies_EAP)
@@ -29,6 +31,7 @@
 #' @source Instituto Nacional de Estadísticas y Censos
 "superficies_EAP"
 
+# 3 pesada_novillos----
 #' Datos del pesaje de dos tropas de novillos extraídos del sistema de registros del establecimiento "La Escondida S.A."
 #' @docType data
 #' @usage data(pesada_novillos)
@@ -52,6 +55,7 @@
 #' @source Gentileza Ing. Agr. Marcón
 "pesada_novillos"
 
+# 4 tambos_2008_2015----
 #' Datos sobre numero de establecimientos lecheros y composición de rodeo en la provincia de Santa Fe durante el período 2008-2015.
 #' @docType data
 #' @usage data(tambos_2008_2015)
@@ -66,6 +70,7 @@
 #' @source Instituto Provincial de Estadísticas y Censos (IPEC)
 "tambos_2008_2015"
 
+# 5 Lotes_BA----
 #' Datos de fertilidad 0-15 y 15-30 cm de Argiudoles en 39 pares de lotes y  bajo alambrado del departamento Las Colonias.
 #' @docType data
 #' @usage data(Lotes_BA)
@@ -87,6 +92,7 @@
 #' @source Dra. Carrizo
 "lotes_BA"
 
+# 6 riesgo_arbolado----
 #' Datos de un relevamiento de 677 arboles de la vía pública de la ciudad de Rafaela para la determinación de riesgo según la metodología de la Sociedad Internacional de Arboricultura (ISA).
 #' @docType data
 #' @usage data(riesgo_arbolado)

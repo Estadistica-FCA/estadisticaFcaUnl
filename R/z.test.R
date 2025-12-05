@@ -1,10 +1,10 @@
-#' @title Internal function to calculate p-value and confidence interval
-#' @description Helper function to calculate p-values and confidence intervals for z-tests.
-#' @param z_calc Numeric. Calculated Z statistic.
-#' @param x Numeric. Center of the confidence interval (mean or difference).
-#' @param se Numeric. Standard error.
+#' @title Funcion interna para calcular p-valor y intervalo de confianza
+#' @description Funcion auxiliar para calcular p-valor y intervalo de confianza para pruebas de distribucion normal Z.
+#' @param z_calc Numeric. Estadistico Z calculado.
+#' @param x Numeric. Centro del intervalo de confianza (media o diferencia).
+#' @param se Numeric. Error estandar.
 #' @inheritParams z.test
-#' @return A list containing `p_val` (p-value) and `conf_int` (confidence interval).
+#' @return Un listado con `p_val` (valor p) y `conf_int` (intervalo de confianza).
 #' @keywords internal
 z_values <- function(z_calc, x, se, alternative = c("two.sided", "less", "greater"), conf.level = 0.95) {
   if (alternative == "less") {
@@ -29,30 +29,30 @@ z_values <- function(z_calc, x, se, alternative = c("two.sided", "less", "greate
   return(list(p_val = p_val, conf_int = conf_int))
 }
 
-#' @title Normal Z test
+#' @title Test de distribucion Normal Z
 #' @description
-#' Performs one and two sample z-tests on vectors of data.
-#' @param x Numeric vector. Sample data for one-sample test or first sample for two-sample test.
-#' @param y Numeric vector. Second sample data for two-sample test. Optional.
-#' @param sig_x Numeric. Population standard deviation for x.
-#' @param sig_y Numeric. Population standard deviation for y. Required for two-sample test.
+#' Realiza pruebas de hipotesis de una o dos muestras con distribucion normal.
+#' @param x Numeric vector. Muestra para una muestra o primer muestra para dos muestras.
+#' @param y Numeric vector. Segunda muestra para dos muestras. Optional.
+#' @param sig_x Numeric. Desviacion estandar poblacional para x.
+#' @param sig_y Numeric. Desviacion estandar poblacional para y. Requerido para dos muestras.
 #' @param alternative Character string specifying the alternative hypothesis.
 #'   Must be one of "two.sided" (default), "greater" or "less".
-#' @param mu Numeric. Hypothesized true mean or difference in means. Default is 0.
-#' @param conf.level Numeric. Confidence level of the interval. Default is 0.95.
-#' @param p1 Numeric. Proportion of success in population 1 (for two-proportion test).
-#' @param p2 Numeric. Proportion of success in population 2 (for two-proportion test).
-#' @param n1 Numeric. Sample size for population 1 (for two-proportion test).
-#' @param n2 Numeric. Sample size for population 2 (for two-proportion test).
-#' @return A list with class "htest" containing the following components:
-#'   \item{statistic}{The value of the z-statistic.}
-#'   \item{p.value}{The p-value for the test.}
-#'   \item{conf.int}{A confidence interval for the mean or difference in means appropriate to the specified alternative hypothesis.}
-#'   \item{estimate}{The estimated mean or difference in means/proportions.}
-#'   \item{null.value}{The specified hypothesized value of the mean or mean difference.}
-#'   \item{alternative}{A character string describing the alternative hypothesis.}
-#'   \item{method}{A character string indicating what type of test was performed.}
-#'   \item{data.name}{A character string giving the name(s) of the data.}
+#' @param mu Numeric. Hipotesis nula para la media o diferencia de medias. Por defecto es 0.
+#' @param conf.level Numeric. Nivel de confianza del intervalo. Por defecto es 0.95.
+#' @param p1 Numeric. Proporcion de exito en la poblacion 1 (para prueba de proporciones).
+#' @param p2 Numeric. Proporcion de exito en la poblacion 2 (para prueba de proporciones).
+#' @param n1 Numeric. Tamaño de la muestra para la poblacion 1 (para prueba de proporciones).
+#' @param n2 Numeric. Tamaño de la muestra para la poblacion 2 (para prueba de proporciones).
+#' @return Un objeto de la clase "htest" que contiene los siguientes componentes:
+#'   \item{statistic}{El valor del estadistico Z.}
+#'   \item{p.value}{El p-valor para la prueba.}
+#'   \item{conf.int}{Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.}
+#'   \item{estimate}{La estimacion de la media o diferencia en medias/proportiones.}
+#'   \item{null.value}{El valor hipotetico de la media o diferencia en medias.}
+#'   \item{alternative}{Un string descriptivo de la hipotesis alternativa.}
+#'   \item{method}{Un string indicando el tipo de prueba realizada.}
+#'   \item{data.name}{Un string que da el nombre(s) de los datos.}
 #' @export
 z.test <- function(x = NULL, y = NULL, sig_x, sig_y = NULL,
                    alternative = c("two.sided", "less", "greater"), mu = 0, conf.level = 0.95,
