@@ -4,3 +4,7 @@
 .Ruserdata
 .DS_Store
 Thumbs.db
+.vscode
+.lintr
+*.Rproj
+.Rprofile
