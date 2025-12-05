@@ -17,7 +17,8 @@ LazyData: false
 Imports:
     dplyr,
     rstudioapi,
-    miniCRAN
+    miniCRAN,
+    ggplot2
 RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
