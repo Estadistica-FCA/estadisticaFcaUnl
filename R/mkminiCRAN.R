@@ -1,6 +1,5 @@
 #' @title Chequear lista de mirrors
 #' @description Función que chequea una lista de mirrors y elige el optimo
-#' @inheritParams mkminiCRAN
 #' @param mirrors Espera un vector de caracteres con los diferentes mirrors
 #' @return Devuelve una url de un mirror valida
 #' @details Recorre la lista de mirrors en orden y chequea que funciona.

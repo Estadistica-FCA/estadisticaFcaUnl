@@ -2,7 +2,7 @@
 % Please edit documentation in R/z.test.R
 \name{z_values}
 \alias{z_values}
-\title{Internal function to calculate p-value and confidence interval}
+\title{Funcion interna para calcular p-valor y intervalo de confianza}
 \usage{
 z_values(
   z_calc,
@@ -13,21 +13,21 @@ z_values(
 )
 }
 \arguments{
-\item{z_calc}{Numeric. Calculated Z statistic.}
+\item{z_calc}{Numeric. Estadistico Z calculado.}
 
-\item{x}{Numeric. Center of the confidence interval (mean or difference).}
+\item{x}{Numeric. Centro del intervalo de confianza (media o diferencia).}
 
-\item{se}{Numeric. Standard error.}
+\item{se}{Numeric. Error estandar.}
 
 \item{alternative}{Character string specifying the alternative hypothesis.
 Must be one of "two.sided" (default), "greater" or "less".}
 
-\item{conf.level}{Numeric. Confidence level of the interval. Default is 0.95.}
+\item{conf.level}{Numeric. Nivel de confianza del intervalo. Por defecto es 0.95.}
 }
 \value{
-A list containing `p_val` (p-value) and `conf_int` (confidence interval).
+Un listado con `p_val` (valor p) y `conf_int` (intervalo de confianza).
 }
 \description{
-Helper function to calculate p-values and confidence intervals for z-tests.
+Funcion auxiliar para calcular p-valor y intervalo de confianza para pruebas de distribucion normal Z.
 }
 \keyword{internal}

@@ -1005,7 +1005,7 @@
 #' A data frame with 27 rows and 6 columns:
 #' \describe{
 #'   \item{Temp:}{temperatura del ambiente en °C.}
-#'   \item{Visc:}{viscosidad del líquido (concentración de sacarosa en %).}
+#'   \item{Visc:}{viscosidad del líquido (concentración de sacarosa en \%).}
 #'   \item{Energia:}{energía gastada por las abejas en J/s.}
 #'   \item{Temp_ord:}{temperatura transformada a factor ordenado.}
 #'   \item{Visc_ord:}{viscosidad transformada a factor ordenado.}
@@ -1100,14 +1100,14 @@
 #' @details
 #' Se incluyeron tres texturas básicas de suelo (arena arcillosa, arcilla y
 #' barro), tres niveles de salinidad del agua (2, 8 y 16 dS/m) y tres niveles de
-#' contenido de agua en el suelo (0%, 5% y 15%).
+#' contenido de agua en el suelo (0\%, 5\% y 15\%).
 #' @docType data
 #' @usage data(Sal_suelo)
 #' @format
 #' A data frame with 54 rows and 7 columns:
 #' \describe{
 #'   \item{Salinidad:}{salinidad del agua en dS/m.}
-#'   \item{Agua:}{contenido de agua en el suelo en %.}
+#'   \item{Agua:}{contenido de agua en el suelo en \%.}
 #'   \item{Textura:}{textura del suelo.}
 #'   \item{EC:}{electrocondutividad del suelo.}
 #'   \item{repeticion:}{id de la repetición.}
@@ -1366,7 +1366,7 @@
 #' \describe{
 #'   \item{Dosis:}{dosis de aditivo en g/100 gMS.}
 #'   \item{Tubo:}{id del tubo de ensayo.}
-#'   \item{dig48:}{digestibilidad a las 48 hs en %.}
+#'   \item{dig48:}{digestibilidad a las 48 hs en \%.}
 #'   \item{Dosis_ord:}{dosis transformada a factor ordenado.}
 #' }
 #' @source --
