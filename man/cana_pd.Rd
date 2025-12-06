@@ -7,17 +7,17 @@
 \format{
 A data frame with 45 rows and 4 columns:
 \describe{
-  \item{Fecha:}{fecha de plantación (parcela principal).}
-  \item{Método:}{método de plantación (subparcela).}
-  \item{Bloque:}{id del bloque.}
-  \item{Rend:}{rendimiento en Tn/ha de azúcar.}
+\item{Fecha:}{fecha de plantación (parcela principal).}
+\item{Método:}{método de plantación (subparcela).}
+\item{Bloque:}{id del bloque.}
+\item{Rend:}{rendimiento en Tn/ha de azúcar.}
 }
 }
 \source{
 --
 }
 \usage{
-data(caña_pd)
+data(cana_pd)
 }
 \description{
 Se midió el rendimiento en Tn/ha de Azúcar que experimentan tres fechas de

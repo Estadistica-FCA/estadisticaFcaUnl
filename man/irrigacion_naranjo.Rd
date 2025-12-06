@@ -7,9 +7,9 @@
 \format{
 A data frame with 48 rows and 2 columns:
 \describe{
-  \item{BL:}{id del bloque.}
-  \item{TR:}{tipo de riego utilizado.}
-  \item{PF:}{peso de la fruta cosechada en libras.}
+\item{BL:}{id del bloque.}
+\item{TR:}{tipo de riego utilizado.}
+\item{PF:}{peso de la fruta cosechada en libras.}
 }
 }
 \source{
@@ -27,12 +27,14 @@ En un naranjal se llevo a cabo un experimento de irrigación con un diseño de
 bloques completos aleatorizado en el que se usaron seis tratamientos de
 irrigación:
 \describe{
-  \item{}{G = goteo.}
-  \item{}{E = por surco.}
-  \item{}{R = rocío.}
-  \item{}{A = aspersor.}
-  \item{}{AR = aspersor + rocío.}
-  \item{}{AN = anegado.}
+\itemize{
+\item G = goteo.
+\item E = por surco.
+\item R = rocío.
+\item A = aspersor.
+\item AR = aspersor + rocío.
+\item AN = anegado.
+}
 }
 
 Los siguientes datos se refieren al peso en libras de la fruta cosechada en cada parcela.

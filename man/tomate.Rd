@@ -7,10 +7,10 @@
 \format{
 A data frame with 20 rows and 3 columns:
 \describe{
-  \item{Tejido:}{id del tejido tratado.}
-  \item{TR:}{tratamiento aplicado (3\% de fructosa, 3\% de glucosa, 3\% de
-  sacarosa y Control).}
-  \item{CR:}{crecimiento del tejido medido en mm X 10.}
+\item{Tejido:}{id del tejido tratado.}
+\item{TR:}{tratamiento aplicado (3\\% de fructosa, 3\\% de glucosa, 3\\% de
+sacarosa y Control).}
+\item{CR:}{crecimiento del tejido medido en mm X 10.}
 }
 }
 \source{
@@ -26,12 +26,12 @@ azúcares.
 }
 \details{
 Se evaluaron 4 tratamientos con 4 repeticiones cada uno:
-\describe{
- \item{}{1- 3\% de fructosa.}
- \item{}{2- 3\% de glucosa.}
- \item{}{3- 3\% de sacarosa.}
- \item{}{4- Control (sin azúcar).}
- }
+\itemize{
+\item 1- 3\% de fructosa.
+\item 2- 3\% de glucosa.
+\item 3- 3\% de sacarosa.
+\item 4- Control (sin azúcar).
 El resultado de crecimiento de tejidos (CR), se midió en mm X 10.
+}
 }
 \keyword{datasets}

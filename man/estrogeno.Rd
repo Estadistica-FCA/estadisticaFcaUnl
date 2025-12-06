@@ -7,8 +7,8 @@
 \format{
 A data frame with 28 rows and 2 columns:
 \describe{
-  \item{SO:}{solucion de estrógeno asignada.}
-  \item{PE:}{Peso del útero.}
+\item{SO:}{solucion de estrógeno asignada.}
+\item{PE:}{Peso del útero.}
 }
 }
 \source{

@@ -1,24 +1,27 @@
 Package: estadisticaFcaUnl
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
+Title: Herramientas y Datos para Estadística en FCA-UNL
+Version: 0.2.1
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
+      given = "Alejandro",
+      family = "Aléman",
+      email = "aaleman@fca.unl.edu.ar",
+      role = c("aut", "cre"),
+      comment = c(affiliation = "Cátedra de Estadística FCA-UNL")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Provee conjuntos de datos y funciones auxiliares para la enseñanza
+    y práctica de la estadística en la Facultad de Ciencias Agrarias de la
+    Universidad Nacional del Litoral.
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: false
 Imports:
-    dplyr,
     rstudioapi,
     miniCRAN,
     ggplot2
 RoxygenNote: 7.3.3
+Roxygen: list(markdown = TRUE)
 Depends: 
-    R (>= 3.5)
+    R (>= 4.1.0)

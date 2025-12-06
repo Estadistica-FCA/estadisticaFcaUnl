@@ -7,9 +7,9 @@
 \format{
 A data frame with 20 rows and 3 columns:
 \describe{
-  \item{Cabeza:}{numero de identificación de la inflorescencia.}
-  \item{Presion:}{presión de vapor (4.4 o 9.9 mmHg) a la que fué sometida.}
-  \item{nectar:}{concentración de azúcares del néctar.}
+\item{Cabeza:}{numero de identificación de la inflorescencia.}
+\item{Presion:}{presión de vapor (4.4 o 9.9 mmHg) a la que fué sometida.}
+\item{nectar:}{concentración de azúcares del néctar.}
 }
 }
 \source{
@@ -20,7 +20,7 @@ data(nectar_trebol_rojo)
 }
 \description{
 Efecto de la presión de vapor en la secreción de néctar de flores de trébol
-rojo (_Trifolium pratense_).
+rojo (\emph{Trifolium pratense}).
 }
 \details{
 Se tomó 10 cabezas (inflorescencias) de trébol rojo y las dividió a la mitad.

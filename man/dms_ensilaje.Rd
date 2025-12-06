@@ -6,10 +6,9 @@
 \title{Digestibilidad de materia seca en ensilaje de maíz}
 \format{
 A data frame with 13 rows and 2 columns:
-\describe{
-  \item{Trat:}{tipo de especie a la que se le suministro la dieta (cordero o
-  novillo).}
-  \item{DMS:}{digestibilidad de la materia seca en \%.}
+\itemize{
+\item \code{Trat}: tipo de especie a la que se le suministro la dieta (cordero o novillo).
+\item \code{DMS}: digestibilidad de la materia seca en \%.
 }
 }
 \source{

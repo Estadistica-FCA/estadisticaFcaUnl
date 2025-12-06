@@ -7,9 +7,9 @@
 \format{
 A data frame with 20 rows and 3 columns:
 \describe{
-  \item{BL:}{id del bloque (muestra de fibra).}
-  \item{CQ:}{tipo de compuesto químico aplicado.}
-  \item{RF:}{resistencia de la fibra.}
+\item{BL:}{id del bloque (muestra de fibra).}
+\item{CQ:}{tipo de compuesto químico aplicado.}
+\item{RF:}{resistencia de la fibra.}
 }
 }
 \source{

@@ -7,19 +7,19 @@
 \format{
 A data frame with 18 rows and 6 columns:
 \describe{
-  \item{Salinidad:}{nivel de salinidad en barios.}
-  \item{Edad:}{edad de la planta al momento de la cosecha en días.}
-  \item{Consumo:}{cantidad de agua consumida (mm/100g peso seco).}
-  \item{repeticion:}{id de la repetición.}
-  \item{Salinidad_ord:}{salinidad transformada a factor ordenado.}
-  \item{Edad_ord:}{edad transformada a factor ordenado.}
+\item{Salinidad:}{nivel de salinidad en barios.}
+\item{Edad:}{edad de la planta al momento de la cosecha en días.}
+\item{Consumo:}{cantidad de agua consumida (mm/100g peso seco).}
+\item{repeticion:}{id de la repetición.}
+\item{Salinidad_ord:}{salinidad transformada a factor ordenado.}
+\item{Edad_ord:}{edad transformada a factor ordenado.}
 }
 }
 \source{
 --
 }
 \usage{
-data(Sal_cebada)
+data(sal_cebada)
 }
 \description{
 Experimento con plantas de cebada para medir el efecto del aumento de la

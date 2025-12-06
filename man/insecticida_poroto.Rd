@@ -7,9 +7,9 @@
 \format{
 A data frame with 12 rows and 3 columns:
 \describe{
-  \item{Bloque:}{id del bloque.}
-  \item{Insecticida:}{id del insecticida aplicado.}
-  \item{emergencia}{número de plántulas emergidas por fila.}
+\item{Bloque:}{id del bloque.}
+\item{Insecticida:}{id del insecticida aplicado.}
+\item{emergencia}{número de plántulas emergidas por fila.}
 }
 }
 \source{
@@ -20,7 +20,7 @@ data(insecticida_poroto)
 }
 \description{
 Experimento realizado para comparar los efectos de tres insecticidas en una
-variedad de frijoles (_Phaseolus vulgaris_).
+variedad de frijoles (\emph{Phaseolus vulgaris}).
 }
 \details{
 Para el ensayo disponía de cuatro parcelas dentro del campo experimental.

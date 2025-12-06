@@ -7,10 +7,10 @@
 \format{
 A data frame with 24 rows and 4 columns:
 \describe{
-  \item{Lamina:}{lámina de riego (parcela principal).}
-  \item{Variedad:}{variedad de arroz (subparcela).}
-  \item{Repetición:}{id de la repetición (bloque).}
-  \item{Rend:}{rendimiento registrado.}
+\item{Lamina:}{lámina de riego (parcela principal).}
+\item{Variedad:}{variedad de arroz (subparcela).}
+\item{Repetición:}{id de la repetición (bloque).}
+\item{Rend:}{rendimiento registrado.}
 }
 }
 \source{

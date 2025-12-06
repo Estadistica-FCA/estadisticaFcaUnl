@@ -6,15 +6,15 @@
 \title{Pesaje de 1598 terneros que ingresaron al sistema de engorde de la estancia "La Escondida S.A."}
 \format{
 A data frame with 1598 rows and 8 columns:
-\describe{
-  \item{Procedencia}{nombre del establecimiento del cual provienen los terneros de destete.}
-  \item{IDV}{código de identificación visual (caravana)}
-  \item{Sexo}{sexo del animal}
-  \item{Fecha Ingreso}{fecha de ingreso al sistema de engorde}
-  \item{Categoría}{categoría dentro a la que pertenecen dentro del rodeo de engorde.}
-  \item{Fecha}{fecha en la que se realizó la pesada (MM/DD/YYYY)}
-  \item{Hora}{hora en la que se realizó la pesada (HH:MM:SS)}
-  \item{Peso}{peso del animal en kg.}
+\itemize{
+\item \code{Procedencia}: nombre del establecimiento del cual provienen los terneros de destete.
+\item \code{IDV}: código de identificación visual (caravana)
+\item \code{Sexo}: sexo del animal
+\item \verb{Fecha Ingreso}: fecha de ingreso al sistema de engorde
+\item \code{Categoria}: categoría dentro a la que pertenecen dentro del rodeo de engorde.
+\item \code{Fecha}: fecha en la que se realizó la pesada (MM/DD/YYYY)
+\item \code{Hora}: hora en la que se realizó la pesada (HH:MM:SS)
+\item \code{Peso}: peso del animal en kg.
 }
 }
 \source{

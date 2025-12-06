@@ -7,9 +7,9 @@
 \format{
 A data frame with 24 rows and 3 columns:
 \describe{
-  \item{Dispositivo:}{letra que identifica el dispositivo utilizado.}
-  \item{Muestra:}{id de la muestra a la que se le realizo la medida.}
-  \item{dif:}{diferencia de pH medido vs pH conocido.}
+\item{Dispositivo:}{letra que identifica el dispositivo utilizado.}
+\item{Muestra:}{id de la muestra a la que se le realizo la medida.}
+\item{dif:}{diferencia de pH medido vs pH conocido.}
 }
 }
 \source{

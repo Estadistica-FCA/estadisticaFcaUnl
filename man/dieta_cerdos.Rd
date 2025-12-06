@@ -7,8 +7,8 @@
 \format{
 A data frame with 26 rows and 2 columns:
 \describe{
-  \item{D:}{tipo de dieta suministrada.}
-  \item{AP:}{aumento de peso en kg (AP).}
+\item{D:}{tipo de dieta suministrada.}
+\item{AP:}{aumento de peso en kg (AP).}
 }
 }
 \source{
@@ -27,14 +27,34 @@ individualmente al azar a 5 cerdos.
 
 Los ingredientes de las dietas evaluadas fueron:
 \describe{
- \item{}{1. Maíz.}
- \item{}{2. Maíz y trigo.}
- \item{}{3. Maíz y cebada.}
- \item{}{4. Sorgo.}
- \item{}{5. Sorgo y trigo.}
- \item{}{6. Sorgo y cebada.}
+\itemize{
+\item 
+\enumerate{
+\item Maíz.
+}
+\item 
+\enumerate{
+\item Maíz y trigo.
+}
+\item 
+\enumerate{
+\item Maíz y cebada.
+}
+\item 
+\enumerate{
+\item Sorgo.
+}
+\item 
+\enumerate{
+\item Sorgo y trigo.
+}
+\item 
+\enumerate{
+\item Sorgo y cebada.
 }
 No obstante, durante el experimento algunas de las repeticiones tuvieron que
 ser descartadas quedaron 26 datos en total.
+}
+}
 }
 \keyword{datasets}

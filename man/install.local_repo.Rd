@@ -35,9 +35,11 @@ repositorio, los paquetes validos y los invalidos
 }
 \examples{
 pkgs <- c(
-  "rmarkdown", "moments", "pacman", "rio", "tidyverse",
-  "emmeans", "car", "DescTools", "agricolae", "multcomp", "multcompView",
-  "ggplot2"
+    "rmarkdown", "moments", "pacman", "rio", "tidyverse",
+    "emmeans", "car", "DescTools", "agricolae", "multcomp", "multcompView",
+    "ggplot2"
 )
+\dontrun{
 install.local_repo(pkgs)
+}
 }

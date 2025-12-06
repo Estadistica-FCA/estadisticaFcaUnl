@@ -7,10 +7,10 @@
 \format{
 A data frame with 25 rows and 3 columns:
 \describe{
-  \item{BL:}{id del bloque.}
-  \item{AL:}{porcentaje de algodón en la fibra.}
-  \item{AL_ord:}{porcentaje de algodón transformado a factor ordenado.}
-  \item{RT:}{resistencia a la tensión registrada.}
+\item{BL:}{id del bloque.}
+\item{AL:}{porcentaje de algodón en la fibra.}
+\item{AL_ord:}{porcentaje de algodón transformado a factor ordenado.}
+\item{RT:}{resistencia a la tensión registrada.}
 }
 }
 \source{

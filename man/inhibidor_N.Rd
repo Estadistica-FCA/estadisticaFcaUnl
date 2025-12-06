@@ -7,10 +7,10 @@
 \format{
 A data frame with 18 rows and 4 columns:
 \describe{
-  \item{bloque:}{id del bloque.}
-  \item{inhibidor:}{nivel de inhibidor de nitrificación (ninguno o 0.5).}
-  \item{Nsuelo:}{momento de aplicación del nitrógeno (pronto, optimo, tarde).}
-  \item{Nabsorbido:}{porcentaje de N absorbido por las plantas.}
+\item{bloque:}{id del bloque.}
+\item{inhibidor:}{nivel de inhibidor de nitrificación (ninguno o 0.5).}
+\item{Nsuelo:}{momento de aplicación del nitrógeno (pronto, optimo, tarde).}
+\item{Nabsorbido:}{porcentaje de N absorbido por las plantas.}
 }
 }
 \source{

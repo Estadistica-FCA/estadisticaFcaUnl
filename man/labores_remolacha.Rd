@@ -7,10 +7,10 @@
 \format{
 A data frame with 9 rows and 4 columns:
 \describe{
-  \item{F:}{id de la fila.}
-  \item{C:}{id de la columna.}
-  \item{LAB:}{tipo de labor cultural aplicada.}
-  \item{RTO:}{rendimiento en toneladas por hectárea.}
+\item{F:}{id de la fila.}
+\item{C:}{id de la columna.}
+\item{LAB:}{tipo de labor cultural aplicada.}
+\item{RTO:}{rendimiento en toneladas por hectárea.}
 }
 }
 \source{

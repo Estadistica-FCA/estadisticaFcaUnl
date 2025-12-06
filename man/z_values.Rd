@@ -25,7 +25,7 @@ Must be one of "two.sided" (default), "greater" or "less".}
 \item{conf.level}{Numeric. Nivel de confianza del intervalo. Por defecto es 0.95.}
 }
 \value{
-Un listado con `p_val` (valor p) y `conf_int` (intervalo de confianza).
+Un listado con \code{p_val} (valor p) y \code{conf_int} (intervalo de confianza).
 }
 \description{
 Funcion auxiliar para calcular p-valor y intervalo de confianza para pruebas de distribucion normal Z.

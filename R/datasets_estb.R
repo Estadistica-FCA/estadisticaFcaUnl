@@ -4,16 +4,14 @@
 #' @usage data(pesada_terneros)
 #' @format
 #' A data frame with 1598 rows and 8 columns:
-#' \describe{
-#'   \item{Procedencia}{nombre del establecimiento del cual provienen los terneros de destete.}
-#'   \item{IDV}{código de identificación visual (caravana)}
-#'   \item{Sexo}{sexo del animal}
-#'   \item{Fecha Ingreso}{fecha de ingreso al sistema de engorde}
-#'   \item{Categoría}{categoría dentro a la que pertenecen dentro del rodeo de engorde.}
-#'   \item{Fecha}{fecha en la que se realizó la pesada (MM/DD/YYYY)}
-#'   \item{Hora}{hora en la que se realizó la pesada (HH:MM:SS)}
-#'   \item{Peso}{peso del animal en kg.}
-#' }
+#' * `Procedencia`: nombre del establecimiento del cual provienen los terneros de destete.
+#' * `IDV`: código de identificación visual (caravana)
+#' * `Sexo`: sexo del animal
+#' * `Fecha Ingreso`: fecha de ingreso al sistema de engorde
+#' * `Categoria`: categoría dentro a la que pertenecen dentro del rodeo de engorde.
+#' * `Fecha`: fecha en la que se realizó la pesada (MM/DD/YYYY)
+#' * `Hora`: hora en la que se realizó la pesada (HH:MM:SS)
+#' * `Peso`: peso del animal en kg.
 #' @source Gentileza Ing. Agr. Marcón
 "pesada_terneros"
 
@@ -73,22 +71,20 @@
 # 5 Lotes_BA----
 #' Datos de fertilidad 0-15 y 15-30 cm de Argiudoles en 39 pares de lotes y  bajo alambrado del departamento Las Colonias.
 #' @docType data
-#' @usage data(Lotes_BA)
+#' @usage data(lotes_BA)
 #' @format
 #' A data frame with 156 rows and 15 columns:
-#' \describe{
-#'   \item{Id_lote}{código identificador del par lote-bajo alambrado}
-#'   \item{Id_muestra}{identificador interno del número de muestra}
-#'   \item{lat, long}{coordenadas geográficas}
-#'   \item{Prof}{profundidad en cm}
-#'   \item{Condicion}{uso de la tierra}
-#'   \item{MO}{materia orgánica en \%}
-#'   \item{P}{fósforo disponible en ppm}
-#'   \item{Nt}{nitrógeno total en \%}
-#'   \item{pH_actual}{acidez actual}
-#'   \item{Ca, Mg, K, Na}{Cationes de intercambio en \eqn{cmol~c~100g^{-1}}}
-#'   \item{CIC}{capacidad de intercambio catiónico en \eqn{cmol~c~100g^{-1}}}
-#' }
+#' * `Id_lote`: código identificador del par lote-bajo alambrado
+#' * `Id_muestra`: identificador interno del número de muestra
+#' * `lat`, `long`: coordenadas geográficas
+#' * `Prof`: profundidad en cm
+#' * `Condicion`: uso de la tierra
+#' * `MO`: materia orgánica en %
+#' * `P`: fósforo disponible en ppm
+#' * `Nt`: nitrógeno total en %
+#' * `pH_actual`: acidez actual
+#' * `Ca`, `Mg`, `K`, `Na`: Cationes de intercambio en \eqn{cmol~c~100g^{-1}}
+#' * `CIC`: capacidad de intercambio catiónico en \eqn{cmol~c~100g^{-1}}
 #' @source Dra. Carrizo
 "lotes_BA"
 

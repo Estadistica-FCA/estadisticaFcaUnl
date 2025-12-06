@@ -7,10 +7,10 @@
 \format{
 A data frame with 152 rows and 10 columns:
 \describe{
-  \item{Departamento}{nombre del departamento}
-  \item{Establecimientos}{número de establecimientos tamberos.}
-  \item{Vacas, Vaquillonas, Toros, Terneros, Terneras, Novillos, Novillitos}{número de cabezas según categoría}
-  \item{Año}{año de la serie}
+\item{Departamento}{nombre del departamento}
+\item{Establecimientos}{número de establecimientos tamberos.}
+\item{Vacas, Vaquillonas, Toros, Terneros, Terneras, Novillos, Novillitos}{número de cabezas según categoría}
+\item{Año}{año de la serie}
 }
 }
 \source{

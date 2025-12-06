@@ -7,17 +7,17 @@
 \format{
 A data frame with 18 rows and 4 columns:
 \describe{
-  \item{Metodo:}{método químico de determinación (1 o 2).}
-  \item{Nivel:}{nivel de glucosa aplicado (A, B o C).}
-  \item{Concentracion:}{concentración de glucosa medida.}
-  \item{repeticion:}{id de la repetición.}
+\item{Metodo:}{método químico de determinación (1 o 2).}
+\item{Nivel:}{nivel de glucosa aplicado (A, B o C).}
+\item{Concentracion:}{concentración de glucosa medida.}
+\item{repeticion:}{id de la repetición.}
 }
 }
 \source{
 --
 }
 \usage{
-data(Conc_glucosa)
+data(conc_glucosa)
 }
 \description{
 Experimento para determinar el efecto de dos métodos químicos de determinación

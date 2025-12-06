@@ -7,9 +7,9 @@
 \format{
 A data frame with 20 rows and 3 columns:
 \describe{
-  \item{BL:}{id del bloque.}
-  \item{AQ:}{tipo de agente químico aplicado.}
-  \item{RT}{resistencia a la tensión registrada.}
+\item{BL:}{id del bloque.}
+\item{AQ:}{tipo de agente químico aplicado.}
+\item{RT}{resistencia a la tensión registrada.}
 }
 }
 \source{

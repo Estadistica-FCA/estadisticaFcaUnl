@@ -7,10 +7,10 @@
 \format{
 A data frame with 20 rows and 24 columns:
 \describe{
-  \item{Dosis:}{dosis de nitrogeno aplicado.}
-  \item{Dosis_ord:}{dosis transformada a factor ordenada.}
-  \item{Dosis_chr:}{dosis como caracter transformada a factor.}
-  \item{Plantas:}{numero de plantas cosechadas de la parcela.}
+\item{Dosis:}{dosis de nitrogeno aplicado.}
+\item{Dosis_ord:}{dosis transformada a factor ordenada.}
+\item{Dosis_chr:}{dosis como caracter transformada a factor.}
+\item{Plantas:}{numero de plantas cosechadas de la parcela.}
 }
 }
 \source{

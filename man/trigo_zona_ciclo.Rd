@@ -7,10 +7,10 @@
 \format{
 A data frame with 27 rows and 4 columns:
 \describe{
-  \item{Zona:}{zona de Santa Fe (Norte, Centro, Sur).}
-  \item{Ciclo:}{ciclo del trigo (anidado en Zona).}
-  \item{Rep:}{id de la repetición.}
-  \item{Rinde:}{rendimiento de trigo en kg/ha.}
+\item{Zona:}{zona de Santa Fe (Norte, Centro, Sur).}
+\item{Ciclo:}{ciclo del trigo (anidado en Zona).}
+\item{Rep:}{id de la repetición.}
+\item{Rinde:}{rendimiento de trigo en kg/ha.}
 }
 }
 \source{
@@ -27,10 +27,10 @@ La adaptación del material genético (fecha y fisiología) hace que en cada
 zona se prioricen ciclos distintos; por eso Ciclo está anidado en Zona.
 
 Anidamiento:
-\describe{
-  \item{}{Norte: corto–intermedio}
-  \item{}{Centro: intermedio–largo}
-  \item{}{Sur: intermedio–largo}
+\itemize{
+\item Norte: corto–intermedio
+\item Centro: intermedio–largo
+\item Sur: intermedio–largo
 }
 }
 \keyword{datasets}

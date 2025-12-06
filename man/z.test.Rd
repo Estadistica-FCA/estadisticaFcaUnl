@@ -44,14 +44,14 @@ Must be one of "two.sided" (default), "greater" or "less".}
 }
 \value{
 Un objeto de la clase "htest" que contiene los siguientes componentes:
-  \item{statistic}{El valor del estadistico Z.}
-  \item{p.value}{El p-valor para la prueba.}
-  \item{conf.int}{Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.}
-  \item{estimate}{La estimacion de la media o diferencia en medias/proportiones.}
-  \item{null.value}{El valor hipotetico de la media o diferencia en medias.}
-  \item{alternative}{Un string descriptivo de la hipotesis alternativa.}
-  \item{method}{Un string indicando el tipo de prueba realizada.}
-  \item{data.name}{Un string que da el nombre(s) de los datos.}
+\item{statistic}{El valor del estadistico Z.}
+\item{p.value}{El p-valor para la prueba.}
+\item{conf.int}{Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.}
+\item{estimate}{La estimacion de la media o diferencia en medias/proportiones.}
+\item{null.value}{El valor hipotetico de la media o diferencia en medias.}
+\item{alternative}{Un string descriptivo de la hipotesis alternativa.}
+\item{method}{Un string indicando el tipo de prueba realizada.}
+\item{data.name}{Un string que da el nombre(s) de los datos.}
 }
 \description{
 Realiza pruebas de hipotesis de una o dos muestras con distribucion normal.

@@ -6,20 +6,20 @@
 \title{Energía en abejas}
 \format{
 A data frame with 27 rows and 6 columns:
-\describe{
-  \item{Temp:}{temperatura del ambiente en °C.}
-  \item{Visc:}{viscosidad del líquido (concentración de sacarosa en \%).}
-  \item{Energia:}{energía gastada por las abejas en J/s.}
-  \item{Temp_ord:}{temperatura transformada a factor ordenado.}
-  \item{Visc_ord:}{viscosidad transformada a factor ordenado.}
-  \item{repeticion:}{id de la repetición.}
+\itemize{
+\item \code{Temp}: temperatura del ambiente en °C.
+\item \code{Visc}: viscosidad del líquido (concentración de sacarosa en \\%).
+\item \code{Energia}: energía gastada por las abejas en J/s.
+\item \code{Temp_ord}: temperatura transformada a factor ordenado.
+\item \code{Visc_ord}: viscosidad transformada a factor ordenado.
+\item \code{repeticion}: id de la repetición.
 }
 }
 \source{
 --
 }
 \usage{
-data(Energia_abejas)
+data(energia_abejas)
 }
 \description{
 Experimento para determinar el efecto de la temperatura del ambiente y la
@@ -28,7 +28,7 @@ viscosidad del líquido en el consumo de energía de abejas melíferas al beber.
 \details{
 Los niveles de temperatura experimentados fueron 20, 30 y 40°C, y la
 viscosidad del líquido se controló por las concentraciones de sacarosa, que
-eran de 20, 40 y 60% del total de sólidos disueltos.
+eran de 20, 40 y 60\% del total de sólidos disueltos.
 
 El entomólogo registró la energía gastada por las abejas en J/s.
 }

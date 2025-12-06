@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^data/internal/
 ^temp/
+^\.lintr$
+^\.vscode$

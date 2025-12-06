@@ -7,8 +7,8 @@
 \format{
 A data frame with 30 rows and 2 columns:
 \describe{
-  \item{Dieta:}{id de la dieta suministrada.}
-  \item{GP:}{ganancia de peso (GP) registrada.}
+\item{Dieta:}{id de la dieta suministrada.}
+\item{GP:}{ganancia de peso (GP) registrada.}
 }
 }
 \source{

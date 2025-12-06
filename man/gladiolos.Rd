@@ -7,9 +7,9 @@
 \format{
 A data frame with 16 rows and 3 columns:
 \describe{
-  \item{BL:}{id del bloque.}
-  \item{TR:}{tipo de tratamiento aplicado.}
-  \item{EH:}{peso promedio por inflorescencia en onzas.}
+\item{BL:}{id del bloque.}
+\item{TR:}{tipo de tratamiento aplicado.}
+\item{EH:}{peso promedio por inflorescencia en onzas.}
 }
 }
 \source{
@@ -25,11 +25,13 @@ gladiolos.
 \details{
 El experimento se realizó en un diseño de bloques completos al azar con cuatro tratamientos y cuatro bloques.
 \describe{
-  \item{}{1- control (sin herbicida).}
-  \item{}{2- 2,4D-TCA.}
-  \item{}{3- DN/CR.}
-  \item{}{4- SESIN.}
+\itemize{
+\item 1- control (sin herbicida).
+\item 2- 2,4D-TCA.
+\item 3- DN/CR.
+\item 4- SESIN.
 }
 Luego se midió el peso promedio por inflorescencia en onzas.
+}
 }
 \keyword{datasets}

@@ -7,8 +7,8 @@
 \format{
 A data frame with 28 rows and 2 columns:
 \describe{
-  \item{AN:}{tipo de anabólico suministrado.}
-  \item{AP:}{aumento de peso en kg.}
+\item{AN:}{tipo de anabólico suministrado.}
+\item{AP:}{aumento de peso en kg.}
 }
 }
 \source{

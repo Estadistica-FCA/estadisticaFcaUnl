@@ -35,11 +35,8 @@
 #' @usage data(dms_ensilaje)
 #' @format
 #' A data frame with 13 rows and 2 columns:
-#' \describe{
-#'   \item{Trat:}{tipo de especie a la que se le suministro la dieta (cordero o
-#'   novillo).}
-#'   \item{DMS:}{digestibilidad de la materia seca en \%.}
-#' }
+#' * `Trat`: tipo de especie a la que se le suministro la dieta (cordero o novillo).
+#' * `DMS`: digestibilidad de la materia seca en %.
 #' @source --
 "dms_ensilaje"
 
@@ -124,9 +121,9 @@
 #' @details
 #' Se evaluaron tres tipos de tratamientos:
 #' \describe{
-#'   \item{}{- 5 cepas de las bacterias \emph{Rizhobium trifolii}.}
-#'   \item{}{- 5 cepas de las bacterias \emph{Rizhobium meliloti}.}
-#'   \item{}{- combinación de 5 cepas de \emph{R. trifolii} con 5 cepas de \emph{R. meliloti}.}
+#' * - 5 cepas de las bacterias \emph{Rizhobium trifolii}.
+#' * - 5 cepas de las bacterias \emph{Rizhobium meliloti}.
+#' * - combinación de 5 cepas de \emph{R. trifolii} con 5 cepas de \emph{R. meliloti}.
 #' }
 #' Los tratamientos fueron asignados por quintuplicado a macetas donde se dejó
 #' crecer una planta de trébol rojo sobre la cual se midió el contenido de N (en mg).
@@ -152,12 +149,12 @@
 #'
 #' Los ingredientes de las dietas evaluadas fueron:
 #' \describe{
-#'  \item{}{1. Maíz.}
-#'  \item{}{2. Maíz y trigo.}
-#'  \item{}{3. Maíz y cebada.}
-#'  \item{}{4. Sorgo.}
-#'  \item{}{5. Sorgo y trigo.}
-#'  \item{}{6. Sorgo y cebada.}
+#' * 1. Maíz.
+#' * 2. Maíz y trigo.
+#' * 3. Maíz y cebada.
+#' * 4. Sorgo.
+#' * 5. Sorgo y trigo.
+#' * 6. Sorgo y cebada.
 #' }
 #' No obstante, durante el experimento algunas de las repeticiones tuvieron que
 #' ser descartadas quedaron 26 datos en total.
@@ -202,12 +199,10 @@
 #' azúcares.
 #' @details
 #' Se evaluaron 4 tratamientos con 4 repeticiones cada uno:
-#' \describe{
-#'  \item{}{1- 3\% de fructosa.}
-#'  \item{}{2- 3\% de glucosa.}
-#'  \item{}{3- 3\% de sacarosa.}
-#'  \item{}{4- Control (sin azúcar).}
-#'  }
+#' * 1- 3% de fructosa.
+#' * 2- 3% de glucosa.
+#' * 3- 3% de sacarosa.
+#' * 4- Control (sin azúcar).
 #' El resultado de crecimiento de tejidos (CR), se midió en mm X 10.
 #' @docType data
 #' @usage data(tomate)
@@ -304,11 +299,11 @@
 #'
 #' Las cinco etapas del régimen (TR) fueron:
 #' \describe{
-#'   \item{}{1. premuda (control).}
-#'   \item{}{2. ayuno de 8 días.}
-#'   \item{}{3. 60 g de salvado al día durante 10 días.}
-#'   \item{}{4. 80 g de salvado al día por 10 días.}
-#'   \item{}{5. mezcla de malta durante 42 días.}
+#' * 1. premuda (control).
+#' * 2. ayuno de 8 días.
+#' * 3. 60 g de salvado al día durante 10 días.
+#' * 4. 80 g de salvado al día por 10 días.
+#' * 5. mezcla de malta durante 42 días.
 #' }
 #' Uno de los compuestos medidos fue la concentración de suero T3. Los datos de
 #' la tabla son las medidas de suero T3 en las cinco gallinas sacrificadas al
@@ -424,9 +419,9 @@
 #' @details
 #' Se trato el suelo y las malezas con uno de los siguientes tratamientos:
 #' \describe{
-#'   \item{}{A: Control (sin herbicida).}
-#'   \item{}{B: Herbicida con Nemagone (nematicida).}
-#'   \item{}{C: Herbicida sin Nemagone (nematicida).}
+#' * A: Control (sin herbicida).
+#' * B: Herbicida con Nemagone (nematicida).
+#' * C: Herbicida sin Nemagone (nematicida).
 #' }
 #' Los investigadores asignaron al azar 6 de los 18 plantines a cada
 #' tratamiento, luego trataron el suelo y las malezas en las áreas de
@@ -481,11 +476,11 @@
 #'
 #' Los tratamientos:
 #' \describe{
-#'  \item{}{1- control: sin fertilizar.}
-#'  \item{}{2- N50: 50 lb de N.}
-#'  \item{}{3- N100: 100 lb de N.}
-#'  \item{}{4- N50P75: 50 lb de N + 75 lb de P~2~O~5~.}
-#'  \item{}{5- N100P75: 100 lb de N + 75 lb de P~2~O~5~.}
+#' * 1- control: sin fertilizar.
+#' * 2- N50: 50 lb de N.
+#' * 3- N100: 100 lb de N.
+#' * 4- N50P75: 50 lb de N + 75 lb de P~2~O~5~.
+#' * 5- N100P75: 100 lb de N + 75 lb de P~2~O~5~.
 #'  }
 #' @docType data
 #' @usage data(fertilizante_pastizal)
@@ -528,10 +523,10 @@
 #' @details
 #' El experimento se realizó en un diseño de bloques completos al azar con cuatro tratamientos y cuatro bloques.
 #' \describe{
-#'   \item{}{1- control (sin herbicida).}
-#'   \item{}{2- 2,4D-TCA.}
-#'   \item{}{3- DN/CR.}
-#'   \item{}{4- SESIN.}
+#' * 1- control (sin herbicida).
+#' * 2- 2,4D-TCA.
+#' * 3- DN/CR.
+#' * 4- SESIN.
 #' }
 #' Luego se midió el peso promedio por inflorescencia en onzas.
 #' @docType data
@@ -581,12 +576,12 @@
 #' bloques completos aleatorizado en el que se usaron seis tratamientos de
 #' irrigación:
 #' \describe{
-#'   \item{}{G = goteo.}
-#'   \item{}{E = por surco.}
-#'   \item{}{R = rocío.}
-#'   \item{}{A = aspersor.}
-#'   \item{}{AR = aspersor + rocío.}
-#'   \item{}{AN = anegado.}
+#' * G = goteo.
+#' * E = por surco.
+#' * R = rocío.
+#' * A = aspersor.
+#' * AR = aspersor + rocío.
+#' * AN = anegado.
 #' }
 #'
 #' Los siguientes datos se refieren al peso en libras de la fruta cosechada en cada parcela.
@@ -611,10 +606,10 @@
 #' @details
 #' Se presentan los datos de los 3 tratamientos
 #' \describe{
-#'   \item{}{C = control sin lavar.}
-#'   \item{}{LC = lavado con agua corriente.}
-#'   \item{}{LSA = lavado y secado con absorbente.}
-#'   \item{}{LSC = lavado y secado con corriente de aire.}
+#' * C = control sin lavar.
+#' * LC = lavado con agua corriente.
+#' * LSA = lavado y secado con absorbente.
+#' * LSC = lavado y secado con corriente de aire.
 #' }
 #' Los tratamientos fueron asignados al azar dentro de 5 bloques
 #' @docType data
@@ -817,10 +812,10 @@
 #'
 #' Las dosis fueron:
 #' \describe{
-#'   \item{}{A: 0 ml}
-#'   \item{}{B: 2 ml}
-#'   \item{}{C: 4 ml}
-#'   \item{}{D: 6 ml}
+#' * A: 0 ml
+#' * B: 2 ml
+#' * C: 4 ml
+#' * D: 6 ml
 #' }
 #' @docType data
 #' @usage data(inyeccion_vaquillas)
@@ -958,12 +953,10 @@
 #' @usage data(semillas_trigo)
 #' @format
 #' A data frame with 16 rows and 4 columns:
-#' \describe{
-#'   \item{Abono:}{tipo de abono utilizado (filas).}
-#'   \item{Insecticida:}{tipo de insecticida utilizado (columnas).}
-#'   \item{Semilla:}{tipo de semilla de trigo evaluada.}
-#'   \item{Rendimiento:}{rendimiento registrado.}
-#' }
+#' * `Abonos`: tipo de abono utilizado (filas).
+#' * `Insecticida`: tipo de insecticida utilizado (columnas).
+#' * `Semilla`: tipo de semilla de trigo evaluada.
+#' * `Rendimiento`: rendimiento registrado.
 #' @source --
 "semillas_trigo"
 
@@ -976,7 +969,7 @@
 #' Se aplicaron las combinaciones de método y nivel de glucosa por triplicado a
 #' muestras de suero.
 #' @docType data
-#' @usage data(Conc_glucosa)
+#' @usage data(conc_glucosa)
 #' @format
 #' A data frame with 18 rows and 4 columns:
 #' \describe{
@@ -1000,17 +993,15 @@
 #'
 #' El entomólogo registró la energía gastada por las abejas en J/s.
 #' @docType data
-#' @usage data(Energia_abejas)
+#' @usage data(energia_abejas)
 #' @format
 #' A data frame with 27 rows and 6 columns:
-#' \describe{
-#'   \item{Temp:}{temperatura del ambiente en °C.}
-#'   \item{Visc:}{viscosidad del líquido (concentración de sacarosa en \%).}
-#'   \item{Energia:}{energía gastada por las abejas en J/s.}
-#'   \item{Temp_ord:}{temperatura transformada a factor ordenado.}
-#'   \item{Visc_ord:}{viscosidad transformada a factor ordenado.}
-#'   \item{repeticion:}{id de la repetición.}
-#' }
+#' * `Temp`: temperatura del ambiente en °C.
+#' * `Visc`: viscosidad del líquido (concentración de sacarosa en \%).
+#' * `Energia`: energía gastada por las abejas en J/s.
+#' * `Temp_ord`: temperatura transformada a factor ordenado.
+#' * `Visc_ord`: viscosidad transformada a factor ordenado.
+#' * `repeticion`: id de la repetición.
 #' @source --
 "energia_abejas"
 
@@ -1029,7 +1020,7 @@
 #' bacteria en la relación simbiótica con la planta (a mayor reducción, mayor
 #' actividad).
 #' @docType data
-#' @usage data(Fijacion_N)
+#' @usage data(fijacion_N)
 #' @format
 #' A data frame with 48 rows and 5 columns:
 #' \describe{
@@ -1052,7 +1043,7 @@
 #' plantas en ambientes que contienen distintas dosis de lodo (bioensayos) en
 #' diferentes ciudades.
 #' @docType data
-#' @usage data(Met_pesados)
+#' @usage data(met_pesados)
 #' @format
 #' A data frame with 36 rows and 5 columns:
 #' \describe{
@@ -1078,7 +1069,7 @@
 #' experimento, expresada en milímetros de agua por cada 100 gramos de peso de
 #' la planta seca.
 #' @docType data
-#' @usage data(Sal_cebada)
+#' @usage data(sal_cebada)
 #' @format
 #' A data frame with 18 rows and 6 columns:
 #' \describe{
@@ -1102,18 +1093,16 @@
 #' barro), tres niveles de salinidad del agua (2, 8 y 16 dS/m) y tres niveles de
 #' contenido de agua en el suelo (0\%, 5\% y 15\%).
 #' @docType data
-#' @usage data(Sal_suelo)
+#' @usage data(sal_suelo)
 #' @format
 #' A data frame with 54 rows and 7 columns:
-#' \describe{
-#'   \item{Salinidad:}{salinidad del agua en dS/m.}
-#'   \item{Agua:}{contenido de agua en el suelo en \%.}
-#'   \item{Textura:}{textura del suelo.}
-#'   \item{EC:}{electrocondutividad del suelo.}
-#'   \item{repeticion:}{id de la repetición.}
-#'   \item{Salinidad_ord:}{salinidad transformada a factor ordenado.}
-#'   \item{Agua_ord:}{contenido de agua transformado a factor ordenado.}
-#' }
+#' * `Salinidad`: salinidad del agua en dS/m.
+#' * `Agua`: contenido de agua en el suelo en \%.
+#' * `Textura`: textura del suelo.
+#' * `EC`: electrocondutividad del suelo.
+#' * `repeticion`: id de la repetición.
+#' * `Salinidad_ord`: salinidad transformada a factor ordenado.
+#' * `Agua_ord`: contenido de agua transformado a factor ordenado.
 #' @source --
 "sal_suelo"
 
@@ -1129,10 +1118,10 @@
 #'
 #' Tratamientos:
 #' \describe{
-#'   \item{}{T1: al voleo fert A}
-#'   \item{}{T2: al voleo fert B}
-#'   \item{}{T3: en banda fert A}
-#'   \item{}{T4: en banda fert B}
+#' * T1: al voleo fert A
+#' * T2: al voleo fert B
+#' * T3: en banda fert A
+#' * T4: en banda fert B
 #' }
 #' @docType data
 #' @usage data(fert_melon)
@@ -1208,10 +1197,10 @@
 #'
 #' Lotes:
 #' \describe{
-#'   \item{}{Vicland1: infectados por H. victoriae.}
-#'   \item{}{Vicland2: no infectados.}
-#'   \item{}{Clinton: resistentes a H. victoriae.}
-#'   \item{}{Branch: resistentes a H. victoriae.}
+#' * Vicland1: infectados por H. victoriae.
+#' * Vicland2: no infectados.
+#' * Clinton: resistentes a H. victoriae.
+#' * Branch: resistentes a H. victoriae.
 #' }
 #' @docType data
 #' @usage data(semillas_pd)
@@ -1258,7 +1247,7 @@
 #' asignaron aleatoriamente a las tres parcelas principales de cada bloque, y
 #' los 3 métodos se asignaron aleatoriamente a las subparcelas.
 #' @docType data
-#' @usage data(caña_pd)
+#' @usage data(cana_pd)
 #' @format
 #' A data frame with 45 rows and 4 columns:
 #' \describe{
@@ -1301,11 +1290,9 @@
 #' zona se prioricen ciclos distintos; por eso Ciclo está anidado en Zona.
 #'
 #' Anidamiento:
-#' \describe{
-#'   \item{}{Norte: corto–intermedio}
-#'   \item{}{Centro: intermedio–largo}
-#'   \item{}{Sur: intermedio–largo}
-#' }
+#' * Norte: corto–intermedio
+#' * Centro: intermedio–largo
+#' * Sur: intermedio–largo
 #' @docType data
 #' @usage data(trigo_zona_ciclo)
 #' @format
@@ -1330,21 +1317,17 @@
 #' con 4 repeticiones.
 #'
 #' Aplicación:
-#' \describe{
-#'   \item{}{F1: Z1, Z7}
-#'   \item{}{F2: Z2, Z3, Z4}
-#'   \item{}{F3: Z5, Z6}
-#' }
+#' * F1: Z1, Z7
+#' * F2: Z2, Z3, Z4
+#' * F3: Z5, Z6
 #' @docType data
 #' @usage data(trigo_fungicidas_momentos)
 #' @format
 #' A data frame with 84 rows and 4 columns:
-#' \describe{
-#'   \item{Fungicida:}{fungicida aplicado (F1, F2, F3).}
-#'   \item{Momento:}{momento fenológico de aplicación (anidado en Fungicida).}
-#'   \item{Bloque:}{id del bloque.}
-#'   \item{y:}{rendimiento en kg/ha.}
-#' }
+#' * `Fungicida`: fungicida aplicado (F1, F2, F3).
+#' * `Momento`: momento fenológico de aplicación (anidado en Fungicida).
+#' * `Bloque`: id del bloque.
+#' * `y`: rendimiento en kg/ha.
 #' @source --
 "trigo_fungicidas_momentos"
 
@@ -1363,11 +1346,9 @@
 #' @usage data(digest_in_vitro)
 #' @format
 #' A data frame with 20 rows and 4 columns:
-#' \describe{
-#'   \item{Dosis:}{dosis de aditivo en g/100 gMS.}
-#'   \item{Tubo:}{id del tubo de ensayo.}
-#'   \item{dig48:}{digestibilidad a las 48 hs en \%.}
-#'   \item{Dosis_ord:}{dosis transformada a factor ordenado.}
-#' }
+#' * `Dosis`: dosis de aditivo en g/100 gMS.
+#' * `Tubo`: id del tubo de ensayo.
+#' * `dig48`: digestibilidad a las 48 hs en %.
+#' * `Dosis_ord`: dosis transformada a factor ordenado.
 #' @source --
 "digest_in_vitro"

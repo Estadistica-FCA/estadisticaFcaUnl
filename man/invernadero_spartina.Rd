@@ -7,9 +7,9 @@
 \format{
 A data frame with 48 rows and 3 columns:
 \describe{
-  \item{TR:}{tipo de combinacion aplicada.}
-  \item{BL:}{id del bloque.}
-  \item{BI:}{bioamasa registrada en peso seco.}
+\item{TR:}{tipo de combinacion aplicada.}
+\item{BL:}{id del bloque.}
+\item{BI:}{bioamasa registrada en peso seco.}
 }
 }
 \source{

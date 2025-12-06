@@ -7,10 +7,10 @@
 \format{
 A data frame with 16 rows and 4 columns:
 \describe{
-  \item{F:}{id de la fila.}
-  \item{C:}{id de la columna.}
-  \item{VAR:}{variedad de trigo evaluada.}
-  \item{REND:}{rendimiento en kg por parcela.}
+\item{F:}{id de la fila.}
+\item{C:}{id de la columna.}
+\item{VAR:}{variedad de trigo evaluada.}
+\item{REND:}{rendimiento en kg por parcela.}
 }
 }
 \source{

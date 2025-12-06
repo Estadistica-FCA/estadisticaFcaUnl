@@ -7,9 +7,9 @@
 \format{
 A data frame with 10 rows and 2 columns:
 \describe{
-  \item{Momento:}{momento en que se expuso las codornices a las condiciones
-  ambientales (antes o despues).}
-  \item{ACE:}{nivel de acetil colinesterasa registrado.}
+\item{Momento:}{momento en que se expuso las codornices a las condiciones
+ambientales (antes o despues).}
+\item{ACE:}{nivel de acetil colinesterasa registrado.}
 }
 }
 \source{
@@ -28,10 +28,10 @@ cambios en su actividad cerebral.
 Para determinar si una nueva formulación disminuye la deriva de este
 producto, se utilizaron dos grupos de codornices:
 \describe{
-  \item{Grupo 1:}{seis codornices expuestas a las condiciones ambientales
-  antes de la aplicación.}
-  \item{Grupo 2:}{cuatro codornices expuestas a las condiciones ambientales
-  luego de la aplicación.}
+\item{Grupo 1:}{seis codornices expuestas a las condiciones ambientales
+antes de la aplicación.}
+\item{Grupo 2:}{cuatro codornices expuestas a las condiciones ambientales
+luego de la aplicación.}
 }
 
 En ambos grupos se midió los niveles de ACE.

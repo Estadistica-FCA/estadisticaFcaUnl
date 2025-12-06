@@ -6,21 +6,21 @@
 \title{Salinidad del suelo}
 \format{
 A data frame with 54 rows and 7 columns:
-\describe{
-  \item{Salinidad:}{salinidad del agua en dS/m.}
-  \item{Agua:}{contenido de agua en el suelo en \%.}
-  \item{Textura:}{textura del suelo.}
-  \item{EC:}{electrocondutividad del suelo.}
-  \item{repeticion:}{id de la repetición.}
-  \item{Salinidad_ord:}{salinidad transformada a factor ordenado.}
-  \item{Agua_ord:}{contenido de agua transformado a factor ordenado.}
+\itemize{
+\item \code{Salinidad}: salinidad del agua en dS/m.
+\item \code{Agua}: contenido de agua en el suelo en \\%.
+\item \code{Textura}: textura del suelo.
+\item \code{EC}: electrocondutividad del suelo.
+\item \code{repeticion}: id de la repetición.
+\item \code{Salinidad_ord}: salinidad transformada a factor ordenado.
+\item \code{Agua_ord}: contenido de agua transformado a factor ordenado.
 }
 }
 \source{
 --
 }
 \usage{
-data(Sal_suelo)
+data(sal_suelo)
 }
 \description{
 Experimento para evaluar la relación entre la electrocondutividad (EC) y la
@@ -29,6 +29,6 @@ salinidad del agua en el suelo con diferentes cantidades de agua y texturas.
 \details{
 Se incluyeron tres texturas básicas de suelo (arena arcillosa, arcilla y
 barro), tres niveles de salinidad del agua (2, 8 y 16 dS/m) y tres niveles de
-contenido de agua en el suelo (0\%, 5\% y 15\%).
+contenido de agua en el suelo (0\\%, 5\\% y 15\\%).
 }
 \keyword{datasets}

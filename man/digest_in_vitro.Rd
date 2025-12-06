@@ -6,11 +6,11 @@
 \title{Digestibilidad in vitro}
 \format{
 A data frame with 20 rows and 4 columns:
-\describe{
-  \item{Dosis:}{dosis de aditivo en g/100 gMS.}
-  \item{Tubo:}{id del tubo de ensayo.}
-  \item{dig48:}{digestibilidad a las 48 hs en \%.}
-  \item{Dosis_ord:}{dosis transformada a factor ordenado.}
+\itemize{
+\item \code{Dosis}: dosis de aditivo en g/100 gMS.
+\item \code{Tubo}: id del tubo de ensayo.
+\item \code{dig48}: digestibilidad a las 48 hs en \%.
+\item \code{Dosis_ord}: dosis transformada a factor ordenado.
 }
 }
 \source{

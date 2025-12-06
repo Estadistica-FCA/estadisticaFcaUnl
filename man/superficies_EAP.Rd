@@ -7,9 +7,9 @@
 \format{
 A data frame with 19 rows and 3 columns:
 \describe{
-  \item{Departamento}{nombre del departamento.}
-  \item{Cant_EAP}{número de explotaciones agropecuarias.}
-  \item{Sup_promedio}{superficie promedio de las explotaciones agropecuarias (en ha).}
+\item{Departamento}{nombre del departamento.}
+\item{Cant_EAP}{número de explotaciones agropecuarias.}
+\item{Sup_promedio}{superficie promedio de las explotaciones agropecuarias (en ha).}
 }
 }
 \source{

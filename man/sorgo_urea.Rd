@@ -7,10 +7,10 @@
 \format{
 A data frame with 16 rows and 4 columns:
 \describe{
-  \item{BL:}{id del bloque.}
-  \item{DO:}{dosis de urea aplicada.}
-  \item{DO_ord:}{dosis de urea transformada a factor ordenada.}
-  \item{RTO:}{rendimiento de grano en kg}
+\item{BL:}{id del bloque.}
+\item{DO:}{dosis de urea aplicada.}
+\item{DO_ord:}{dosis de urea transformada a factor ordenada.}
+\item{RTO:}{rendimiento de grano en kg}
 }
 }
 \source{

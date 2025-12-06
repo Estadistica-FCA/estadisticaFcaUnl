@@ -7,8 +7,8 @@
 \format{
 A data frame with 32 rows and 2 columns:
 \describe{
-  \item{Hibrido:}{id del híbrido de maíz evaluado.}
-  \item{rend:}{rendimiento registrado.}
+\item{Hibrido:}{id del híbrido de maíz evaluado.}
+\item{rend:}{rendimiento registrado.}
 }
 }
 \source{

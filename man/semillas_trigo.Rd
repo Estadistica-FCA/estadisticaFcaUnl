@@ -6,11 +6,11 @@
 \title{Rendimiento de semillas de trigo}
 \format{
 A data frame with 16 rows and 4 columns:
-\describe{
-  \item{Abono:}{tipo de abono utilizado (filas).}
-  \item{Insecticida:}{tipo de insecticida utilizado (columnas).}
-  \item{Semilla:}{tipo de semilla de trigo evaluada.}
-  \item{Rendimiento:}{rendimiento registrado.}
+\itemize{
+\item \code{Abonos}: tipo de abono utilizado (filas).
+\item \code{Insecticida}: tipo de insecticida utilizado (columnas).
+\item \code{Semilla}: tipo de semilla de trigo evaluada.
+\item \code{Rendimiento}: rendimiento registrado.
 }
 }
 \source{
@@ -31,8 +31,8 @@ de semilla de trigo, (A, B, C, D) y decide realizar el experimento
 utilizando un diseño en cuadrado latino. Para ello selecciona 4 niveles para
 cada una de las variables de bloque:
 \itemize{
-  \item Abono: (a1, a2, a3, a4)
-  \item Insecticida: (i1, i2, i3, i4)
+\item Abono: (a1, a2, a3, a4)
+\item Insecticida: (i1, i2, i3, i4)
 }
 }
 \keyword{datasets}

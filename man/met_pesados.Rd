@@ -7,18 +7,18 @@
 \format{
 A data frame with 36 rows and 5 columns:
 \describe{
-  \item{Ciudad:}{ciudad donde se realizó el ensayo.}
-  \item{Dosis:}{dosis de lodo aplicada.}
-  \item{zinc:}{nivel de zinc medido en las plantas.}
-  \item{Dosis_ord:}{dosis de lodo transformada a factor ordenado.}
-  \item{repeticion:}{id de la repetición.}
+\item{Ciudad:}{ciudad donde se realizó el ensayo.}
+\item{Dosis:}{dosis de lodo aplicada.}
+\item{zinc:}{nivel de zinc medido en las plantas.}
+\item{Dosis_ord:}{dosis de lodo transformada a factor ordenado.}
+\item{repeticion:}{id de la repetición.}
 }
 }
 \source{
 --
 }
 \usage{
-data(Met_pesados)
+data(met_pesados)
 }
 \description{
 Estudio sobre el efecto de lodos de desagüe en el crecimiento de plantas y

@@ -7,11 +7,11 @@
 \format{
 A data frame with 60 rows and 5 columns:
 \describe{
-  \item{Sitio:}{id del sitio experimental.}
-  \item{Parcela:}{id de la parcela.}
-  \item{Tratamiento:}{id del insecticida aplicado.}
-  \item{Muestra:}{id de la muestra dentro de la parcela.}
-  \item{cantidad:}{número de larvas sobrevivientes.}
+\item{Sitio:}{id del sitio experimental.}
+\item{Parcela:}{id de la parcela.}
+\item{Tratamiento:}{id del insecticida aplicado.}
+\item{Muestra:}{id de la muestra dentro de la parcela.}
+\item{cantidad:}{número de larvas sobrevivientes.}
 }
 }
 \source{

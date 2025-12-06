@@ -7,8 +7,8 @@
 \format{
 A data frame with 27 rows and 2 columns:
 \describe{
-  \item{Tipo:}{tipo de ejemplar (atípicos o aberrantes).}
-  \item{caucho:}{contenido de caucho.}
+\item{Tipo:}{tipo de ejemplar (atípicos o aberrantes).}
+\item{caucho:}{contenido de caucho.}
 }
 }
 \source{
@@ -18,12 +18,12 @@ A data frame with 27 rows and 2 columns:
 data(guayule)
 }
 \description{
-El guayule (_Parthenium argentatum_) es una planta arbustiva que se utiliza
+El guayule (\emph{Parthenium argentatum}) es una planta arbustiva que se utiliza
 como fuente alternativa de látex hipoalergénico.
 }
 \details{
 En un estudio para caracterizar los contenidos de caucho se recolectaron 54
-ejemplares los cuales se clasificaron en `atípicos` y `aberrantes`.
+ejemplares los cuales se clasificaron en \code{atípicos} y \code{aberrantes}.
 
 A cada individuo de estos grupos se le midió el contenido de caucho.
 }

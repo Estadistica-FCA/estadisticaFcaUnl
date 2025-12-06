@@ -7,10 +7,10 @@
 \format{
 A data frame with 16 rows and 4 columns:
 \describe{
-  \item{F:}{id de la camada (filas).}
-  \item{C:}{categoría de peso corporal (columnas).}
-  \item{HORMONA:}{hormona inyectada.}
-  \item{PESO:}{peso del ovario medido.}
+\item{F:}{id de la camada (filas).}
+\item{C:}{categoría de peso corporal (columnas).}
+\item{HORMONA:}{hormona inyectada.}
+\item{PESO:}{peso del ovario medido.}
 }
 }
 \source{

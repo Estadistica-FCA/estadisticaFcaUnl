@@ -7,8 +7,8 @@
 \format{
 A data frame with 30 rows and 2 columns:
 \describe{
-  \item{Tratamiento:}{cepa con la que fué inoculada.}
-  \item{N:}{contenido de nitrogeno (en mg).}
+\item{Tratamiento:}{cepa con la que fué inoculada.}
+\item{N:}{contenido de nitrogeno (en mg).}
 }
 }
 \source{
@@ -25,11 +25,22 @@ diferentes cepas de bacterias.
 \details{
 Se evaluaron tres tipos de tratamientos:
 \describe{
-  \item{}{- 5 cepas de las bacterias \emph{Rizhobium trifolii}.}
-  \item{}{- 5 cepas de las bacterias \emph{Rizhobium meliloti}.}
-  \item{}{- combinación de 5 cepas de \emph{R. trifolii} con 5 cepas de \emph{R. meliloti}.}
+\itemize{
+\item 
+\itemize{
+\item 5 cepas de las bacterias \emph{Rizhobium trifolii}.
+}
+\item 
+\itemize{
+\item 5 cepas de las bacterias \emph{Rizhobium meliloti}.
+}
+\item 
+\itemize{
+\item combinación de 5 cepas de \emph{R. trifolii} con 5 cepas de \emph{R. meliloti}.
 }
 Los tratamientos fueron asignados por quintuplicado a macetas donde se dejó
 crecer una planta de trébol rojo sobre la cual se midió el contenido de N (en mg).
+}
+}
 }
 \keyword{datasets}

@@ -7,18 +7,18 @@
 \format{
 A data frame with 48 rows and 5 columns:
 \describe{
-  \item{Cultivo:}{tipo de cultivo hospedante.}
-  \item{N:}{nivel de nitrógeno aplicado en ppm.}
-  \item{acetileno:}{reducción de acetileno medida.}
-  \item{N_ord:}{nivel de nitrógeno transformado a factor ordenado.}
-  \item{repeticion:}{id de la repetición.}
+\item{Cultivo:}{tipo de cultivo hospedante.}
+\item{N:}{nivel de nitrógeno aplicado en ppm.}
+\item{acetileno:}{reducción de acetileno medida.}
+\item{N_ord:}{nivel de nitrógeno transformado a factor ordenado.}
+\item{repeticion:}{id de la repetición.}
 }
 }
 \source{
 --
 }
 \usage{
-data(Fijacion_N)
+data(fijacion_N)
 }
 \description{
 Experimento para determinar el efecto del N y hospedantes (cultivos) en la

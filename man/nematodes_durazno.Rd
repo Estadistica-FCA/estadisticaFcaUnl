@@ -7,8 +7,8 @@
 \format{
 A data frame with 18 rows and 2 columns:
 \describe{
-  \item{Tratamiento:}{tipo de tratamiento aplicado.}
-  \item{altura:}{altura del plantin en cm.}
+\item{Tratamiento:}{tipo de tratamiento aplicado.}
+\item{altura:}{altura del plantin en cm.}
 }
 }
 \source{
@@ -29,13 +29,15 @@ efectivo en promover el crecimiento de los plantines.
 \details{
 Se trato el suelo y las malezas con uno de los siguientes tratamientos:
 \describe{
-  \item{}{A: Control (sin herbicida).}
-  \item{}{B: Herbicida con Nemagone (nematicida).}
-  \item{}{C: Herbicida sin Nemagone (nematicida).}
+\itemize{
+\item A: Control (sin herbicida).
+\item B: Herbicida con Nemagone (nematicida).
+\item C: Herbicida sin Nemagone (nematicida).
 }
 Los investigadores asignaron al azar 6 de los 18 plantines a cada
 tratamiento, luego trataron el suelo y las malezas en las áreas de
 crecimiento con el tratamiento asignado.
+}
 
 Al final del estudio, registraron la altura (en cm) de cada plantin.
 }

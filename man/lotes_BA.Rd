@@ -6,25 +6,25 @@
 \title{Datos de fertilidad 0-15 y 15-30 cm de Argiudoles en 39 pares de lotes y  bajo alambrado del departamento Las Colonias.}
 \format{
 A data frame with 156 rows and 15 columns:
-\describe{
-  \item{Id_lote}{código identificador del par lote-bajo alambrado}
-  \item{Id_muestra}{identificador interno del número de muestra}
-  \item{lat, long}{coordenadas geográficas}
-  \item{Prof}{profundidad en cm}
-  \item{Condicion}{uso de la tierra}
-  \item{MO}{materia orgánica en \%}
-  \item{P}{fósforo disponible en ppm}
-  \item{Nt}{nitrógeno total en \%}
-  \item{pH_actual}{acidez actual}
-  \item{Ca, Mg, K, Na}{Cationes de intercambio en \eqn{cmol~c~100g^{-1}}}
-  \item{CIC}{capacidad de intercambio catiónico en \eqn{cmol~c~100g^{-1}}}
+\itemize{
+\item \code{Id_lote}: código identificador del par lote-bajo alambrado
+\item \code{Id_muestra}: identificador interno del número de muestra
+\item \code{lat}, \code{long}: coordenadas geográficas
+\item \code{Prof}: profundidad en cm
+\item \code{Condicion}: uso de la tierra
+\item \code{MO}: materia orgánica en \%
+\item \code{P}: fósforo disponible en ppm
+\item \code{Nt}: nitrógeno total en \%
+\item \code{pH_actual}: acidez actual
+\item \code{Ca}, \code{Mg}, \code{K}, \code{Na}: Cationes de intercambio en \eqn{cmol~c~100g^{-1}}
+\item \code{CIC}: capacidad de intercambio catiónico en \eqn{cmol~c~100g^{-1}}
 }
 }
 \source{
 Dra. Carrizo
 }
 \usage{
-data(Lotes_BA)
+data(lotes_BA)
 }
 \description{
 Datos de fertilidad 0-15 y 15-30 cm de Argiudoles en 39 pares de lotes y  bajo alambrado del departamento Las Colonias.

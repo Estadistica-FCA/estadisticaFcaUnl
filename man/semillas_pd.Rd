@@ -7,10 +7,10 @@
 \format{
 A data frame with 64 rows and 4 columns:
 \describe{
-  \item{lote:}{lote de semilla (parcela principal).}
-  \item{bloque:}{id del bloque.}
-  \item{tratamiento:}{tratamiento químico o control (subparcela).}
-  \item{rendimiento:}{rendimiento en bushels por acre.}
+\item{lote:}{lote de semilla (parcela principal).}
+\item{bloque:}{id del bloque.}
+\item{tratamiento:}{tratamiento químico o control (subparcela).}
+\item{rendimiento:}{rendimiento en bushels por acre.}
 }
 }
 \source{
@@ -31,10 +31,12 @@ completa.
 
 Lotes:
 \describe{
-  \item{}{Vicland1: infectados por H. victoriae.}
-  \item{}{Vicland2: no infectados.}
-  \item{}{Clinton: resistentes a H. victoriae.}
-  \item{}{Branch: resistentes a H. victoriae.}
+\itemize{
+\item Vicland1: infectados por H. victoriae.
+\item Vicland2: no infectados.
+\item Clinton: resistentes a H. victoriae.
+\item Branch: resistentes a H. victoriae.
+}
 }
 }
 \keyword{datasets}

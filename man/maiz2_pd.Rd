@@ -7,10 +7,10 @@
 \format{
 A data frame with 36 rows and 4 columns:
 \describe{
-  \item{Bloque:}{id del bloque.}
-  \item{Aplicacion:}{forma de aplicación (parcela principal).}
-  \item{Abono:}{tipo de abono (subparcela).}
-  \item{Rend:}{rendimiento por parcela en kg.}
+\item{Bloque:}{id del bloque.}
+\item{Aplicacion:}{forma de aplicación (parcela principal).}
+\item{Abono:}{tipo de abono (subparcela).}
+\item{Rend:}{rendimiento por parcela en kg.}
 }
 }
 \source{

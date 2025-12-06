@@ -7,8 +7,8 @@
 \format{
 A data frame with 25 rows and 2 columns:
 \describe{
-  \item{TR:}{regimen de muda suministrado.}
-  \item{T3:}{concentración de suero T3.}
+\item{TR:}{regimen de muda suministrado.}
+\item{T3:}{concentración de suero T3.}
 }
 }
 \source{
@@ -29,14 +29,31 @@ cuatro etapas del régimen.
 
 Las cinco etapas del régimen (TR) fueron:
 \describe{
-  \item{}{1. premuda (control).}
-  \item{}{2. ayuno de 8 días.}
-  \item{}{3. 60 g de salvado al día durante 10 días.}
-  \item{}{4. 80 g de salvado al día por 10 días.}
-  \item{}{5. mezcla de malta durante 42 días.}
+\itemize{
+\item 
+\enumerate{
+\item premuda (control).
+}
+\item 
+\enumerate{
+\item ayuno de 8 días.
+}
+\item 
+\enumerate{
+\item 60 g de salvado al día durante 10 días.
+}
+\item 
+\enumerate{
+\item 80 g de salvado al día por 10 días.
+}
+\item 
+\enumerate{
+\item mezcla de malta durante 42 días.
 }
 Uno de los compuestos medidos fue la concentración de suero T3. Los datos de
 la tabla son las medidas de suero T3 en las cinco gallinas sacrificadas al
 final de cada etapa del régimen.
+}
+}
 }
 \keyword{datasets}

@@ -6,11 +6,11 @@
 \title{Fungicidas y momentos en trigo}
 \format{
 A data frame with 84 rows and 4 columns:
-\describe{
-  \item{Fungicida:}{fungicida aplicado (F1, F2, F3).}
-  \item{Momento:}{momento fenológico de aplicación (anidado en Fungicida).}
-  \item{Bloque:}{id del bloque.}
-  \item{y:}{rendimiento en kg/ha.}
+\itemize{
+\item \code{Fungicida}: fungicida aplicado (F1, F2, F3).
+\item \code{Momento}: momento fenológico de aplicación (anidado en Fungicida).
+\item \code{Bloque}: id del bloque.
+\item \code{y}: rendimiento en kg/ha.
 }
 }
 \source{
@@ -29,10 +29,10 @@ está anidado en Fungicida. El ensayo es de bloques completos aleatorizados
 con 4 repeticiones.
 
 Aplicación:
-\describe{
-  \item{}{F1: Z1, Z7}
-  \item{}{F2: Z2, Z3, Z4}
-  \item{}{F3: Z5, Z6}
+\itemize{
+\item F1: Z1, Z7
+\item F2: Z2, Z3, Z4
+\item F3: Z5, Z6
 }
 }
 \keyword{datasets}

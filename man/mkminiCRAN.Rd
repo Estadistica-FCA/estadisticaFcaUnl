@@ -38,9 +38,11 @@ paquetes descargados.
 }
 \examples{
 pkgs <- c(
-  "rmarkdown", "moments", "pacman", "rio", "tidyverse", "emmeans",
-  "car", "DescTools", "agricolae", "multcomp", "multcompView", "ggplot2"
+    "rmarkdown", "moments", "pacman", "rio", "tidyverse", "emmeans",
+    "car", "DescTools", "agricolae", "multcomp", "multcompView", "ggplot2"
 )
 path <- "/home/path_to_repo"
+\dontrun{
 mkminiCRAN(pkgs, path)
+}
 }

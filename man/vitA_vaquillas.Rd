@@ -7,8 +7,8 @@
 \format{
 A data frame with 28 rows and 2 columns:
 \describe{
-  \item{Tratamiento:}{tipo de dieta a la que fué sometida.}
-  \item{GDPV:}{ganancia diaria de peso vivo (GDPV) en g/día/animal.}
+\item{Tratamiento:}{tipo de dieta a la que fué sometida.}
+\item{GDPV:}{ganancia diaria de peso vivo (GDPV) en g/día/animal.}
 }
 }
 \source{
@@ -22,12 +22,12 @@ Efecto de la Vitamina A en el crecimiento de vaquillas Holstein.
 }
 \details{
 Se seleccionaron 28 vaquillas de similar peso inicial y edad, las cuales
- fueron alimentadas individualmente durante un cierto período. A la mitad de
- las vaquillonas se les suministró una dieta sin Vitamina A (control) y al
- resto una dieta rica en Vitamina A. La asignación de las dietas fue
- completamente al azar.
+fueron alimentadas individualmente durante un cierto período. A la mitad de
+las vaquillonas se les suministró una dieta sin Vitamina A (control) y al
+resto una dieta rica en Vitamina A. La asignación de las dietas fue
+completamente al azar.
 
- Al final del ensayo se registró el peso final y se calculó la ganancia
- diaria de peso vivo (GDPV) en g/día/animal.
+Al final del ensayo se registró el peso final y se calculó la ganancia
+diaria de peso vivo (GDPV) en g/día/animal.
 }
 \keyword{datasets}

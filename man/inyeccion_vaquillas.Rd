@@ -7,12 +7,12 @@
 \format{
 A data frame with 16 rows and 6 columns:
 \describe{
-  \item{F:}{línea genética (filas).}
-  \item{C:}{método de inyección (columnas).}
-  \item{D:}{dosis aplicada (A, B, C, D).}
-  \item{RTA:}{aumento de peso en kg.}
-  \item{D_num:}{dosis aplicada en formato numerico.}
-  \item{D_ord:}{dosis aplicada como factor ordenado.}
+\item{F:}{línea genética (filas).}
+\item{C:}{método de inyección (columnas).}
+\item{D:}{dosis aplicada (A, B, C, D).}
+\item{RTA:}{aumento de peso en kg.}
+\item{D_num:}{dosis aplicada en formato numerico.}
+\item{D_ord:}{dosis aplicada como factor ordenado.}
 }
 }
 \source{
@@ -36,10 +36,12 @@ tiempo.
 
 Las dosis fueron:
 \describe{
-  \item{}{A: 0 ml}
-  \item{}{B: 2 ml}
-  \item{}{C: 4 ml}
-  \item{}{D: 6 ml}
+\itemize{
+\item A: 0 ml
+\item B: 2 ml
+\item C: 4 ml
+\item D: 6 ml
+}
 }
 }
 \keyword{datasets}
