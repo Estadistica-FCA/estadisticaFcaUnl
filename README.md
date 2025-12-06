@@ -1,4 +1,6 @@
-# estadisticaFcaUnl <a href="https://fca.unl.edu.ar/"><picture><source media="(prefers-color-scheme: dark)" srcset="man/figures/logo_dark.png"><img src="man/figures/logo.png" align="left" height="139" alt="FCA-UNL" /></picture></a>
+<a href="https://fca.unl.edu.ar/"><picture><source media="(prefers-color-scheme: dark)" srcset="man/figures/logo_dark.png"><img src="man/figures/logo.png" height="139" alt="FCA-UNL" /></picture></a>
+
+# estadisticaFcaUnl
 
 <!-- badges: start -->
 <!-- badges: end -->
