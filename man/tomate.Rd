@@ -6,11 +6,11 @@
 \title{Crecimiento de tejido de tomate}
 \format{
 A data frame with 20 rows and 3 columns:
-\describe{
-\item{Tejido:}{id del tejido tratado.}
-\item{TR:}{tratamiento aplicado (3\\% de fructosa, 3\\% de glucosa, 3\\% de
-sacarosa y Control).}
-\item{CR:}{crecimiento del tejido medido en mm X 10.}
+\itemize{
+\item \code{Tejido}: id del tejido tratado.
+\item \code{TR}: tratamiento aplicado (3\\% de fructosa, 3\\% de glucosa, 3\\% de
+sacarosa y Control).
+\item \code{CR}: crecimiento del tejido medido en mm X 10.
 }
 }
 \source{

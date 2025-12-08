@@ -6,9 +6,9 @@
 \title{Efecto de la dieta en cerdos}
 \format{
 A data frame with 26 rows and 2 columns:
-\describe{
-\item{D:}{tipo de dieta suministrada.}
-\item{AP:}{aumento de peso en kg (AP).}
+\itemize{
+\item \code{D}: tipo de dieta suministrada.
+\item \code{AP}: aumento de peso en kg (AP).
 }
 }
 \source{
@@ -26,7 +26,6 @@ Se seleccionaron 30 cerdos de similar peso y edad y cada dieta se suministró
 individualmente al azar a 5 cerdos.
 
 Los ingredientes de las dietas evaluadas fueron:
-\describe{
 \itemize{
 \item 
 \enumerate{
@@ -51,7 +50,6 @@ Los ingredientes de las dietas evaluadas fueron:
 \item 
 \enumerate{
 \item Sorgo y cebada.
-}
 No obstante, durante el experimento algunas de las repeticiones tuvieron que
 ser descartadas quedaron 26 datos en total.
 }

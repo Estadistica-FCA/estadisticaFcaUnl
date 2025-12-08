@@ -6,9 +6,9 @@
 \title{Vitamina A en vaquillas}
 \format{
 A data frame with 28 rows and 2 columns:
-\describe{
-\item{Tratamiento:}{tipo de dieta a la que fué sometida.}
-\item{GDPV:}{ganancia diaria de peso vivo (GDPV) en g/día/animal.}
+\itemize{
+\item \code{Tratamiento}: tipo de dieta a la que fué sometida.
+\item \code{GDPV}: ganancia diaria de peso vivo (GDPV) en g/día/animal.
 }
 }
 \source{

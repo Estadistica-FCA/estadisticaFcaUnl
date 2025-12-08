@@ -6,13 +6,13 @@
 \title{Salinidad en cebada}
 \format{
 A data frame with 18 rows and 6 columns:
-\describe{
-\item{Salinidad:}{nivel de salinidad en barios.}
-\item{Edad:}{edad de la planta al momento de la cosecha en días.}
-\item{Consumo:}{cantidad de agua consumida (mm/100g peso seco).}
-\item{repeticion:}{id de la repetición.}
-\item{Salinidad_ord:}{salinidad transformada a factor ordenado.}
-\item{Edad_ord:}{edad transformada a factor ordenado.}
+\itemize{
+\item \code{Salinidad}: nivel de salinidad en barios.
+\item \code{Edad}: edad de la planta al momento de la cosecha en días.
+\item \code{Consumo}: cantidad de agua consumida (mm/100g peso seco).
+\item \code{repeticion}: id de la repetición.
+\item \code{Salinidad_ord}: salinidad transformada a factor ordenado.
+\item \code{Edad_ord}: edad transformada a factor ordenado.
 }
 }
 \source{

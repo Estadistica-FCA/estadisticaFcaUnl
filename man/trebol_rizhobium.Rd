@@ -6,9 +6,9 @@
 \title{Incoculación en trébol rojo}
 \format{
 A data frame with 30 rows and 2 columns:
-\describe{
-\item{Tratamiento:}{cepa con la que fué inoculada.}
-\item{N:}{contenido de nitrogeno (en mg).}
+\itemize{
+\item \code{Tratamiento}: cepa con la que fué inoculada.
+\item \code{N}: contenido de nitrogeno (en mg).
 }
 }
 \source{
@@ -24,7 +24,6 @@ diferentes cepas de bacterias.
 }
 \details{
 Se evaluaron tres tipos de tratamientos:
-\describe{
 \itemize{
 \item 
 \itemize{
@@ -37,7 +36,6 @@ Se evaluaron tres tipos de tratamientos:
 \item 
 \itemize{
 \item combinación de 5 cepas de \emph{R. trifolii} con 5 cepas de \emph{R. meliloti}.
-}
 Los tratamientos fueron asignados por quintuplicado a macetas donde se dejó
 crecer una planta de trébol rojo sobre la cual se midió el contenido de N (en mg).
 }

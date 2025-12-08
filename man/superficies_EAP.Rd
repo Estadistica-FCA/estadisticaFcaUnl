@@ -6,10 +6,10 @@
 \title{Cantidad de empresas agropecuarias y la superficie promedio de la provincia de Santa Fe registradas en el Censo Nacional Agropecuario 2008.}
 \format{
 A data frame with 19 rows and 3 columns:
-\describe{
-\item{Departamento}{nombre del departamento.}
-\item{Cant_EAP}{número de explotaciones agropecuarias.}
-\item{Sup_promedio}{superficie promedio de las explotaciones agropecuarias (en ha).}
+\itemize{
+\item \code{Departamento}: nombre del departamento.
+\item \code{Cant_EAP}: número de explotaciones agropecuarias.
+\item \code{Sup_promedio}: superficie promedio de las explotaciones agropecuarias (en ha).
 }
 }
 \source{

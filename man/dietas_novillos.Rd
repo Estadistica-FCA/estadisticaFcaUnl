@@ -6,10 +6,10 @@
 \title{Dietas en novillos}
 \format{
 A data frame with 20 rows and 3 columns:
-\describe{
-\item{Dieta:}{tipo de dieta suministrada.}
-\item{Animal:}{id del animal.}
-\item{peso:}{aumento de peso en kg.}
+\itemize{
+\item \code{Dieta}: tipo de dieta suministrada.
+\item \code{Animal}: id del animal.
+\item \code{peso}: aumento de peso en kg.
 }
 }
 \source{

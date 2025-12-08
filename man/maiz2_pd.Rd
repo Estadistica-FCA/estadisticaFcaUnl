@@ -6,11 +6,11 @@
 \title{Abonos en maíz}
 \format{
 A data frame with 36 rows and 4 columns:
-\describe{
-\item{Bloque:}{id del bloque.}
-\item{Aplicacion:}{forma de aplicación (parcela principal).}
-\item{Abono:}{tipo de abono (subparcela).}
-\item{Rend:}{rendimiento por parcela en kg.}
+\itemize{
+\item \code{Bloque}: id del bloque.
+\item \code{Aplicacion}: forma de aplicación (parcela principal).
+\item \code{Abono}: tipo de abono (subparcela).
+\item \code{Rend}: rendimiento por parcela en kg.
 }
 }
 \source{

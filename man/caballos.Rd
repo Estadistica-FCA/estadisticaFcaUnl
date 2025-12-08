@@ -6,9 +6,9 @@
 \title{Medicamentos en caballos de carrera}
 \format{
 A data frame with 12 rows and 2 columns:
-\describe{
-\item{TR:}{tipo de medicamento suministrado.}
-\item{TI:}{tiempo registrado en segundos.}
+\itemize{
+\item \code{TR}: tipo de medicamento suministrado.
+\item \code{TI}: tiempo registrado en segundos.
 }
 }
 \source{

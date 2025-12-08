@@ -6,10 +6,10 @@
 \title{Ácido ascórbico en nabos}
 \format{
 A data frame with 15 rows and 3 columns:
-\describe{
-\item{BL:}{id del bloque.}
-\item{TR:}{tipo de lavado y secado aplicado.}
-\item{LE:}{contenido de ácido ascórbico.}
+\itemize{
+\item \code{BL}: id del bloque.
+\item \code{TR}: tipo de lavado y secado aplicado.
+\item \code{LE}: contenido de ácido ascórbico.
 }
 }
 \source{
@@ -25,13 +25,11 @@ ascórbico de nabos.
 }
 \details{
 Se presentan los datos de los 3 tratamientos
-\describe{
 \itemize{
 \item C = control sin lavar.
 \item LC = lavado con agua corriente.
 \item LSA = lavado y secado con absorbente.
 \item LSC = lavado y secado con corriente de aire.
-}
 Los tratamientos fueron asignados al azar dentro de 5 bloques
 }
 }

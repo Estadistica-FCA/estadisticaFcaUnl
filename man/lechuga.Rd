@@ -6,11 +6,11 @@
 \title{Respuesta de la lechuga a la fertilización nitrogenada}
 \format{
 A data frame with 20 rows and 24 columns:
-\describe{
-\item{Dosis:}{dosis de nitrogeno aplicado.}
-\item{Dosis_ord:}{dosis transformada a factor ordenada.}
-\item{Dosis_chr:}{dosis como caracter transformada a factor.}
-\item{Plantas:}{numero de plantas cosechadas de la parcela.}
+\itemize{
+\item \code{Dosis}: dosis de nitrogeno aplicado.
+\item \code{Dosis_ord}: dosis transformada a factor ordenada.
+\item \code{Dosis_chr}: dosis como caracter transformada a factor.
+\item \code{Plantas}: numero de plantas cosechadas de la parcela.
 }
 }
 \source{

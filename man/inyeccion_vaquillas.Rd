@@ -6,13 +6,13 @@
 \title{Métodos de inyección en vaquillas}
 \format{
 A data frame with 16 rows and 6 columns:
-\describe{
-\item{F:}{línea genética (filas).}
-\item{C:}{método de inyección (columnas).}
-\item{D:}{dosis aplicada (A, B, C, D).}
-\item{RTA:}{aumento de peso en kg.}
-\item{D_num:}{dosis aplicada en formato numerico.}
-\item{D_ord:}{dosis aplicada como factor ordenado.}
+\itemize{
+\item \code{F}: línea genética (filas).
+\item \code{C}: método de inyección (columnas).
+\item \code{D}: dosis aplicada (A, B, C, D).
+\item \code{RTA}: aumento de peso en kg.
+\item \code{D_num}: dosis aplicada en formato numerico.
+\item \code{D_ord}: dosis aplicada como factor ordenado.
 }
 }
 \source{
@@ -35,13 +35,11 @@ La respuesta se midió en aumento de peso (kg) en un determinado periodo de
 tiempo.
 
 Las dosis fueron:
-\describe{
 \itemize{
 \item A: 0 ml
 \item B: 2 ml
 \item C: 4 ml
 \item D: 6 ml
-}
 }
 }
 \keyword{datasets}

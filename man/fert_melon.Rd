@@ -6,11 +6,11 @@
 \title{Fertilización en melón}
 \format{
 A data frame with 16 rows and 4 columns:
-\describe{
-\item{Fila:}{id de la fila del diseño.}
-\item{Column:}{id de la columna del diseño.}
-\item{Tratamiento:}{tratamiento aplicado.}
-\item{rend:}{peso seco de las plantas de melón.}
+\itemize{
+\item \code{Fila}: id de la fila del diseño.
+\item \code{Column}: id de la columna del diseño.
+\item \code{Tratamiento}: tratamiento aplicado.
+\item \code{rend}: peso seco de las plantas de melón.
 }
 }
 \source{
@@ -29,13 +29,11 @@ Cuadrado Latino (filas y columnas) debido a la variabilidad del suelo y
 pendiente.
 
 Tratamientos:
-\describe{
 \itemize{
 \item T1: al voleo fert A
 \item T2: al voleo fert B
 \item T3: en banda fert A
 \item T4: en banda fert B
-}
 }
 }
 \keyword{datasets}

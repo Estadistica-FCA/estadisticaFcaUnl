@@ -6,9 +6,9 @@
 \title{Conservantes en frutillas congeladas}
 \format{
 A data frame with 32 rows and 2 columns:
-\describe{
-\item{Tratamiento:}{preservante utilizado.}
-\item{decoloracion:}{grado de decoloración en una escala del 1 al 10.}
+\itemize{
+\item \code{Tratamiento}: preservante utilizado.
+\item \code{decoloracion}: grado de decoloración en una escala del 1 al 10.
 }
 }
 \source{

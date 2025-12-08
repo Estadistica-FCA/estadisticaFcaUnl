@@ -6,9 +6,9 @@
 \title{Híbridos de maíz}
 \format{
 A data frame with 32 rows and 2 columns:
-\describe{
-\item{Hibrido:}{id del híbrido de maíz evaluado.}
-\item{rend:}{rendimiento registrado.}
+\itemize{
+\item \code{Hibrido}: id del híbrido de maíz evaluado.
+\item \code{rend}: rendimiento registrado.
 }
 }
 \source{

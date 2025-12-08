@@ -6,11 +6,11 @@
 \title{Tiempo de reacción en proceso químico}
 \format{
 A data frame with 25 rows and 5 columns:
-\describe{
-\item{F:}{id de la fila.}
-\item{C:}{id de la columna.}
-\item{INGREDIENTE:}{ingrediente utilizado (A, B, C, D, E).}
-\item{TIEMPO:}{tiempo de reacción.}
+\itemize{
+\item \code{F}: id de la fila.
+\item \code{C}: id de la columna.
+\item \code{INGREDIENTE}: ingrediente utilizado (A, B, C, D, E).
+\item \code{TIEMPO}: tiempo de reacción.
 }
 }
 \source{

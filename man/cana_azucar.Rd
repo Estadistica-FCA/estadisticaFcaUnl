@@ -6,11 +6,11 @@
 \title{Variedades de caña de azúcar}
 \format{
 A data frame with 25 rows and 4 columns:
-\describe{
-\item{F:}{id de la fila.}
-\item{C:}{id de la columna.}
-\item{VAR:}{variedad de caña de azúcar evaluada.}
-\item{RTO:}{producción en kilos por parcela.}
+\itemize{
+\item \code{F}: id de la fila.
+\item \code{C}: id de la columna.
+\item \code{VAR}: variedad de caña de azúcar evaluada.
+\item \code{RTO}: producción en kilos por parcela.
 }
 }
 \source{

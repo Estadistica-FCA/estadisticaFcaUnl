@@ -6,13 +6,13 @@
 \title{Prolactina en vaquillas}
 \format{
 A data frame with 9 rows and 6 columns:
-\describe{
-\item{F:}{factor de bloqueo peso (filas).}
-\item{C:}{factor de bloqueo genética (columnas).}
-\item{DOSIS:}{dosis de hormona TRH aplicada.}
-\item{PICO:}{pico máximo de prolactina medido.}
-\item{DOSIS_num:}{dosis aplicada en formato numerico.}
-\item{DOSIS_ord:}{dosis aplicada como factor ordenado.}
+\itemize{
+\item \code{F}: factor de bloqueo peso (filas).
+\item \code{C}: factor de bloqueo genética (columnas).
+\item \code{DOSIS}: dosis de hormona TRH aplicada.
+\item \code{PICO}: pico máximo de prolactina medido.
+\item \code{DOSIS_num}: dosis aplicada en formato numerico.
+\item \code{DOSIS_ord}: dosis aplicada como factor ordenado.
 }
 }
 \source{

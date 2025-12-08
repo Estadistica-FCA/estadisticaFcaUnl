@@ -6,10 +6,10 @@
 \title{Compuestos químicos en fibra}
 \format{
 A data frame with 20 rows and 3 columns:
-\describe{
-\item{BL:}{id del bloque (muestra de fibra).}
-\item{CQ:}{tipo de compuesto químico aplicado.}
-\item{RF:}{resistencia de la fibra.}
+\itemize{
+\item \code{BL}: id del bloque (muestra de fibra).
+\item \code{CQ}: tipo de compuesto químico aplicado.
+\item \code{RF}: resistencia de la fibra.
 }
 }
 \source{

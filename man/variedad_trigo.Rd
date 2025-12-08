@@ -6,11 +6,11 @@
 \title{Rendimiento de variedades de trigo}
 \format{
 A data frame with 16 rows and 4 columns:
-\describe{
-\item{F:}{id de la fila.}
-\item{C:}{id de la columna.}
-\item{VAR:}{variedad de trigo evaluada.}
-\item{REND:}{rendimiento en kg por parcela.}
+\itemize{
+\item \code{F}: id de la fila.
+\item \code{C}: id de la columna.
+\item \code{VAR}: variedad de trigo evaluada.
+\item \code{REND}: rendimiento en kg por parcela.
 }
 }
 \source{

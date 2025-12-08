@@ -6,12 +6,12 @@
 \title{Metales pesados en lodos}
 \format{
 A data frame with 36 rows and 5 columns:
-\describe{
-\item{Ciudad:}{ciudad donde se realizó el ensayo.}
-\item{Dosis:}{dosis de lodo aplicada.}
-\item{zinc:}{nivel de zinc medido en las plantas.}
-\item{Dosis_ord:}{dosis de lodo transformada a factor ordenado.}
-\item{repeticion:}{id de la repetición.}
+\itemize{
+\item \code{Ciudad}: ciudad donde se realizó el ensayo.
+\item \code{Dosis}: dosis de lodo aplicada.
+\item \code{zinc}: nivel de zinc medido en las plantas.
+\item \code{Dosis_ord}: dosis de lodo transformada a factor ordenado.
+\item \code{repeticion}: id de la repetición.
 }
 }
 \source{

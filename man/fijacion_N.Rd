@@ -6,12 +6,12 @@
 \title{Fijación de Nitrógeno}
 \format{
 A data frame with 48 rows and 5 columns:
-\describe{
-\item{Cultivo:}{tipo de cultivo hospedante.}
-\item{N:}{nivel de nitrógeno aplicado en ppm.}
-\item{acetileno:}{reducción de acetileno medida.}
-\item{N_ord:}{nivel de nitrógeno transformado a factor ordenado.}
-\item{repeticion:}{id de la repetición.}
+\itemize{
+\item \code{Cultivo}: tipo de cultivo hospedante.
+\item \code{N}: nivel de nitrógeno aplicado en ppm.
+\item \code{acetileno}: reducción de acetileno medida.
+\item \code{N_ord}: nivel de nitrógeno transformado a factor ordenado.
+\item \code{repeticion}: id de la repetición.
 }
 }
 \source{

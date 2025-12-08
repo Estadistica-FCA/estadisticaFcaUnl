@@ -15,10 +15,8 @@
 #' @usage data(vitA_vaquillas)
 #' @format
 #' A data frame with 28 rows and 2 columns:
-#' \describe{
-#'   \item{Tratamiento:}{tipo de dieta a la que fué sometida.}
-#'   \item{GDPV:}{ganancia diaria de peso vivo (GDPV) en g/día/animal.}
-#' }
+#'   * `Tratamiento`: tipo de dieta a la que fué sometida.
+#'   * `GDPV`: ganancia diaria de peso vivo (GDPV) en g/día/animal.
 #' @source --
 "vitA_vaquillas"
 
@@ -54,10 +52,8 @@
 #' @usage data(guayule)
 #' @format
 #' A data frame with 27 rows and 2 columns:
-#' \describe{
-#'   \item{Tipo:}{tipo de ejemplar (atípicos o aberrantes).}
-#'   \item{caucho:}{contenido de caucho.}
-#' }
+#'   * `Tipo`: tipo de ejemplar (atípicos o aberrantes).
+#'   * `caucho`: contenido de caucho.
 #' @source --
 "guayule"
 
@@ -71,23 +67,19 @@
 #' @details
 #' Para determinar si una nueva formulación disminuye la deriva de este
 #' producto, se utilizaron dos grupos de codornices:
-#' \describe{
-#'   \item{Grupo 1:}{seis codornices expuestas a las condiciones ambientales
-#'   antes de la aplicación.}
-#'   \item{Grupo 2:}{cuatro codornices expuestas a las condiciones ambientales
-#'   luego de la aplicación.}
-#' }
+#'   * `Grupo 1`: seis codornices expuestas a las condiciones ambientales
+#'   antes de la aplicación.
+#'   * `Grupo 2`: cuatro codornices expuestas a las condiciones ambientales
+#'   luego de la aplicación.
 #'
 #' En ambos grupos se midió los niveles de ACE.
 #' @docType data
 #' @usage data(ace_codornices)
 #' @format
 #' A data frame with 10 rows and 2 columns:
-#' \describe{
-#'   \item{Momento:}{momento en que se expuso las codornices a las condiciones
-#'   ambientales (antes o despues).}
-#'   \item{ACE:}{nivel de acetil colinesterasa registrado.}
-#' }
+#'   * `Momento`: momento en que se expuso las codornices a las condiciones
+#'   ambientales (antes o despues).
+#'   * `ACE`: nivel de acetil colinesterasa registrado.
 #' @source --
 "ace_codornices"
 
@@ -104,11 +96,9 @@
 #' @usage data(nectar_trebol_rojo)
 #' @format
 #' A data frame with 20 rows and 3 columns:
-#' \describe{
-#'   \item{Cabeza:}{numero de identificación de la inflorescencia.}
-#'   \item{Presion:}{presión de vapor (4.4 o 9.9 mmHg) a la que fué sometida.}
-#'   \item{nectar:}{concentración de azúcares del néctar.}
-#' }
+#'   * `Cabeza`: numero de identificación de la inflorescencia.
+#'   * `Presion`: presión de vapor (4.4 o 9.9 mmHg) a la que fué sometida.
+#'   * `nectar`: concentración de azúcares del néctar.
 #' @source --
 "nectar_trebol_rojo"
 
@@ -120,21 +110,17 @@
 #' diferentes cepas de bacterias.
 #' @details
 #' Se evaluaron tres tipos de tratamientos:
-#' \describe{
 #' * - 5 cepas de las bacterias \emph{Rizhobium trifolii}.
 #' * - 5 cepas de las bacterias \emph{Rizhobium meliloti}.
 #' * - combinación de 5 cepas de \emph{R. trifolii} con 5 cepas de \emph{R. meliloti}.
-#' }
 #' Los tratamientos fueron asignados por quintuplicado a macetas donde se dejó
 #' crecer una planta de trébol rojo sobre la cual se midió el contenido de N (en mg).
 #' @docType data
 #' @usage data(trebol_rizhobium)
 #' @format
 #' A data frame with 30 rows and 2 columns:
-#' \describe{
-#'   \item{Tratamiento:}{cepa con la que fué inoculada.}
-#'   \item{N:}{contenido de nitrogeno (en mg).}
-#' }
+#'   * `Tratamiento`: cepa con la que fué inoculada.
+#'   * `N`: contenido de nitrogeno (en mg).
 #' @source --
 "trebol_rizhobium"
 
@@ -148,24 +134,20 @@
 #' individualmente al azar a 5 cerdos.
 #'
 #' Los ingredientes de las dietas evaluadas fueron:
-#' \describe{
 #' * 1. Maíz.
 #' * 2. Maíz y trigo.
 #' * 3. Maíz y cebada.
 #' * 4. Sorgo.
 #' * 5. Sorgo y trigo.
 #' * 6. Sorgo y cebada.
-#' }
 #' No obstante, durante el experimento algunas de las repeticiones tuvieron que
 #' ser descartadas quedaron 26 datos en total.
 #' @docType data
 #' @usage data(dieta_cerdos)
 #' @format
 #' A data frame with 26 rows and 2 columns:
-#' \describe{
-#'   \item{D:}{tipo de dieta suministrada.}
-#'   \item{AP:}{aumento de peso en kg (AP).}
-#' }
+#'   * `D`: tipo de dieta suministrada.
+#'   * `AP`: aumento de peso en kg (AP).
 #' @source --
 "dieta_cerdos"
 
@@ -184,10 +166,8 @@
 #' @usage data(caballos)
 #' @format
 #' A data frame with 12 rows and 2 columns:
-#' \describe{
-#'   \item{TR:}{tipo de medicamento suministrado.}
-#'   \item{TI:}{tiempo registrado en segundos.}
-#' }
+#'   * `TR`: tipo de medicamento suministrado.
+#'   * `TI`: tiempo registrado en segundos.
 #' @source --
 "caballos"
 
@@ -208,12 +188,10 @@
 #' @usage data(tomate)
 #' @format
 #' A data frame with 20 rows and 3 columns:
-#' \describe{
-#'   \item{Tejido:}{id del tejido tratado.}
-#'   \item{TR:}{tratamiento aplicado (3\% de fructosa, 3\% de glucosa, 3\% de
-#'   sacarosa y Control).}
-#'   \item{CR:}{crecimiento del tejido medido en mm X 10.}
-#' }
+#'   * `Tejido`: id del tejido tratado.
+#'   * `TR`: tratamiento aplicado (3\% de fructosa, 3\% de glucosa, 3\% de
+#'   sacarosa y Control).
+#'   * `CR`: crecimiento del tejido medido en mm X 10.
 #' @source --
 "tomate"
 
@@ -236,10 +214,8 @@
 #' @usage data(peso_vaquillonas)
 #' @format
 #' A data frame with 28 rows and 2 columns:
-#' \describe{
-#'   \item{AN:}{tipo de anabólico suministrado.}
-#'   \item{AP:}{aumento de peso en kg.}
-#' }
+#'   * `AN`: tipo de anabólico suministrado.
+#'   * `AP`: aumento de peso en kg.
 #' @source --
 "peso_vaquillonas"
 
@@ -256,10 +232,8 @@
 #' @usage data(estrogeno)
 #' @format
 #' A data frame with 28 rows and 2 columns:
-#' \describe{
-#'   \item{SO:}{solucion de estrógeno asignada.}
-#'   \item{PE:}{Peso del útero.}
-#' }
+#'   * `SO`: solucion de estrógeno asignada.
+#'   * `PE`: Peso del útero.
 #' @source --
 "estrogeno"
 
@@ -277,12 +251,10 @@
 #' @usage data(lechuga)
 #' @format
 #' A data frame with 20 rows and 24 columns:
-#' \describe{
-#'   \item{Dosis:}{dosis de nitrogeno aplicado.}
-#'   \item{Dosis_ord:}{dosis transformada a factor ordenada.}
-#'   \item{Dosis_chr:}{dosis como caracter transformada a factor.}
-#'   \item{Plantas:}{numero de plantas cosechadas de la parcela.}
-#' }
+#'   * `Dosis`: dosis de nitrogeno aplicado.
+#'   * `Dosis_ord`: dosis transformada a factor ordenada.
+#'   * `Dosis_chr`: dosis como caracter transformada a factor.
+#'   * `Plantas`: numero de plantas cosechadas de la parcela.
 #' @source --
 "lechuga"
 
@@ -298,13 +270,11 @@
 #' cuatro etapas del régimen.
 #'
 #' Las cinco etapas del régimen (TR) fueron:
-#' \describe{
 #' * 1. premuda (control).
 #' * 2. ayuno de 8 días.
 #' * 3. 60 g de salvado al día durante 10 días.
 #' * 4. 80 g de salvado al día por 10 días.
 #' * 5. mezcla de malta durante 42 días.
-#' }
 #' Uno de los compuestos medidos fue la concentración de suero T3. Los datos de
 #' la tabla son las medidas de suero T3 en las cinco gallinas sacrificadas al
 #' final de cada etapa del régimen.
@@ -312,10 +282,8 @@
 #' @usage data(gallinas)
 #' @format
 #' A data frame with 25 rows and 2 columns:
-#' \describe{
-#'   \item{TR:}{regimen de muda suministrado.}
-#'   \item{T3:}{concentración de suero T3.}
-#' }
+#'   * `TR`: regimen de muda suministrado.
+#'   * `T3`: concentración de suero T3.
 #' @source --
 "gallinas"
 
@@ -334,11 +302,9 @@
 #' @usage data(pH_laboratorio)
 #' @format
 #' A data frame with 24 rows and 3 columns:
-#' \describe{
-#'   \item{Dispositivo:}{letra que identifica el dispositivo utilizado.}
-#'   \item{Muestra:}{id de la muestra a la que se le realizo la medida.}
-#'   \item{dif:}{diferencia de pH medido vs pH conocido.}
-#' }
+#'   * `Dispositivo`: letra que identifica el dispositivo utilizado.
+#'   * `Muestra`: id de la muestra a la que se le realizo la medida.
+#'   * `dif`: diferencia de pH medido vs pH conocido.
 #' @source --
 "pH_laboratorio"
 
@@ -360,10 +326,8 @@
 #' @usage data(conservante_frutilla)
 #' @format
 #' A data frame with 32 rows and 2 columns:
-#' \describe{
-#'   \item{Tratamiento:}{preservante utilizado.}
-#'   \item{decoloracion:}{grado de decoloración en una escala del 1 al 10.}
-#' }
+#'   * `Tratamiento`: preservante utilizado.
+#'   * `decoloracion`: grado de decoloración en una escala del 1 al 10.
 #' @source --
 "conservante_frutilla"
 
@@ -378,10 +342,8 @@
 #' @usage data(hibridos_maiz)
 #' @format
 #' A data frame with 32 rows and 2 columns:
-#' \describe{
-#'   \item{Hibrido:}{id del híbrido de maíz evaluado.}
-#'   \item{rend:}{rendimiento registrado.}
-#' }
+#'   * `Hibrido`: id del híbrido de maíz evaluado.
+#'   * `rend`: rendimiento registrado.
 #' @source --
 "hibridos_maiz"
 
@@ -399,10 +361,8 @@
 #' @usage data(dieta_pavos)
 #' @format
 #' A data frame with 30 rows and 2 columns:
-#' \describe{
-#'   \item{Dieta:}{id de la dieta suministrada.}
-#'   \item{GP:}{ganancia de peso (GP) registrada.}
-#' }
+#'   * `Dieta`: id de la dieta suministrada.
+#'   * `GP`: ganancia de peso (GP) registrada.
 #' @source --
 "dieta_pavos"
 
@@ -418,11 +378,9 @@
 #' efectivo en promover el crecimiento de los plantines.
 #' @details
 #' Se trato el suelo y las malezas con uno de los siguientes tratamientos:
-#' \describe{
 #' * A: Control (sin herbicida).
 #' * B: Herbicida con Nemagone (nematicida).
 #' * C: Herbicida sin Nemagone (nematicida).
-#' }
 #' Los investigadores asignaron al azar 6 de los 18 plantines a cada
 #' tratamiento, luego trataron el suelo y las malezas en las áreas de
 #' crecimiento con el tratamiento asignado.
@@ -432,10 +390,8 @@
 #' @usage data(nematodes_durazno)
 #' @format
 #' A data frame with 18 rows and 2 columns:
-#' \describe{
-#'   \item{Tratamiento:}{tipo de tratamiento aplicado.}
-#'   \item{altura:}{altura del plantin en cm.}
-#' }
+#'   * `Tratamiento`: tipo de tratamiento aplicado.
+#'   * `altura`: altura del plantin en cm.
 #' @source --
 "nematodes_durazno"
 
@@ -455,11 +411,9 @@
 #' @usage data(dietas_novillos)
 #' @format
 #' A data frame with 20 rows and 3 columns:
-#' \describe{
-#'   \item{Dieta:}{tipo de dieta suministrada.}
-#'   \item{Animal:}{id del animal.}
-#'   \item{peso:}{aumento de peso en kg.}
-#' }
+#'   * `Dieta`: tipo de dieta suministrada.
+#'   * `Animal`: id del animal.
+#'   * `peso`: aumento de peso en kg.
 #' @source --
 "dietas_novillos"
 
@@ -475,22 +429,18 @@
 #' Como respuesta se cuantificó la concentración de P en tejido foliar.
 #'
 #' Los tratamientos:
-#' \describe{
 #' * 1- control: sin fertilizar.
 #' * 2- N50: 50 lb de N.
 #' * 3- N100: 100 lb de N.
 #' * 4- N50P75: 50 lb de N + 75 lb de P~2~O~5~.
 #' * 5- N100P75: 100 lb de N + 75 lb de P~2~O~5~.
-#'  }
 #' @docType data
 #' @usage data(fertilizante_pastizal)
 #' @format
 #' A data frame with 25 rows and 3 columns:
-#' \describe{
-#'   \item{Bloque:}{id del bloque.}
-#'   \item{Tratamiento:}{tipo de tratamiento aplicado.}
-#'   \item{P:}{concentración de P en tejido foliar.}
-#' }
+#'   * `Bloque`: id del bloque.
+#'   * `Tratamiento`: tipo de tratamiento aplicado.
+#'   * `P`: concentración de P en tejido foliar.
 #' @source --
 "fertilizante_pastizal"
 
@@ -507,11 +457,9 @@
 #' @usage data(fibra_quimico)
 #' @format
 #' A data frame with 20 rows and 3 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque (muestra de fibra).}
-#'   \item{CQ:}{tipo de compuesto químico aplicado.}
-#'   \item{RF:}{resistencia de la fibra.}
-#' }
+#'   * `BL`: id del bloque (muestra de fibra).
+#'   * `CQ`: tipo de compuesto químico aplicado.
+#'   * `RF`: resistencia de la fibra.
 #' @source --
 "fibra_quimico"
 
@@ -522,22 +470,18 @@
 #' gladiolos.
 #' @details
 #' El experimento se realizó en un diseño de bloques completos al azar con cuatro tratamientos y cuatro bloques.
-#' \describe{
 #' * 1- control (sin herbicida).
 #' * 2- 2,4D-TCA.
 #' * 3- DN/CR.
 #' * 4- SESIN.
-#' }
 #' Luego se midió el peso promedio por inflorescencia en onzas.
 #' @docType data
 #' @usage data(gladiolos)
 #' @format
 #' A data frame with 16 rows and 3 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque.}
-#'   \item{TR:}{tipo de tratamiento aplicado.}
-#'   \item{EH:}{peso promedio por inflorescencia en onzas.}
-#' }
+#'   * `BL`: id del bloque.
+#'   * `TR`: tipo de tratamiento aplicado.
+#'   * `EH`: peso promedio por inflorescencia en onzas.
 #' @source --
 "gladiolos"
 
@@ -558,11 +502,9 @@
 #' @usage data(invernadero_spartina)
 #' @format
 #' A data frame with 48 rows and 3 columns:
-#' \describe{
-#'   \item{TR:}{tipo de combinacion aplicada.}
-#'   \item{BL:}{id del bloque.}
-#'   \item{BI:}{bioamasa registrada en peso seco.}
-#' }
+#'   * `TR`: tipo de combinacion aplicada.
+#'   * `BL`: id del bloque.
+#'   * `BI`: bioamasa registrada en peso seco.
 #' @source --
 "invernadero_spartina"
 
@@ -575,25 +517,21 @@
 #' En un naranjal se llevo a cabo un experimento de irrigación con un diseño de
 #' bloques completos aleatorizado en el que se usaron seis tratamientos de
 #' irrigación:
-#' \describe{
 #' * G = goteo.
 #' * E = por surco.
 #' * R = rocío.
 #' * A = aspersor.
 #' * AR = aspersor + rocío.
 #' * AN = anegado.
-#' }
 #'
 #' Los siguientes datos se refieren al peso en libras de la fruta cosechada en cada parcela.
 #' @docType data
 #' @usage data(irrigacion_naranjo)
 #' @format
 #' A data frame with 48 rows and 2 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque.}
-#'   \item{TR:}{tipo de riego utilizado.}
-#'   \item{PF:}{peso de la fruta cosechada en libras.}
-#' }
+#'   * `BL`: id del bloque.
+#'   * `TR`: tipo de riego utilizado.
+#'   * `PF`: peso de la fruta cosechada en libras.
 #' @source --
 "irrigacion_naranjo"
 
@@ -605,22 +543,18 @@
 #' ascórbico de nabos.
 #' @details
 #' Se presentan los datos de los 3 tratamientos
-#' \describe{
 #' * C = control sin lavar.
 #' * LC = lavado con agua corriente.
 #' * LSA = lavado y secado con absorbente.
 #' * LSC = lavado y secado con corriente de aire.
-#' }
 #' Los tratamientos fueron asignados al azar dentro de 5 bloques
 #' @docType data
 #' @usage data(nabos)
 #' @format
 #' A data frame with 15 rows and 3 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque.}
-#'   \item{TR:}{tipo de lavado y secado aplicado.}
-#'   \item{LE:}{contenido de ácido ascórbico.}
-#' }
+#'   * `BL`: id del bloque.
+#'   * `TR`: tipo de lavado y secado aplicado.
+#'   * `LE`: contenido de ácido ascórbico.
 #' @source --
 "nabos"
 
@@ -637,12 +571,10 @@
 #' @usage data(resist_algodon)
 #' @format
 #' A data frame with 25 rows and 3 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque.}
-#'   \item{AL:}{porcentaje de algodón en la fibra.}
-#'   \item{AL_ord:}{porcentaje de algodón transformado a factor ordenado.}
-#'   \item{RT:}{resistencia a la tensión registrada.}
-#' }
+#'   * `BL`: id del bloque.
+#'   * `AL`: porcentaje de algodón en la fibra.
+#'   * `AL_ord`: porcentaje de algodón transformado a factor ordenado.
+#'   * `RT`: resistencia a la tensión registrada.
 #' @source --
 "resist_algodon"
 
@@ -660,11 +592,9 @@
 #' @usage data(rollos_tela)
 #' @format
 #' A data frame with 20 rows and 3 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque.}
-#'   \item{AQ:}{tipo de agente químico aplicado.}
-#'   \item{RT}{resistencia a la tensión registrada.}
-#' }
+#'   * `BL`: id del bloque.
+#'   * `AQ`: tipo de agente químico aplicado.
+#'   * `RT`: resistencia a la tensión registrada.
 #' @source --
 "rollos_tela"
 
@@ -680,12 +610,10 @@
 #' @usage data(sorgo_urea)
 #' @format
 #' A data frame with 16 rows and 4 columns:
-#' \describe{
-#'   \item{BL:}{id del bloque.}
-#'   \item{DO:}{dosis de urea aplicada.}
-#'   \item{DO_ord:}{dosis de urea transformada a factor ordenada.}
-#'   \item{RTO:}{rendimiento de grano en kg}
-#' }
+#'   * `BL`: id del bloque.
+#'   * `DO`: dosis de urea aplicada.
+#'   * `DO_ord`: dosis de urea transformada a factor ordenada.
+#'   * `RTO`: rendimiento de grano en kg
 #' @source --
 "sorgo_urea"
 
@@ -710,11 +638,9 @@
 #' @usage data(insecticida_poroto)
 #' @format
 #' A data frame with 12 rows and 3 columns:
-#' \describe{
-#'   \item{Bloque:}{id del bloque.}
-#'   \item{Insecticida:}{id del insecticida aplicado.}
-#'   \item{emergencia}{número de plántulas emergidas por fila.}
-#' }
+#'   * `Bloque`: id del bloque.
+#'   * `Insecticida`: id del insecticida aplicado.
+#'   * `emergencia`: número de plántulas emergidas por fila.
 #' @source --
 "insecticida_poroto"
 
@@ -739,13 +665,11 @@
 #' @usage data(larvas_cesped)
 #' @format
 #' A data frame with 60 rows and 5 columns:
-#' \describe{
-#'   \item{Sitio:}{id del sitio experimental.}
-#'   \item{Parcela:}{id de la parcela.}
-#'   \item{Tratamiento:}{id del insecticida aplicado.}
-#'   \item{Muestra:}{id de la muestra dentro de la parcela.}
-#'   \item{cantidad:}{número de larvas sobrevivientes.}
-#' }
+#'   * `Sitio`: id del sitio experimental.
+#'   * `Parcela`: id de la parcela.
+#'   * `Tratamiento`: id del insecticida aplicado.
+#'   * `Muestra`: id de la muestra dentro de la parcela.
+#'   * `cantidad`: número de larvas sobrevivientes.
 #' @source --
 "larvas_cesped"
 
@@ -760,12 +684,10 @@
 #' @usage data(cana_azucar)
 #' @format
 #' A data frame with 25 rows and 4 columns:
-#' \describe{
-#'   \item{F:}{id de la fila.}
-#'   \item{C:}{id de la columna.}
-#'   \item{VAR:}{variedad de caña de azúcar evaluada.}
-#'   \item{RTO:}{producción en kilos por parcela.}
-#' }
+#'   * `F`: id de la fila.
+#'   * `C`: id de la columna.
+#'   * `VAR`: variedad de caña de azúcar evaluada.
+#'   * `RTO`: producción en kilos por parcela.
 #' @source --
 "cana_azucar"
 
@@ -787,12 +709,10 @@
 #' @usage data(hormona_ovario)
 #' @format
 #' A data frame with 16 rows and 4 columns:
-#' \describe{
-#'   \item{F:}{id de la camada (filas).}
-#'   \item{C:}{categoría de peso corporal (columnas).}
-#'   \item{HORMONA:}{hormona inyectada.}
-#'   \item{PESO:}{peso del ovario medido.}
-#' }
+#'   * `F`: id de la camada (filas).
+#'   * `C`: categoría de peso corporal (columnas).
+#'   * `HORMONA`: hormona inyectada.
+#'   * `PESO`: peso del ovario medido.
 #' @source --
 "hormona_ovario"
 
@@ -811,24 +731,20 @@
 #' tiempo.
 #'
 #' Las dosis fueron:
-#' \describe{
 #' * A: 0 ml
 #' * B: 2 ml
 #' * C: 4 ml
 #' * D: 6 ml
-#' }
 #' @docType data
 #' @usage data(inyeccion_vaquillas)
 #' @format
 #' A data frame with 16 rows and 6 columns:
-#' \describe{
-#'   \item{F:}{línea genética (filas).}
-#'   \item{C:}{método de inyección (columnas).}
-#'   \item{D:}{dosis aplicada (A, B, C, D).}
-#'   \item{RTA:}{aumento de peso en kg.}
-#'   \item{D_num:}{dosis aplicada en formato numerico.}
-#'   \item{D_ord:}{dosis aplicada como factor ordenado.}
-#' }
+#'   * `F`: línea genética (filas).
+#'   * `C`: método de inyección (columnas).
+#'   * `D`: dosis aplicada (A, B, C, D).
+#'   * `RTA`: aumento de peso en kg.
+#'   * `D_num`: dosis aplicada en formato numerico.
+#'   * `D_ord`: dosis aplicada como factor ordenado.
 #' @source --
 "inyeccion_vaquillas"
 
@@ -844,14 +760,12 @@
 #' @usage data(prolactina_vacas)
 #' @format
 #' A data frame with 9 rows and 6 columns:
-#' \describe{
-#'   \item{F:}{factor de bloqueo peso (filas).}
-#'   \item{C:}{factor de bloqueo genética (columnas).}
-#'   \item{DOSIS:}{dosis de hormona TRH aplicada.}
-#'   \item{PICO:}{pico máximo de prolactina medido.}
-#'   \item{DOSIS_num:}{dosis aplicada en formato numerico.}
-#'   \item{DOSIS_ord:}{dosis aplicada como factor ordenado.}
-#' }
+#'   * `F`: factor de bloqueo peso (filas).
+#'   * `C`: factor de bloqueo genética (columnas).
+#'   * `DOSIS`: dosis de hormona TRH aplicada.
+#'   * `PICO`: pico máximo de prolactina medido.
+#'   * `DOSIS_num`: dosis aplicada en formato numerico.
+#'   * `DOSIS_ord`: dosis aplicada como factor ordenado.
 #' @source --
 "prolactina_vacas"
 
@@ -865,12 +779,10 @@
 #' @usage data(tiempo_reaccion)
 #' @format
 #' A data frame with 25 rows and 5 columns:
-#' \describe{
-#'   \item{F:}{id de la fila.}
-#'   \item{C:}{id de la columna.}
-#'   \item{INGREDIENTE:}{ingrediente utilizado (A, B, C, D, E).}
-#'   \item{TIEMPO:}{tiempo de reacción.}
-#' }
+#'   * `F`: id de la fila.
+#'   * `C`: id de la columna.
+#'   * `INGREDIENTE`: ingrediente utilizado (A, B, C, D, E).
+#'   * `TIEMPO`: tiempo de reacción.
 #' @source --
 "tiempo_reaccion"
 
@@ -885,12 +797,10 @@
 #' @usage data(variedad_trigo)
 #' @format
 #' A data frame with 16 rows and 4 columns:
-#' \describe{
-#'   \item{F:}{id de la fila.}
-#'   \item{C:}{id de la columna.}
-#'   \item{VAR:}{variedad de trigo evaluada.}
-#'   \item{REND:}{rendimiento en kg por parcela.}
-#' }
+#'   * `F`: id de la fila.
+#'   * `C`: id de la columna.
+#'   * `VAR`: variedad de trigo evaluada.
+#'   * `REND`: rendimiento en kg por parcela.
 #' @source --
 "variedad_trigo"
 
@@ -905,12 +815,10 @@
 #' @usage data(labores_remolacha)
 #' @format
 #' A data frame with 9 rows and 4 columns:
-#' \describe{
-#'   \item{F:}{id de la fila.}
-#'   \item{C:}{id de la columna.}
-#'   \item{LAB:}{tipo de labor cultural aplicada.}
-#'   \item{RTO:}{rendimiento en toneladas por hectárea.}
-#' }
+#'   * `F`: id de la fila.
+#'   * `C`: id de la columna.
+#'   * `LAB`: tipo de labor cultural aplicada.
+#'   * `RTO`: rendimiento en toneladas por hectárea.
 #' @source --
 "labores_remolacha"
 
@@ -924,12 +832,10 @@
 #' @usage data(raciones_pollos)
 #' @format
 #' A data frame with 16 rows and 4 columns:
-#' \describe{
-#'   \item{Pisos:}{número de pisos de la jaula (filas).}
-#'   \item{Casilleros:}{número de casilleros (columnas).}
-#'   \item{Racion:}{ración alimenticia suministrada.}
-#'   \item{Peso:}{peso del pollo en kg a las 8 semanas.}
-#' }
+#'   * `Pisos`: número de pisos de la jaula (filas).
+#'   * `Casilleros`: número de casilleros (columnas).
+#'   * `Racion`: ración alimenticia suministrada.
+#'   * `Peso`: peso del pollo en kg a las 8 semanas.
 #' @source --
 "raciones_pollos"
 
@@ -972,12 +878,10 @@
 #' @usage data(conc_glucosa)
 #' @format
 #' A data frame with 18 rows and 4 columns:
-#' \describe{
-#'   \item{Metodo:}{método químico de determinación (1 o 2).}
-#'   \item{Nivel:}{nivel de glucosa aplicado (A, B o C).}
-#'   \item{Concentracion:}{concentración de glucosa medida.}
-#'   \item{repeticion:}{id de la repetición.}
-#' }
+#'   * `Metodo`: método químico de determinación (1 o 2).
+#'   * `Nivel`: nivel de glucosa aplicado (A, B o C).
+#'   * `Concentracion`: concentración de glucosa medida.
+#'   * `repeticion`: id de la repetición.
 #' @source --
 "conc_glucosa"
 
@@ -1023,13 +927,11 @@
 #' @usage data(fijacion_N)
 #' @format
 #' A data frame with 48 rows and 5 columns:
-#' \describe{
-#'   \item{Cultivo:}{tipo de cultivo hospedante.}
-#'   \item{N:}{nivel de nitrógeno aplicado en ppm.}
-#'   \item{acetileno:}{reducción de acetileno medida.}
-#'   \item{N_ord:}{nivel de nitrógeno transformado a factor ordenado.}
-#'   \item{repeticion:}{id de la repetición.}
-#' }
+#'   * `Cultivo`: tipo de cultivo hospedante.
+#'   * `N`: nivel de nitrógeno aplicado en ppm.
+#'   * `acetileno`: reducción de acetileno medida.
+#'   * `N_ord`: nivel de nitrógeno transformado a factor ordenado.
+#'   * `repeticion`: id de la repetición.
 #' @source --
 "fijacion_N"
 
@@ -1046,13 +948,11 @@
 #' @usage data(met_pesados)
 #' @format
 #' A data frame with 36 rows and 5 columns:
-#' \describe{
-#'   \item{Ciudad:}{ciudad donde se realizó el ensayo.}
-#'   \item{Dosis:}{dosis de lodo aplicada.}
-#'   \item{zinc:}{nivel de zinc medido en las plantas.}
-#'   \item{Dosis_ord:}{dosis de lodo transformada a factor ordenado.}
-#'   \item{repeticion:}{id de la repetición.}
-#' }
+#'   * `Ciudad`: ciudad donde se realizó el ensayo.
+#'   * `Dosis`: dosis de lodo aplicada.
+#'   * `zinc`: nivel de zinc medido en las plantas.
+#'   * `Dosis_ord`: dosis de lodo transformada a factor ordenado.
+#'   * `repeticion`: id de la repetición.
 #' @source --
 "met_pesados"
 
@@ -1072,14 +972,12 @@
 #' @usage data(sal_cebada)
 #' @format
 #' A data frame with 18 rows and 6 columns:
-#' \describe{
-#'   \item{Salinidad:}{nivel de salinidad en barios.}
-#'   \item{Edad:}{edad de la planta al momento de la cosecha en días.}
-#'   \item{Consumo:}{cantidad de agua consumida (mm/100g peso seco).}
-#'   \item{repeticion:}{id de la repetición.}
-#'   \item{Salinidad_ord:}{salinidad transformada a factor ordenado.}
-#'   \item{Edad_ord:}{edad transformada a factor ordenado.}
-#' }
+#'   * `Salinidad`: nivel de salinidad en barios.
+#'   * `Edad`: edad de la planta al momento de la cosecha en días.
+#'   * `Consumo`: cantidad de agua consumida (mm/100g peso seco).
+#'   * `repeticion`: id de la repetición.
+#'   * `Salinidad_ord`: salinidad transformada a factor ordenado.
+#'   * `Edad_ord`: edad transformada a factor ordenado.
 #' @source --
 "sal_cebada"
 
@@ -1117,22 +1015,18 @@
 #' pendiente.
 #'
 #' Tratamientos:
-#' \describe{
 #' * T1: al voleo fert A
 #' * T2: al voleo fert B
 #' * T3: en banda fert A
 #' * T4: en banda fert B
-#' }
 #' @docType data
 #' @usage data(fert_melon)
 #' @format
 #' A data frame with 16 rows and 4 columns:
-#' \describe{
-#'   \item{Fila:}{id de la fila del diseño.}
-#'   \item{Column:}{id de la columna del diseño.}
-#'   \item{Tratamiento:}{tratamiento aplicado.}
-#'   \item{rend:}{peso seco de las plantas de melón.}
-#' }
+#'   * `Fila`: id de la fila del diseño.
+#'   * `Column`: id de la columna del diseño.
+#'   * `Tratamiento`: tratamiento aplicado.
+#'   * `rend`: peso seco de las plantas de melón.
 #' @source --
 "fert_melon"
 
@@ -1150,12 +1044,10 @@
 #' @usage data(inhibidor_N)
 #' @format
 #' A data frame with 18 rows and 4 columns:
-#' \describe{
-#'   \item{bloque:}{id del bloque.}
-#'   \item{inhibidor:}{nivel de inhibidor de nitrificación (ninguno o 0.5).}
-#'   \item{Nsuelo:}{momento de aplicación del nitrógeno (pronto, optimo, tarde).}
-#'   \item{Nabsorbido:}{porcentaje de N absorbido por las plantas.}
-#' }
+#'   * `bloque`: id del bloque.
+#'   * `inhibidor`: nivel de inhibidor de nitrificación (ninguno o 0.5).
+#'   * `Nsuelo`: momento de aplicación del nitrógeno (pronto, optimo, tarde).
+#'   * `Nabsorbido`: porcentaje de N absorbido por las plantas.
 #' @source --
 "inhibidor_N"
 
@@ -1174,13 +1066,11 @@
 #' @usage data(soja_pd)
 #' @format
 #' A data frame with 60 rows and 5 columns:
-#' \describe{
-#'   \item{variedad:}{variedad de soja (parcela principal).}
-#'   \item{espaciamiento:}{espaciamiento entre surcos en pulgadas (subparcela).}
-#'   \item{bloque:}{id del bloque.}
-#'   \item{rendimiento:}{rendimiento en bushels por acre.}
-#'   \item{espaciamiento_ord:}{espaciamiento transformado a factor ordenado.}
-#' }
+#'   * `variedad`: variedad de soja (parcela principal).
+#'   * `espaciamiento`: espaciamiento entre surcos en pulgadas (subparcela).
+#'   * `bloque`: id del bloque.
+#'   * `rendimiento`: rendimiento en bushels por acre.
+#'   * `espaciamiento_ord`: espaciamiento transformado a factor ordenado.
 #' @source --
 "soja_pd"
 
@@ -1196,22 +1086,18 @@
 #' completa.
 #'
 #' Lotes:
-#' \describe{
 #' * Vicland1: infectados por H. victoriae.
 #' * Vicland2: no infectados.
 #' * Clinton: resistentes a H. victoriae.
 #' * Branch: resistentes a H. victoriae.
-#' }
 #' @docType data
 #' @usage data(semillas_pd)
 #' @format
 #' A data frame with 64 rows and 4 columns:
-#' \describe{
-#'   \item{lote:}{lote de semilla (parcela principal).}
-#'   \item{bloque:}{id del bloque.}
-#'   \item{tratamiento:}{tratamiento químico o control (subparcela).}
-#'   \item{rendimiento:}{rendimiento en bushels por acre.}
-#' }
+#'   * `lote`: lote de semilla (parcela principal).
+#'   * `bloque`: id del bloque.
+#'   * `tratamiento`: tratamiento químico o control (subparcela).
+#'   * `rendimiento`: rendimiento en bushels por acre.
 #' @source --
 "semillas_pd"
 
@@ -1228,12 +1114,10 @@
 #' @usage data(arroz_pd)
 #' @format
 #' A data frame with 24 rows and 4 columns:
-#' \describe{
-#'   \item{Lamina:}{lámina de riego (parcela principal).}
-#'   \item{Variedad:}{variedad de arroz (subparcela).}
-#'   \item{Repetición:}{id de la repetición (bloque).}
-#'   \item{Rend:}{rendimiento registrado.}
-#' }
+#'   * `Lamina`: lámina de riego (parcela principal).
+#'   * `Variedad`: variedad de arroz (subparcela).
+#'   * `Repetición`: id de la repetición (bloque).
+#'   * `Rend`: rendimiento registrado.
 #' @source --
 "arroz_pd"
 
@@ -1250,12 +1134,10 @@
 #' @usage data(cana_pd)
 #' @format
 #' A data frame with 45 rows and 4 columns:
-#' \describe{
-#'   \item{Fecha:}{fecha de plantación (parcela principal).}
-#'   \item{Método:}{método de plantación (subparcela).}
-#'   \item{Bloque:}{id del bloque.}
-#'   \item{Rend:}{rendimiento en Tn/ha de azúcar.}
-#' }
+#'   * `Fecha`: fecha de plantación (parcela principal).
+#'   * `Método`: método de plantación (subparcela).
+#'   * `Bloque`: id del bloque.
+#'   * `Rend`: rendimiento en Tn/ha de azúcar.
 #' @source --
 "cana_pd"
 
@@ -1272,12 +1154,10 @@
 #' @usage data(maiz2_pd)
 #' @format
 #' A data frame with 36 rows and 4 columns:
-#' \describe{
-#'   \item{Bloque:}{id del bloque.}
-#'   \item{Aplicacion:}{forma de aplicación (parcela principal).}
-#'   \item{Abono:}{tipo de abono (subparcela).}
-#'   \item{Rend:}{rendimiento por parcela en kg.}
-#' }
+#'   * `Bloque`: id del bloque.
+#'   * `Aplicacion`: forma de aplicación (parcela principal).
+#'   * `Abono`: tipo de abono (subparcela).
+#'   * `Rend`: rendimiento por parcela en kg.
 #' @source --
 "maiz2_pd"
 
@@ -1297,12 +1177,10 @@
 #' @usage data(trigo_zona_ciclo)
 #' @format
 #' A data frame with 27 rows and 4 columns:
-#' \describe{
-#'   \item{Zona:}{zona de Santa Fe (Norte, Centro, Sur).}
-#'   \item{Ciclo:}{ciclo del trigo (anidado en Zona).}
-#'   \item{Rep:}{id de la repetición.}
-#'   \item{Rinde:}{rendimiento de trigo en kg/ha.}
-#' }
+#'   * `Zona`: zona de Santa Fe (Norte, Centro, Sur).
+#'   * `Ciclo`: ciclo del trigo (anidado en Zona).
+#'   * `Rep`: id de la repetición.
+#'   * `Rinde`: rendimiento de trigo en kg/ha.
 #' @source --
 "trigo_zona_ciclo"
 

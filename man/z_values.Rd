@@ -13,16 +13,16 @@ z_values(
 )
 }
 \arguments{
-\item{z_calc}{Numeric. Estadistico Z calculado.}
+\item{z_calc}{Numerico. Estadistico Z calculado.}
 
-\item{x}{Numeric. Centro del intervalo de confianza (media o diferencia).}
+\item{x}{Numerico. Centro del intervalo de confianza (media o diferencia).}
 
-\item{se}{Numeric. Error estandar.}
+\item{se}{Numerico. Error estandar.}
 
-\item{alternative}{Character string specifying the alternative hypothesis.
-Must be one of "two.sided" (default), "greater" or "less".}
+\item{alternative}{String de caracteres que especifica la hipotesis alternativa.
+Debe ser "two.sided" (default), "greater" o "less".}
 
-\item{conf.level}{Numeric. Nivel de confianza del intervalo. Por defecto es 0.95.}
+\item{conf.level}{Numerico. Nivel de confianza del intervalo. Por defecto es 0.95.}
 }
 \value{
 Un listado con \code{p_val} (valor p) y \code{conf_int} (intervalo de confianza).

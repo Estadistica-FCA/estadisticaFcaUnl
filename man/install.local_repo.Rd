@@ -7,12 +7,12 @@
 install.local_repo(pkgs = NULL, repo_path = NULL, install = T)
 }
 \arguments{
-\item{pkgs}{Espera un vector de caracteres con los paquetes a instalar}
+\item{pkgs}{Vector de caracteres. Espera los paquetes a instalar}
 
-\item{repo_path}{Espera un string con la ruta donde instalar el repositorio.
+\item{repo_path}{String. Espera la ruta donde instalar el repositorio.
 Si no se especifica se toma el del script donde se está ejecutando}
 
-\item{install}{Parámetro de debug que permite correr la función sin
+\item{install}{Logico. Parámetro de debug que permite correr la función sin
 descargar nada}
 }
 \value{

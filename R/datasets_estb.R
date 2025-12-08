@@ -21,11 +21,9 @@
 #' @usage data(superficies_EAP)
 #' @format
 #' A data frame with 19 rows and 3 columns:
-#' \describe{
-#'   \item{Departamento}{nombre del departamento.}
-#'   \item{Cant_EAP}{número de explotaciones agropecuarias.}
-#'   \item{Sup_promedio}{superficie promedio de las explotaciones agropecuarias (en ha).}
-#' }
+#'   * `Departamento`: nombre del departamento.
+#'   * `Cant_EAP`: número de explotaciones agropecuarias.
+#'   * `Sup_promedio`: superficie promedio de las explotaciones agropecuarias (en ha).
 #' @source Instituto Nacional de Estadísticas y Censos
 "superficies_EAP"
 
@@ -35,21 +33,19 @@
 #' @usage data(pesada_novillos)
 #' @format
 #' A data frame with 1842 rows and 13 columns:
-#' \describe{
-#'   \item{IDV}{código de identificación visual (caravana)}
-#'   \item{Tropa}{número de tropa al que pertenece.}
-#'   \item{Procedencia}{nombre del establecimiento del cual proviene.}
-#'   \item{Fecha_Ingreso}{fecha de ingreso al sistema de engorde.}
-#'   \item{Peso_inicial}{peso al ingresar al sistema de engorde.}
-#'   \item{Peso_anterior}{peso registrado en la pesada anterior.}
-#'   \item{GPV_anterior}{ganancia de peso vivo en la ultima pesada, i.e. diferencia de peso entre las últimas dos pesadas.}
-#'   \item{GDM_anterior}{ganancia de peso diaria promedio anterior}
-#'   \item{Fecha}{fecha de la pesada actual (MM/DD/YYYY)}
-#'   \item{Hora}{hora en la que se realizó la pesada actual (HH:MM:SS)}
-#'   \item{Peso}{peso actual registrado en kg.}
-#'   \item{Días}{número de días entre la pesada anterior y la actual.}
-#'   \item{Días_total}{número de dias desde el ingreso al sistema.}
-#' }
+#'   * `IDV`: código de identificación visual (caravana)
+#'   * `Tropa`: número de tropa al que pertenece.
+#'   * `Procedencia`: nombre del establecimiento del cual proviene.
+#'   * `Fecha_Ingreso`: fecha de ingreso al sistema de engorde.
+#'   * `Peso_inicial`: peso al ingresar al sistema de engorde.
+#'   * `Peso_anterior`: peso registrado en la pesada anterior.
+#'   * `GPV_anterior`: ganancia de peso vivo en la ultima pesada, i.e. diferencia de peso entre las últimas dos pesadas.
+#'   * `GDM_anterior`: ganancia de peso diaria promedio anterior
+#'   * `Fecha`: fecha de la pesada actual (MM/DD/YYYY)
+#'   * `Hora`: hora en la que se realizó la pesada actual (HH:MM:SS)
+#'   * `Peso`: peso actual registrado en kg.
+#'   * `Días`: número de días entre la pesada anterior y la actual.
+#'   * `Días_total`: número de dias desde el ingreso al sistema.
 #' @source Gentileza Ing. Agr. Marcón
 "pesada_novillos"
 
@@ -59,12 +55,10 @@
 #' @usage data(tambos_2008_2015)
 #' @format
 #' A data frame with 152 rows and 10 columns:
-#' \describe{
-#'   \item{Departamento}{nombre del departamento}
-#'   \item{Establecimientos}{número de establecimientos tamberos.}
-#'   \item{Vacas, Vaquillonas, Toros, Terneros, Terneras, Novillos, Novillitos}{número de cabezas según categoría}
-#'   \item{Año}{año de la serie}
-#' }
+#'   * `Departamento`: nombre del departamento
+#'   * `Establecimientos`: número de establecimientos tamberos.
+#'   * `Vacas, Vaquillonas, Toros, Terneros, Terneras, Novillos, Novillitos`: número de cabezas según categoría
+#'   * `Año`: año de la serie
 #' @source Instituto Provincial de Estadísticas y Censos (IPEC)
 "tambos_2008_2015"
 
@@ -94,20 +88,58 @@
 #' @usage data(riesgo_arbolado)
 #' @format
 #' A data frame with 677 rows and 9 columns:
-#' \describe{
-#'   \item{Especie}{género y especie del árbol}
-#'   \item{DAP}{diámetro a la altura del pecho (en cm)}
-#'   \item{asim_copa}{asimetría de la copa}
-#'   \item{dom_copa}{dominancia de la copa}
-#'   \item{cazuela}{tamaño de la cazuela o cantero donde está plantado el árbol}
-#'   \item{DC}{daño más importante en la corona.}
-#'   \item{DT}{daño más importante en el tronco.}
-#'   \item{DR}{daño más importante en las ramas.}
-#'   \item{riesgo}{nivel de riesgo según escala ISA, resulta de la adición de tres componentes:
+#'   * `Especie`: género y especie del árbol
+#'   * `DAP`: diámetro a la altura del pecho (en cm)
+#'   * `asim_copa`: asimetría de la copa
+#'   * `dom_copa`: dominancia de la copa
+#'   * `cazuela`: tamaño de la cazuela o cantero donde está plantado el árbol
+#'   * `DC`: daño más importante en la corona.
+#'   * `DT`: daño más importante en el tronco.
+#'   * `DR`: daño más importante en las ramas.
+#'   * `riesgo`: nivel de riesgo según escala ISA, resulta de la adición de tres componentes:
 #'   (1) potencial de ruptura,
 #'   (2) tamaño de la parte comprometida, y
 #'   (3) objetivo sobre el cual puede caer.
-#'   Cada componente va de 1 a 4, entonces el riesgo puede tomar valores entre 3 (bajo) y 12 (alto).}
-#' }
+#'   Cada componente va de 1 a 4, entonces el riesgo puede tomar valores entre 3 (bajo) y 12 (alto).
 #' @source Dr. Castro
 "riesgo_arbolado"
+
+# 7 ryegrass----
+#' @title Longitud de espigas de Ryegrass
+#' @description
+#' En un estudio de mejoramiento se midió la longitud de 75 espigas de ryegrass.
+#' @details
+#' La variable en estudio es la longitud de espigas (cm).
+#' @docType data
+#' @usage data(ryegrass)
+#' @format A data frame with 75 rows and 2 columns:
+#'   * `planta`: número de planta
+#'   * `longitud`: Longitud de la espiga en cm
+"ryegrass"
+
+# 8 tribolium----
+#' @title Pérdida de agua en Tribolium confusum
+#' @description
+#' Estudio de pérdida de agua en el coleóptero de la harina (*Tribolium confusum*).
+#' @details
+#' Se pesaron 9 lotes de 25 coleópteros cada uno, se guardaron a diferente humedad relativa y se pesaron nuevamente a los 6 días. Se calculó la pérdida de peso (mg) para cada lote.
+#' @docType data
+#' @usage data(tribolium)
+#' @format A data frame with 9 rows and 2 columns:
+#'   * `Humedad`: Humedad relativa (%)
+#'   * `Perdida`: Pérdida de peso (mg)
+"tribolium"
+
+# 9 lisina_pollos----
+#' @title Suplementación con Lisina en pollos
+#' @description
+#' Experimento para modelar la relación entre la ganancia de peso en pollos cuyas dietas fueron suplementadas con distintas cantidades de lisina.
+#' @details
+#' Se seleccionó una muestra aleatoria de 12 pollos los cuales fueron alojados en jaulas individuales y alimentados a voluntad con el alimento más el suplemento.
+#' @docType data
+#' @usage data(lisina_pollos)
+#' @format A data frame with 12 rows and 3 columns:
+#'   * `Pollo`: Identificador del pollo
+#'   * `Consumo`: Consumo de alimento
+#'   * `Lisina`: Cantidad de lisina consumida (g)
+"lisina_pollos"

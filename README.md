@@ -17,17 +17,3 @@ Puedes instalar la versión de desarrollo de `estadisticaFcaUnl` desde [GitHub](
 # install.packages("devtools")
 devtools::install_github("Estadistica-FCA/estadisticaFcaUnl")
 ```
-
-## Ejemplo
-
-Este es un ejemplo básico de cómo cargar un dataset del paquete:
-
-``` r
-library(estadisticaFcaUnl)
-
-# Cargar el dataset lotes_BA
-data(lotes_BA)
-
-# Ver las primeras filas
-head(lotes_BA)
-```

@@ -6,11 +6,11 @@
 \title{Riego en arroz}
 \format{
 A data frame with 24 rows and 4 columns:
-\describe{
-\item{Lamina:}{lámina de riego (parcela principal).}
-\item{Variedad:}{variedad de arroz (subparcela).}
-\item{Repetición:}{id de la repetición (bloque).}
-\item{Rend:}{rendimiento registrado.}
+\itemize{
+\item \code{Lamina}: lámina de riego (parcela principal).
+\item \code{Variedad}: variedad de arroz (subparcela).
+\item \code{Repetición}: id de la repetición (bloque).
+\item \code{Rend}: rendimiento registrado.
 }
 }
 \source{

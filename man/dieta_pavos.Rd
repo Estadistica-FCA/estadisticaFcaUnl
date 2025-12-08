@@ -6,9 +6,9 @@
 \title{Dietas en pavos}
 \format{
 A data frame with 30 rows and 2 columns:
-\describe{
-\item{Dieta:}{id de la dieta suministrada.}
-\item{GP:}{ganancia de peso (GP) registrada.}
+\itemize{
+\item \code{Dieta}: id de la dieta suministrada.
+\item \code{GP}: ganancia de peso (GP) registrada.
 }
 }
 \source{

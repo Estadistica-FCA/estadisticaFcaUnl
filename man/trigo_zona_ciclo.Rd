@@ -6,11 +6,11 @@
 \title{Trigo en zonas y ciclos}
 \format{
 A data frame with 27 rows and 4 columns:
-\describe{
-\item{Zona:}{zona de Santa Fe (Norte, Centro, Sur).}
-\item{Ciclo:}{ciclo del trigo (anidado en Zona).}
-\item{Rep:}{id de la repetición.}
-\item{Rinde:}{rendimiento de trigo en kg/ha.}
+\itemize{
+\item \code{Zona}: zona de Santa Fe (Norte, Centro, Sur).
+\item \code{Ciclo}: ciclo del trigo (anidado en Zona).
+\item \code{Rep}: id de la repetición.
+\item \code{Rinde}: rendimiento de trigo en kg/ha.
 }
 }
 \source{

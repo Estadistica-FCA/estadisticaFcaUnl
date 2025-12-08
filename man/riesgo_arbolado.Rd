@@ -6,20 +6,20 @@
 \title{Datos de un relevamiento de 677 arboles de la vía pública de la ciudad de Rafaela para la determinación de riesgo según la metodología de la Sociedad Internacional de Arboricultura (ISA).}
 \format{
 A data frame with 677 rows and 9 columns:
-\describe{
-\item{Especie}{género y especie del árbol}
-\item{DAP}{diámetro a la altura del pecho (en cm)}
-\item{asim_copa}{asimetría de la copa}
-\item{dom_copa}{dominancia de la copa}
-\item{cazuela}{tamaño de la cazuela o cantero donde está plantado el árbol}
-\item{DC}{daño más importante en la corona.}
-\item{DT}{daño más importante en el tronco.}
-\item{DR}{daño más importante en las ramas.}
-\item{riesgo}{nivel de riesgo según escala ISA, resulta de la adición de tres componentes:
+\itemize{
+\item \code{Especie}: género y especie del árbol
+\item \code{DAP}: diámetro a la altura del pecho (en cm)
+\item \code{asim_copa}: asimetría de la copa
+\item \code{dom_copa}: dominancia de la copa
+\item \code{cazuela}: tamaño de la cazuela o cantero donde está plantado el árbol
+\item \code{DC}: daño más importante en la corona.
+\item \code{DT}: daño más importante en el tronco.
+\item \code{DR}: daño más importante en las ramas.
+\item \code{riesgo}: nivel de riesgo según escala ISA, resulta de la adición de tres componentes:
 (1) potencial de ruptura,
 (2) tamaño de la parte comprometida, y
 (3) objetivo sobre el cual puede caer.
-Cada componente va de 1 a 4, entonces el riesgo puede tomar valores entre 3 (bajo) y 12 (alto).}
+Cada componente va de 1 a 4, entonces el riesgo puede tomar valores entre 3 (bajo) y 12 (alto).
 }
 }
 \source{

@@ -6,10 +6,10 @@
 \title{Irrigación en naranjos}
 \format{
 A data frame with 48 rows and 2 columns:
-\describe{
-\item{BL:}{id del bloque.}
-\item{TR:}{tipo de riego utilizado.}
-\item{PF:}{peso de la fruta cosechada en libras.}
+\itemize{
+\item \code{BL}: id del bloque.
+\item \code{TR}: tipo de riego utilizado.
+\item \code{PF}: peso de la fruta cosechada en libras.
 }
 }
 \source{
@@ -26,7 +26,6 @@ naranjos.
 En un naranjal se llevo a cabo un experimento de irrigación con un diseño de
 bloques completos aleatorizado en el que se usaron seis tratamientos de
 irrigación:
-\describe{
 \itemize{
 \item G = goteo.
 \item E = por surco.
@@ -34,7 +33,6 @@ irrigación:
 \item A = aspersor.
 \item AR = aspersor + rocío.
 \item AN = anegado.
-}
 }
 
 Los siguientes datos se refieren al peso en libras de la fruta cosechada en cada parcela.

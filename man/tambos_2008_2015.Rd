@@ -6,11 +6,11 @@
 \title{Datos sobre numero de establecimientos lecheros y composición de rodeo en la provincia de Santa Fe durante el período 2008-2015.}
 \format{
 A data frame with 152 rows and 10 columns:
-\describe{
-\item{Departamento}{nombre del departamento}
-\item{Establecimientos}{número de establecimientos tamberos.}
-\item{Vacas, Vaquillonas, Toros, Terneros, Terneras, Novillos, Novillitos}{número de cabezas según categoría}
-\item{Año}{año de la serie}
+\itemize{
+\item \code{Departamento}: nombre del departamento
+\item \code{Establecimientos}: número de establecimientos tamberos.
+\item \verb{Vacas, Vaquillonas, Toros, Terneros, Terneras, Novillos, Novillitos}: número de cabezas según categoría
+\item \code{Año}: año de la serie
 }
 }
 \source{

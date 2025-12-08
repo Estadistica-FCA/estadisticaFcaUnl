@@ -6,10 +6,10 @@
 \title{Crecimiento de \emph{Spartina altemiflora}}
 \format{
 A data frame with 48 rows and 3 columns:
-\describe{
-\item{TR:}{tipo de combinacion aplicada.}
-\item{BL:}{id del bloque.}
-\item{BI:}{bioamasa registrada en peso seco.}
+\itemize{
+\item \code{TR}: tipo de combinacion aplicada.
+\item \code{BL}: id del bloque.
+\item \code{BI}: bioamasa registrada en peso seco.
 }
 }
 \source{

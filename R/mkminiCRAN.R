@@ -1,6 +1,6 @@
 #' @title Chequear lista de mirrors
 #' @description Función que chequea una lista de mirrors y elige el optimo
-#' @param mirrors Espera un vector de caracteres con los diferentes mirrors
+#' @param mirrors Vector de caracteres. Espera los mirrors a chequear
 #' @return Devuelve una url de un mirror valida
 #' @details Recorre la lista de mirrors en orden y chequea que funciona.
 #' Si funciona lo retorna.
@@ -30,12 +30,11 @@ check_mirrors <- function(mirrors) {
 
 #' @title Armar miniCRAN local
 #' @description Función que arma un miniCRAN de manera local
-#' @param pkgs Espera un vector de caracteres con los diferentes paquetes
-#' a instalar
-#' @param path Espera un string con la ruta donde deberá armarse el miniCRAN
-#' @param so Espera un vector de caracteres con los sistemas operativos a
+#' @param pkgs Vector de caracteres. Espera los paquetes a instalar
+#' @param path String. Espera la ruta donde deberá armarse el miniCRAN
+#' @param so Vector de caracteres. Espera los sistemas operativos a
 #' utilizar. Por defecto incluye los tres más importantes
-#' @param mirrors Puede especificarse una lista de mirrors a utilizar. Si no se
+#' @param mirrors Vector de caracteres. Puede especificarse una lista de mirrors a utilizar. Si no se
 #' especifica usa los que trae por defecto
 #' @return Devuelve una vector con los paquetes instalados+
 #' @details Primero chequea el mirror a utilizar.

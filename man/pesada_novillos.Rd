@@ -6,20 +6,20 @@
 \title{Datos del pesaje de dos tropas de novillos extraídos del sistema de registros del establecimiento "La Escondida S.A."}
 \format{
 A data frame with 1842 rows and 13 columns:
-\describe{
-\item{IDV}{código de identificación visual (caravana)}
-\item{Tropa}{número de tropa al que pertenece.}
-\item{Procedencia}{nombre del establecimiento del cual proviene.}
-\item{Fecha_Ingreso}{fecha de ingreso al sistema de engorde.}
-\item{Peso_inicial}{peso al ingresar al sistema de engorde.}
-\item{Peso_anterior}{peso registrado en la pesada anterior.}
-\item{GPV_anterior}{ganancia de peso vivo en la ultima pesada, i.e. diferencia de peso entre las últimas dos pesadas.}
-\item{GDM_anterior}{ganancia de peso diaria promedio anterior}
-\item{Fecha}{fecha de la pesada actual (MM/DD/YYYY)}
-\item{Hora}{hora en la que se realizó la pesada actual (HH:MM:SS)}
-\item{Peso}{peso actual registrado en kg.}
-\item{Días}{número de días entre la pesada anterior y la actual.}
-\item{Días_total}{número de dias desde el ingreso al sistema.}
+\itemize{
+\item \code{IDV}: código de identificación visual (caravana)
+\item \code{Tropa}: número de tropa al que pertenece.
+\item \code{Procedencia}: nombre del establecimiento del cual proviene.
+\item \code{Fecha_Ingreso}: fecha de ingreso al sistema de engorde.
+\item \code{Peso_inicial}: peso al ingresar al sistema de engorde.
+\item \code{Peso_anterior}: peso registrado en la pesada anterior.
+\item \code{GPV_anterior}: ganancia de peso vivo en la ultima pesada, i.e. diferencia de peso entre las últimas dos pesadas.
+\item \code{GDM_anterior}: ganancia de peso diaria promedio anterior
+\item \code{Fecha}: fecha de la pesada actual (MM/DD/YYYY)
+\item \code{Hora}: hora en la que se realizó la pesada actual (HH:MM:SS)
+\item \code{Peso}: peso actual registrado en kg.
+\item \code{Días}: número de días entre la pesada anterior y la actual.
+\item \code{Días_total}: número de dias desde el ingreso al sistema.
 }
 }
 \source{

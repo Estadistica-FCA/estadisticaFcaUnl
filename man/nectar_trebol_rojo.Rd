@@ -6,10 +6,10 @@
 \title{Néctar en trébol rojo}
 \format{
 A data frame with 20 rows and 3 columns:
-\describe{
-\item{Cabeza:}{numero de identificación de la inflorescencia.}
-\item{Presion:}{presión de vapor (4.4 o 9.9 mmHg) a la que fué sometida.}
-\item{nectar:}{concentración de azúcares del néctar.}
+\itemize{
+\item \code{Cabeza}: numero de identificación de la inflorescencia.
+\item \code{Presion}: presión de vapor (4.4 o 9.9 mmHg) a la que fué sometida.
+\item \code{nectar}: concentración de azúcares del néctar.
 }
 }
 \source{

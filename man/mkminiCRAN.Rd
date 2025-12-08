@@ -12,15 +12,14 @@ mkminiCRAN(
 )
 }
 \arguments{
-\item{pkgs}{Espera un vector de caracteres con los diferentes paquetes
-a instalar}
+\item{pkgs}{Vector de caracteres. Espera los paquetes a instalar}
 
-\item{path}{Espera un string con la ruta donde deberá armarse el miniCRAN}
+\item{path}{String. Espera la ruta donde deberá armarse el miniCRAN}
 
-\item{so}{Espera un vector de caracteres con los sistemas operativos a
+\item{so}{Vector de caracteres. Espera los sistemas operativos a
 utilizar. Por defecto incluye los tres más importantes}
 
-\item{mirrors}{Puede especificarse una lista de mirrors a utilizar. Si no se
+\item{mirrors}{Vector de caracteres. Puede especificarse una lista de mirrors a utilizar. Si no se
 especifica usa los que trae por defecto}
 }
 \value{

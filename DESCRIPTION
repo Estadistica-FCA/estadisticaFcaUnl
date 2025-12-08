@@ -9,6 +9,20 @@ Authors@R: c(
       email = "aaleman@fca.unl.edu.ar",
       role = c("aut", "cre"),
       comment = c(affiliation = "Cátedra de Estadística FCA-UNL")
+    ),
+    person(
+      given = "Patricia M.",
+      family = "Acetta",
+      email = "pacetta@fca.unl.edu.ar",
+      role = "aut",
+      comment = c(affiliation = "Cátedra de Estadística FCA-UNL")
+    ),
+    person(
+      given = "Carlos Agustin",
+      family = "Alesso",
+      email = "calesso@fca.unl.edu.ar",
+      role = "aut",
+      comment = c(affiliation = "Cátedra de Estadística FCA-UNL")
     )
   )
 Description: Provee conjuntos de datos y funciones auxiliares para la enseñanza

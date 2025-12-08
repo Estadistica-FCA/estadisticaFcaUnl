@@ -2,10 +2,10 @@
 #' @description Función que calcula las vallas internas y externas para la detección de valores atípicos (outliers).
 #' Permite ingresar los cuartiles Q1 y Q3 directamente o un vector de datos para calcularlos.
 #' Además, genera un gráfico ilustrativo de las vallas y, si se proporcionan datos, un boxplot.
-#' @param Q1 Valor del primer cuartil (25%). Opcional si se proporciona `data`.
-#' @param Q3 Valor del tercer cuartil (75%). Opcional si se proporciona `data`.
+#' @param Q1 Numerico. Valor del primer cuartil (25%). Opcional si se proporciona `data`.
+#' @param Q3 Numerico. Valor del tercer cuartil (75%). Opcional si se proporciona `data`.
 #' @param data Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.
-#' @param plot Valor lógico. Si es `TRUE` (por defecto), genera un gráfico de las vallas.
+#' @param plot Logico. Si es `TRUE` (por defecto), genera un gráfico de las vallas.
 #' @return Retorna invisiblemente un vector con los valores de las vallas:
 #' * `VIE`: Valla Inferior Externa (Q1 - 3 * IQR)
 #' * `VII`: Valla Inferior Interna (Q1 - 1.5 * IQR)

@@ -7,7 +7,7 @@
 check_mirrors(mirrors)
 }
 \arguments{
-\item{mirrors}{Espera un vector de caracteres con los diferentes mirrors}
+\item{mirrors}{Vector de caracteres. Espera los mirrors a chequear}
 }
 \value{
 Devuelve una url de un mirror valida

@@ -6,10 +6,10 @@
 \title{Insecticidas en poroto}
 \format{
 A data frame with 12 rows and 3 columns:
-\describe{
-\item{Bloque:}{id del bloque.}
-\item{Insecticida:}{id del insecticida aplicado.}
-\item{emergencia}{número de plántulas emergidas por fila.}
+\itemize{
+\item \code{Bloque}: id del bloque.
+\item \code{Insecticida}: id del insecticida aplicado.
+\item \code{emergencia}: número de plántulas emergidas por fila.
 }
 }
 \source{

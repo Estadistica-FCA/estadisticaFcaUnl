@@ -6,11 +6,11 @@
 \title{Raciones alimenticias para pollos}
 \format{
 A data frame with 16 rows and 4 columns:
-\describe{
-\item{Pisos:}{número de pisos de la jaula (filas).}
-\item{Casilleros:}{número de casilleros (columnas).}
-\item{Racion:}{ración alimenticia suministrada.}
-\item{Peso:}{peso del pollo en kg a las 8 semanas.}
+\itemize{
+\item \code{Pisos}: número de pisos de la jaula (filas).
+\item \code{Casilleros}: número de casilleros (columnas).
+\item \code{Racion}: ración alimenticia suministrada.
+\item \code{Peso}: peso del pollo en kg a las 8 semanas.
 }
 }
 \source{

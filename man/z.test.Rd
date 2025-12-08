@@ -19,39 +19,41 @@ z.test(
 )
 }
 \arguments{
-\item{x}{Numeric vector. Muestra para una muestra o primer muestra para dos muestras.}
+\item{x}{Vector numerico. Muestra para una muestra o primer muestra para dos muestras.}
 
-\item{y}{Numeric vector. Segunda muestra para dos muestras. Optional.}
+\item{y}{Vector numerico. Segunda muestra para dos muestras. Optional.}
 
-\item{sig_x}{Numeric. Desviacion estandar poblacional para x.}
+\item{sig_x}{Numerico. Desviacion estandar poblacional para x.}
 
-\item{sig_y}{Numeric. Desviacion estandar poblacional para y. Requerido para dos muestras.}
+\item{sig_y}{Numerico. Desviacion estandar poblacional para y. Requerido para dos muestras.}
 
-\item{alternative}{Character string specifying the alternative hypothesis.
-Must be one of "two.sided" (default), "greater" or "less".}
+\item{alternative}{String de caracteres que especifica la hipotesis alternativa.
+Debe ser "two.sided" (default), "greater" o "less".}
 
-\item{mu}{Numeric. Hipotesis nula para la media o diferencia de medias. Por defecto es 0.}
+\item{mu}{Numerico. Hipotesis nula para la media o diferencia de medias. Por defecto es 0.}
 
-\item{conf.level}{Numeric. Nivel de confianza del intervalo. Por defecto es 0.95.}
+\item{conf.level}{Numerico. Nivel de confianza del intervalo. Por defecto es 0.95.}
 
-\item{p1}{Numeric. Proporcion de exito en la poblacion 1 (para prueba de proporciones).}
+\item{p1}{Numerico. Proporcion de exito en la poblacion 1 (para prueba de proporciones).}
 
-\item{p2}{Numeric. Proporcion de exito en la poblacion 2 (para prueba de proporciones).}
+\item{p2}{Numerico. Proporcion de exito en la poblacion 2 (para prueba de proporciones).}
 
-\item{n1}{Numeric. Tamaño de la muestra para la poblacion 1 (para prueba de proporciones).}
+\item{n1}{Numerico. Tamaño de la muestra para la poblacion 1 (para prueba de proporciones).}
 
-\item{n2}{Numeric. Tamaño de la muestra para la poblacion 2 (para prueba de proporciones).}
+\item{n2}{Numerico. Tamaño de la muestra para la poblacion 2 (para prueba de proporciones).}
 }
 \value{
 Un objeto de la clase "htest" que contiene los siguientes componentes:
-\item{statistic}{El valor del estadistico Z.}
-\item{p.value}{El p-valor para la prueba.}
-\item{conf.int}{Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.}
-\item{estimate}{La estimacion de la media o diferencia en medias/proportiones.}
-\item{null.value}{El valor hipotetico de la media o diferencia en medias.}
-\item{alternative}{Un string descriptivo de la hipotesis alternativa.}
-\item{method}{Un string indicando el tipo de prueba realizada.}
-\item{data.name}{Un string que da el nombre(s) de los datos.}
+\itemize{
+\item \code{statistic}: El valor del estadistico Z.
+\item \code{p.value}: El p-valor para la prueba.
+\item \code{conf.int}: Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.
+\item \code{estimate}: La estimacion de la media o diferencia en medias/proportiones.
+\item \code{null.value}: El valor hipotetico de la media o diferencia en medias.
+\item \code{alternative}: Un string descriptivo de la hipotesis alternativa.
+\item \code{method}: Un string indicando el tipo de prueba realizada.
+\item \code{data.name}: Un string que da el nombre(s) de los datos.
+}
 }
 \description{
 Realiza pruebas de hipotesis de una o dos muestras con distribucion normal.

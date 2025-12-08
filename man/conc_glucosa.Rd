@@ -6,11 +6,11 @@
 \title{Concentración de glucosa}
 \format{
 A data frame with 18 rows and 4 columns:
-\describe{
-\item{Metodo:}{método químico de determinación (1 o 2).}
-\item{Nivel:}{nivel de glucosa aplicado (A, B o C).}
-\item{Concentracion:}{concentración de glucosa medida.}
-\item{repeticion:}{id de la repetición.}
+\itemize{
+\item \code{Metodo}: método químico de determinación (1 o 2).
+\item \code{Nivel}: nivel de glucosa aplicado (A, B o C).
+\item \code{Concentracion}: concentración de glucosa medida.
+\item \code{repeticion}: id de la repetición.
 }
 }
 \source{

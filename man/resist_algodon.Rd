@@ -6,11 +6,11 @@
 \title{Resistencia de fibra sintética con algodón}
 \format{
 A data frame with 25 rows and 3 columns:
-\describe{
-\item{BL:}{id del bloque.}
-\item{AL:}{porcentaje de algodón en la fibra.}
-\item{AL_ord:}{porcentaje de algodón transformado a factor ordenado.}
-\item{RT:}{resistencia a la tensión registrada.}
+\itemize{
+\item \code{BL}: id del bloque.
+\item \code{AL}: porcentaje de algodón en la fibra.
+\item \code{AL_ord}: porcentaje de algodón transformado a factor ordenado.
+\item \code{RT}: resistencia a la tensión registrada.
 }
 }
 \source{

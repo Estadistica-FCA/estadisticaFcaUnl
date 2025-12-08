@@ -7,13 +7,13 @@
 vallas_outliers(Q1 = NULL, Q3 = NULL, data = NULL, plot = TRUE)
 }
 \arguments{
-\item{Q1}{Valor del primer cuartil (25\%). Opcional si se proporciona \code{data}.}
+\item{Q1}{Numerico. Valor del primer cuartil (25\%). Opcional si se proporciona \code{data}.}
 
-\item{Q3}{Valor del tercer cuartil (75\%). Opcional si se proporciona \code{data}.}
+\item{Q3}{Numerico. Valor del tercer cuartil (75\%). Opcional si se proporciona \code{data}.}
 
 \item{data}{Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.}
 
-\item{plot}{Valor lógico. Si es \code{TRUE} (por defecto), genera un gráfico de las vallas.}
+\item{plot}{Logico. Si es \code{TRUE} (por defecto), genera un gráfico de las vallas.}
 }
 \value{
 Retorna invisiblemente un vector con los valores de las vallas:

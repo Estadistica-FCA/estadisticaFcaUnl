@@ -1,10 +1,10 @@
 #' @title Instalar desde miniCRAN
 #' @description Función que instala los paquetes especificados desde un
 #' repositorio local
-#' @param pkgs Espera un vector de caracteres con los paquetes a instalar
-#' @param repo_path Espera un string con la ruta donde instalar el repositorio.
+#' @param pkgs Vector de caracteres. Espera los paquetes a instalar
+#' @param repo_path String. Espera la ruta donde instalar el repositorio.
 #' Si no se especifica se toma el del script donde se está ejecutando
-#' @param install Parámetro de debug que permite correr la función sin
+#' @param install Logico. Parámetro de debug que permite correr la función sin
 #' descargar nada
 #' @return Retorna una lista con la ruta del repositorio, el tipo de paquetes
 #' descargados, los paquetes exitosos y los que dieron error

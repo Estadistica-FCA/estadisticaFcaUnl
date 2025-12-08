@@ -6,12 +6,12 @@
 \title{Espaciamiento en soja}
 \format{
 A data frame with 60 rows and 5 columns:
-\describe{
-\item{variedad:}{variedad de soja (parcela principal).}
-\item{espaciamiento:}{espaciamiento entre surcos en pulgadas (subparcela).}
-\item{bloque:}{id del bloque.}
-\item{rendimiento:}{rendimiento en bushels por acre.}
-\item{espaciamiento_ord:}{espaciamiento transformado a factor ordenado.}
+\itemize{
+\item \code{variedad}: variedad de soja (parcela principal).
+\item \code{espaciamiento}: espaciamiento entre surcos en pulgadas (subparcela).
+\item \code{bloque}: id del bloque.
+\item \code{rendimiento}: rendimiento en bushels por acre.
+\item \code{espaciamiento_ord}: espaciamiento transformado a factor ordenado.
 }
 }
 \source{

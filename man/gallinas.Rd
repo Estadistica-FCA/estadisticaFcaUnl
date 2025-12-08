@@ -6,9 +6,9 @@
 \title{Función pituitaria en gallinas}
 \format{
 A data frame with 25 rows and 2 columns:
-\describe{
-\item{TR:}{regimen de muda suministrado.}
-\item{T3:}{concentración de suero T3.}
+\itemize{
+\item \code{TR}: regimen de muda suministrado.
+\item \code{T3}: concentración de suero T3.
 }
 }
 \source{
@@ -28,7 +28,6 @@ previa al régimen de muda forzada y el resto al final de cada una de las
 cuatro etapas del régimen.
 
 Las cinco etapas del régimen (TR) fueron:
-\describe{
 \itemize{
 \item 
 \enumerate{
@@ -49,7 +48,6 @@ Las cinco etapas del régimen (TR) fueron:
 \item 
 \enumerate{
 \item mezcla de malta durante 42 días.
-}
 Uno de los compuestos medidos fue la concentración de suero T3. Los datos de
 la tabla son las medidas de suero T3 en las cinco gallinas sacrificadas al
 final de cada etapa del régimen.

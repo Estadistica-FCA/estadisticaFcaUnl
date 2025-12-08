@@ -6,9 +6,9 @@
 \title{Contenido de caucho en guayule}
 \format{
 A data frame with 27 rows and 2 columns:
-\describe{
-\item{Tipo:}{tipo de ejemplar (atípicos o aberrantes).}
-\item{caucho:}{contenido de caucho.}
+\itemize{
+\item \code{Tipo}: tipo de ejemplar (atípicos o aberrantes).
+\item \code{caucho}: contenido de caucho.
 }
 }
 \source{

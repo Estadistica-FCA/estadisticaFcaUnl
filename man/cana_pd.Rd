@@ -6,11 +6,11 @@
 \title{Fechas de plantación en caña de azúcar}
 \format{
 A data frame with 45 rows and 4 columns:
-\describe{
-\item{Fecha:}{fecha de plantación (parcela principal).}
-\item{Método:}{método de plantación (subparcela).}
-\item{Bloque:}{id del bloque.}
-\item{Rend:}{rendimiento en Tn/ha de azúcar.}
+\itemize{
+\item \code{Fecha}: fecha de plantación (parcela principal).
+\item \code{Método}: método de plantación (subparcela).
+\item \code{Bloque}: id del bloque.
+\item \code{Rend}: rendimiento en Tn/ha de azúcar.
 }
 }
 \source{

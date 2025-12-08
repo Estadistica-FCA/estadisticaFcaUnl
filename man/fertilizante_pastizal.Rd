@@ -6,10 +6,10 @@
 \title{Fertilización en \emph{Bouteloua gracilis}}
 \format{
 A data frame with 25 rows and 3 columns:
-\describe{
-\item{Bloque:}{id del bloque.}
-\item{Tratamiento:}{tipo de tratamiento aplicado.}
-\item{P:}{concentración de P en tejido foliar.}
+\itemize{
+\item \code{Bloque}: id del bloque.
+\item \code{Tratamiento}: tipo de tratamiento aplicado.
+\item \code{P}: concentración de P en tejido foliar.
 }
 }
 \source{
@@ -29,14 +29,12 @@ más un control) los cuales fueron asignados a parcelas en cada bloque.
 Como respuesta se cuantificó la concentración de P en tejido foliar.
 
 Los tratamientos:
-\describe{
 \itemize{
 \item 1- control: sin fertilizar.
 \item 2- N50: 50 lb de N.
 \item 3- N100: 100 lb de N.
 \item 4- N50P75: 50 lb de N + 75 lb de P~2~O~5~.
 \item 5- N100P75: 100 lb de N + 75 lb de P~2~O~5~.
-}
 }
 }
 \keyword{datasets}
