@@ -60,3 +60,146 @@ str(riesgo_arbolado)
 ```{r}
 use_data(riesgo_arbolado, overwrite = TRUE)
 ```
+
+## ryegrass
+```{r}
+ryegrass <- import(file.path(path_i, "ryegrass.txt"))
+str(ryegrass)
+```
+```{r}
+ryegrass <- ryegrass %>%
+    mutate(
+        planta = as.numeric(planta),
+        longitud = as.numeric(longitud)
+    )
+str(ryegrass)
+```
+```{r}
+use_data(ryegrass, overwrite = TRUE)
+```
+
+## tribolium
+```{r}
+tribolium <- import(file.path(path_i, "tribolium.txt"))
+str(tribolium)
+```
+```{r}
+use_data(tribolium, overwrite = TRUE)
+```
+
+## lisina_pollos
+```{r}
+lisina_pollos <- import(file.path(path_i, "lisina_pollos.txt"))
+str(lisina_pollos)
+```
+```{r}
+lisina_pollos <- lisina_pollos %>%
+    mutate(
+        Pollo = as.numeric(Pollo),
+        Consumo = as.numeric(Consumo),
+        Lisina = as.numeric(Lisina)
+    )
+str(lisina_pollos)
+```
+```{r}
+use_data(lisina_pollos, overwrite = TRUE)
+```
+
+## nitrogeno
+```{r}
+nitrogeno <- import(file.path(path_i, "nitrogeno.txt"))
+str(nitrogeno)
+```
+```{r}
+use_data(nitrogeno, overwrite = TRUE)
+```
+
+## novillos
+```{r}
+novillos <- import(file.path(path_i, "novillos.txt"))
+str(novillos)
+```
+```{r}
+use_data(novillos, overwrite = TRUE)
+```
+
+## pH_forestal
+```{r}
+pH_forestal <- import(file.path(path_i, "pH_forestal.txt"))
+str(pH_forestal)
+```
+```{r}
+use_data(pH_forestal, overwrite = TRUE)
+```
+
+## Lotes_CO
+```{r}
+lotes_CO <- import(file.path(path_i, "Lotes_CO.xls"))
+str(lotes_CO)
+```
+```{r}
+use_data(lotes_CO, overwrite = TRUE)
+```
+
+## pesada_novillos_tropa1
+```{r}
+pesada_novillos_tropa1 <- import(file.path(path_i, "Pesada 04-02-18 Tropa 1 Novillos LJ.csv"))
+str(pesada_novillos_tropa1)
+```
+```{r}
+use_data(pesada_novillos_tropa1, overwrite = TRUE)
+```
+
+## cabezas_ajo
+```{r}
+cabezas_ajo <- import(file.path(path_i, "cabezas_ajo.txt"))
+str(cabezas_ajo)
+```
+```{r}
+use_data(cabezas_ajo, overwrite = TRUE)
+```
+
+## cacahuates
+```{r}
+cacahuates <- import(file.path(path_i, "cacahuates.txt"))
+str(cacahuates)
+```
+```{r}
+use_data(cacahuates, overwrite = TRUE)
+```
+
+## datos_climaticos
+```{r}
+datos_climaticos <- import(file.path(path_i, "datos_climáticos.csv"))
+str(datos_climaticos)
+```
+```{r}
+use_data(datos_climaticos, overwrite = TRUE)
+```
+
+## ej7
+```{r}
+ej7 <- import(file.path(path_i, "ej7.txt"))
+str(ej7)
+```
+```{r}
+use_data(ej7, overwrite = TRUE)
+```
+
+## esparragos
+```{r}
+esparragos <- import(file.path(path_i, "esparragos.txt"))
+str(esparragos)
+```
+```{r}
+use_data(esparragos, overwrite = TRUE)
+```
+
+## forestal_calibracion
+```{r}
+forestal_calibracion <- import(file.path(path_i, "forestal_calibracion.txt"))
+str(forestal_calibracion)
+```
+```{r}
+use_data(forestal_calibracion, overwrite = TRUE)
+```
