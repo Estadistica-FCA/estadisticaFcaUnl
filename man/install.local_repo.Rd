@@ -4,7 +4,7 @@
 \alias{install.local_repo}
 \title{Instalar desde miniCRAN}
 \usage{
-install.local_repo(pkgs = NULL, repo_path = NULL, install = T)
+install.local_repo(pkgs = NULL, repo_path = NULL, install = TRUE)
 }
 \arguments{
 \item{pkgs}{Vector de caracteres. Espera los paquetes a instalar}

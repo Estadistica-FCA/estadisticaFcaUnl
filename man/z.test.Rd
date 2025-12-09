@@ -58,3 +58,15 @@ Un objeto de la clase "htest" que contiene los siguientes componentes:
 \description{
 Realiza pruebas de hipotesis de una o dos muestras con distribucion normal.
 }
+\examples{
+# One-sample Z-test
+x <- rnorm(100, mean = 10, sd = 2)
+z.test(x, sig_x = 2, mu = 10)
+
+# Two-sample Z-test
+y <- rnorm(100, mean = 12, sd = 2)
+z.test(x, y, sig_x = 2, sig_y = 2)
+
+# Two-proportion Z-test
+z.test(p1 = 0.5, p2 = 0.6, n1 = 100, n2 = 100)
+}

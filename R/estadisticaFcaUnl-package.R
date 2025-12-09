@@ -10,6 +10,7 @@
 #' @section Funciones:
 #' * [vallas_outliers]: Detección de outliers.
 #' * [z.test]: Test Z.
+#' * [verificar_ortogonalidad]: Verificar ortogonalidad de matrices de contraste.
 #'
 #' @section Datasets:
 #' * [datasets_estb]: Datasets para Estadística Básica.

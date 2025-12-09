@@ -27,9 +27,9 @@
 #' @importFrom rstudioapi getSourceEditorContext
 #' @importFrom utils available.packages install.packages
 #' @export
-install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = T) {
+install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = TRUE) {
     # require(rstudioapi) este import esta manejado por Roxygen
-    if (install == T && is.null(pkgs)) {
+    if (install == TRUE && is.null(pkgs)) {
         stop("Debera ingresar una lista valida de paquetes a instalar")
     }
 

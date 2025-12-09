@@ -3,6 +3,7 @@
 export(install.local_repo)
 export(mkminiCRAN)
 export(vallas_outliers)
+export(verificar_ortogonalidad)
 export(z.test)
 importFrom(ggplot2,aes)
 importFrom(ggplot2,annotate)

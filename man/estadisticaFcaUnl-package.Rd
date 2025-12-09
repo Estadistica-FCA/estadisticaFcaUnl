@@ -17,6 +17,7 @@ Universidad Nacional del Litoral.
 \itemize{
 \item \link{vallas_outliers}: Detección de outliers.
 \item \link{z.test}: Test Z.
+\item \link{verificar_ortogonalidad}: Verificar ortogonalidad de matrices de contraste.
 }
 }
 
