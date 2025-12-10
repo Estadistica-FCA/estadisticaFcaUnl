@@ -6,14 +6,15 @@
 #' @param Q3 Numerico. Valor del tercer cuartil (75%). Opcional si se proporciona `data`.
 #' @param data Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.
 #' @param plot Logico. Si es `TRUE` (por defecto), genera un gráfico de las vallas.
-#' @return Retorna invisiblemente un vector con los valores de las vallas:
+#' @return Retorna invisiblemente un data frame con los valores de las vallas:
 #' * `VIE`: Valla Inferior Externa (Q1 - 3 * IQR)
 #' * `VII`: Valla Inferior Interna (Q1 - 1.5 * IQR)
 #' * `VSI`: Valla Superior Interna (Q3 + 1.5 * IQR)
 #' * `VSE`: Valla Superior Externa (Q3 + 3 * IQR)
 #' @examples
 #' # Usando cuartiles directamente
-#' vallas_outliers(Q1 = 10, Q3 = 20)
+#' res <- vallas_outliers(Q1 = 10, Q3 = 20, plot = FALSE)
+#' res$VII
 #'
 #' # Usando un vector de datos
 #' set.seed(123)
@@ -22,15 +23,20 @@
 #' @importFrom stats quantile
 #' @importFrom ggplot2 ggplot theme_minimal labs theme element_blank element_text coord_cartesian geom_vline aes scale_color_manual geom_label geom_boxplot annotate
 #' @export
-vallas_outliers <- function(Q1 = NULL, Q3 = NULL, data = NULL, plot = TRUE) {
+vallas_outliers <- function(data = NULL, Q1 = NULL, Q3 = NULL, plot = TRUE) {
     if (is.null(Q1) || is.null(Q3)) {
         if (is.null(data)) {
-            stop("Se requieren Q1 y Q3 o data")
+            stop("Se requieren que se cargue un vector de datos o los valores de Q1 y Q3 de la distribución")
         } else {
-            Q1 <- quantile(data, 0.25) |> unname()
-            Q3 <- quantile(data, 0.75) |> unname()
+            Q1 <- quantile(data, 0.25, names = FALSE)
+            Q3 <- quantile(data, 0.75, names = FALSE)
         }
+    } else {
+        # Asegurar que Q1 y Q3 no tengan nombres (por si se ingresaron manualmente con names=TRUE)
+        Q1 <- unname(Q1)
+        Q3 <- unname(Q3)
     }
+
 
     IQR <- Q3 - Q1
     estadisticos <- c(
@@ -100,5 +106,5 @@ vallas_outliers <- function(Q1 = NULL, Q3 = NULL, data = NULL, plot = TRUE) {
 
         print(p)
     }
-    return(invisible(vallas)) # Se pone como invisible ya que se muestra por consola más arriba
+    return(invisible(as.data.frame(as.list(vallas)))) # Se pone como invisible ya que se muestra por consola más arriba
 }

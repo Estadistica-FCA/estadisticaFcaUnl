@@ -10,15 +10,16 @@ Lista de datasets utilizados en la asignatura Estadística Básica.
 \section{Datasets}{
 
 \itemize{
+\item \link{lisina_pollos}
 \item \link{lotes_BA}
 \item \link{pesada_novillos}
 \item \link{pesada_terneros}
+\item \link{productores}
 \item \link{riesgo_arbolado}
+\item \link{ryegrass}
 \item \link{superficies_EAP}
 \item \link{tambos_2008_2015}
-\item \link{ryegrass}
 \item \link{tribolium}
-\item \link{lisina_pollos}
 }
 }
 

@@ -18,7 +18,8 @@ use_data(pesada_terneros, overwrite = TRUE)
 
 ## superficies_EAP
 ```{r}
-superficies_EAP <- import(file.path(path_i, "superficies_EAP.txt"))
+superficies_EAP <- read.fwf(file.path(path_i, "superficies_EAP.txt"), widths = c(23, 10, 20), header = FALSE, skip = 1, strip.white = TRUE, col.names = c("Departamento", "Cant_EAP", "Sup_promedio")) %>%
+    mutate(Departamento = gsub('"', "", Departamento))
 str(superficies_EAP)
 ```
 ```{r}
@@ -27,7 +28,12 @@ use_data(superficies_EAP, overwrite = TRUE)
 
 ## pesada_novillos
 ```{r}
-pesada_novillos <- import(file.path(path_i, "pesada_novillos.xlsx"))
+pesada_novillos <- import(file.path(path_i, "pesada_novillos.xlsx")) %>%
+    mutate(
+        Fecha_Ingreso = as.Date(as.numeric(Fecha_Ingreso), origin = "1899-12-30"),
+        Fecha = as.Date(as.numeric(Fecha), origin = "1899-12-30"),
+        Hora = format(as.POSIXct(as.numeric(Hora) * 86400, origin = "1970-01-01", tz = "UTC"), "%H:%M:%S")
+    )
 str(pesada_novillos)
 ```
 ```{r}
@@ -103,6 +109,15 @@ str(lisina_pollos)
 ```
 ```{r}
 use_data(lisina_pollos, overwrite = TRUE)
+```
+
+## productores
+```{r}
+productores <- import(file.path(path_i, "productores.xlsx"))
+str(productores)
+```
+```{r}
+use_data(productores, overwrite = TRUE)
 ```
 
 ## nitrogeno

@@ -143,3 +143,15 @@
 #'   * `Consumo`: Consumo de alimento
 #'   * `Lisina`: Cantidad de lisina consumida (g)
 "lisina_pollos"
+
+# 10 productores----
+#' @title Producción de lotes por grupo de productores
+#' @description
+#' Datos de 320 lotes clasificados por producción de tres grupos de productores (A, B y C). Las clasificaciones se realizaron según el nivel de la producción de cada lote (Alto, Medio y Bajo).
+#' @docType data
+#' @usage data(productores)
+#' @format A data frame with 320 rows and 3 columns:
+#'   * `Nivel_Produccion`: Nivel de producción del lote (Alto, Medio, Bajo)
+#'   * `Grupo`: Grupo de productores (A, B, C)
+#'   * `Lotes`: Cantidad de lotes (frecuencia)
+"productores"

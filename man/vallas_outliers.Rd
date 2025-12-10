@@ -4,19 +4,19 @@
 \alias{vallas_outliers}
 \title{Calcular y Graficar Vallas para Outliers}
 \usage{
-vallas_outliers(Q1 = NULL, Q3 = NULL, data = NULL, plot = TRUE)
+vallas_outliers(data = NULL, Q1 = NULL, Q3 = NULL, plot = TRUE)
 }
 \arguments{
+\item{data}{Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.}
+
 \item{Q1}{Numerico. Valor del primer cuartil (25\%). Opcional si se proporciona \code{data}.}
 
 \item{Q3}{Numerico. Valor del tercer cuartil (75\%). Opcional si se proporciona \code{data}.}
 
-\item{data}{Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.}
-
 \item{plot}{Logico. Si es \code{TRUE} (por defecto), genera un gráfico de las vallas.}
 }
 \value{
-Retorna invisiblemente un vector con los valores de las vallas:
+Retorna invisiblemente un data frame con los valores de las vallas:
 \itemize{
 \item \code{VIE}: Valla Inferior Externa (Q1 - 3 * IQR)
 \item \code{VII}: Valla Inferior Interna (Q1 - 1.5 * IQR)
@@ -31,7 +31,8 @@ Además, genera un gráfico ilustrativo de las vallas y, si se proporcionan dato
 }
 \examples{
 # Usando cuartiles directamente
-vallas_outliers(Q1 = 10, Q3 = 20)
+res <- vallas_outliers(Q1 = 10, Q3 = 20, plot = FALSE)
+res$VII
 
 # Usando un vector de datos
 set.seed(123)

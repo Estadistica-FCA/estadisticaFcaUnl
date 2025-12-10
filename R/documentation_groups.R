@@ -6,15 +6,16 @@
 #' @docType data
 #' @format NULL
 #' @section Datasets:
+#' * [lisina_pollos]
 #' * [lotes_BA]
 #' * [pesada_novillos]
 #' * [pesada_terneros]
+#' * [productores]
 #' * [riesgo_arbolado]
+#' * [ryegrass]
 #' * [superficies_EAP]
 #' * [tambos_2008_2015]
-#' * [ryegrass]
 #' * [tribolium]
-#' * [lisina_pollos]
 #'
 NULL
 
