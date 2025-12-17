@@ -7,10 +7,10 @@
 #' @param data Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.
 #' @param plot Logico. Si es `TRUE` (por defecto), genera un gráfico de las vallas.
 #' @return Retorna invisiblemente un data frame con los valores de las vallas:
-#' * `VIE`: Valla Inferior Externa (Q1 - 3 * IQR)
-#' * `VII`: Valla Inferior Interna (Q1 - 1.5 * IQR)
-#' * `VSI`: Valla Superior Interna (Q3 + 1.5 * IQR)
-#' * `VSE`: Valla Superior Externa (Q3 + 3 * IQR)
+#' * `VIE`: Valla Externa Inferior (Q1 - 3 * IQR)
+#' * `VII`: Valla Interna Inferior (Q1 - 1.5 * IQR)
+#' * `VSI`: Valla Interna Superior (Q3 + 1.5 * IQR)
+#' * `VSE`: Valla Externa Superior (Q3 + 3 * IQR)
 #' @examples
 #' # Usando cuartiles directamente
 #' res <- vallas_outliers(Q1 = 10, Q3 = 20, plot = FALSE)
@@ -45,10 +45,10 @@ vallas_outliers <- function(data = NULL, Q1 = NULL, Q3 = NULL, plot = TRUE) {
         IQR = IQR
     )
     vallas <- c(
-        VIE = Q1 - 3 * IQR,
+        VEI = Q1 - 3 * IQR,
         VII = Q1 - 1.5 * IQR,
-        VSI = Q3 + 1.5 * IQR,
-        VSE = Q3 + 3 * IQR
+        VIS = Q3 + 1.5 * IQR,
+        VES = Q3 + 3 * IQR
     )
 
     # Salida por consola

@@ -18,7 +18,7 @@ Authors@R: c(
       comment = c(affiliation = "Cátedra de Estadística FCA-UNL")
     ),
     person(
-      given = "Carlos Agustin",
+      given = "Agustin",
       family = "Alesso",
       email = "calesso@fca.unl.edu.ar",
       role = "aut",
