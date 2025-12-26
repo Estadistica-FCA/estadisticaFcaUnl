@@ -2,9 +2,9 @@
 % Please edit documentation in R/vallas_outliers.R
 \name{vallas_outliers}
 \alias{vallas_outliers}
-\title{Calcular y Graficar Vallas para Outliers}
+\title{Calcular Vallas para Outliers}
 \usage{
-vallas_outliers(data = NULL, Q1 = NULL, Q3 = NULL, plot = TRUE)
+vallas_outliers(data = NULL, Q1 = NULL, Q3 = NULL)
 }
 \arguments{
 \item{data}{Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.}
@@ -12,26 +12,23 @@ vallas_outliers(data = NULL, Q1 = NULL, Q3 = NULL, plot = TRUE)
 \item{Q1}{Numerico. Valor del primer cuartil (25\%). Opcional si se proporciona \code{data}.}
 
 \item{Q3}{Numerico. Valor del tercer cuartil (75\%). Opcional si se proporciona \code{data}.}
-
-\item{plot}{Logico. Si es \code{TRUE} (por defecto), genera un gráfico de las vallas.}
 }
 \value{
 Retorna invisiblemente un data frame con los valores de las vallas:
 \itemize{
-\item \code{VIE}: Valla Inferior Externa (Q1 - 3 * IQR)
-\item \code{VII}: Valla Inferior Interna (Q1 - 1.5 * IQR)
-\item \code{VSI}: Valla Superior Interna (Q3 + 1.5 * IQR)
-\item \code{VSE}: Valla Superior Externa (Q3 + 3 * IQR)
+\item \code{VEI}: Valla Externa Inferior (Q1 - 3 * IQR)
+\item \code{VII}: Valla Interna Inferior (Q1 - 1.5 * IQR)
+\item \code{VIS}: Valla Interna Superior (Q3 + 1.5 * IQR)
+\item \code{VES}: Valla Externa Superior (Q3 + 3 * IQR)
 }
 }
 \description{
 Función que calcula las vallas internas y externas para la detección de valores atípicos (outliers).
 Permite ingresar los cuartiles Q1 y Q3 directamente o un vector de datos para calcularlos.
-Además, genera un gráfico ilustrativo de las vallas y, si se proporcionan datos, un boxplot.
 }
 \examples{
 # Usando cuartiles directamente
-res <- vallas_outliers(Q1 = 10, Q3 = 20, plot = FALSE)
+res <- vallas_outliers(Q1 = 10, Q3 = 20)
 res$VII
 
 # Usando un vector de datos

@@ -1,3 +1,11 @@
+# estadisticaFcaUnl 0.2.3
+
+*   Refactored `vallas_outliers`: removed plotting logic and updated return type (now `data.frame`).
+*   Added `geom_vallas()`: a new ggplot2 geometry to plot outlier fences.
+*   `geom_vallas()` supports direct color customization (`color_interna`, `color_externa`), line width (`linewidth`), and label size (`size_texto`).
+*   `geom_vallas()` includes a `mostrar_vallas` parameter to filter internal/external fences.
+*   Internal implementation uses multiple layers to allow independent styling and facet support.
+
 # estadisticaFcaUnl 0.2.2
 
 *   Added new function: `verificar_ortogonalidad` for checking orthogonality of contrast matrices.

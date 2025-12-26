@@ -43,7 +43,7 @@ Universidad Nacional del Litoral.
 Authors:
 \itemize{
   \item Patricia M. Acetta \email{pacetta@fca.unl.edu.ar} (Cátedra de Estadística FCA-UNL)
-  \item Carlos Agustin Alesso \email{calesso@fca.unl.edu.ar} (Cátedra de Estadística FCA-UNL)
+  \item Agustin Alesso \email{calesso@fca.unl.edu.ar} (Cátedra de Estadística FCA-UNL)
 }
 
 }
