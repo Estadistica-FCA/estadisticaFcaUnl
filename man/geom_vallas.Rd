@@ -15,7 +15,8 @@ geom_vallas(
   color_externa = "red",
   linetype = "dashed",
   linewidth = 1,
-  size = 3,
+  size_texto = 3.5,
+  mostrar_vallas = "todas",
   ...
 )
 }
@@ -38,9 +39,11 @@ geom_vallas(
 
 \item{linetype}{Tipo de línea para las vallas (por defecto "dashed").}
 
-\item{linewidth}{Grosor de las líneas de las vallas.}
+\item{linewidth}{Grosor de las líneas de las vallas (por defecto 1).}
 
-\item{size}{Grosor de las etiquetas de texto.}
+\item{size_texto}{Tamaño del texto de las etiquetas (por defecto 3.5).}
+
+\item{mostrar_vallas}{Qué vallas mostrar: "todas" (por defecto), "internas" o "externas".}
 
 \item{...}{Otros argumentos pasados a \code{\link[ggplot2]{layer}}.}
 }

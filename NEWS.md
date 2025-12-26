@@ -5,6 +5,7 @@
 *   `geom_vallas()` supports direct color customization (`color_interna`, `color_externa`), line width (`linewidth`), and label size (`size_texto`).
 *   `geom_vallas()` includes a `mostrar_vallas` parameter to filter internal/external fences.
 *   Internal implementation uses multiple layers to allow independent styling and facet support.
+*   Integrated `cli` package for improved console output in `vallas_outliers`, `verificar_ortogonalidad`, `install.local_repo`, and `mkminiCRAN`.
 
 # estadisticaFcaUnl 0.2.2
 

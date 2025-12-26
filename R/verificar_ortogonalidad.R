@@ -13,7 +13,7 @@
 #' @export
 verificar_ortogonalidad <- function(M) {
     if (!is.matrix(M)) {
-        stop("El argumento M debe ser una matriz.")
+        cli::cli_abort("El argumento {.arg M} debe ser una matriz.")
     }
 
     n_cols <- ncol(M)
@@ -22,16 +22,26 @@ verificar_ortogonalidad <- function(M) {
     if (is.null(colnames_M)) {
         colnames_M <- paste0("C", 1:n_cols)
     }
+
     # chequea que la suma de cada columna sea cero
     all_sums_zero <- TRUE
-    cat("Verificaci\u00f3n de suma de coeficientes:\n")
+    cli::cli_h2("Verificaci\u00f3n de suma de coeficientes")
+
+    sums_list <- setNames(numeric(n_cols), colnames_M)
     for (i in 1:n_cols) {
         s <- sum(M[, i])
+        sums_list[i] <- s
         if (s != 0) {
             all_sums_zero <- FALSE
         }
-        cat(sprintf("Sumatoria del contraste %s = %g\n", colnames_M[i], s))
     }
+
+    cli::cli_dl(
+        setNames(
+            as.character(round(sums_list, 4)),
+            paste0("Sumatoria ", names(sums_list))
+        )
+    )
 
     # chequea que la matriz sea ortogonal
     all_orthogonal <- TRUE
@@ -43,19 +53,27 @@ verificar_ortogonalidad <- function(M) {
                 cp <- sum(M[, i] * M[, j])
                 if (cp != 0) {
                     all_orthogonal <- FALSE
-                    failing_pairs <- c(failing_pairs, sprintf("  %s vs %s (Producto = %g)", colnames_M[i], colnames_M[j], cp))
+                    failing_pairs <- c(failing_pairs, sprintf("%s vs %s (Producto = %g)", colnames_M[i], colnames_M[j], cp))
                 }
             }
         }
     }
+
     # imprime el resultado final
     is_orthogonal <- all_sums_zero && all_orthogonal
-    cat("\nResultado final: La matriz", ifelse(is_orthogonal, "ES", "NO ES"), "ortogonal.\n")
-    # imprime las combinaciones que no son ortogonales si las hay
-    if (length(failing_pairs) > 0) {
-        cat("Combinaciones que rompen la ortogonalidad:\n")
-        cat(paste(failing_pairs, collapse = "\n"), "\n")
+
+    if (is_orthogonal) {
+        cli::cli_alert_success("La matriz ES ortogonal y sus columnas son contrastes (suman cero).")
+    } else {
+        cli::cli_alert_danger("La matriz NO cumple con las condiciones de ortogonalidad o suma cero.")
+
+        # imprime las combinaciones que no son ortogonales si las hay
+        if (length(failing_pairs) > 0) {
+            cli::cli_alert_warning("Combinaciones que rompen la ortogonalidad:")
+            cli::cli_ul(failing_pairs)
+        }
     }
+
     # retorna el resultado final
     invisible(is_orthogonal)
 }

@@ -19,13 +19,13 @@ check_mirrors <- function(mirrors) {
         )
 
         if (ok) {
-            message("Usando mirror: ", url)
+            cli::cli_alert_success("Usando mirror: {.url {url}}")
             return(c(CRAN = url))
         } else {
-            message("Fall\u00F3 mirror: ", url)
+            cli::cli_alert_danger("Fall\u00F3 mirror: {.url {url}}")
         }
     }
-    stop("Ning\u00FAn mirror disponible.")
+    cli::cli_abort("Ning\u00FAn mirror disponible.")
 }
 
 #' @title Armar miniCRAN local

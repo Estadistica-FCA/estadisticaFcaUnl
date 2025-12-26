@@ -49,12 +49,16 @@ vallas_outliers <- function(data = NULL, Q1 = NULL, Q3 = NULL) {
     )
 
     # Salida por consola
-    cat("Resumen de Estad\u00EDsticos:\n")
-    print(round(estadisticos, 2))
-    cat("|-----------------------|\n")
-    cat("Vallas:\n")
-    print(round(vallas, 2))
-    cat("\n")
+    cli::cli_h1("Resumen de Estad\u00EDsticos")
+    cli::cli_verbatim(cli::style_bold(sprintf("%-10s %-10s %-10s", "Q1", "Q3", "IQR")))
+    cli::cli_verbatim(sprintf("%-10.2f %-10.2f %-10.2f", Q1, Q3, IQR))
+
+    cli::cli_h1("Vallas")
+    nombres_v <- paste(sprintf("%-10s", names(vallas)), collapse = " ")
+    valores_v <- paste(sprintf("%-10.2f", vallas), collapse = " ")
+
+    cli::cli_verbatim(cli::style_bold(nombres_v))
+    cli::cli_verbatim(valores_v)
 
     return(invisible(as.data.frame(as.list(vallas)))) # Se pone como invisible ya que se muestra por consola más arriba
 }

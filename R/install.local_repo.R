@@ -30,7 +30,7 @@
 install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = TRUE) {
     # require(rstudioapi) este import esta manejado por Roxygen
     if (install == TRUE && is.null(pkgs)) {
-        stop("Debera ingresar una lista valida de paquetes a instalar")
+        cli::cli_abort("Deber\u00E1 ingresar una lista valida de paquetes a instalar")
     }
 
     # Obtiene el SO en que opera
@@ -60,7 +60,7 @@ install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = TRUE) {
         Windows = "win.binary",
         Linux = "source",
         Darwin = "source",
-        stop("Sistema operativo no soportado.")
+        cli::cli_abort("Sistema operativo no soportado.")
     )
 
     # Chequea si el directorio es correcto y obtiene los paquetes disponibles
@@ -69,7 +69,7 @@ install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = TRUE) {
             rownames(available.packages(repos = full_path, type = tipo_pkg))
         },
         error = function(e) {
-            warning("No se pudo acceder al repositorio: ", e$message)
+            cli::cli_alert_warning("No se pudo acceder al repositorio: {e$message}")
             character(0)
         }
     )
@@ -80,16 +80,15 @@ install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = TRUE) {
         pkgs_validos <- intersect(pkgs, disponibles)
 
         if (length(pkgs_invalidos) > 0) {
-            warning(
-                "Los siguientes paquetes no se encontraron en el repositorio:\n",
-                paste(pkgs_invalidos, collapse = ", ")
+            cli::cli_alert_warning(
+                "Los siguientes paquetes no se encontraron en el repositorio: {.val {pkgs_invalidos}}"
             )
         }
 
         if (install && length(pkgs_validos) > 0) {
             install.packages(pkgs_validos, repos = full_path, type = tipo_pkg)
         } else if (install && length(pkgs_validos) == 0) {
-            message("No se instalaron paquetes: ninguno disponible en el repositorio.")
+            cli::cli_alert_info("No se instalaron paquetes: ninguno disponible en el repositorio.")
         }
     } else {
         pkgs_invalidos <- NULL
