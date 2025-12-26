@@ -10,6 +10,7 @@
 #'     C4 = c(0, 1 / 2, 1 / 2, -1 / 2, -1 / 2)
 #' )
 #' verificar_ortogonalidad(K)
+#' @importFrom cli cli_abort cli_h2 cli_dl cli_alert_success cli_alert_danger cli_alert_warning cli_ul
 #' @export
 verificar_ortogonalidad <- function(M) {
     if (!is.matrix(M)) {

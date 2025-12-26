@@ -26,6 +26,7 @@
 #' }
 #' @importFrom rstudioapi getSourceEditorContext
 #' @importFrom utils available.packages install.packages
+#' @importFrom cli cli_abort cli_alert_warning cli_alert_info
 #' @export
 install.local_repo <- function(pkgs = NULL, repo_path = NULL, install = TRUE) {
     # require(rstudioapi) este import esta manejado por Roxygen

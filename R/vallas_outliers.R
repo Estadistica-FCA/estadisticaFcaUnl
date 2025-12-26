@@ -19,6 +19,7 @@
 #' datos <- rnorm(100)
 #' vallas_outliers(data = datos)
 #' @importFrom stats quantile
+#' @importFrom cli cli_h1 cli_verbatim style_bold
 #' @export
 vallas_outliers <- function(data = NULL, Q1 = NULL, Q3 = NULL) {
     if (is.null(Q1) || is.null(Q3)) {

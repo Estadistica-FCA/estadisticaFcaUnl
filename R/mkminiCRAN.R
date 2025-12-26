@@ -53,6 +53,7 @@ check_mirrors <- function(mirrors) {
 #' }
 #' @importFrom miniCRAN pkgDep makeRepo
 #' @importFrom rstudioapi getSourceEditorContext
+#' @importFrom cli cli_alert_success cli_alert_danger cli_abort
 #' @export
 mkminiCRAN <- function(pkgs, path = NULL, so = c("windows", "linux", "macos"),
                        mirrors = NULL) {
