@@ -17,6 +17,8 @@
 #' * [datasets_estex]: Datasets para Estadística Experimental.
 #'
 #' @section Funciones extra:
+#' * [ajustar_variables]: Ajuste de tendencia, dispersión, forma y outliers.
+#' * [forzar_efecto]: Manipulación de significancia de efectos en ANOVA.
 #' * [install.local_repo]: Instalación desde repositorio local.
 #' * [mkminiCRAN]: Creación de repositorio local.
 #'

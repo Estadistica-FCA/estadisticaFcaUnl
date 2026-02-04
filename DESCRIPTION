@@ -1,7 +1,7 @@
 Package: estadisticaFcaUnl
 Type: Package
 Title: Herramientas y Datos para Estadística en FCA-UNL
-Version: 0.2.3
+Version: 0.2.4
 Authors@R: c(
     person(
       given = "Alejandro",
@@ -35,7 +35,8 @@ Imports:
     rstudioapi,
     miniCRAN,
     ggplot2,
-    cli
+    cli,
+    moments
 RoxygenNote: 7.3.3
 Roxygen: list(markdown = TRUE)
 Depends: 

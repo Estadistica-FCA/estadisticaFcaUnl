@@ -1,3 +1,9 @@
+# estadisticaFcaUnl 0.2.4
+
+*   Added new function `forzar_efecto()`: Manipulates ANOVA effect significance.
+*   Added new function `ajustar_variables()`: Adjusts distribution properties (mean, sd, shape, outliers).
+*   Improved `forzar_efecto()` logic: `significativo = FALSE` now generates realistic non-significant p-values using inverse magnitude scaling.
+
 # estadisticaFcaUnl 0.2.3
 
 *   Refactored `vallas_outliers`: removed plotting logic and updated return type (now `data.frame`).
