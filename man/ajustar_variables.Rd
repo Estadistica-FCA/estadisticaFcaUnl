@@ -11,7 +11,8 @@ ajustar_variables(
   desvio_obj = NULL,
   asim_obj = NULL,
   curt_obj = NULL,
-  n_outliers = NULL
+  n_outliers = NULL,
+  mantener_originales = FALSE
 )
 }
 \arguments{
@@ -19,15 +20,17 @@ ajustar_variables(
 
 \item{col}{Nombre de la columna a modificar (string).}
 
-\item{media_obj}{Media objetivo. Numérico (escalar o vector por grupos) o nombre de columna.}
+\item{media_obj}{Media objetivo. Numérico (escalar o vector/lista por grupos) o nombre de columna.}
 
-\item{desvio_obj}{Desviación estándar objetivo. Numérico (escalar o vector por grupos) o nombre de columna.}
+\item{desvio_obj}{Desviación estándar objetivo. Numérico (escalar o vector/lista por grupos) o nombre de columna.}
 
-\item{asim_obj}{Asimetría objetivo. Numérico (escalar o vector por grupos) o nombre de columna.}
+\item{asim_obj}{Asimetría objetivo. Numérico (escalar o vector/lista por grupos) o nombre de columna.}
 
-\item{curt_obj}{Curtosis objetivo (3 = Normal). Numérico (escalar o vector por grupos) o nombre de columna.}
+\item{curt_obj}{Curtosis objetivo (3 = Normal). Numérico (escalar o vector/lista por grupos) o nombre de columna.}
 
-\item{n_outliers}{Número aproximado de outliers. Numérico (escalar o vector por grupos) o nombre de columna.}
+\item{n_outliers}{Número aproximado de outliers. Numérico (escalar o vector/lista por grupos) o nombre de columna.}
+
+\item{mantener_originales}{Lógico. Si es TRUE, los parámetros no especificados (NULL) se rellenan con los valores originales de la muestra. Si es FALSE (default), se dejan como NULL y la función solo ajusta lo solicitado.}
 }
 \value{
 Un data.frame con la columna especificada modificada.
@@ -41,4 +44,24 @@ Modifica una columna numérica de un data.frame para ajustar:
 }
 
 Soporta dataframes agrupados (\code{grouped_df} de \code{dplyr}).
+}
+\examples{
+\dontrun{
+library(dplyr)
+data("energia_abejas")
+
+# Ejemplo: Modificar por grupos usando listas para parámetros especificos
+# Grupo 1: Sin cambios (NULL) - Manteniendo originales
+# Grupo 2: Asimetria -0.1
+# Grupo 3: Asimetria 0.1
+energia_mod <- energia_abejas \%>\%
+    group_by(Temp_ord) \%>\%
+    ajustar_variables(
+        col = "Energia",
+        asim_obj = list(NULL, -0.1, 0.1),
+        mantener_originales = TRUE
+    ) \%>\%
+    ungroup()
+}
+
 }

@@ -10,12 +10,32 @@
 #'
 #' @param data Un data.frame (o grouped_df) que contiene la columna a modificar.
 #' @param col Nombre de la columna a modificar (string).
-#' @param media_obj Media objetivo. Numérico (escalar o vector por grupos) o nombre de columna.
-#' @param desvio_obj Desviación estándar objetivo. Numérico (escalar o vector por grupos) o nombre de columna.
-#' @param asim_obj Asimetría objetivo. Numérico (escalar o vector por grupos) o nombre de columna.
-#' @param curt_obj Curtosis objetivo (3 = Normal). Numérico (escalar o vector por grupos) o nombre de columna.
-#' @param n_outliers Número aproximado de outliers. Numérico (escalar o vector por grupos) o nombre de columna.
+#' @param media_obj Media objetivo. Numérico (escalar o vector/lista por grupos) o nombre de columna.
+#' @param desvio_obj Desviación estándar objetivo. Numérico (escalar o vector/lista por grupos) o nombre de columna.
+#' @param asim_obj Asimetría objetivo. Numérico (escalar o vector/lista por grupos) o nombre de columna.
+#' @param curt_obj Curtosis objetivo (3 = Normal). Numérico (escalar o vector/lista por grupos) o nombre de columna.
+#' @param n_outliers Número aproximado de outliers. Numérico (escalar o vector/lista por grupos) o nombre de columna.
+#' @param mantener_originales Lógico. Si es TRUE, los parámetros no especificados (NULL) se rellenan con los valores originales de la muestra. Si es FALSE (default), se dejan como NULL y la función solo ajusta lo solicitado.
 #' @return Un data.frame con la columna especificada modificada.
+#'
+#' @examples
+#' \dontrun{
+#' library(dplyr)
+#' data("energia_abejas")
+#'
+#' # Ejemplo: Modificar por grupos usando listas para parámetros especificos
+#' # Grupo 1: Sin cambios (NULL) - Manteniendo originales
+#' # Grupo 2: Asimetria -0.1
+#' # Grupo 3: Asimetria 0.1
+#' energia_mod <- energia_abejas %>%
+#'     group_by(Temp_ord) %>%
+#'     ajustar_variables(
+#'         col = "Energia",
+#'         asim_obj = list(NULL, -0.1, 0.1),
+#'         mantener_originales = TRUE
+#'     ) %>%
+#'     ungroup()
+#' }
 #'
 #' @importFrom stats sd optim rnorm quantile IQR qnorm runif
 #' @importFrom grDevices boxplot.stats
@@ -23,7 +43,8 @@
 #' @importFrom cli cli_alert_warning cli_abort
 #' @export
 ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
-                              asim_obj = NULL, curt_obj = NULL, n_outliers = NULL) {
+                              asim_obj = NULL, curt_obj = NULL, n_outliers = NULL,
+                              mantener_originales = FALSE) {
     # --- 1. Validaciones ---
     if (!is.data.frame(data)) {
         cli::cli_abort("El argumento 'data' debe ser un data.frame")
@@ -38,31 +59,43 @@ ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
     }
 
     # --- 2. Lógica Principal ---
-
     if (inherits(data, "grouped_df")) {
         # === CASO AGRUPADO ===
         groups <- attr(data, "groups")
         if (is.null(groups)) {
+            cli::cli_alert_warning("El dataframe est\u00e1 marcado como agrupado ({.cls grouped_df}) pero no contiene metadatos de grupos. Se retorna el objeto sin cambios.")
             return(data)
         }
 
-        n_groups <- nrow(groups)
-        group_indices <- groups$.rows
-        x_global <- data[[col]]
+        n_groups <- nrow(groups) # Número de grupos
+        group_indices <- groups$.rows # Indices de fila de cada grupo
+        x_global <- data[[col]] # Vector global con todos los datos
+
+        media_obj <- .validar_param_agrupado(media_obj, "media_obj", n_groups)
+        desvio_obj <- .validar_param_agrupado(desvio_obj, "desvio_obj", n_groups)
+        asim_obj <- .validar_param_agrupado(asim_obj, "asim_obj", n_groups)
+        curt_obj <- .validar_param_agrupado(curt_obj, "curt_obj", n_groups)
+        n_outliers <- .validar_param_agrupado(n_outliers, "n_outliers", n_groups)
 
         for (i in seq_len(n_groups)) {
             idx <- group_indices[[i]] # Indices de fila de este grupo
-            subset_x <- x_global[idx]
+            subset_x <- x_global[idx] # Subconjunto de datos para este grupo
 
-            # Obtener valores objetivo especificos para este grupo
-            m_val <- .obtener_valor_grupo(media_obj, data, idx, i, n_groups, "media_obj")
-            d_val <- .obtener_valor_grupo(desvio_obj, data, idx, i, n_groups, "desvio_obj")
-            a_val <- .obtener_valor_grupo(asim_obj, data, idx, i, n_groups, "asim_obj")
-            c_val <- .obtener_valor_grupo(curt_obj, data, idx, i, n_groups, "curt_obj")
-            o_val <- .obtener_valor_grupo(n_outliers, data, idx, i, n_groups, "n_outliers")
+            if (length(subset_x) <= 1) {
+                cli::cli_abort("El grupo {i} tiene tama\u00f1o {length(subset_x)}. Se requiere N > 1 para ajustar variables.")
+            }
 
             # Aplicar transformación al subset
-            subset_mod <- .ajustar_vector_nucleo(subset_x, m_val, d_val, a_val, c_val, o_val)
+            # Usamos [[i]] para extraer (funciona para listas y vectores)
+            subset_mod <- .ajustar_vector_nucleo(
+                subset_x,
+                media_obj[[i]],
+                desvio_obj[[i]],
+                asim_obj[[i]],
+                curt_obj[[i]],
+                n_outliers[[i]],
+                mantener_originales
+            )
 
             # Asignar de vuelta
             x_global[idx] <- subset_mod
@@ -73,90 +106,101 @@ ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
         # === CASO NO AGRUPADO ===
         x <- data[[col]]
 
-        m_val <- .obtener_valor_simple(media_obj, data, "media_obj")
-        d_val <- .obtener_valor_simple(desvio_obj, data, "desvio_obj")
-        a_val <- .obtener_valor_simple(asim_obj, data, "asim_obj")
-        c_val <- .obtener_valor_simple(curt_obj, data, "curt_obj")
-        o_val <- .obtener_valor_simple(n_outliers, data, "n_outliers")
+        if (length(x) <= 1) {
+            cli::cli_abort("La variable tiene tama\u00f1o {length(x)}. Se requiere N > 1 para ajustar variables.")
+        }
 
-        x_mod <- .ajustar_vector_nucleo(x, m_val, d_val, a_val, c_val, o_val)
+        x_mod <- .ajustar_vector_nucleo(x, media_obj, desvio_obj, asim_obj, curt_obj, n_outliers, mantener_originales)
         data[[col]] <- x_mod
     }
 
     return(data)
 }
 
-# --- Helpers de Resolución de Parámetros ---
-
-.obtener_valor_simple <- function(val, data, arg_name) {
-    if (is.null(val)) {
-        return(NULL)
+# Helper para validar y rellenar parámetros
+# Si es NULL, se genera una lista de NULLs.
+# Si no es NULL, debe ser vector o lista de longitud n_groups.
+.validar_param_agrupado <- function(param, nombre, n) {
+    if (is.null(param)) {
+        return(vector("list", n)) # Lista de NULLs
     }
-    if (is.character(val) && length(val) == 1 && val %in% names(data)) {
-        vals <- unique(data[[val]])
-        if (length(vals) > 1) {
-            cli::cli_alert_warning("Argumento {.arg {arg_name}} varía en los datos no agrupados. Se usará el primer valor.")
-        }
-        return(vals[1])
+    if ((!is.vector(param) && !is.list(param)) || length(param) != n) {
+        cli::cli_abort("El argumento {.arg {nombre}} debe ser un vector o lista de la misma longitud que el número de grupos ({n}).")
     }
-    return(val)
-}
-
-.obtener_valor_grupo <- function(val, data, idx_rows, group_i, n_groups, arg_name) {
-    if (is.null(val)) {
-        return(NULL)
-    }
-    if (is.character(val) && length(val) == 1 && val %in% names(data)) {
-        sub_vals <- unique(data[[val]][idx_rows])
-        if (length(sub_vals) > 1) {
-            cli::cli_alert_warning("Grupo {group_i} tiene múltiples valores en {.val {val}}. Se usa el primero.")
-        }
-        return(sub_vals[1])
-    }
-    if (is.numeric(val) && length(val) == n_groups) {
-        return(val[group_i])
-    }
-    if (length(val) == 1) {
-        return(val)
-    }
-    cli::cli_abort("Argumento {.arg {arg_name}} tiene longitud incorrecta ({length(val)}) para {n_groups} grupos.")
+    return(param)
 }
 
 # --- Núcleo Matemático ---
 
-.ajustar_vector_nucleo <- function(x, media_obj, desvio_obj, asim_obj, curt_obj, n_outliers) {
-    if (is.null(media_obj)) media_obj <- mean(x, na.rm = TRUE)
-    if (is.null(desvio_obj)) desvio_obj <- stats::sd(x, na.rm = TRUE)
+.ajustar_vector_nucleo <- function(x, media_obj, desvio_obj, asim_obj, curt_obj, n_outliers, mantener_originales) {
+    # Validar parámetros entrada (Nucleo espera escalares o NULL)
+    .validar_parametro_nucleo(media_obj, "media_obj")
+    .validar_parametro_nucleo(desvio_obj, "desvio_obj")
+    .validar_parametro_nucleo(asim_obj, "asim_obj")
+    .validar_parametro_nucleo(curt_obj, "curt_obj")
+    .validar_parametro_nucleo(n_outliers, "n_outliers")
 
+    # Capturar estadísticas originales por si se piden mantener
+    media_orig <- mean(x, na.rm = TRUE)
+    desvio_orig <- stats::sd(x, na.rm = TRUE)
+
+    # 1. Cambiar forma (asimetría y curtosis)
     if (!is.null(asim_obj) || !is.null(curt_obj)) {
         cur_skew <- moments::skewness(x, na.rm = TRUE)
         cur_kurt <- moments::kurtosis(x, na.rm = TRUE)
+
+        # Si alguno es NULL, decidimos con qué rellenarlo
         target_s <- if (is.null(asim_obj)) cur_skew else asim_obj
         target_k <- if (is.null(curt_obj)) cur_kurt else curt_obj
+
         x <- .modificar_forma(x, target_s, target_k)
     }
 
+    # 2. Outliers
     if (!is.null(n_outliers)) {
         x <- .modificar_outliers(x, n_outliers)
     }
 
+    # 3. Escalar Media y Desvío
+    if (is.null(media_obj) && is.null(desvio_obj) && !mantener_originales) {
+        return(x)
+    }
     media_act <- mean(x, na.rm = TRUE)
     desvio_act <- stats::sd(x, na.rm = TRUE)
-    if (is.na(desvio_act)) desvio_act <- 0
+    z <- (x - media_act) / desvio_act
 
-    # Si target desvio es NULL, asumimos mantener el actual
-    if (is.null(desvio_obj)) desvio_obj <- desvio_act
-
-    if (desvio_act == 0) {
-        # Si no hay variabilidad (o N=1), no podemos escalar varianza.
-        # Simplemente fijamos la nueva media.
-        x_new <- rep(media_obj, length(x))
-    } else {
-        z <- (x - media_act) / desvio_act
-        x_new <- z * desvio_obj + media_obj
+    if (is.null(media_obj)) {
+        if (mantener_originales) {
+            media_obj <- media_orig
+        } else {
+            media_obj <- media_act
+        }
     }
+
+    if (is.null(desvio_obj)) {
+        if (mantener_originales) {
+            desvio_obj <- desvio_orig
+        } else {
+            desvio_obj <- desvio_act
+        }
+    }
+    x_new <- z * desvio_obj + media_obj
     return(x_new)
 }
+
+.validar_parametro_nucleo <- function(val, nombre) {
+    if (is.null(val)) {
+        return(invisible(NULL))
+    }
+
+    if (!is.numeric(val)) {
+        cli::cli_abort("El parámetro interno {.arg {nombre}} debe ser numérico.")
+    }
+    if (length(val) != 1) {
+        cli::cli_abort("El parámetro interno {.arg {nombre}} debe ser un escalar (longitud 1).")
+    }
+}
+
 
 .modificar_forma <- function(x, asim, curt) {
     coefs <- .hallar_coeficientes_fleishman(asim, curt)
