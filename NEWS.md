@@ -7,6 +7,10 @@
     *   Added support for `list()` inputs in grouped dataframes to handle explicit `NULL` values per group.
     *   Added `mantener_originales` argument to preserve original statistics when parameters are unspecified.
     *   Added validation to ensure sample size ($N > 1$) to prevent calculation errors.
+*   Renamed `forzar_efecto()` to `ajustar_significancia()`:
+    *   Renamed parameter `significativo` to `sig` and made it mandatory.
+    *   Added support for RCBD designs (cells with N=1) by injecting residual noise.
+    *   Implemented early exit if the desired significance state is already met.
 
 # estadisticaFcaUnl 0.2.3
 

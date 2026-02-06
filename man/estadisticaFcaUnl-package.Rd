@@ -33,7 +33,7 @@ Universidad Nacional del Litoral.
 
 \itemize{
 \item \link{ajustar_variables}: Ajuste de tendencia, dispersión, forma y outliers.
-\item \link{forzar_efecto}: Manipulación de significancia de efectos en ANOVA.
+\item \link{ajustar_significancia}: Manipulación de significancia de efectos en ANOVA.
 \item \link{install.local_repo}: Instalación desde repositorio local.
 \item \link{mkminiCRAN}: Creación de repositorio local.
 }

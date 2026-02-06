@@ -41,6 +41,7 @@
 #' @importFrom grDevices boxplot.stats
 #' @importFrom moments skewness kurtosis
 #' @importFrom cli cli_alert_warning cli_abort
+#' @importFrom dplyr group_by summarise ungroup mutate %>%
 #' @export
 ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
                               asim_obj = NULL, curt_obj = NULL, n_outliers = NULL,
