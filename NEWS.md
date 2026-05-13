@@ -11,6 +11,7 @@
     *   Renamed parameter `significativo` to `sig` and made it mandatory.
     *   Added support for RCBD designs (cells with N=1) by injecting residual noise.
     *   Implemented early exit if the desired significance state is already met.
+*   Updated documentation: Recommended `pak::pkg_install()` for installation instead of `devtools::install_github()` to align with modern R standards and avoid deprecation warnings.
 
 # estadisticaFcaUnl 0.2.3
 

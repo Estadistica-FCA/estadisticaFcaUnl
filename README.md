@@ -14,6 +14,6 @@ Provee conjuntos de datos y funciones auxiliares para la enseñanza y práctica 
 Puedes instalar la versión de desarrollo de `estadisticaFcaUnl` desde [GitHub](https://github.com/) con:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("Estadistica-FCA/estadisticaFcaUnl")
+# install.packages("pak")
+pak::pkg_install("Estadistica-FCA/estadisticaFcaUnl")
 ```
