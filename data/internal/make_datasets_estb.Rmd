@@ -8,6 +8,7 @@ path_i <- "~/Documents/Estadistica/estadisticaFcaUnl/data/internal"
 
 
 ## Pesada terneros
+#done
 ```{r}
 pesada_terneros <- import(file.path(path_i, "pesada_terneros.xlsx"))
 str(pesada_terneros)
@@ -17,6 +18,7 @@ use_data(pesada_terneros, overwrite = TRUE)
 ```
 
 ## superficies_EAP
+#done
 ```{r}
 superficies_EAP <- read.fwf(file.path(path_i, "superficies_EAP.txt"), widths = c(23, 10, 20), header = FALSE, skip = 1, strip.white = TRUE, col.names = c("Departamento", "Cant_EAP", "Sup_promedio")) %>%
     mutate(Departamento = gsub('"', "", Departamento))
@@ -27,12 +29,17 @@ use_data(superficies_EAP, overwrite = TRUE)
 ```
 
 ## pesada_novillos
+#done
 ```{r}
 pesada_novillos <- import(file.path(path_i, "pesada_novillos.xlsx")) %>%
     mutate(
         Fecha_Ingreso = as.Date(as.numeric(Fecha_Ingreso), origin = "1899-12-30"),
         Fecha = as.Date(as.numeric(Fecha), origin = "1899-12-30"),
         Hora = format(as.POSIXct(as.numeric(Hora) * 86400, origin = "1970-01-01", tz = "UTC"), "%H:%M:%S")
+    ) %>%
+    rename(
+        Dias = Días,
+        Dias_total = Días_total
     )
 str(pesada_novillos)
 ```
@@ -41,6 +48,7 @@ use_data(pesada_novillos, overwrite = TRUE)
 ```
 
 ## tambos_2008_2015
+#done
 ```{r}
 tambos_2008_2015 <- import(file.path(path_i, "tambos_2008-2015.xls"))
 str(tambos_2008_2015)
@@ -50,6 +58,7 @@ use_data(tambos_2008_2015, overwrite = TRUE)
 ```
 
 ## lotes_BA
+#done
 ```{r}
 lotes_BA <- import(file.path(path_i, "Lotes_BA.xls"))
 str(lotes_BA)
@@ -59,6 +68,7 @@ use_data(lotes_BA, overwrite = TRUE)
 ```
 
 ## riesgo_arbolado
+#done
 ```{r}
 riesgo_arbolado <- import(file.path(path_i, "riesgo_arbolado.xlsx"))
 str(riesgo_arbolado)
@@ -68,6 +78,7 @@ use_data(riesgo_arbolado, overwrite = TRUE)
 ```
 
 ## ryegrass
+#done
 ```{r}
 ryegrass <- import(file.path(path_i, "ryegrass.txt"))
 str(ryegrass)
@@ -85,6 +96,7 @@ use_data(ryegrass, overwrite = TRUE)
 ```
 
 ## tribolium
+#done
 ```{r}
 tribolium <- import(file.path(path_i, "tribolium.txt"))
 str(tribolium)
@@ -94,6 +106,7 @@ use_data(tribolium, overwrite = TRUE)
 ```
 
 ## lisina_pollos
+#done
 ```{r}
 lisina_pollos <- import(file.path(path_i, "lisina_pollos.txt"))
 str(lisina_pollos)
@@ -112,6 +125,7 @@ use_data(lisina_pollos, overwrite = TRUE)
 ```
 
 ## productores
+#done
 ```{r}
 productores <- import(file.path(path_i, "productores.xlsx"))
 str(productores)
@@ -120,101 +134,850 @@ str(productores)
 use_data(productores, overwrite = TRUE)
 ```
 
-## nitrogeno
+## especies
+#done
 ```{r}
-nitrogeno <- import(file.path(path_i, "nitrogeno.txt"))
-str(nitrogeno)
+especies <- import(file.path(path_i, "especies.xlsx")) %>%
+    rename(Numero = Número)
+str(especies)
 ```
 ```{r}
-use_data(nitrogeno, overwrite = TRUE)
-```
-
-## novillos
-```{r}
-novillos <- import(file.path(path_i, "novillos.txt"))
-str(novillos)
-```
-```{r}
-use_data(novillos, overwrite = TRUE)
+use_data(especies, overwrite = TRUE)
 ```
 
-## pH_forestal
+## plantacion
+#done
 ```{r}
-pH_forestal <- import(file.path(path_i, "pH_forestal.txt"))
-str(pH_forestal)
-```
-```{r}
-use_data(pH_forestal, overwrite = TRUE)
-```
-
-## Lotes_CO
-```{r}
-lotes_CO <- import(file.path(path_i, "Lotes_CO.xls"))
-str(lotes_CO)
-```
-```{r}
-use_data(lotes_CO, overwrite = TRUE)
+set.seed(1)
+altura <- round(rnorm(10, 2.5, sqrt(0.35)), 2)
+cat(altura)
+plantacion <- as.data.frame(altura)
+str(plantacion)
 ```
 
-## pesada_novillos_tropa1
 ```{r}
-pesada_novillos_tropa1 <- import(file.path(path_i, "Pesada 04-02-18 Tropa 1 Novillos LJ.csv"))
-str(pesada_novillos_tropa1)
-```
-```{r}
-use_data(pesada_novillos_tropa1, overwrite = TRUE)
+use_data(plantacion, overwrite = TRUE)
 ```
 
-## cabezas_ajo
+## plantacion_dap
+#done
 ```{r}
-cabezas_ajo <- import(file.path(path_i, "cabezas_ajo.txt"))
-str(cabezas_ajo)
-```
-```{r}
-use_data(cabezas_ajo, overwrite = TRUE)
-```
-
-## cacahuates
-```{r}
-cacahuates <- import(file.path(path_i, "cacahuates.txt"))
-str(cacahuates)
-```
-```{r}
-use_data(cacahuates, overwrite = TRUE)
+set.seed(1)
+dap <- round(rnorm(10, 15, sqrt(1.5)), 2)
+cat(dap)
+plantacion_dap <- as.data.frame(dap)
+str(plantacion_dap)
 ```
 
-## datos_climaticos
 ```{r}
-datos_climaticos <- import(file.path(path_i, "datos_climáticos.csv"))
-str(datos_climaticos)
-```
-```{r}
-use_data(datos_climaticos, overwrite = TRUE)
+use_data(plantacion_dap, overwrite = TRUE)
 ```
 
-## ej7
+## pulsaciones_caballos
+#done
 ```{r}
-ej7 <- import(file.path(path_i, "ej7.txt"))
-str(ej7)
-```
-```{r}
-use_data(ej7, overwrite = TRUE)
-```
-
-## esparragos
-```{r}
-esparragos <- import(file.path(path_i, "esparragos.txt"))
-str(esparragos)
-```
-```{r}
-use_data(esparragos, overwrite = TRUE)
+set.seed(3)
+pulsaciones <- round(rnorm(15, mean = 85, sd = 15))
+cat(pulsaciones)
+pulsaciones_caballos <- as.data.frame(pulsaciones)
+str(pulsaciones_caballos)
 ```
 
-## forestal_calibracion
 ```{r}
-forestal_calibracion <- import(file.path(path_i, "forestal_calibracion.txt"))
-str(forestal_calibracion)
+use_data(pulsaciones_caballos, overwrite = TRUE)
+```
+
+## molinos
+#done
+```{r}
+set.seed(4)
+km_h <- round(rnorm(15, 78, 3), 0)
+cat(km_h)
+molinos <- as.data.frame(km_h)
+str(molinos)
 ```
 ```{r}
-use_data(forestal_calibracion, overwrite = TRUE)
+use_data(molinos, overwrite = TRUE)
+```
+
+## alimento
+#done
+```{r}
+set.seed(8)
+vitaminas <- round(rnorm(16, 13, 2.5), 1)
+cat(vitaminas)
+alimento <- as.data.frame(vitaminas)
+str(alimento)
+```
+```{r}
+use_data(alimento, overwrite = TRUE)
+```
+
+## maiz
+#done
+```{r}
+maiz <- data.frame(plantas = 6:11, parcelas = c(2, 5, 6, 4, 2, 1))
+str(maiz)
+```
+```{r}
+use_data(maiz, overwrite = TRUE)
+```
+
+## corderos
+#done
+```{r}
+set.seed(16)
+peso <- round(rnorm(20, 45, 1.8), 2)
+cat(peso, sep = ", ")
+corderos <- as.data.frame(peso)
+str(corderos)
+```
+
+```{r}
+use_data(corderos, overwrite = TRUE)
+```
+
+## sorgo
+#done
+```{r}
+set.seed(1)
+altura <- round(rnorm(16, 2, 0.1), 2)
+cat(altura, sep = ", ")
+sorgo <- as.data.frame(altura)
+str(sorgo)
+```
+```{r}
+use_data(sorgo, overwrite = TRUE)
+```
+
+## ovejas
+#done
+```{r}
+set.seed(3)
+peso <- round(rnorm(25, 10, 2), 1)
+cat(peso, sep = ", ")
+ovejas <- as.data.frame(peso)
+str(ovejas)
+```
+```{r}
+use_data(ovejas, overwrite = TRUE)
+```
+
+## balanceado_cerdos
+#done
+```{r}
+set.seed(4)
+aumento <- round(rnorm(20, 187, 27))
+cat(aumento, sep = ", ")
+balanceado_cerdos <- as.data.frame(aumento)
+str(balanceado_cerdos)
+```
+```{r}
+use_data(balanceado_cerdos, overwrite = TRUE)
+```
+
+## pezoneras
+#done
+```{r}
+duracion <- c(970, 1530, 1120, 1240, 1310, 1515, 1302, 1221, 985, 1312, 1721, 1200, 1305, 1000, 1040, 1450, 1342, 1221, 1310, 1500)
+cat(duracion, sep = " ")
+pezoneras <- as.data.frame(duracion)
+str(pezoneras)
+```
+```{r}
+use_data(pezoneras, overwrite = TRUE)
+```
+
+## establecimientos
+#done
+```{r}
+set.seed(6)
+superficie <- round(rnorm(12, 130, 30))
+cat(superficie, sep = ", ")
+establecimientos <- as.data.frame(superficie)
+str(establecimientos)
+```
+```{r}
+use_data(establecimientos, overwrite = TRUE)
+```
+
+## neumaticos_tractores
+#done
+```{r}
+set.seed(19)
+duracion <- round(rnorm(15, 27.63, sqrt(11.5)), 2)
+cat(duracion, sep = ", ")
+neumaticos_tractores <- as.data.frame(duracion)
+str(neumaticos_tractores)
+```
+```{r}
+use_data(neumaticos_tractores, overwrite = TRUE)
+```
+
+## glifosato
+#done
+```{r}
+glifosato <- import(file.path(path_i, "glifosato.xlsx"))
+str(glifosato)
+```
+```{r}
+use_data(glifosato, overwrite = TRUE)
+```
+
+## barrenador
+#done
+```{r}
+barrenador <- import(file.path(path_i, "barrenador.xlsx"))
+str(barrenador)
+```
+```{r}
+use_data(barrenador, overwrite = TRUE)
+```
+
+## penetrometro
+#done
+```{r}
+penetrometro <- import(file.path(path_i, "penetrometro.xlsx"))
+str(penetrometro)
+```
+```{r}
+use_data(penetrometro, overwrite = TRUE)
+```
+
+## TRC
+#done
+```{r}
+TRC <- import(file.path(path_i, "TRC.xlsx"))
+str(TRC)
+```
+```{r}
+use_data(TRC, overwrite = TRUE)
+```
+
+## concentracion_insecticida
+```{r}
+metA <- c(10.7, 11.2, 15.3, 14.9, 13.9, 15, 15.6, 15.7, 14.3, 10.8)
+metB <- c(11.1, 11.4, 15, 15.1, 14.3, 15.4, 15.4, 16, 14.3, 11.2)
+n1 <- length(metA)
+n2 <- length(metB)
+
+
+concentracion_insecticida <- data.frame(
+    metodo = c(rep("A", n1), rep("B", n2)),
+    concentracion = c(metA, metB)
+) %>%
+    mutate(metodo = factor(metodo, levels = c("A", "B")))
+str(concentracion_insecticida)
+```
+```{r}
+use_data(concentracion_insecticida, overwrite = TRUE)
+```
+
+## neumaticos
+#done
+```{r}
+set.seed(1)
+A <- round(rnorm(15, 25.75, 0.45), 1)
+B <- round(rnorm(15, 23.20, 0.45), 1)
+
+neumaticos <- data.frame(
+    neumatico = c(1:(length(A) + length(B))),
+    marca = c(rep("A", length(A)), rep("B", length(B))),
+    duracion = c(A, B)
+)
+str(neumaticos)
+```
+```{r}
+use_data(neumaticos, overwrite = TRUE)
+```
+
+## peso_balanceado
+#done
+```{r}
+set.seed(3)
+muestra1 <- round(rnorm(25, 18.5, 3.8), 1)
+muestra2 <- round(rnorm(30, 20.5, 3.8), 1)
+
+muestra <- c(1:(length(muestra1) + length(muestra2)))
+peso_balanceado <- data.frame(muestra,
+    dia = c(
+        rep("muestra1", length(muestra1)),
+        rep("muestra2", length(muestra2))
+    ),
+    peso = c(muestra1, muestra2)
+)
+str(peso_balanceado)
+```
+```{r}
+use_data(peso_balanceado, overwrite = TRUE)
+```
+
+## raciones
+#done
+```{r}
+set.seed(4)
+racion1 <- round(rnorm(12, 6.900, sqrt(0.65)), 1)
+racion2 <- round(rnorm(12, 5.915, sqrt(0.65)), 1)
+novillo <- c(1:(length(racion1) + length(racion2)))
+raciones <- data.frame(novillo,
+    racion = c(
+        rep("1", length(racion1)),
+        rep("2", length(racion2))
+    ),
+    peso = c(racion1, racion2)
+)
+str(raciones)
+```
+```{r}
+use_data(raciones, overwrite = TRUE)
+```
+
+## cerdos
+#done
+```{r}
+alim_d <- c(8.5, 8.2, 7.0, 8.3, 7.2, 8.1, 7.5, 7.8)
+alim_m <- c(8.3, 8.5, 8.0, 8.4, 8.3, 8.1, 8.2, 8.1)
+cerdo <- c(1:(length(alim_d) + length(alim_d)))
+cerdos <- data.frame(cerdo,
+    alimento = c(
+        rep("alim_d", length(alim_d)),
+        rep("alim_m", length(alim_m))
+    ),
+    ganancia = c(alim_d, alim_m)
+)
+str(cerdos)
+```
+```{r}
+use_data(cerdos, overwrite = TRUE)
+```
+
+## ganancia_novillos
+#done
+```{r}
+Placebo <- c(79, 60, 99, 68, 91, 99, 106, 68, 85, 56, 112, 93, 81, 96)
+Mineral <- c(64, 142, 153, 119, 137, 88, 115, 90, 107, 98, 96, 80, 113, 97)
+novillo <- c(1:(length(Placebo) + length(Mineral)))
+ganancia_novillos <- data.frame(novillo,
+    tratamiento = c(
+        rep("Placebo", length(Placebo)),
+        rep("Mineral", length(Mineral))
+    ),
+    ganancia = c(Placebo, Mineral)
+)
+str(ganancia_novillos)
+```
+```{r}
+use_data(ganancia_novillos, overwrite = TRUE)
+```
+
+## N_suelo
+#done
+```{r}
+set.seed(1)
+Bueno <- round(rnorm(25, 21.5, 0.75), 1)
+Pobre <- round(rnorm(25, 7.3, 0.45), 1)
+
+N_suelo <- data.frame(
+    suelo = c(1:(length(Bueno) + length(Pobre))),
+    tipo = c(rep("Bueno", length(Bueno)), rep("Pobre", length(Pobre))),
+    ppm = c(Bueno, Pobre)
+)
+str(N_suelo)
+```
+```{r}
+use_data(N_suelo, overwrite = TRUE)
+```
+
+## efectividad_sembradora
+#done
+```{r}
+nueva <- c(8.0, 8.4, 8.0, 6.4, 8.6, 7.7, 7.7, 5.6, 5.7, 6.2)
+vieja <- c(5.6, 7.4, 7.3, 6.4, 7.5, 6.1, 6.6, 6.0, 5.6, 5.5)
+parcelas <- c(1:(length(nueva) + length(vieja)))
+efectividad_sembradora <- data.frame(parcelas,
+    maquina = c(
+        rep("nueva", length(nueva)),
+        rep("vieja", length(vieja))
+    ),
+    rendimiento = c(nueva, vieja)
+)
+str(efectividad_sembradora)
+```
+```{r}
+use_data(efectividad_sembradora, overwrite = TRUE)
+```
+
+## lesiones_hojas
+#done
+```{r}
+prep1 <- c(9, 17, 31, 18, 7, 8, 20, 10)
+prep2 <- c(17, 11, 18, 14, 6, 7, 17, 5)
+id <- c(1:(length(prep1) + length(prep2)))
+lesiones_hojas <- data.frame(id,
+    preparado = c(
+        rep("prep1", length(prep1)),
+        rep("prep2", length(prep2))
+    ),
+    lesiones = c(prep1, prep2)
+)
+str(lesiones_hojas)
+```
+```{r}
+use_data(lesiones_hojas, overwrite = TRUE)
+```
+
+## dieta_bufalos
+#done
+```{r}
+inicial <- c(70, 75, 77, 80, 85, 90, 74, 92, 89, 88)
+final <- c(65, 68, 70, 76, 83, 82, 70, 88, 83, 82)
+animal <- c(1:(length(inicial) + length(final)))
+dieta_bufalos <- data.frame(animal,
+    tratamiento = c(
+        rep("inicial", length(inicial)),
+        rep("final", length(final))
+    ),
+    perdida = c(inicial, final)
+)
+str(dieta_bufalos)
+```
+```{r}
+use_data(dieta_bufalos, overwrite = TRUE)
+```
+
+## colesterol
+#done
+```{r}
+set.seed(13)
+baja_grasa <- round(rnorm(19, 167.16, sqrt(198)), 1)
+normal <- round(rnorm(24, 178.12, sqrt(435)), 1)
+paciente <- c(1:(length(baja_grasa) + length(normal)))
+colesterol <- data.frame(paciente,
+    tratamiento = c(
+        rep("baja_grasa", length(baja_grasa)),
+        rep("normal", length(normal))
+    ),
+    colesterol = c(baja_grasa, normal)
+)
+str(colesterol)
+```
+```{r}
+use_data(colesterol, overwrite = TRUE)
+```
+
+## MS_girasol
+#done
+```{r}
+Normales <- c(6.21, 5.70, 6.04, 4.47, 5.22, 4.45, 4.84, 5.88, 5.82, 6.09, 5.59, 6.06, 5.59, 6.74, 5.55, 5.79)
+Anormales <- c(4.28, 3.71, 2.48, 3.71, 3.37, 4.20, 5.06, 2.40, 4.93, 4.91, 3.51, 4.36, 3.80, 2.99)
+plantas <- c(1:(length(Normales) + length(Anormales)))
+MS_girasol <- data.frame(plantas,
+    grupo = c(
+        rep("Normales", length(Normales)),
+        rep("Anormales", length(Anormales))
+    ),
+    MS = c(Normales, Anormales)
+)
+str(MS_girasol)
+```
+```{r}
+use_data(MS_girasol, overwrite = TRUE)
+```
+
+## dietas_pollos
+#done
+```{r}
+Tradicional <- c(1.75, 1.43, 1.72, 1.58, 1.62, 1.72, 1.75, 1.80)
+Especial <- c(1.80, 1.52, 1.80, 1.59, 1.71, 1.78, 1.75, 1.81)
+pollo <- c(1:(length(Tradicional) + length(Especial)))
+dietas_pollos <- data.frame(pollo,
+    dieta = c(
+        rep("Tradicional", length(Tradicional)),
+        rep("Especial", length(Especial))
+    ),
+    ganancia = c(Tradicional, Especial)
+)
+str(dietas_pollos)
+```
+```{r}
+use_data(dietas_pollos, overwrite = TRUE)
+```
+
+## germinacion
+```{r}
+txt <- textConnection(
+    "Trat   Germinado  semillas
+  A       si         190
+  A       no         10
+  B       si         170
+  B       no         30
+  C       si         180
+  C       no         20"
+)
+germinacion <- read.table(txt, header = T)
+xtabs(semillas ~ Trat + Germinado, germinacion)
+str(germinacion)
+```
+```{r}
+use_data(germinacion, overwrite = TRUE)
+```
+
+## algodon
+```{r}
+txt <- textConnection(
+    "corola  hoja    frec
+  amarilla ancha   717
+  amarilla angosta 249
+  blanca   ancha   236
+  blanca   angosta 80"
+)
+algodon <- read.table(txt, header = T)
+xtabs(frec ~ corola + hoja, algodon)
+str(algodon)
+```
+```{r}
+use_data(algodon, overwrite = TRUE)
+```
+
+## educacion
+```{r}
+tbl <- matrix(c(775, 687, 76, 170),
+    byrow = T, nrow = 2,
+    dimnames = list(casado = c("si", "no"), momento = c("ingreso", "al 3er año"))
+)
+txt <- textConnection(
+    "momento       casado    frec
+  ingreso        si        775
+  ingreso        no        76
+  3er_año        si        687
+  3er_año        no        170"
+)
+educacion <- read.table(txt, header = T)
+xtabs(frec ~ momento + casado, educacion)
+str(educacion)
+```
+```{r}
+use_data(educacion, overwrite = TRUE)
+```
+
+## semilla
+```{r}
+tbl <- matrix(
+    c(
+        45, 27, 24, 19, 32, 26, 88, 22, 28, 25,
+        12, 8, 7, 10, 11, 6, 24, 10, 6, 7
+    ),
+    byrow = F, nrow = 10,
+    dimnames = list(plantas = 1:10, "tipo semilla" = c("redonda", "angular"))
+)
+tbl
+
+semilla <- data.frame(
+    redonda = c(45, 27, 24, 19, 32, 26, 88, 22, 28, 25),
+    angular = c(12, 8, 7, 10, 11, 6, 24, 10, 6, 7)
+)
+str(semilla)
+```
+```{r}
+use_data(semilla, overwrite = TRUE)
+```
+
+## albumen
+```{r}
+tbl <- matrix(
+    c(
+        25, 32, 14, 70, 24, 20, 32, 44, 50, 44,
+        11, 7, 5, 27, 13, 6, 13, 9, 14, 18
+    ),
+    byrow = F, ncol = 2,
+    dimnames = list(plantas = 1:10, "albumen" = c("amarillo", "verde"))
+)
+tbl
+albumen <- data.frame(
+    amarillo = c(25, 32, 14, 70, 24, 20, 32, 44, 50, 44),
+    verde = c(11, 7, 5, 27, 13, 6, 13, 9, 14, 18)
+)
+str(albumen)
+```
+```{r}
+use_data(albumen, overwrite = TRUE)
+```
+
+## insectos
+```{r}
+tbl <- matrix(c(213, 128, 37, 18, 3, 1),
+    byrow = F, ncol = 1,
+    dimnames = list(insectos = 0:5, "frecuencia")
+)
+tbl
+# datos
+insectos <- c(0:5)
+obs <- c(213, 128, 37, 18, 3, 1)
+insectos <- data.frame(obs, insectos)
+str(insectos)
+```
+```{r}
+use_data(insectos, overwrite = TRUE)
+```
+
+## monedas
+```{r}
+tbl <- matrix(c(6, 41, 56, 45, 12),
+    byrow = F, ncol = 1,
+    dimnames = list(caras = 0:4, "frecuencia")
+)
+tbl
+caras <- 0:4
+obs <- c(6, 41, 56, 45, 12)
+monedas <- data.frame(obs, caras)
+str(monedas)
+```
+```{r}
+use_data(monedas, overwrite = TRUE)
+```
+
+## capturados
+```{r}
+tbl <- matrix(c(381, 360, 173, 65, 13, 8),
+    byrow = F, ncol = 1,
+    dimnames = list(insectos = 0:5, "intervalos")
+)
+tbl
+obs <- c(381, 360, 173, 65, 13, 8)
+insectos <- c(0, 1, 2, 3, 4, 5)
+capturados <- data.frame(obs, insectos)
+str(capturados)
+```
+```{r}
+use_data(capturados, overwrite = TRUE)
+```
+
+## susceptibilidad
+```{r}
+tbl <- matrix(c(15, 30, 40, 2, 3, 10),
+    byrow = T, ncol = 3,
+    dimnames = list(Roya = c("resistente", "susceptible"), "largo semilla" = c("corto", "medio", "largo"))
+)
+txt <- textConnection(
+    "Roya               largo           freq
+  resistente            corto          15
+  resistente            medio          2
+  resistente            largo          30
+  susceptible            corto         3
+  susceptible            medio         40
+  susceptible            largo         10"
+)
+susceptibilidad <- read.table(txt, header = T)
+xtabs(freq ~ Roya + largo, susceptibilidad)
+str(susceptibilidad)
+```
+```{r}
+use_data(susceptibilidad, overwrite = TRUE)
+```
+
+## actividad
+```{r}
+txt <- textConnection("actividad	localidad	freq
+Agrícola	A	40
+Agrícola	B	32
+Agrícola	C	59
+Agrícola	D	65
+Ganadera	A	51
+Ganadera	B	87
+Ganadera	C	42
+Ganadera	D	53
+Mixta	A	120
+Mixta	B	68
+Mixta	C	55
+Mixta	D	92
+")
+actividad <- read.table(txt, header = T)
+xtabs(freq ~ localidad + actividad, actividad)
+str(actividad)
+```
+```{r}
+use_data(actividad, overwrite = TRUE)
+```
+
+## razas
+```{r}
+razas <- read.table(textConnection(
+    "Tipo    Raza     partos
+    anormal   Holstein 42
+    anormal   Cruza    20
+    anormal   Jersey   30
+    normal  Holstein 130
+    normal  Cruza    28
+    normal  Jersey   50"
+), header = T)
+xtabs(partos ~ Tipo + Raza, razas)
+str(razas)
+```
+```{r}
+use_data(razas, overwrite = TRUE)
+```
+
+## semillas
+```{r}
+semillas <- read.table(textConnection(
+    "Partida    Tamaño    semillas
+    A           grande    70
+    A           normal    290
+    A           chico     90
+    B           grande    80
+    B           normal    300
+    B           chico     110
+    C           grande    20
+    C           normal    140
+    C           chico     60"
+), header = T)
+xtabs(semillas ~ Partida + Tamaño, semillas)
+str(semillas)
+```
+```{r}
+use_data(semillas, overwrite = TRUE)
+```
+
+## arvejas
+```{r}
+arvejas <- data.frame(
+    freq = c(315, 108, 101, 32),
+    fenotipo = c("LA", "LV", "RA", "RV")
+)
+str(arvejas)
+```
+```{r}
+use_data(arvejas, overwrite = TRUE)
+```
+
+## agua_forrajera
+```{r}
+agua_forrajera <- data.frame(agua = c(12, 18, 24, 30, 36), MS = c(5.27, 5.68, 6.25, 7.53, 8.02))
+str(agua_forrajera)
+```
+```{r}
+use_data(agua_forrajera, overwrite = TRUE)
+```
+
+## area_trigo
+```{r}
+area_trigo <- data.frame(
+    sup_total = c(147, 125, 160, 118, 149, 128, 150, 145, 115, 140, 152, 152),
+    sup_trigo = c(56, 42, 72, 36, 63, 47, 55, 49, 38, 42, 68, 60)
+)
+str(area_trigo)
+```
+```{r}
+use_data(area_trigo, overwrite = TRUE)
+```
+
+## coleoptero
+```{r}
+coleoptero <- data.frame(
+    HR = c(0, 12, 29.5, 43, 53, 62.5, 75.5, 85, 93),
+    perdida = c(8.98, 8.14, 6.67, 6.08, 5.90, 5.83, 4.68, 4.20, 3.72)
+)
+str(coleoptero)
+```
+```{r}
+use_data(coleoptero, overwrite = TRUE)
+```
+
+## P_maiz
+```{r}
+P_maiz <- data.frame(
+    P_suelo = c(0.4, 3.1, 4.7, 9.4, 11.6, 10.9, 23.1, 23.1, 29.9),
+    P_planta = c(64, 71, 54, 81, 98, 76, 76, 95, 99)
+)
+str(P_maiz)
+```
+```{r}
+use_data(P_maiz, overwrite = TRUE)
+```
+
+## lluvia_forraje
+```{r}
+lluvia_forraje <- data.frame(
+    rend = c(2, 1, 5, 3, 6, 4, 8, 9, 10, 7),
+    lluvia = c(3, 6, 9, 12, 15, 18, 21, 24, 27, 30)
+)
+str(lluvia_forraje)
+```
+```{r}
+use_data(lluvia_forraje, overwrite = TRUE)
+```
+
+## hileras_maiz
+```{r}
+hileras_maiz <- import(file.path(path_i, "hileras_maiz.xlsx"))
+str(hileras_maiz)
+```
+```{r}
+use_data(hileras_maiz, overwrite = TRUE)
+```
+
+## calificaciones
+```{r}
+calificaciones <- data.frame(
+    Fisica = c(65, 73, 87, 64, 78, 92, 70, 66, 88, 87, 79, 71),
+    Matematica = c(68, 76, 88, 65, 79, 96, 78, 65, 81, 87, 78, 70)
+)
+str(calificaciones)
+```
+```{r}
+use_data(calificaciones, overwrite = TRUE)
+```
+
+## semilla_trigo
+```{r}
+semilla_trigo <- import(file.path(path_i, "semilla_trigo.xlsx"))
+str(semilla_trigo)
+```
+```{r}
+use_data(semilla_trigo, overwrite = TRUE)
+```
+
+## huevos
+```{r}
+huevos <- import(file.path(path_i, "huevos.xlsx"))
+str(huevos)
+```
+```{r}
+use_data(huevos, overwrite = TRUE)
+```
+
+## pollos
+```{r}
+pollos <- import(file.path(path_i, "pollos.xlsx"))
+str(pollos)
+```
+```{r}
+use_data(pollos, overwrite = TRUE)
+```
+
+## fungicida
+```{r}
+fungicida <- import(file.path(path_i, "fungicida.xlsx"))
+str(fungicida)
+```
+```{r}
+use_data(fungicida, overwrite = TRUE)
+```
+
+## proteina_caseina
+```{r}
+proteina_caseina <- import(file.path(path_i, "proteina_caseina.xlsx"))
+str(proteina_caseina)
+```
+```{r}
+use_data(proteina_caseina, overwrite = TRUE)
+```
+
+## dosis_tomate
+```{r}
+dosis_tomate <- import(file.path(path_i, "dosis_tomate.xlsx"))
+str(dosis_tomate)
+```
+```{r}
+use_data(dosis_tomate, overwrite = TRUE)
 ```

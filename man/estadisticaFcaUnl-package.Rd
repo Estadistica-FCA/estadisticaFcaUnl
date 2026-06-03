@@ -40,12 +40,13 @@ Universidad Nacional del Litoral.
 }
 
 \author{
-\strong{Maintainer}: Alejandro Aléman \email{aaleman@fca.unl.edu.ar} (Cátedra de Estadística FCA-UNL)
+\strong{Maintainer}: Alejandro Aléman \email{aaleman@fca.unl.edu.ar} (affiliation: Cátedra de Estadística FCA-UNL)
 
 Authors:
 \itemize{
-  \item Patricia M. Acetta \email{pacetta@fca.unl.edu.ar} (Cátedra de Estadística FCA-UNL)
-  \item Agustin Alesso \email{calesso@fca.unl.edu.ar} (Cátedra de Estadística FCA-UNL)
+  \item Alejandro Aléman \email{aaleman@fca.unl.edu.ar} (affiliation: Cátedra de Estadística FCA-UNL)
+  \item Patricia M. Acetta \email{pacetta@fca.unl.edu.ar} (affiliation: Cátedra de Estadística FCA-UNL)
+  \item Agustin Alesso \email{calesso@fca.unl.edu.ar} (affiliation: Cátedra de Estadística FCA-UNL)
 }
 
 }

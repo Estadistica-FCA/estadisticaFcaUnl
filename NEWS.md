@@ -1,3 +1,10 @@
+# estadisticaFcaUnl 0.2.5
+
+*   Added roxygen2 documentation for 55 basic statistics datasets (including `molinos`, `alimento`, `maiz`, `corderos`, `sorgo`, `ovejas`, `balanceado_cerdos`, `pezoneras`, `establecimientos`, `neumaticos_tractores`, `glifosato`, `barrenador`, `penetrometro`, `TRC`, `concentracion_insecticida`, `neumaticos`, `peso_balanceado`, `raciones`, `cerdos`, `ganancia_novillos`, `N_suelo`, `efectividad_sembradora`, `lesiones_hojas`, `dieta_bufalos`, `colesterol`, `MS_girasol`, `dietas_pollos`, `germinacion`, `algodon`, `educacion`, `semilla`, `albumen`, `insectos`, `monedas`, `capturados`, `susceptibilidad`, `actividad`, `razas`, `semillas`, `arvejas`, `agua_forrajera`, `area_trigo`, `coleoptero`, `P_maiz`, `lluvia_forraje`, `hileras_maiz`, `calificaciones`, `semilla_trigo`, `huevos`, `pollos`, `fungicida`, `proteina_caseina`, and `dosis_tomate`).
+*   Updated `R/documentation_groups.R` to register all 67 basic statistics datasets under the `datasets_estb` group in alphabetical order.
+*   Cleaned column names across several datasets to remove written accents/tildes while preserving original capitalization (`Días` and `Días_total` to `Dias` and `Dias_total` in `pesada_novillos`; `Número` to `Numero` in `especies`; `Repetición` to `Repeticion` in `arroz_pd`; `Método` to `Metodo` in `cana_pd`).
+*   Re-generated internal `.rda` dataset files and updated package documentation via `devtools::document()`.
+
 # estadisticaFcaUnl 0.2.4
 
 *   Added new function `forzar_efecto()`: Manipulates ANOVA effect significance.
