@@ -1,3 +1,8 @@
+# estadisticaFcaUnl 0.2.7
+
+*   Added support for one-proportion Z-test in `z.test()` when `p1` and `n1` are specified and `p2`/`n2` are omitted.
+*   Updated package documentation and examples for `z.test()`.
+
 # estadisticaFcaUnl 0.2.6
 
 *   Reverted column name accent removals across `pesada_novillos` (`Días`, `Días_total`), `especies` (`Número`), `arroz_pd` (`Repetición`), and `cana_pd` (`Método`) to preserve compatibility with scripts/exercises that import raw `.xlsx` files directly.

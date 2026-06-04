@@ -32,25 +32,25 @@ z_values <- function(z_calc, x, se, alternative = c("two.sided", "less", "greate
 
 #' @title Test de distribucion Normal Z
 #' @description
-#' Realiza pruebas de hipotesis de una o dos muestras con distribucion normal.
+#' Realiza pruebas de hipotesis de una o dos muestras con distribucion normal (para medias o proporciones).
 #' @param x Vector numerico. Muestra para una muestra o primer muestra para dos muestras.
 #' @param y Vector numerico. Segunda muestra para dos muestras. Optional.
 #' @param sig_x Numerico. Desviacion estandar poblacional para x.
 #' @param sig_y Numerico. Desviacion estandar poblacional para y. Requerido para dos muestras.
 #' @param alternative String de caracteres que especifica la hipotesis alternativa.
 #'   Debe ser "two.sided" (default), "greater" o "less".
-#' @param mu Numerico. Hipotesis nula para la media o diferencia de medias. Por defecto es 0.
+#' @param mu Numerico. Hipotesis nula para la media, diferencia de medias o proporcion. Por defecto es 0.
 #' @param conf.level Numerico. Nivel de confianza del intervalo. Por defecto es 0.95.
-#' @param p1 Numerico. Proporcion de exito en la poblacion 1 (para prueba de proporciones).
-#' @param p2 Numerico. Proporcion de exito en la poblacion 2 (para prueba de proporciones).
-#' @param n1 Numerico. Tamaño de la muestra para la poblacion 1 (para prueba de proporciones).
-#' @param n2 Numerico. Tamaño de la muestra para la poblacion 2 (para prueba de proporciones).
+#' @param p1 Numerico. Proporcion de exito muestral (para una o dos proporciones).
+#' @param p2 Numerico. Proporcion de exito en la poblacion 2 (para prueba de dos proporciones).
+#' @param n1 Numerico. Tamaño de la muestra (para una o dos proporciones).
+#' @param n2 Numerico. Tamaño de la muestra para la poblacion 2 (para prueba de dos proporciones).
 #' @return Un objeto de la clase "htest" que contiene los siguientes componentes:
 #' * `statistic`: El valor del estadistico Z.
 #' * `p.value`: El p-valor para la prueba.
-#' * `conf.int`: Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.
-#' * `estimate`: La estimacion de la media o diferencia en medias/proportiones.
-#' * `null.value`: El valor hipotetico de la media o diferencia en medias.
+#' * `conf.int`: Un intervalo de confianza apropiado a la hipotesis alternativa especificada.
+#' * `estimate`: La estimacion de la media, diferencia en medias/proporciones, o proporcion de la muestra.
+#' * `null.value`: El valor hipotetico de la media, diferencia en medias, o proporcion.
 #' * `alternative`: Un string descriptivo de la hipotesis alternativa.
 #' * `method`: Un string indicando el tipo de prueba realizada.
 #' * `data.name`: Un string que da el nombre(s) de los datos.
@@ -62,6 +62,9 @@ z_values <- function(z_calc, x, se, alternative = c("two.sided", "less", "greate
 #' # Two-sample Z-test
 #' y <- rnorm(100, mean = 12, sd = 2)
 #' z.test(x, y, sig_x = 2, sig_y = 2)
+#'
+#' # One-proportion Z-test
+#' z.test(p1 = 0.4, n1 = 100, mu = 0.5)
 #'
 #' # Two-proportion Z-test
 #' z.test(p1 = 0.5, p2 = 0.6, n1 = 100, n2 = 100)
@@ -123,6 +126,32 @@ z.test <- function(x = NULL, y = NULL, sig_x, sig_y = NULL,
             null.value = c(`difference in means` = mu), # Etiqueta para la diferencia de medias nula
             alternative = alternative,
             method = "Two-sample Z-test",
+            data.name = data_name
+        )
+    } else if (!is.null(p1) && !is.null(n1) && is.null(p2) && is.null(n2)) {
+        # Validar mu para proporcion (debe estar entre 0 y 1, exclusivo)
+        if (mu <= 0 || mu >= 1) {
+            stop("Para una prueba de una proporcion, 'mu' (proporcion bajo hipotesis nula) debe estar entre 0 y 1")
+        }
+        # Parametros muestrales
+        se <- sqrt(mu * (1 - mu) / n1)
+        z_calc <- (p1 - mu) / se
+
+        # Calculo de proporciones e intervalos de confianza usando error estandar estimado (Wald)
+        se_ci <- sqrt(p1 * (1 - p1) / n1)
+        z <- z_values(z_calc, p1, se_ci, alternative, conf.level)
+
+        # Estructura de la salida
+        data_name <- deparse(substitute(p1))
+
+        res <- list(
+            statistic = c(z = z_calc),
+            p.value = z$p_val,
+            conf.int = z$conf_int,
+            estimate = c(p1 = p1), # Etiqueta para la proporcion muestral
+            null.value = c(proportion = mu), # Etiqueta para la proporcion nula
+            alternative = alternative,
+            method = "One-proportion Z-test",
             data.name = data_name
         )
     } else if (!is.null(p1) && !is.null(p2) && !is.null(n1) && !is.null(n2)) {

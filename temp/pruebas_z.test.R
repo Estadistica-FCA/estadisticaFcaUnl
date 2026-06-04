@@ -15,3 +15,12 @@ z.test(x = datos1, mu = 22, y = datos2, sig_x = sigma1, sig_y = sigma2, alternat
 p1 <- 112 / 120
 p2 <- 135 / 150
 z.test(p1 = p1, p2 = p2, n1 = 120, n2 = 150, alternative = "two.sided", conf.level = 0.95)
+
+# Pruebas para una sola proporción
+z.test(p1 = 0.4, n1 = 100, mu = 0.5)
+z.test(p1 = 0.4, n1 = 100, mu = 0.5, alternative = "less")
+z.test(p1 = 0.4, n1 = 100, mu = 0.5, alternative = "greater")
+
+# Pruebas de error esperadas
+try(z.test(p1 = 0.4, n1 = 100))
+try(z.test(p1 = 0.4, n1 = 100, mu = 1.2))

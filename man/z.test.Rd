@@ -30,33 +30,33 @@ z.test(
 \item{alternative}{String de caracteres que especifica la hipotesis alternativa.
 Debe ser "two.sided" (default), "greater" o "less".}
 
-\item{mu}{Numerico. Hipotesis nula para la media o diferencia de medias. Por defecto es 0.}
+\item{mu}{Numerico. Hipotesis nula para la media, diferencia de medias o proporcion. Por defecto es 0.}
 
 \item{conf.level}{Numerico. Nivel de confianza del intervalo. Por defecto es 0.95.}
 
-\item{p1}{Numerico. Proporcion de exito en la poblacion 1 (para prueba de proporciones).}
+\item{p1}{Numerico. Proporcion de exito muestral (para una o dos proporciones).}
 
-\item{p2}{Numerico. Proporcion de exito en la poblacion 2 (para prueba de proporciones).}
+\item{p2}{Numerico. Proporcion de exito en la poblacion 2 (para prueba de dos proporciones).}
 
-\item{n1}{Numerico. Tamaño de la muestra para la poblacion 1 (para prueba de proporciones).}
+\item{n1}{Numerico. Tamaño de la muestra (para una o dos proporciones).}
 
-\item{n2}{Numerico. Tamaño de la muestra para la poblacion 2 (para prueba de proporciones).}
+\item{n2}{Numerico. Tamaño de la muestra para la poblacion 2 (para prueba de dos proporciones).}
 }
 \value{
 Un objeto de la clase "htest" que contiene los siguientes componentes:
 \itemize{
 \item \code{statistic}: El valor del estadistico Z.
 \item \code{p.value}: El p-valor para la prueba.
-\item \code{conf.int}: Un intervalo de confianza para la media o diferencia en medias apropiado a la hipotesis alternativa especificada.
-\item \code{estimate}: La estimacion de la media o diferencia en medias/proportiones.
-\item \code{null.value}: El valor hipotetico de la media o diferencia en medias.
+\item \code{conf.int}: Un intervalo de confianza apropiado a la hipotesis alternativa especificada.
+\item \code{estimate}: La estimacion de la media, diferencia en medias/proporciones, o proporcion de la muestra.
+\item \code{null.value}: El valor hipotetico de la media, diferencia en medias, o proporcion.
 \item \code{alternative}: Un string descriptivo de la hipotesis alternativa.
 \item \code{method}: Un string indicando el tipo de prueba realizada.
 \item \code{data.name}: Un string que da el nombre(s) de los datos.
 }
 }
 \description{
-Realiza pruebas de hipotesis de una o dos muestras con distribucion normal.
+Realiza pruebas de hipotesis de una o dos muestras con distribucion normal (para medias o proporciones).
 }
 \examples{
 # One-sample Z-test
@@ -66,6 +66,9 @@ z.test(x, sig_x = 2, mu = 10)
 # Two-sample Z-test
 y <- rnorm(100, mean = 12, sd = 2)
 z.test(x, y, sig_x = 2, sig_y = 2)
+
+# One-proportion Z-test
+z.test(p1 = 0.4, n1 = 100, mu = 0.5)
 
 # Two-proportion Z-test
 z.test(p1 = 0.5, p2 = 0.6, n1 = 100, n2 = 100)
