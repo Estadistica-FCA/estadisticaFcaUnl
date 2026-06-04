@@ -36,10 +36,6 @@ pesada_novillos <- import(file.path(path_i, "pesada_novillos.xlsx")) %>%
         Fecha_Ingreso = as.Date(as.numeric(Fecha_Ingreso), origin = "1899-12-30"),
         Fecha = as.Date(as.numeric(Fecha), origin = "1899-12-30"),
         Hora = format(as.POSIXct(as.numeric(Hora) * 86400, origin = "1970-01-01", tz = "UTC"), "%H:%M:%S")
-    ) %>%
-    rename(
-        Dias = Días,
-        Dias_total = Días_total
     )
 str(pesada_novillos)
 ```
@@ -137,8 +133,7 @@ use_data(productores, overwrite = TRUE)
 ## especies
 #done
 ```{r}
-especies <- import(file.path(path_i, "especies.xlsx")) %>%
-    rename(Numero = Número)
+especies <- import(file.path(path_i, "especies.xlsx"))
 str(especies)
 ```
 ```{r}

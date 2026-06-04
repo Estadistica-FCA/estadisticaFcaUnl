@@ -1116,7 +1116,7 @@
 #' A data frame with 24 rows and 4 columns:
 #'   * `Lamina`: lámina de riego (parcela principal).
 #'   * `Variedad`: variedad de arroz (subparcela).
-#'   * `Repeticion`: id de la repetición (bloque).
+#'   * `Repetición`: id de la repetición (bloque).
 #'   * `Rend`: rendimiento registrado.
 #' @source --
 "arroz_pd"
@@ -1135,7 +1135,7 @@
 #' @format
 #' A data frame with 45 rows and 4 columns:
 #'   * `Fecha`: fecha de plantación (parcela principal).
-#'   * `Metodo`: método de plantación (subparcela).
+#'   * `Método`: método de plantación (subparcela).
 #'   * `Bloque`: id del bloque.
 #'   * `Rend`: rendimiento en Tn/ha de azúcar.
 #' @source --

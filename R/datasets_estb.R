@@ -44,8 +44,8 @@
 #'   * `Fecha`: fecha de la pesada actual (MM/DD/YYYY)
 #'   * `Hora`: hora en la que se realizó la pesada actual (HH:MM:SS)
 #'   * `Peso`: peso actual registrado en kg.
-#'   * `Dias`: número de días entre la pesada anterior y la actual.
-#'   * `Dias_total`: número de dias desde el ingreso al sistema.
+#'   * `Días`: número de días entre la pesada anterior y la actual.
+#'   * `Días_total`: número de dias desde el ingreso al sistema.
 #' @source Gentileza Ing. Agr. Marcón
 "pesada_novillos"
 
@@ -165,7 +165,7 @@
 #' @format A data frame with 6 rows and 3 columns:
 #'   * `Especie`: Especie
 #'   * `Hojas`: Estado de las hojas (sanas, enfermas)
-#'   * `Numero`: Número de ejemplares
+#'   * `Número`: Número de ejemplares
 "especies"
 
 # 12 plantacion----

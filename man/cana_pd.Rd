@@ -8,7 +8,7 @@
 A data frame with 45 rows and 4 columns:
 \itemize{
 \item \code{Fecha}: fecha de plantación (parcela principal).
-\item \code{Metodo}: método de plantación (subparcela).
+\item \code{Método}: método de plantación (subparcela).
 \item \code{Bloque}: id del bloque.
 \item \code{Rend}: rendimiento en Tn/ha de azúcar.
 }

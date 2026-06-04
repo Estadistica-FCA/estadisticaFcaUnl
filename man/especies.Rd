@@ -9,7 +9,7 @@ A data frame with 6 rows and 3 columns:
 \itemize{
 \item \code{Especie}: Especie
 \item \code{Hojas}: Estado de las hojas (sanas, enfermas)
-\item \code{Numero}: Número de ejemplares
+\item \code{Número}: Número de ejemplares
 }
 }
 \usage{

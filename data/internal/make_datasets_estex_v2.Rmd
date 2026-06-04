@@ -945,11 +945,10 @@ str(arroz_pd)
 ```
 ```{r}
 arroz_pd <- arroz_pd %>%
-  rename(Repeticion = Repetición) %>%
   mutate(
     Lamina = as.factor(Lamina),
     Variedad = as.factor(Variedad),
-    Repeticion = as.factor(Repeticion),
+    Repetición = as.factor(Repetición),
     Rend = as.numeric(Rend)
   )
 str(arroz_pd)
@@ -966,10 +965,9 @@ str(cana_pd)
 ```
 ```{r}
 cana_pd <- cana_pd %>%
-  rename(Metodo = Método) %>%
   mutate(
     Fecha = as.factor(Fecha),
-    Metodo = as.factor(Metodo),
+    Método = as.factor(Método),
     Bloque = as.factor(Bloque),
     Rend = as.numeric(Rend)
   )

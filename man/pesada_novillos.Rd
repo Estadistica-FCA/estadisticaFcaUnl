@@ -18,8 +18,8 @@ A data frame with 1842 rows and 13 columns:
 \item \code{Fecha}: fecha de la pesada actual (MM/DD/YYYY)
 \item \code{Hora}: hora en la que se realizó la pesada actual (HH:MM:SS)
 \item \code{Peso}: peso actual registrado en kg.
-\item \code{Dias}: número de días entre la pesada anterior y la actual.
-\item \code{Dias_total}: número de dias desde el ingreso al sistema.
+\item \code{Días}: número de días entre la pesada anterior y la actual.
+\item \code{Días_total}: número de dias desde el ingreso al sistema.
 }
 }
 \source{

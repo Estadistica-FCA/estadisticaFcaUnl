@@ -9,7 +9,7 @@ A data frame with 24 rows and 4 columns:
 \itemize{
 \item \code{Lamina}: lámina de riego (parcela principal).
 \item \code{Variedad}: variedad de arroz (subparcela).
-\item \code{Repeticion}: id de la repetición (bloque).
+\item \code{Repetición}: id de la repetición (bloque).
 \item \code{Rend}: rendimiento registrado.
 }
 }

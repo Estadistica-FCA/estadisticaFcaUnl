@@ -1,3 +1,8 @@
+# estadisticaFcaUnl 0.2.6
+
+*   Reverted column name accent removals across `pesada_novillos` (`Días`, `Días_total`), `especies` (`Número`), `arroz_pd` (`Repetición`), and `cana_pd` (`Método`) to preserve compatibility with scripts/exercises that import raw `.xlsx` files directly.
+*   Updated package documentation and re-generated internal `.rda` dataset files to match the reverted column names.
+
 # estadisticaFcaUnl 0.2.5
 
 *   Added roxygen2 documentation for 55 basic statistics datasets (including `molinos`, `alimento`, `maiz`, `corderos`, `sorgo`, `ovejas`, `balanceado_cerdos`, `pezoneras`, `establecimientos`, `neumaticos_tractores`, `glifosato`, `barrenador`, `penetrometro`, `TRC`, `concentracion_insecticida`, `neumaticos`, `peso_balanceado`, `raciones`, `cerdos`, `ganancia_novillos`, `N_suelo`, `efectividad_sembradora`, `lesiones_hojas`, `dieta_bufalos`, `colesterol`, `MS_girasol`, `dietas_pollos`, `germinacion`, `algodon`, `educacion`, `semilla`, `albumen`, `insectos`, `monedas`, `capturados`, `susceptibilidad`, `actividad`, `razas`, `semillas`, `arvejas`, `agua_forrajera`, `area_trigo`, `coleoptero`, `P_maiz`, `lluvia_forraje`, `hileras_maiz`, `calificaciones`, `semilla_trigo`, `huevos`, `pollos`, `fungicida`, `proteina_caseina`, and `dosis_tomate`).
