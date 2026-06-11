@@ -1,5 +1,6 @@
 # estadisticaFcaUnl 0.2.7
 
+*   Added a numerical tolerance parameter `tol` to `verificar_ortogonalidad()` to prevent floating-point comparison errors with non-integer contrast matrices.
 *   Added support for one-proportion Z-test in `z.test()` when `p1` and `n1` are specified and `p2`/`n2` are omitted.
 *   Updated package documentation and examples for `z.test()`.
 

@@ -4,10 +4,12 @@
 \alias{verificar_ortogonalidad}
 \title{Verificar Ortogonalidad de una Matriz}
 \usage{
-verificar_ortogonalidad(M)
+verificar_ortogonalidad(M, tol = 1e-08)
 }
 \arguments{
 \item{M}{Una matriz numérica.}
+
+\item{tol}{Tolerancia numérica para las comparaciones con cero (por defecto 1e-8).}
 }
 \value{
 Un valor lógico (invisible): TRUE si las columnas son ortogonales y suman cero, FALSE en caso contrario.

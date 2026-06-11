@@ -1,6 +1,7 @@
 #' @title Verificar Ortogonalidad de una Matriz
 #' @description Comprueba si las columnas de una matriz son ortogonales entre sí y si suman cero (contrastes).
 #' @param M Una matriz numérica.
+#' @param tol Tolerancia numérica para las comparaciones con cero (por defecto 1e-8).
 #' @return Un valor lógico (invisible): TRUE si las columnas son ortogonales y suman cero, FALSE en caso contrario.
 #' @examples
 #' K <- cbind(
@@ -11,8 +12,9 @@
 #' )
 #' verificar_ortogonalidad(K)
 #' @importFrom cli cli_abort cli_h2 cli_dl cli_alert_success cli_alert_danger cli_alert_warning cli_ul
+#' @importFrom stats setNames
 #' @export
-verificar_ortogonalidad <- function(M) {
+verificar_ortogonalidad <- function(M, tol = 1e-8) {
     if (!is.matrix(M)) {
         cli::cli_abort("El argumento {.arg M} debe ser una matriz.")
     }
@@ -32,7 +34,7 @@ verificar_ortogonalidad <- function(M) {
     for (i in 1:n_cols) {
         s <- sum(M[, i])
         sums_list[i] <- s
-        if (s != 0) {
+        if (abs(s) > tol) {
             all_sums_zero <- FALSE
         }
     }
@@ -52,7 +54,7 @@ verificar_ortogonalidad <- function(M) {
         for (i in 1:(n_cols - 1)) {
             for (j in (i + 1):n_cols) {
                 cp <- sum(M[, i] * M[, j])
-                if (cp != 0) {
+                if (abs(cp) > tol) {
                     all_orthogonal <- FALSE
                     failing_pairs <- c(failing_pairs, sprintf("%s vs %s (Producto = %g)", colnames_M[i], colnames_M[j], cp))
                 }
