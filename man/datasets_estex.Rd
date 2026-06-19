@@ -11,12 +11,23 @@ Lista de datasets utilizados en la asignatura Estadística Experimental.
 
 \itemize{
 \item \link{ace_codornices}
+\item \link{almacenamiento_carne}
 \item \link{arroz_pd}
 \item \link{caballos}
+\item \link{camarones}
 \item \link{cana_azucar}
 \item \link{cana_pd}
+\item \link{cangrejo_ermitanio}
+\item \link{cebada_salinidad}
+\item \link{cemento}
+\item \link{cesped_compactacion}
+\item \link{cesped_golf}
+\item \link{citricos}
+\item \link{competencia}
 \item \link{conc_glucosa}
 \item \link{conservante_frutilla}
+\item \link{corderos_des}
+\item \link{densidad_trigo_riego_suelo}
 \item \link{dieta_cerdos}
 \item \link{dieta_pavos}
 \item \link{dietas_novillos}
@@ -25,9 +36,11 @@ Lista de datasets utilizados en la asignatura Estadística Experimental.
 \item \link{energia_abejas}
 \item \link{estrogeno}
 \item \link{fert_melon}
+\item \link{fert_trigo_bajo_riego}
 \item \link{fertilizante_pastizal}
 \item \link{fibra_quimico}
 \item \link{fijacion_N}
+\item \link{forestal_alt}
 \item \link{gallinas}
 \item \link{gladiolos}
 \item \link{guayule}
@@ -41,6 +54,7 @@ Lista de datasets utilizados en la asignatura Estadística Experimental.
 \item \link{labores_remolacha}
 \item \link{larvas_cesped}
 \item \link{lechuga}
+\item \link{lodos}
 \item \link{maiz2_pd}
 \item \link{met_pesados}
 \item \link{nabos}

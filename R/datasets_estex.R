@@ -1230,3 +1230,324 @@
 #' * `Dosis_ord`: dosis transformada a factor ordenado.
 #' @source --
 "digest_in_vitro"
+
+# 56 almacenamiento_carne----
+#' @title Técnicas de envasado de carne
+#' @description
+#' Estudio del efecto de técnicas de envasado de carne en la supresión del
+#' crecimiento bacteriano de cortes en góndola.
+#' @details
+#' Cortes de carne envasados con diferentes tratamientos (al vacío, CO2,
+#' comercial y mezcla de gases) para evaluar el crecimiento bacteriano.
+#' @docType data
+#' @usage data(almacenamiento_carne)
+#' @format
+#' A data frame with 12 rows and 3 columns:
+#'   * `Corte`: identificación del corte de carne.
+#'   * `Tratamiento`: método de envasado (al vacío, CO2, comercial, mezcla de gases).
+#'   * `bacterias`: recuento de bacterias en log10 UFC/cm2.
+#' @source --
+"almacenamiento_carne"
+
+# 57 cangrejo_ermitanio----
+#' @title Recuento de cangrejos ermitaños
+#' @description
+#' Recuento de cangrejos ermitaños en 6 sitios costeros.
+#' @details
+#' Para el estudio, se seleccionaron 6 sitios costeros. En cada uno de ellos
+#' se trazaron transectas y se registró y contabilizó la cantidad de cangrejos
+#' ermitaños presentes en cada una de ellas.
+#' @docType data
+#' @usage data(cangrejo_ermitanio)
+#' @format
+#' A data frame with 150 rows and 2 columns:
+#'   * `cant`: número de cangrejos ermitaños registrados.
+#'   * `Sitio`: sitio costero evaluado (Factor con 6 niveles: "1", "2", "3", "4", "5", "6").
+#' @source --
+"cangrejo_ermitanio"
+
+# 58 competencia----
+#' @title Competencia intraespecífica en cultivos
+#' @description
+#' En un experimento de cultivos se evaluó la relación entre la densidad de
+#' plantas (competencia) y la producción de granos.
+#' @details
+#' Se usaron 5 densidades de plantas (10, 20, 30, 40 y 50) las que se asignaron
+#' por triplicado a parcelas experimentales siguiendo un diseño completamente
+#' al azar (DCA). A cosecha se determinó el rendimiento por parcela.
+#' @docType data
+#' @usage data(competencia)
+#' @format
+#' A data frame with 15 rows and 3 columns:
+#'   * `D`: densidad de plantas.
+#'   * `rend`: rendimiento de granos por parcela.
+#'   * `D_ord`: densidad de plantas transformada a factor ordenado (10 < 20 < 30 < 40 < 50).
+#' @source --
+"competencia"
+
+# 59 fert_trigo_bajo_riego----
+#' @title Fertilización de trigo bajo riego
+#' @description
+#' Se evaluaron 6 estrategias (momento y dosis) de fertilización nitrogenada en
+#' trigo, incluyendo un control sin fertilización, y se midió la respuesta como
+#' contenido de N en el pseudo-tallo.
+#' @details
+#' El ensayo se realizó en un campo con sistema de riego que producía un
+#' gradiente de humedad. Para controlarlo, las parcelas se ubicaron en bloques
+#' perpendiculares a dicho gradiente.
+#' 
+#' Los datos de nitrógeno se registran en ppm x 10^-1^.
+#' @docType data
+#' @usage data(fert_trigo_bajo_riego)
+#' @format
+#' A data frame with 24 rows and 3 columns:
+#'   * `Bloque`: factor que identifica el bloque (1, 2, 3, 4).
+#'   * `Tratamiento`: factor que identifica la estrategia de fertilización (1 a 6).
+#'   * `N`: contenido de nitrógeno en el pseudo-tallo (ppm x 10^-1^).
+#' @source --
+"fert_trigo_bajo_riego"
+
+# 60 densidad_trigo_riego_suelo----
+#' @title Densidad de siembra en trigo bajo riego y gradientes de suelo
+#' @description
+#' Se realizó un ensayo a campo para determinar la relación entre el
+#' rendimiento de trigo y la densidad de siembra.
+#' @details
+#' Se evaluaron 5 densidades de siembra (30, 80, 130, 180 y 230 lb/acre) en un
+#' campo regado que tenía un gradiente de humedad en una dirección y un gradiente
+#' de suelos en otra dirección. Para filtrar estos efectos se utilizó un diseño
+#' de cuadrado latino (DCL).
+#' 
+#' En cada parcela el rendimiento fue registrado en lb/acre x 10^2^.
+#' @docType data
+#' @usage data(densidad_trigo_riego_suelo)
+#' @format
+#' A data frame with 25 rows and 6 columns:
+#'   * `Fila`: factor de fila en el diseño DCL (1 a 5).
+#'   * `Columna`: factor de columna en el diseño DCL (1 a 5).
+#'   * `Letra`: letra asignada en el cuadrado latino (A a E).
+#'   * `Densidad`: densidad de siembra (lb/acre).
+#'   * `rend`: rendimiento registrado (lb/acre x 10^2^).
+#'   * `Densidad_ord`: densidad de siembra transformada a factor ordenado (30 < 80 < 130 < 180 < 230).
+#' @source --
+"densidad_trigo_riego_suelo"
+
+# 61 corderos_des----
+#' @title Efecto de DES en fosfolípidos de corderos
+#' @description
+#' Experimento para determinar los efectos del dietilestilbestrol (DES) en el
+#' contenido de fosfolípidos en sangre de corderos.
+#' @details
+#' Se condujo un experimento para determinar los efectos del dietilestilbestrol
+#' (DES) en el contenido de fosfolípidos en sangre de corderos sacrificados en
+#' dos momentos del día (AM y PM). Para ello, se seleccionaron 20 corderos los
+#' que se asignaron a los tratamientos por quintuplicado siguiendo un DCA.
+#' @docType data
+#' @usage data(corderos_des)
+#' @format
+#' A data frame with 20 rows and 3 columns:
+#'   * `Momento`: momento del día en que se sacrificaron los corderos (AM o PM).
+#'   * `DES`: tratamiento con dietilestilbestrol (no o si).
+#'   * `FL`: contenido de fosfolípidos en sangre.
+#' @source --
+"corderos_des"
+
+# 62 citricos----
+#' @title Rendimiento de fruta en cítricos bajo diferentes pesticidas
+#' @description
+#' Experimento para determinar los efectos de 4 pesticidas en el rendimiento de
+#' fruta de 3 variedades de cítricos.
+#' @details
+#' Se seleccionaron 8 árboles de cada variedad de cítrico y se asignó al azar uno
+#' de los pesticidas a dos árboles de cada variedad (réplicas). Las aplicaciones
+#' se realizaron siguiendo las dosis de marbete y se midió el rendimiento en
+#' bushels por árbol.
+#' 
+#' Un bushel equivale aproximadamente a 18.14 kg.
+#' @docType data
+#' @usage data(citricos)
+#' @format
+#' A data frame with 24 rows and 4 columns:
+#'   * `Variedad`: factor que identifica la variedad de cítrico (1, 2, 3).
+#'   * `Pesticida`: factor que identifica el tipo de pesticida (1, 2, 3, 4).
+#'   * `rep`: número de réplica o repetición (1, 2).
+#'   * `rend`: rendimiento en bushels por árbol.
+#' @source --
+"citricos"
+
+# 63 lodos----
+#' @title Acumulación de cinc en cebada fertilizada con lodos
+#' @description
+#' Bioensayo para determinar la acumulación de cinc (Zn) en plantas de cebada
+#' fertilizadas con barros (lodos) de plantas de tratamiento de efluentes
+#' urbanos de tres ciudades.
+#' @details
+#' Se evaluaron barros provenientes de tres ciudades (niveles A, B y C) aplicados
+#' en tres dosis. Se midió el contenido de cinc (Zn) acumulado en la planta de
+#' cebada.
+#' @docType data
+#' @usage data(lodos)
+#' @format
+#' A data frame with 36 rows and 5 columns:
+#'   * `Ciudad`: factor que identifica la ciudad de origen de los barros (A, B, C).
+#'   * `Dosis`: dosis de barros aplicada (0.5, 1.0, 1.5).
+#'   * `rep`: número de réplica o repetición (1 a 4).
+#'   * `Zn`: contenido de cinc (Zn) en la planta.
+#'   * `Dosis_ord`: dosis de barros transformada a factor ordenado (0.5 < 1.0 < 1.5).
+#' @source --
+"lodos"
+
+# 64 cebada_salinidad----
+#' @title Efecto de salinidad y desarrollo en el consumo de agua en cebada
+#' @description
+#' Ensayo para estudiar el efecto de la salinidad del sustrato S (0, 6 y 12
+#' bares) y el estado de desarrollo de la planta de cebada D (14, 21 y 28 días)
+#' en el consumo de agua C.
+#' @details
+#' Los 9 tratamientos resultantes de la combinación de los factores de
+#' salinidad y días de desarrollo fueron asignados al azar a las unidades
+#' experimentales siguiendo un diseño completamente al azar (DCA).
+#' @docType data
+#' @usage data(cebada_salinidad)
+#' @format
+#' A data frame with 18 rows and 5 columns:
+#'   * `S`: salinidad del sustrato (0, 6 o 12 bares).
+#'   * `D`: estado de desarrollo de la planta de cebada (14, 21 o 28 días).
+#'   * `C`: consumo de agua registrado.
+#'   * `D_ord`: estado de desarrollo de la planta transformado a factor ordenado (14 < 21 < 28).
+#'   * `S_ord`: salinidad del sustrato transformada a factor ordenado (0 < 6 < 12).
+#' @source --
+"cebada_salinidad"
+
+# 65 camarones----
+#' @title Efecto de temperatura, densidad y salinidad en el crecimiento de camarones
+#' @description
+#' Estudio llevado a cabo para determinar cómo la densidad de población del
+#' estanque (D), la temperatura (T) y la salinidad del agua (S) influyen sobre
+#' la tasa de crecimiento de camarones criados en acuarios.
+#' @details
+#' Se evalúa si la densidad de población, la temperatura y la salinidad influyen
+#' de manera conjunta (interacciones) o independiente sobre la tasa de
+#' crecimiento de los camarones criados en condiciones controladas de acuarios.
+#' @docType data
+#' @usage data(camarones)
+#' @format
+#' A data frame with 36 rows and 5 columns:
+#'   * `T`: factor que identifica la temperatura del agua (25 o 35 °C).
+#'   * `D`: factor que identifica la densidad de población (80 o 160 individuos).
+#'   * `S`: factor que identifica la salinidad del agua (10, 25 o 40 g/L).
+#'   * `rep`: número de réplica o repetición (1 a 3).
+#'   * `Y`: tasa de crecimiento registrada.
+#' @source --
+"camarones"
+
+# 66 cemento----
+#' @title Calidad de mezclas de cemento de diferentes proveedores
+#' @description
+#' Ensayo diseñado para evaluar si existen diferencias de calidad del cemento
+#' en 4 mezclas elaboradas por 3 proveedores.
+#' @details
+#' La calidad del cemento se midió mediante pruebas de resistencia en laboratorio.
+#' Las mezclas se denominaron A, B, C y D, pero sus componentes varían de
+#' proveedor en proveedor, por lo tanto la mezcla es un factor anidado dentro
+#' del proveedor. De cada partida se tomaron 2 muestras para las determinaciones
+#' (identificadas en el factor `partida`).
+#' @docType data
+#' @usage data(cemento)
+#' @format
+#' A data frame with 24 rows and 4 columns:
+#'   * `resistencia`: resistencia registrada en pruebas de laboratorio (indicador de calidad).
+#'   * `partida`: factor que identifica la partida o muestra (1 o 2).
+#'   * `mezcla`: tipo de mezcla (A, B, C, D) anidada dentro de proveedor.
+#'   * `proveedor`: factor que identifica al proveedor (1, 2, 3).
+#' @source --
+"cemento"
+
+# 67 forestal_alt----
+#' @title Altura de árboles en ensayo forestal en San Agustín
+#' @description
+#' Al año de vida de una plantación forestal experimental en San Agustín, se midió
+#' la altura de árboles de cinco materiales genéticos bajo dos manejos de suelo.
+#' @details
+#' Los cinco materiales genéticos evaluados fueron:
+#'   * `E. dunnii` (de semillas)
+#'   * `GC08` (clon de _E. grandis_ x _E. camaldulensis_)
+#'   * `GC09` (clon de _E. grandis_ x _E. camaldulensis_)
+#'   * `H105` (clon de _E. grandis_ x _E. camaldulensis_)
+#'   * `GT H117` (clon de _E. grandis_ x _E. tereticornis_)
+#' 
+#' Los manejos de suelo evaluados fueron:
+#'   * `C`: Control, sin subsolado.
+#'   * `T`: Tratado, con subsolado a 60 cm de profundidad.
+#' @docType data
+#' @usage data(forestal_alt)
+#' @format
+#' A data frame with 40 rows and 4 columns:
+#'   * `Bloque`: factor que identifica el bloque o repetición (1 a 4).
+#'   * `Material`: factor que identifica el material genético del eucalipto.
+#'   * `Manejo`: factor que identifica el tipo de manejo del suelo (C o T).
+#'   * `altura`: altura del árbol al año de vida.
+#' @source --
+"forestal_alt"
+
+# 68 cesped_compactacion----
+#' @title Durabilidad de variedades de césped bajo compactación
+#' @description
+#' Experimento para evaluar la durabilidad de 6 variedades de céspedes sometidas
+#' a tres niveles de compactación en un diseño en franjas (strip-plot).
+#' @details
+#' El ensayo se llevó a cabo en tres localidades (bloques). En cada bloque, cada
+#' variedad de césped fue ubicada en parcelas. Debido a la dificultad para
+#' maniobrar la maquinaria de compactación, esta se aplicó en franjas
+#' transversales sobre las variedades.
+#' 
+#' La variable de respuesta registrada fue la cantidad de materia seca (MS) en
+#' cada subunidad.
+#' @docType data
+#' @usage data(cesped_compactacion)
+#' @format
+#' A data frame with 54 rows and 4 columns:
+#'   * `Localidad`: factor que identifica la localidad o bloque (1, 2, 3).
+#'   * `Compact`: factor que identifica el nivel de compactación (Leve, Moderado, Nada).
+#'   * `Variedad`: factor que identifica la variedad de césped (V1 a V6).
+#'   * `MS`: cantidad de materia seca registrada en la subunidad.
+#' @source --
+"cesped_compactacion"
+
+# 69 cesped_golf----
+#' @title Calidad de césped en campo de golf bajo fertilización y acumulación de biomasa
+#' @description
+#' Experimento para determinar el efecto de cuatro fuentes de nitrógeno y tres
+#' niveles de acumulación de biomasa muerta sobre la calidad del césped (medida
+#' como contenido de clorofila) en un diseño de parcelas divididas (split-plot).
+#' @details
+#' En un campo de golf sembrado con pasto Pencross se delimitaron 8 parcelas principales
+#' a las cuales se les asignó una fuente de fertilizante siguiendo un diseño en
+#' bloques completos al azar (DBCA) con dos bloques (réplicas). Las fuentes evaluadas
+#' fueron: urea, sulfato de amonio, isobutildenediurea (IBDU) y urea con cubierta
+#' de sulfuro (UCS).
+#' 
+#' Dos años más tarde, cada una de las parcelas se dividió en tres subparcelas a las
+#' que se asignaron al azar los niveles de acumulación de biomasa: 2, 5 y 8 años.
+#' Al final del experimento se midió el contenido de clorofila (mg/g) en muestras
+#' de césped.
+#' @docType data
+#' @usage data(cesped_golf)
+#' @format
+#' A data frame with 24 rows and 5 columns:
+#'   * `Fuente`: factor que identifica la fuente de fertilizante nitrogenado (Isobutenildiurea, Sulfato de Amonio, Urea, Urea c/ cubierta de sulfuro).
+#'   * `Bloque`: factor que identifica el bloque o réplica (1, 2).
+#'   * `Años`: años de acumulación de biomasa muerta (2, 5, 8).
+#'   * `clorofila`: contenido de clorofila en la muestra de césped (mg/g).
+#'   * `Años_ord`: años de acumulación de biomasa transformados a factor ordenado (2 < 5 < 8).
+#' @source --
+"cesped_golf"
+
+
+
+
+
+
+
+
+

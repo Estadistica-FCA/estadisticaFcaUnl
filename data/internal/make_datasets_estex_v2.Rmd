@@ -1056,3 +1056,259 @@ str(digest_in_vitro)
 ```{r}
 use_data(digest_in_vitro)
 ```
+
+## 56. almacenamiento_carne
+```{r}
+almacenamiento_carne <- import("almacenamiento_carne.xlsx")
+str(almacenamiento_carne)
+```
+
+```{r}
+almacenamiento_carne <- almacenamiento_carne %>% 
+    mutate(
+        Tratamiento = as.factor(Tratamiento)
+    )
+str(almacenamiento_carne)
+```
+
+```{r}
+use_data(almacenamiento_carne)
+```
+## 57. cangrejo_ermitanio
+```{r}
+cangrejo_ermitanio <- import("cangrejo_ermitanio.xlsx")
+str(cangrejo_ermitanio)
+```
+
+```{r}
+cangrejo_ermitanio <- cangrejo_ermitanio %>% 
+    mutate(
+        Sitio = as.factor(Sitio)
+    )
+str(cangrejo_ermitanio)
+```
+
+```{r}
+use_data(cangrejo_ermitanio)
+```
+## 58. competencia
+```{r}
+competencia <- import("competencia.xlsx")
+str(competencia)
+```
+
+```{r}
+competencia <- competencia %>% 
+    mutate(
+        D_ord = as.ordered(D)
+    )
+str(competencia)
+```
+
+```{r}
+use_data(competencia)
+```
+## 59. fert_trigo_bajo_riego
+```{r}
+fert_trigo_bajo_riego <- import("fert_trigo_bajo_riego.xlsx")
+str(fert_trigo_bajo_riego)
+```
+
+```{r}
+fert_trigo_bajo_riego <- fert_trigo_bajo_riego %>% 
+    mutate(
+        Bloque = as.factor(Bloque),
+        Tratamiento = as.factor(Tratamiento)
+    )
+str(fert_trigo_bajo_riego)
+```
+
+```{r}
+use_data(fert_trigo_bajo_riego)
+```
+
+## 60. densidad_trigo_riego_suelo
+```{r}
+densidad_trigo_riego_suelo <- import("densidad_trigo_riego_suelo.xlsx")
+str(densidad_trigo_riego_suelo)
+```
+
+```{r}
+densidad_trigo_riego_suelo <- densidad_trigo_riego_suelo %>% 
+    mutate(
+        Fila = as.factor(Fila), 
+        Columna = as.factor(Columna), 
+        Densidad_ord = as.ordered(Densidad)
+    )
+str(densidad_trigo_riego_suelo)
+```
+
+```{r}
+use_data(densidad_trigo_riego_suelo)
+```
+## 61. corderos_des
+```{r}
+corderos_des <- import("corderos.xlsx")
+str(corderos_des)
+```
+
+```{r}
+corderos_des <- corderos_des %>% 
+    mutate(
+        Momento = as.factor(Momento),
+         DES = as.factor(DES)
+    )
+str(corderos_des)
+```
+
+```{r}
+use_data(corderos_des)
+```
+## 62. citricos
+```{r}
+citricos <- import("citricos.xlsx")
+str(citricos)
+```
+
+```{r}
+citricos <- citricos %>% 
+    mutate(
+        Variedad = as.factor(Variedad),
+         Pesticida = as.factor(Pesticida)
+    )
+str(citricos)
+```
+
+```{r}
+use_data(citricos)
+```
+## 63. lodos
+```{r}
+lodos <- import("lodos.xlsx")
+str(lodos)
+```
+
+```{r}
+lodos <- lodos %>% 
+    mutate(
+        Dosis_ord = as.ordered(Dosis),
+         Ciudad = as.factor(Ciudad)
+    )
+str(lodos)
+```
+
+```{r}
+use_data(lodos)
+```
+## 64. cebada_salinidad
+```{r}
+cebada_salinidad <- import("cebada_salinidad.xlsx")
+str(cebada_salinidad)
+```
+
+```{r}
+cebada_salinidad <- cebada_salinidad %>% 
+    mutate(
+        D_ord = as.ordered(D), 
+        S_ord = as.ordered(S)
+    )
+str(cebada_salinidad)
+```
+
+```{r}
+use_data(cebada_salinidad)
+```
+## 65. camarones
+```{r}
+camarones <- import("camarones.xlsx")
+str(camarones)
+```
+
+```{r}
+camarones <- camarones %>% 
+    mutate(
+        T = as.factor(T), 
+        S = as.factor(S),  
+        D = as.factor(D)
+    )
+str(camarones)
+```
+
+```{r}
+use_data(camarones)
+```
+## 66. cemento
+```{r}
+cemento <- import("cemento.xlsx")
+str(cemento)
+```
+
+```{r}
+cemento <- cemento %>% 
+    mutate(
+        proveedor = as.factor(proveedor), 
+        partida = as.factor(partida)
+    )
+str(cemento)
+```
+
+```{r}
+use_data(cemento)
+```
+## 67. forestal_alt
+```{r}
+forestal_alt <- import("forestal_alt.xlsx")
+str(forestal_alt)
+```
+
+```{r}
+forestal_alt <- forestal_alt %>% 
+    mutate(
+        Bloque = as.factor(Bloque), 
+        Manejo = as.factor(Manejo),
+        Material = as.factor(Material)
+    )
+str(forestal_alt)
+```
+
+```{r}
+use_data(forestal_alt)
+```
+## 68. cesped_compactacion
+```{r}
+cesped_compactacion <- import("cesped_compactacion.xlsx")
+str(cesped_compactacion)
+```
+
+```{r}
+cesped_compactacion <- cesped_compactacion %>% 
+    mutate(
+        Localidad = as.factor(Localidad), 
+        Compact = as.factor(Compact),
+        Variedad = as.factor(Variedad)
+    )
+str(cesped_compactacion)
+```
+
+```{r}
+use_data(cesped_compactacion)
+```
+## 69. cesped_golf
+```{r}
+cesped_golf <- import("cesped_golf.xlsx")
+str(cesped_golf)
+```
+
+```{r}
+cesped_golf <- cesped_golf %>% 
+    mutate(
+        Bloque = as.factor(Bloque), 
+        Fuente = as.factor(Fuente),
+        Años_ord = as.ordered(Años)
+    )
+str(cesped_golf)
+```
+
+```{r}
+use_data(cesped_golf)
+```

@@ -1,4 +1,11 @@
+# estadisticaFcaUnl 0.2.8
+
+*   Added roxygen2 documentation for 14 experimental statistics datasets: `almacenamiento_carne`, `cangrejo_ermitanio`, `competencia`, `fert_trigo_bajo_riego`, `densidad_trigo_riego_suelo`, `corderos_des`, `citricos`, `lodos`, `cebada_salinidad`, `camarones`, `cemento`, `forestal_alt`, `cesped_compactacion`, and `cesped_golf`.
+*   Updated `R/documentation_groups.R` to register these datasets under the `datasets_estex` group in alphabetical order.
+*   Updated `pending/PENDING_EST2_DATASETS.md` checklist of pending datasets.
+
 # estadisticaFcaUnl 0.2.7
+
 
 *   Added a numerical tolerance parameter `tol` to `verificar_ortogonalidad()` to prevent floating-point comparison errors with non-integer contrast matrices.
 *   Added support for one-proportion Z-test in `z.test()` when `p1` and `n1` are specified and `p2`/`n2` are omitted.
