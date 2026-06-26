@@ -1,4 +1,10 @@
+# estadisticaFcaUnl 0.3.1
+
+*   Added detailed print output for `er_bloqueo()` displaying Mean Squares (CM) used and the correction factor.
+*   Added automatic alerts in `er_bloqueo()` console outputs evaluating and concluding the experiment's precision.
+
 # estadisticaFcaUnl 0.3.0
+
 
 *   Implemented `er_bloqueo()` to calculate relative blocking efficiency for "DCAvsDBCA" (DCA vs DBCA) and "DBCAvsDCL" (DBCA vs DCL).
 *   Added `comparacion` parameter to `er_bloqueo()` to choose between DCA vs DBCA and DBCA vs DCL comparison modes.
