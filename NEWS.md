@@ -1,4 +1,12 @@
+# estadisticaFcaUnl 0.3.0
+
+*   Implemented `er_bloqueo()` to calculate relative blocking efficiency for "DCAvsDBCA" (DCA vs DBCA) and "DBCAvsDCL" (DBCA vs DCL).
+*   Added `comparacion` parameter to `er_bloqueo()` to choose between DCA vs DBCA and DBCA vs DCL comparison modes.
+*   Formatted output to display rounded values (2 decimal places) using `cli` in console, while returning the numeric value invisibly.
+*   Added package documentation and examples.
+
 # estadisticaFcaUnl 0.2.8
+
 
 *   Added roxygen2 documentation for 14 experimental statistics datasets: `almacenamiento_carne`, `cangrejo_ermitanio`, `competencia`, `fert_trigo_bajo_riego`, `densidad_trigo_riego_suelo`, `corderos_des`, `citricos`, `lodos`, `cebada_salinidad`, `camarones`, `cemento`, `forestal_alt`, `cesped_compactacion`, and `cesped_golf`.
 *   Updated `R/documentation_groups.R` to register these datasets under the `datasets_estex` group in alphabetical order.
