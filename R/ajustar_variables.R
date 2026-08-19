@@ -56,7 +56,7 @@ ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
         ))
     }
     if (!is.numeric(data[[col]])) {
-        cli::cli_abort("La columna {.val {col}} debe ser numérica.")
+        cli::cli_abort("La columna {.val {col}} debe ser num\u00e9rica.")
     }
 
     # --- 2. Lógica Principal ---
@@ -126,7 +126,7 @@ ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
         return(vector("list", n)) # Lista de NULLs
     }
     if ((!is.vector(param) && !is.list(param)) || length(param) != n) {
-        cli::cli_abort("El argumento {.arg {nombre}} debe ser un vector o lista de la misma longitud que el número de grupos ({n}).")
+        cli::cli_abort("El argumento {.arg {nombre}} debe ser un vector o lista de la misma longitud que el n\u00famero de grupos ({n}).")
     }
     return(param)
 }
@@ -195,10 +195,10 @@ ajustar_variables <- function(data, col, media_obj = NULL, desvio_obj = NULL,
     }
 
     if (!is.numeric(val)) {
-        cli::cli_abort("El parámetro interno {.arg {nombre}} debe ser numérico.")
+        cli::cli_abort("El par\u00e1metro interno {.arg {nombre}} debe ser num\u00e9rico.")
     }
     if (length(val) != 1) {
-        cli::cli_abort("El parámetro interno {.arg {nombre}} debe ser un escalar (longitud 1).")
+        cli::cli_abort("El par\u00e1metro interno {.arg {nombre}} debe ser un escalar (longitud 1).")
     }
 }
 

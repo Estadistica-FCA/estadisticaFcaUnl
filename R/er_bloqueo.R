@@ -51,7 +51,7 @@ er_bloqueo <- function(formula, data, comparacion = "DCAvsDBCA") {
 
     if (comparacion == "DCAvsDBCA") {
         if (length(formula_terms) < 2) {
-            cli::cli_abort("La fórmula debe tener al menos dos términos en el miembro derecho: el bloque (primero) y el tratamiento (segundo).")
+            cli::cli_abort("La f\u00f3rmula debe tener al menos dos t\u00e9rminos en el miembro derecho: el bloque (primero) y el tratamiento (segundo).")
         }
 
         bloque_name <- formula_terms[1]
@@ -81,20 +81,20 @@ er_bloqueo <- function(formula, data, comparacion = "DCAvsDBCA") {
             "*" = "CM Error (DCA estimado): {.val {round(CME_DCA, 2)}}",
             "*" = "CM Error (DBCA): {.val {round(CME_DBCA, 2)}}"
         ))
-        cli::cli_text("Factor de corrección por grados de libertad: {.val {round(fc, 2)}}")
+        cli::cli_text("Factor de correcci\u00f3n por grados de libertad: {.val {round(fc, 2)}}")
         cli::cli_text("Eficiencia relativa de aplicar un bloqueo (DCA vs DBCA): {.val {round(er, 2)}}")
 
-        # Conclusión
+        # Conclusi\u00f3n
         if (er > 1) {
-            cli::cli_alert_success("Aplicar bloques mejoró la precisión del experimento.")
+            cli::cli_alert_success("Aplicar bloques mejor\u00f3 la precisi\u00f3n del experimento.")
         } else if (er < 1) {
-            cli::cli_alert_danger("Aplicar bloques no mejoró la precisión del experimento.")
+            cli::cli_alert_danger("Aplicar bloques no mejor\u00f3 la precisi\u00f3n del experimento.")
         } else {
-            cli::cli_alert_info("Aplicar bloques no produjo cambios en la precisión del experimento.")
+            cli::cli_alert_info("Aplicar bloques no produjo cambios en la precisi\u00f3n del experimento.")
         }
     } else {
         if (length(formula_terms) < 3) {
-            cli::cli_abort("Para la comparación 'DBCAvsDCL', la fórmula debe tener al menos tres términos en el miembro derecho: fila (primero), columna (segundo) y tratamiento (tercero).")
+            cli::cli_abort("Para la comparaci\u00f3n 'DBCAvsDCL', la f\u00f3rmula debe tener al menos tres t\u00e9rminos en el miembro derecho: fila (primero), columna (segundo) y tratamiento (tercero).")
         }
 
         row_name <- formula_terms[1]
@@ -133,7 +133,7 @@ er_bloqueo <- function(formula, data, comparacion = "DCAvsDBCA") {
             "*" = "CM Error (DBCA estimado con columnas como bloques): {.val {round(CME_DBCAc, 2)}}",
             "*" = "CM Error (DCL): {.val {round(CME_DCL, 2)}}"
         ))
-        cli::cli_text("Factor de corrección por grados de libertad: {.val {round(fc, 2)}}")
+        cli::cli_text("Factor de correcci\u00f3n por grados de libertad: {.val {round(fc, 2)}}")
         cli::cli_text("Eficiencia relativa de aplicar un cuadrado latino (DBCA vs DCL):")
         cli::cli_bullets(c(
             "*" = "Usando filas como bloques ({.val {row_name}}): {.val {round(er_f, 2)}}",
@@ -143,19 +143,19 @@ er_bloqueo <- function(formula, data, comparacion = "DCAvsDBCA") {
         # Conclusiones
         # Filas
         if (er_f > 1) {
-            cli::cli_alert_success("El diseño en cuadrado latino (DCL) mejoró la precisión respecto a un DBCA con {.val {row_name}} como bloques.")
+            cli::cli_alert_success("El dise\u00f1o en cuadrado latino (DCL) mejor\u00f3 la precisi\u00f3n respecto a un DBCA con {.val {row_name}} como bloques.")
         } else if (er_f < 1) {
-            cli::cli_alert_danger("El diseño en cuadrado latino (DCL) no mejoró la precisión respecto a un DBCA con {.val {row_name}} como bloques.")
+            cli::cli_alert_danger("El dise\u00f1o en cuadrado latino (DCL) no mejor\u00f3 la precisi\u00f3n respecto a un DBCA con {.val {row_name}} como bloques.")
         } else {
-            cli::cli_alert_info("El diseño en cuadrado latino (DCL) no produjo cambios respecto a un DBCA con {.val {row_name}} como bloques.")
+            cli::cli_alert_info("El dise\u00f1o en cuadrado latino (DCL) no produjo cambios respecto a un DBCA con {.val {row_name}} como bloques.")
         }
         # Columnas
         if (er_c > 1) {
-            cli::cli_alert_success("El diseño en cuadrado latino (DCL) mejoró la precisión respecto a un DBCA con {.val {col_name}} como bloques.")
+            cli::cli_alert_success("El dise\u00f1o en cuadrado latino (DCL) mejor\u00f3 la precisi\u00f3n respecto a un DBCA con {.val {col_name}} como bloques.")
         } else if (er_c < 1) {
-            cli::cli_alert_danger("El diseño en cuadrado latino (DCL) no mejoró la precisión respecto a un DBCA con {.val {col_name}} como bloques.")
+            cli::cli_alert_danger("El dise\u00f1o en cuadrado latino (DCL) no mejor\u00f3 la precisi\u00f3n respecto a un DBCA con {.val {col_name}} como bloques.")
         } else {
-            cli::cli_alert_info("El diseño en cuadrado latino (DCL) no produjo cambios respecto a un DBCA con {.val {col_name}} como bloques.")
+            cli::cli_alert_info("El dise\u00f1o en cuadrado latino (DCL) no produjo cambios respecto a un DBCA con {.val {col_name}} como bloques.")
         }
     }
 

@@ -2,6 +2,8 @@
 % Please edit documentation in R/geom_vallas.R
 \name{geom_vallas}
 \alias{geom_vallas}
+\alias{StatVallasOnlyLines}
+\alias{StatVallasOnlyLabels}
 \title{Capa de Vallas para Outliers}
 \usage{
 geom_vallas(
@@ -19,6 +21,10 @@ geom_vallas(
   mostrar_vallas = "todas",
   ...
 )
+
+StatVallasOnlyLines
+
+StatVallasOnlyLabels
 }
 \arguments{
 \item{mapping}{Conjunto de mapeos estéticos creados por \code{\link[ggplot2]{aes}}.}

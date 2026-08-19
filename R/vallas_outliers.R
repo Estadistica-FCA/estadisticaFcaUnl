@@ -24,7 +24,7 @@
 vallas_outliers <- function(data = NULL, Q1 = NULL, Q3 = NULL) {
     if (is.null(Q1) || is.null(Q3)) {
         if (is.null(data)) {
-            stop("Se requieren que se cargue un vector de datos o los valores de Q1 y Q3 de la distribución")
+            stop("Se requieren que se cargue un vector de datos o los valores de Q1 y Q3 de la distribuci\u00f3n")
         } else {
             Q1 <- quantile(data, 0.25, names = FALSE)
             Q3 <- quantile(data, 0.75, names = FALSE)
@@ -61,5 +61,5 @@ vallas_outliers <- function(data = NULL, Q1 = NULL, Q3 = NULL) {
     cli::cli_verbatim(cli::style_bold(nombres_v))
     cli::cli_verbatim(valores_v)
 
-    return(invisible(as.data.frame(as.list(vallas)))) # Se pone como invisible ya que se muestra por consola más arriba
+    return(invisible(as.data.frame(as.list(vallas)))) # Se pone como invisible ya que se muestra por consola m\u00e1s arriba
 }

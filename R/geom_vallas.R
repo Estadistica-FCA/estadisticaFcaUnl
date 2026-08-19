@@ -70,6 +70,8 @@ geom_vallas <- function(mapping = NULL, data = NULL, position = "identity",
     return(res)
 }
 
+#' @rdname geom_vallas
+#' @format NULL
 #' @export
 StatVallasOnlyLines <- ggplot2::ggproto("StatVallasOnlyLines", ggplot2::Stat,
     compute_group = function(data, scales, mostrar_vallas = "todos") {
@@ -102,6 +104,8 @@ StatVallasOnlyLines <- ggplot2::ggproto("StatVallasOnlyLines", ggplot2::Stat,
     required_aes = c("x")
 )
 
+#' @rdname geom_vallas
+#' @format NULL
 #' @export
 StatVallasOnlyLabels <- ggplot2::ggproto("StatVallasOnlyLabels", ggplot2::Stat,
     compute_group = function(data, scales, mostrar_vallas = "todos") {
