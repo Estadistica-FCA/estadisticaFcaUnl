@@ -1,7 +1,7 @@
 Package: estadisticaFcaUnl
 Type: Package
 Title: Herramientas y Datos para Estadística en FCA-UNL
-Version: 0.3.1
+Version: 0.3.2
 Authors@R: c(
     person(
       given = "Alejandro",
@@ -31,6 +31,7 @@ Description: Provee conjuntos de datos y funciones auxiliares para la enseñanza
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: false
+NeedsCompilation: no
 Imports:
     rstudioapi,
     miniCRAN,
@@ -41,4 +42,4 @@ Imports:
 Roxygen: list(markdown = TRUE)
 Depends: 
     R (>= 4.1.0)
-Config/roxygen2/version: 8.0.0
+Config/roxygen2/version: 8.1.0

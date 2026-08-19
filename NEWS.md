@@ -1,4 +1,9 @@
+# estadisticaFcaUnl 0.3.2
+
+*   Added `NeedsCompilation: no` to `DESCRIPTION` so that installation from source on Windows does not require Rtools.
+
 # estadisticaFcaUnl 0.3.1
+
 
 *   Added detailed print output for `er_bloqueo()` displaying Mean Squares (CM) used and the correction factor.
 *   Added automatic alerts in `er_bloqueo()` console outputs evaluating and concluding the experiment's precision.
