@@ -30,7 +30,11 @@
 #'
 #' # Comparación DBCA vs DCL
 #' data(densidad_trigo_riego_suelo)
-#' er_bloqueo(rend ~ Fila + Columna + Densidad_ord, densidad_trigo_riego_suelo, comparacion = "DBCAvsDCL")
+#' er_bloqueo(
+#'   rend ~ Fila + Columna + Densidad_ord,
+#'   densidad_trigo_riego_suelo,
+#'   comparacion = "DBCAvsDCL"
+#' )
 #'
 #' @importFrom stats as.formula terms model.frame aov anova
 #' @importFrom cli cli_abort cli_text cli_bullets cli_alert_success cli_alert_danger cli_alert_info

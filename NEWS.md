@@ -1,4 +1,10 @@
+# estadisticaFcaUnl 0.3.3
+
+*   Converted code string literals to unicode escape sequences to eliminate R CMD check non-ASCII warnings.
+*   Added `.n_cell` and `.target_media` to global variables list in `R/globals.R` and formatted example line lengths to achieve 100% OK status in `R CMD check`.
+
 # estadisticaFcaUnl 0.3.2
+
 
 *   Added `NeedsCompilation: no` to `DESCRIPTION` so that installation from source on Windows does not require Rtools.
 

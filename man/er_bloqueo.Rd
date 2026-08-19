@@ -42,6 +42,10 @@ er_bloqueo(P ~ Bloque + Tratamiento, fertilizante_pastizal)
 
 # Comparación DBCA vs DCL
 data(densidad_trigo_riego_suelo)
-er_bloqueo(rend ~ Fila + Columna + Densidad_ord, densidad_trigo_riego_suelo, comparacion = "DBCAvsDCL")
+er_bloqueo(
+  rend ~ Fila + Columna + Densidad_ord,
+  densidad_trigo_riego_suelo,
+  comparacion = "DBCAvsDCL"
+)
 
 }
