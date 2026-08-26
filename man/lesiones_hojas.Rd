@@ -21,4 +21,4 @@ Datos sobre la cantidad de lesiones provocadas artificialmente en hojas de tabac
 \details{
 En un ensayo se comparó la cantidad de lesiones provocadas en hojas de tabaco por dos concentraciones de un virus. Se seleccionaron 8 pares de hojas (un par de hojas por planta). A cada hoja del par se le aplicó uno de los preparados (prep1 o prep2) y se midió el número de lesiones provocadas artificialmente.
 }
-\keyword{datasets}
+\keyword{internal}

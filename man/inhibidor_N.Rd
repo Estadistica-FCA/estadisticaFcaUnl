@@ -29,4 +29,4 @@ inhibidor tuvo dos niveles: ninguno y 0.5 kg/ha.
 
 La respuesta es el porcentaje de N que absorbieron las plantas de maíz dulce.
 }
-\keyword{datasets}
+\keyword{internal}

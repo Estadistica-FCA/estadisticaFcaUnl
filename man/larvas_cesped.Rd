@@ -37,4 +37,4 @@ dejada sin tratar a modo de control.
 A la semana siguiente se contó el número de larvas en tres sectores de cada
 parcela y se registro el promedio de sobrevivientes de cada parcela.
 }
-\keyword{datasets}
+\keyword{internal}

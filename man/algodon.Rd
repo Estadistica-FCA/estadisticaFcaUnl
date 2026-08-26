@@ -21,4 +21,4 @@ Frecuencias de clasificación de 1282 plantas de algodón según el color de la 
 \details{
 La tabla da la clasificación de 1282 plantas de algodón según el color de la corola y la forma de la hoja, utilizada para evaluar si existe asociación entre ambas características.
 }
-\keyword{datasets}
+\keyword{internal}

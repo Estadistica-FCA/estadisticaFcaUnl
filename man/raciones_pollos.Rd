@@ -25,4 +25,4 @@ Se probaron 4 raciones alimenticias para pollos, criados en jaula tipo batería 
 \details{
 La variable analizada fué: peso del pollo (kg) a las 8 semanas de edad.
 }
-\keyword{datasets}
+\keyword{internal}

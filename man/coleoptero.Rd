@@ -20,4 +20,4 @@ Datos de pérdida de peso (en mg) en lotes de coleópteros de la harina (\emph{T
 \details{
 Los datos proceden de un estudio de pérdida de agua en el coleóptero de la harina (\emph{Tribolium confusum}). Se pesaron 9 lotes de 25 coleópteros cada uno, se guardaron a diferente humedad relativa (HR) y se pesaron nuevamente a los 6 días. Se calculó la pérdida de peso (mg) para cada lote.
 }
-\keyword{datasets}
+\keyword{internal}

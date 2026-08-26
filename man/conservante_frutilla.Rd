@@ -31,4 +31,4 @@ de plástico y conservada en el freezer a 0°C durante 6 meses. Luego de dicho
 período las muestras fueron descongeladas y se realizó una evaluación de
 decoloración en una escala de 1 a 10 (a mayor numero mayor decoloración).
 }
-\keyword{datasets}
+\keyword{internal}

@@ -20,4 +20,4 @@ Datos de concentraciones medidas con dos métodos rápidos en 10 dosis preparada
 \details{
 Se quiere comparar dos métodos rápidos para estimar la concentración de un principio activo en un insecticida. Se preparan 10 dosis en el laboratorio y se mide la concentración de cada una con ambos métodos (A y B).
 }
-\keyword{datasets}
+\keyword{internal}

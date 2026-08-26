@@ -20,4 +20,4 @@ Datos de cantidad de agua aplicada (en cm^3) y el rendimiento resultante de mate
 \details{
 Los datos representan la cantidad de agua aplicada (cm^3) y el rendimiento de una especie forrajera (tn MS/ha), en un establecimiento de la provincia de Santa Fe.
 }
-\keyword{datasets}
+\keyword{internal}

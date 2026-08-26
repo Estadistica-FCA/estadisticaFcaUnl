@@ -19,4 +19,4 @@ Datos de pesos en kilogramos de una muestra de 20 corderos.
 \details{
 Una muestra de 20 corderos indica los pesos en kg.
 }
-\keyword{datasets}
+\keyword{internal}

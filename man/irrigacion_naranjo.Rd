@@ -37,4 +37,4 @@ irrigación:
 
 Los siguientes datos se refieren al peso en libras de la fruta cosechada en cada parcela.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -28,4 +28,4 @@ resistencia se relaciona con el porcentaje de algodón en la fibra.
 Para ello se emplean cinco niveles de porcentaje de algodón (AL), y se
 ejecutan cinco réplicas en orden aleatorio (bloques).
 }
-\keyword{datasets}
+\keyword{internal}

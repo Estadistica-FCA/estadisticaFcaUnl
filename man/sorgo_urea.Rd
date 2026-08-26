@@ -27,4 +27,4 @@ experimento con sorgo granífero.
 Se estudiaron 3 dosis de urea (DO en kg/ha) con un testigo, obteniéndose
 siguientes rendimientos de grano en Kg por parcela de 20 m^2.
 }
-\keyword{datasets}
+\keyword{internal}

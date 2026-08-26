@@ -26,4 +26,4 @@ de trigo en kilogramos por parcela (cada parcela de 42 metros cuadrados).
 \details{
 Se evaluaron cuatro variedades en un DCL.
 }
-\keyword{datasets}
+\keyword{internal}

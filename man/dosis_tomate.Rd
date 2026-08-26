@@ -21,4 +21,4 @@ Datos de rendimiento de fruto y cantidad de tallos por metro cuadrado registrado
 \details{
 Se realizó un análisis de crecimiento de tomate en invernadero y se midieron distintas variables como rendimiento de fruto en kg/ha y la cantidad de tallos por m2. Las plantas fueron establecidas en macetas, se utilizó un sistema de riego dirigido y se les aplicaron diferentes dosis de fertilizante. Al momento de la cosecha se contabilizaron los tallos y se pesaron los frutos.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -31,4 +31,4 @@ espaciamientos entre surcos (en pulgadas) se aplicaron a subparcelas.
 
 La respuesta es el rendimiento en bushels por acre.
 }
-\keyword{datasets}
+\keyword{internal}

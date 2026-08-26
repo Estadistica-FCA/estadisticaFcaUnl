@@ -21,4 +21,4 @@ Experimento para modelar la relación entre la ganancia de peso en pollos cuyas 
 \details{
 Se seleccionó una muestra aleatoria de 12 pollos los cuales fueron alojados en jaulas individuales y alimentados a voluntad con el alimento más el suplemento.
 }
-\keyword{datasets}
+\keyword{internal}

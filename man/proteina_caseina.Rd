@@ -20,4 +20,4 @@ Contenido de proteína bruta (PB) y caseína (CA) en leche registrado en una mue
 \details{
 Los datos se refieren al contenido de proteína bruta (PB) y caseína (CA) en leche medido en una muestra de 23 tambos de la cuenca lechera del centro del país.
 }
-\keyword{datasets}
+\keyword{internal}

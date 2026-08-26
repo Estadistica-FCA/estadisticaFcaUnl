@@ -20,4 +20,4 @@ Datos de una muestra de 12 explotaciones agrícolas que registran el tamaño tot
 \details{
 A continuación se detallan los datos de una muestra de 12 explotaciones agrícolas donde se registra el tamaño de las mismas y el área sembrada con trigo (ambas variables en hectáreas o unidades de superficie correspondientes).
 }
-\keyword{datasets}
+\keyword{internal}

@@ -20,4 +20,4 @@ Datos de consumo estimado de lisina y ganancia de peso en una muestra de 12 poll
 \details{
 Un investigador condujo un experimento para modelar la relación entre la ganancia de peso en pollos cuyas dietas fueron suplementadas con distintas cantidades de lisina (aminoácido) y la cantidad de lisina consumida. Dado que el porcentaje de lisina del alimento es conocido, la cantidad de lisina consumida se estima a partir de la cantidad de alimento consumida. Se seleccionó una muestra aleatoria de 12 pollos los cuales fueron alojados en jaulas individuales y alimentados a voluntad con el alimento más el suplemento.
 }
-\keyword{datasets}
+\keyword{internal}

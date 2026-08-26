@@ -21,4 +21,4 @@ Datos de ganancia de peso (en kg) de 8 pares de pollos idénticos alimentados co
 \details{
 Se buscaron 8 pares de pollos idénticos en cuanto a peso, raza y sexo. A un lote se le suministró por 15 días el alimento tradicional y al otro lote una ración especial. Se detalla la ganancia de peso de cada animal al finalizar el periodo.
 }
-\keyword{datasets}
+\keyword{internal}

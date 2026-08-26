@@ -21,4 +21,4 @@ data(superficies_EAP)
 \description{
 Cantidad de empresas agropecuarias y la superficie promedio de la provincia de Santa Fe registradas en el Censo Nacional Agropecuario 2008.
 }
-\keyword{datasets}
+\keyword{internal}

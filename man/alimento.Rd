@@ -19,4 +19,4 @@ Datos del contenido de vitaminas (por cada 100 g) en una muestra de 16 animales 
 \details{
 Un nutricionista animal desea estimar el contenido vitamínico de cierto alimento. Toma una muestra de 16 animales y registra los contenidos de vitaminas por cada 100 g.
 }
-\keyword{datasets}
+\keyword{internal}

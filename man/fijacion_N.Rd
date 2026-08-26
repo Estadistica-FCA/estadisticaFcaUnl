@@ -34,4 +34,4 @@ La reducción de acetileno refleja la cantidad de nitrógeno que fija la
 bacteria en la relación simbiótica con la planta (a mayor reducción, mayor
 actividad).
 }
-\keyword{datasets}
+\keyword{internal}

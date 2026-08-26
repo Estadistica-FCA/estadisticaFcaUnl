@@ -20,4 +20,4 @@ Frecuencias observadas del número de caras obtenidas en el lanzamiento simultá
 \details{
 Distribución de resultados obtenidos al lanzar un grupo de 4 monedas de forma simultánea un total de 160 veces, registrando el número de caras.
 }
-\keyword{datasets}
+\keyword{internal}

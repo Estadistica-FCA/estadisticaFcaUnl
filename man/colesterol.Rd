@@ -21,4 +21,4 @@ Datos del nivel de colesterol en sangre (mg/dl) de pacientes bajo dos tipos de d
 \details{
 Se compara el nivel de colesterol en la sangre (mg/dl) de pacientes seleccionados al azar y sometidos a dos dietas distintas, una baja en grasa y otra normal.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -20,4 +20,4 @@ Resultados de variación de planta a planta en el color del albumen (amarillo o 
 \details{
 Mendel también observó la variación de planta a planta en un experimento sobre el color del albumen de las semillas. Los resultados para diez plantas seleccionadas se registran en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

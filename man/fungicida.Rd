@@ -20,4 +20,4 @@ Datos del daño remanente (tamaño promedio de manchas en hoja bandera) obtenido
 \details{
 Se desea probar la efectividad de un nuevo fungicida para el control de roya en trigo. Se probaron distintas dosis en gramos de principio activo por hectárea (gr.p.a./ha) en 13 parcelas de 100 plantas cada una. A los 15 días de la aplicación se realizó una evaluación del daño, registrada como el tamaño promedio de las manchas en la hoja bandera.
 }
-\keyword{datasets}
+\keyword{internal}

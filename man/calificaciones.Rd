@@ -20,4 +20,4 @@ Calificaciones obtenidas en las asignaturas de Física y Matemática en una mues
 \details{
 La tabla detalla las calificaciones en Física y Matemática de una muestra de 12 alumnos seleccionados al azar.
 }
-\keyword{datasets}
+\keyword{internal}

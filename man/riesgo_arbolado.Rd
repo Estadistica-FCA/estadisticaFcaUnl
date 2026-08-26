@@ -31,4 +31,4 @@ data(riesgo_arbolado)
 \description{
 Datos de un relevamiento de 677 arboles de la vía pública de la ciudad de Rafaela para la determinación de riesgo según la metodología de la Sociedad Internacional de Arboricultura (ISA).
 }
-\keyword{datasets}
+\keyword{internal}

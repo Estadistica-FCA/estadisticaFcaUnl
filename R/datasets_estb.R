@@ -1,6 +1,7 @@
 # 1 pesada_terneros----
 #' Pesaje de 1598 terneros que ingresaron al sistema de engorde de la estancia "La Escondida S.A."
 #' @docType data
+#' @keywords internal
 #' @usage data(pesada_terneros)
 #' @format
 #' A data frame with 1598 rows and 8 columns:
@@ -18,6 +19,7 @@
 # 2 superficies_EAP----
 #' Cantidad de empresas agropecuarias y la superficie promedio de la provincia de Santa Fe registradas en el Censo Nacional Agropecuario 2008.
 #' @docType data
+#' @keywords internal
 #' @usage data(superficies_EAP)
 #' @format
 #' A data frame with 19 rows and 3 columns:
@@ -30,6 +32,7 @@
 # 3 pesada_novillos----
 #' Datos del pesaje de dos tropas de novillos extraídos del sistema de registros del establecimiento "La Escondida S.A."
 #' @docType data
+#' @keywords internal
 #' @usage data(pesada_novillos)
 #' @format
 #' A data frame with 1842 rows and 13 columns:
@@ -52,6 +55,7 @@
 # 4 tambos_2008_2015----
 #' Datos sobre numero de establecimientos lecheros y composición de rodeo en la provincia de Santa Fe durante el período 2008-2015.
 #' @docType data
+#' @keywords internal
 #' @usage data(tambos_2008_2015)
 #' @format
 #' A data frame with 152 rows and 10 columns:
@@ -65,6 +69,7 @@
 # 5 Lotes_BA----
 #' Datos de fertilidad 0-15 y 15-30 cm de Argiudoles en 39 pares de lotes y  bajo alambrado del departamento Las Colonias.
 #' @docType data
+#' @keywords internal
 #' @usage data(lotes_BA)
 #' @format
 #' A data frame with 156 rows and 15 columns:
@@ -85,6 +90,7 @@
 # 6 riesgo_arbolado----
 #' Datos de un relevamiento de 677 arboles de la vía pública de la ciudad de Rafaela para la determinación de riesgo según la metodología de la Sociedad Internacional de Arboricultura (ISA).
 #' @docType data
+#' @keywords internal
 #' @usage data(riesgo_arbolado)
 #' @format
 #' A data frame with 677 rows and 9 columns:
@@ -111,6 +117,7 @@
 #' @details
 #' La variable en estudio es la longitud de espigas (cm).
 #' @docType data
+#' @keywords internal
 #' @usage data(ryegrass)
 #' @format A data frame with 75 rows and 2 columns:
 #'   * `planta`: número de planta
@@ -124,6 +131,7 @@
 #' @details
 #' Se pesaron 9 lotes de 25 coleópteros cada uno, se guardaron a diferente humedad relativa y se pesaron nuevamente a los 6 días. Se calculó la pérdida de peso (mg) para cada lote.
 #' @docType data
+#' @keywords internal
 #' @usage data(tribolium)
 #' @format A data frame with 9 rows and 2 columns:
 #'   * `Humedad`: Humedad relativa (%)
@@ -137,6 +145,7 @@
 #' @details
 #' Se seleccionó una muestra aleatoria de 12 pollos los cuales fueron alojados en jaulas individuales y alimentados a voluntad con el alimento más el suplemento.
 #' @docType data
+#' @keywords internal
 #' @usage data(lisina_pollos)
 #' @format A data frame with 12 rows and 3 columns:
 #'   * `Pollo`: Identificador del pollo
@@ -149,6 +158,7 @@
 #' @description
 #' Datos de 320 lotes clasificados por producción de tres grupos de productores (A, B y C). Las clasificaciones se realizaron según el nivel de la producción de cada lote (Alto, Medio y Bajo).
 #' @docType data
+#' @keywords internal
 #' @usage data(productores)
 #' @format A data frame with 320 rows and 3 columns:
 #'   * `Nivel_Produccion`: Nivel de producción del lote (Alto, Medio, Bajo)
@@ -161,6 +171,7 @@
 #' @description
 #' Datos de cantidad de hojas sanas y enfermas según especie.
 #' @docType data
+#' @keywords internal
 #' @usage data(especies)
 #' @format A data frame with 6 rows and 3 columns:
 #'   * `Especie`: Especie
@@ -173,6 +184,7 @@
 #' @description
 #' Datos de altura en metros de una muestra de 10 ejemplares de árboles _Eucalyptus_ en su segundo año de plantación de un predio de San Agustín (Santa Fe).
 #' @docType data
+#' @keywords internal
 #' @usage data(plantacion)
 #' @format A data frame with 10 rows and 1 column:
 #'   * `altura`: Altura del árbol en metros
@@ -183,6 +195,7 @@
 #' @description
 #' Datos de DAP (diámetro a la altura del pecho) expresados en centímetros de los árboles de la plantación de _Eucalyptus_ de San Agustín (Santa Fe) en su segundo año.
 #' @docType data
+#' @keywords internal
 #' @usage data(plantacion_dap)
 #' @format A data frame with 10 rows and 1 column:
 #'   * `dap`: Diámetro a la altura del pecho en centímetros
@@ -193,6 +206,7 @@
 #' @description
 #' Datos de pulsaciones del corazón por minuto de una muestra de 15 caballos de carrera registrados en un estudio.
 #' @docType data
+#' @keywords internal
 #' @usage data(pulsaciones_caballos)
 #' @format A data frame with 15 rows and 1 column:
 #'   * `pulsaciones`: Pulsaciones del corazón por minuto (latidos por minuto)
@@ -205,6 +219,7 @@
 #' @details
 #' Una empresa mayorista solicita al fabricante torres de molinos que puedan soportar vientos de 80 \eqn{km~h^{-1}}. La misma quiere determinar si las torres se ajustan a estas especificaciones solicitadas, para lo cual selecciona una muestra aleatoria de 15 molinos y los somete a pruebas de viento.
 #' @docType data
+#' @keywords internal
 #' @usage data(molinos)
 #' @format A data frame with 15 rows and 1 column:
 #'   * `km_h`: velocidad del viento (en km/h) soportada por la torre
@@ -217,6 +232,7 @@
 #' @details
 #' Un nutricionista animal desea estimar el contenido vitamínico de cierto alimento. Toma una muestra de 16 animales y registra los contenidos de vitaminas por cada 100 g.
 #' @docType data
+#' @keywords internal
 #' @usage data(alimento)
 #' @format A data frame with 16 rows and 1 column:
 #'   * `vitaminas`: contenido de vitaminas por cada 100 g
@@ -229,6 +245,7 @@
 #' @details
 #' Las observaciones corresponden al número de plantas \eqn{m^{-2}} nacidas en 20 sectores dentro de un lote de maíz.
 #' @docType data
+#' @keywords internal
 #' @usage data(maiz)
 #' @format A data frame with 6 rows and 2 columns:
 #'   * `plantas`: número de plantas por metro cuadrado
@@ -242,6 +259,7 @@
 #' @details
 #' Una muestra de 20 corderos indica los pesos en kg.
 #' @docType data
+#' @keywords internal
 #' @usage data(corderos)
 #' @format A data frame with 20 rows and 1 column:
 #'   * `peso`: peso en kilogramos
@@ -254,6 +272,7 @@
 #' @details
 #' Las siguientes son las alturas de una muestra de 16 plantas de sorgo forrajero.
 #' @docType data
+#' @keywords internal
 #' @usage data(sorgo)
 #' @format A data frame with 16 rows and 1 column:
 #'   * `altura`: altura de la planta (en metros)
@@ -266,6 +285,7 @@
 #' @details
 #' La ganancia en peso de 25 ovejas sometidas a una ración alimenticia durante un cierto período fue registrada en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(ovejas)
 #' @format A data frame with 25 rows and 1 column:
 #'   * `peso`: ganancia en peso (en kilogramos)
@@ -278,6 +298,7 @@
 #' @details
 #' Un fabricante dedicado a la elaboración de alimento balanceado para cerdos afirma que su producto aumenta el peso promedio en 200 gr. En una muestra de 20 cerdos tomados al azar se obtuvieron los siguientes aumentos de peso (en gramos).
 #' @docType data
+#' @keywords internal
 #' @usage data(balanceado_cerdos)
 #' @format A data frame with 20 rows and 1 column:
 #'   * `aumento`: aumento de peso en gramos
@@ -290,6 +311,7 @@
 #' @details
 #' Un fabricante de pezoneras sostiene que la duración media de las mismas es superior a 1400 h. Se tomó una muestra de 20 pezoneras y se detalla su duración en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(pezoneras)
 #' @format A data frame with 20 rows and 1 column:
 #'   * `duracion`: duración de la pezonera en horas
@@ -302,6 +324,7 @@
 #' @details
 #' Un estudio económico desea probar si la superficie media de los establecimientos de una región es mayor a 135 ha. Para ello se tomó una muestra de 12 establecimientos agropecuarios y se obtuvieron los siguientes datos de superficie en ha.
 #' @docType data
+#' @keywords internal
 #' @usage data(establecimientos)
 #' @format A data frame with 12 rows and 1 column:
 #'   * `superficie`: superficie del establecimiento en hectáreas (ha)
@@ -314,6 +337,7 @@
 #' @details
 #' Un fabricante de neumáticos de tractores mide en miles de km la duración de los mismos. En un ensayo de 15 neumáticos la duración de los mismos fue registrada en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(neumaticos_tractores)
 #' @format A data frame with 15 rows and 1 column:
 #'   * `duracion`: duración del neumático en miles de kilómetros (mil km)
@@ -326,6 +350,7 @@
 #' @details
 #' Datos correspondientes a mediciones de control de calidad del peso de empaque para cajas de Glifosato (un herbicida granulado soluble que se comercializa en paquetes de 15 kg). Incluye registros de múltiples meses y envases con el objetivo de evaluar el funcionamiento de la maquinaria de empaque y controlar la variabilidad y desviaciones en los pesos de carga de los envases.
 #' @docType data
+#' @keywords internal
 #' @usage data(glifosato)
 #' @format A data frame with 1150 rows and 3 columns:
 #'   * `Mes`: mes de registro del empaque (ej. "enero", "febrero", etc.)
@@ -340,6 +365,7 @@
 #' @details
 #' Datos correspondientes a un experimento realizado para evaluar la eficacia de un insecticida destinado al control del barrenador del brote de soja (_Epinotia aporema_). Se seleccionaron plantas afectadas por la plaga en dos lotes experimentales diferentes (Lote 1 y Lote 2) y se les aplicó la dosis de producto recomendada, registrando de forma binaria si la plaga fue controlada eficazmente en cada planta.
 #' @docType data
+#' @keywords internal
 #' @usage data(barrenador)
 #' @format A data frame with 2050 rows and 3 columns:
 #'   * `Muestra`: identificador numérico de la planta (muestra)
@@ -354,6 +380,7 @@
 #' @details
 #' Datos correspondientes a mediciones de resistencia mecánica a la penetración (RP) de un suelo, expresadas en megapascales (MPa). La resistencia mecánica es una propiedad del suelo crítica para el desarrollo radical, existiendo un umbral de 2 MPa que puede limitar el cultivo y requerir labranza. El set de datos incluye determinaciones de RP en diferentes muestras (ubicaciones) tomadas antes y después de realizar una labor de labranza vertical.
 #' @docType data
+#' @keywords internal
 #' @usage data(penetrometro)
 #' @format A data frame with 2000 rows and 3 columns:
 #'   * `Muestra`: identificador numérico del punto de muestreo
@@ -368,6 +395,7 @@
 #' @details
 #' Los participantes de un programa de salud miden su progreso mediante el tiempo que les toma correr determinada distancia. Un índice del progreso lo constituye la tasa de recuperación cardíaca (TRC). Los datos corresponden a tiempos (minutos y segundos) registrados para una carrera de 2.5 km. Los participantes pertenecen a dos grupos etarios: hombres entre 40 y 49 años (Grupo 1) y hombres entre 50 y 59 años (Grupo 2).
 #' @docType data
+#' @keywords internal
 #' @usage data(TRC)
 #' @format A data frame with 22 rows and 3 columns:
 #'   * `individuo`: identificador numérico del participante
@@ -382,6 +410,7 @@
 #' @details
 #' Se quiere comparar dos métodos rápidos para estimar la concentración de un principio activo en un insecticida. Se preparan 10 dosis en el laboratorio y se mide la concentración de cada una con ambos métodos (A y B).
 #' @docType data
+#' @keywords internal
 #' @usage data(concentracion_insecticida)
 #' @format A data frame with 20 rows and 2 columns:
 #'   * `metodo`: método de medición utilizado ("A" o "B")
@@ -395,6 +424,7 @@
 #' @details
 #' Una cooperativa agrícola debe decidir cuál de dos tipos de neumáticos (A y B) va a comprar para sus camiones. Los neumáticos se prueban bajo condiciones semejantes hasta que se desgastan. Se emplean 15 de cada marca, registrándose la duración en miles de km.
 #' @docType data
+#' @keywords internal
 #' @usage data(neumaticos)
 #' @format A data frame with 30 rows and 3 columns:
 #'   * `neumatico`: identificador numérico de la muestra de neumático
@@ -409,6 +439,7 @@
 #' @details
 #' Se sabe que una máquina de empacar balanceado para cerdos vierte el balanceado en bolsas de 20 kg, con una desviación estándar de 3.8 kg. Se llevan a cabo verificaciones constantes de los pesos netos de las bolsas para mantener el ajuste de la maquinaria que controla el peso. Dos muestras tomadas en dos días presentan la información registrada en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(peso_balanceado)
 #' @format A data frame with 55 rows and 3 columns:
 #'   * `muestra`: identificador numérico de la bolsa (muestra)
@@ -423,6 +454,7 @@
 #' @details
 #' En un ensayo de engorde de novillos se utilizaron dos raciones (A y B) en dos lotes de 12 animales cada uno. La variable respuesta fue la ganancia de peso por animal por día (kg). Por información previa se consideró que las varianzas poblacionales eran iguales, con un valor de 0.65.
 #' @docType data
+#' @keywords internal
 #' @usage data(raciones)
 #' @format A data frame with 24 rows and 3 columns:
 #'   * `novillo`: identificador numérico del animal
@@ -437,6 +469,7 @@
 #' @details
 #' En un ensayo de engorde de cerdos se utilizaron dos tipos de alimentación diferentes, D y M, en dos lotes de 8 cerdos. Al mes de iniciado el ensayo se registró la ganancia en peso (kg) por animal.
 #' @docType data
+#' @keywords internal
 #' @usage data(cerdos)
 #' @format A data frame with 16 rows and 3 columns:
 #'   * `cerdo`: identificador numérico del animal
@@ -451,6 +484,7 @@
 #' @details
 #' Se realizó un ensayo con novillos de raza Holando. A un grupo de animales se le dio un mineral y al otro grupo un placebo. Se detalla la ganancia de peso (kg) acumulada por cada animal durante el ensayo.
 #' @docType data
+#' @keywords internal
 #' @usage data(ganancia_novillos)
 #' @format A data frame with 28 rows and 3 columns:
 #'   * `novillo`: identificador numérico del animal
@@ -465,6 +499,7 @@
 #' @details
 #' El contenido de N-NO3 (ppm) en diferentes suelos del norte de la provincia de Santa Fe fue medido y clasificado según el tipo de suelo (Bueno y Pobre).
 #' @docType data
+#' @keywords internal
 #' @usage data(N_suelo)
 #' @format A data frame with 50 rows and 3 columns:
 #'   * `suelo`: identificador numérico de la muestra de suelo
@@ -479,6 +514,7 @@
 #' @details
 #' Para contrastar la efectividad del uso de una nueva máquina sembradora con respecto a una tradicional se seleccionaron 10 parcelas. Cada una de ellas se dividió en dos sectores, asignándose al azar a cada uno de los mismos las distintas máquinas, utilizando el mismo cultivo. El rendimiento en kg/parcela se detalla en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(efectividad_sembradora)
 #' @format A data frame with 20 rows and 3 columns:
 #'   * `parcelas`: identificador numérico de la parcela
@@ -493,6 +529,7 @@
 #' @details
 #' En un ensayo se comparó la cantidad de lesiones provocadas en hojas de tabaco por dos concentraciones de un virus. Se seleccionaron 8 pares de hojas (un par de hojas por planta). A cada hoja del par se le aplicó uno de los preparados (prep1 o prep2) y se midió el número de lesiones provocadas artificialmente.
 #' @docType data
+#' @keywords internal
 #' @usage data(lesiones_hojas)
 #' @format A data frame with 16 rows and 3 columns:
 #'   * `id`: identificador numérico de la planta (par de hojas)
@@ -507,6 +544,7 @@
 #' @details
 #' Se estudió el efecto en la pérdida de peso (kg) en 10 búfalos sometidos a una dieta hipocalórica. Los datos registran el peso de cada animal en el momento inicial y en el momento final del tratamiento.
 #' @docType data
+#' @keywords internal
 #' @usage data(dieta_bufalos)
 #' @format A data frame with 20 rows and 3 columns:
 #'   * `animal`: identificador del búfalo
@@ -521,6 +559,7 @@
 #' @details
 #' Se compara el nivel de colesterol en la sangre (mg/dl) de pacientes seleccionados al azar y sometidos a dos dietas distintas, una baja en grasa y otra normal.
 #' @docType data
+#' @keywords internal
 #' @usage data(colesterol)
 #' @format A data frame with 43 rows and 3 columns:
 #'   * `paciente`: identificador numérico del paciente
@@ -535,6 +574,7 @@
 #' @details
 #' En un cultivo de girasol se seleccionaron 30 plantas al azar de las cuales 16 eran normales y 14 anormales. Los porcentajes de materia seca para cada grupo fueron registrados en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(MS_girasol)
 #' @format A data frame with 30 rows and 3 columns:
 #'   * `plantas`: identificador de la planta
@@ -549,6 +589,7 @@
 #' @details
 #' Se buscaron 8 pares de pollos idénticos en cuanto a peso, raza y sexo. A un lote se le suministró por 15 días el alimento tradicional y al otro lote una ración especial. Se detalla la ganancia de peso de cada animal al finalizar el periodo.
 #' @docType data
+#' @keywords internal
 #' @usage data(dietas_pollos)
 #' @format A data frame with 16 rows and 3 columns:
 #'   * `pollo`: identificador numérico de la pareja de pollos
@@ -563,6 +604,7 @@
 #' @details
 #' Un experimentador efectuó pruebas de germinación de tres tratamientos químicos aplicados a cada una de 200 semillas elegidas al azar.
 #' @docType data
+#' @keywords internal
 #' @usage data(germinacion)
 #' @format A data frame with 6 rows and 3 columns:
 #'   * `Trat`: tratamiento químico aplicado ("A", "B", "C")
@@ -577,6 +619,7 @@
 #' @details
 #' La tabla da la clasificación de 1282 plantas de algodón según el color de la corola y la forma de la hoja, utilizada para evaluar si existe asociación entre ambas características.
 #' @docType data
+#' @keywords internal
 #' @usage data(algodon)
 #' @format A data frame with 4 rows and 3 columns:
 #'   * `corola`: color de la corola de la planta ("amarilla", "blanca")
@@ -591,6 +634,7 @@
 #' @details
 #' Los datos corresponden al número de estudiantes universitarios hombres, casados y solteros, que aún estaban en el establecimiento educacional tres años más tarde del ingreso. Diseñado para contrastar si la proporción difiere entre grupos.
 #' @docType data
+#' @keywords internal
 #' @usage data(educacion)
 #' @format A data frame with 4 rows and 3 columns:
 #'   * `momento`: momento del registro ("ingreso", "3er_año")
@@ -605,6 +649,7 @@
 #' @details
 #' Mendel, en uno de sus clásicos estudios genéticos, observó la variación de planta a planta en una serie de experimentos sobre la forma de la semilla. Las primeras diez plantas dieron los resultados registrados en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(semilla)
 #' @format A data frame with 10 rows and 2 columns:
 #'   * `redonda`: cantidad de semillas con forma redonda obtenidas por planta
@@ -618,6 +663,7 @@
 #' @details
 #' Mendel también observó la variación de planta a planta en un experimento sobre el color del albumen de las semillas. Los resultados para diez plantas seleccionadas se registran en este set de datos.
 #' @docType data
+#' @keywords internal
 #' @usage data(albumen)
 #' @format A data frame with 10 rows and 2 columns:
 #'   * `amarillo`: cantidad de semillas con albumen amarillo obtenidas por planta
@@ -631,6 +677,7 @@
 #' @details
 #' Datos correspondientes a la distribución del número de insectos en una muestra de 400 plantas de cultivo.
 #' @docType data
+#' @keywords internal
 #' @usage data(insectos)
 #' @format A data frame with 6 rows and 2 columns:
 #'   * `obs`: número de plantas observadas con la cantidad de insectos correspondiente (frecuencia)
@@ -644,6 +691,7 @@
 #' @details
 #' Distribución de resultados obtenidos al lanzar un grupo de 4 monedas de forma simultánea un total de 160 veces, registrando el número de caras.
 #' @docType data
+#' @keywords internal
 #' @usage data(monedas)
 #' @format A data frame with 5 rows and 2 columns:
 #'   * `obs`: frecuencia de lanzamientos observados con la cantidad de caras dada
@@ -657,6 +705,7 @@
 #' @details
 #' El número observado de insectos capturados en un lote en 1000 intervalos de un minuto se describe en esta tabla de frecuencias.
 #' @docType data
+#' @keywords internal
 #' @usage data(capturados)
 #' @format A data frame with 6 rows and 2 columns:
 #'   * `obs`: cantidad de intervalos observados con el número de insectos correspondiente (frecuencia)
@@ -670,6 +719,7 @@
 #' @details
 #' Se realizó una experiencia en trigo a fin de establecer si existe relación entre los caracteres largo de semilla y susceptibilidad a roya. Se obtuvieron los valores para un cruzamiento entre un padre de semilla larga y resistente y otro de semilla corta y susceptible.
 #' @docType data
+#' @keywords internal
 #' @usage data(susceptibilidad)
 #' @format A data frame with 6 rows and 3 columns:
 #'   * `Roya`: nivel de susceptibilidad/resistencia a la roya ("resistente", "susceptible")
@@ -684,6 +734,7 @@
 #' @details
 #' En una encuesta socioeconómica efectuada en el área rural de cuatro localidades se obtuvieron los valores para la variable actividad predominante de la explotación (agrícola, ganadera, etc.).
 #' @docType data
+#' @keywords internal
 #' @usage data(actividad)
 #' @format A data frame with 12 rows and 3 columns:
 #'   * `actividad`: actividad predominante de la explotación ("Agrícola", "Ganadera", "Mixta")
@@ -698,6 +749,7 @@
 #' @details
 #' Para estudiar la relación entre el tipo de parto y la raza en vacas lecheras se tomó una muestra de 300 vacas de una cuenca lechera y se las clasificó según dichos atributos.
 #' @docType data
+#' @keywords internal
 #' @usage data(razas)
 #' @format A data frame with 6 rows and 3 columns:
 #'   * `Tipo`: tipo de parto ("normal" o "anormal")
@@ -712,6 +764,7 @@
 #' @details
 #' Se quiere saber si la proporción de los tamaños de semilla de maíz son similares en 3 partidas de semillas. De cada partida se toma una muestra y se clasifica la semilla según su tamaño en chico, normal y grande.
 #' @docType data
+#' @keywords internal
 #' @usage data(semillas)
 #' @format A data frame with 9 rows and 3 columns:
 #'   * `Partida`: partida de procedencia de la semilla ("A", "B", "C")
@@ -726,6 +779,7 @@
 #' @details
 #' En una variedad de arvejas, la textura y color de la semilla se rigen por caracteres mendelianos, siendo "lisas" (L) y "amarillas" (A) fenotipos dominantes, mientras que "rugosas" (R) y "verdes" (V) son recesivos. La proporción teórica del número de arvejas LA, LV, RA y RV es 9:3:3:1. Se clasificaron 556 arvejas según su fenotipo y se obtuvieron los resultados registrados.
 #' @docType data
+#' @keywords internal
 #' @usage data(arvejas)
 #' @format A data frame with 4 rows and 2 columns:
 #'   * `freq`: cantidad de arvejas observadas (frecuencia)
@@ -739,6 +793,7 @@
 #' @details
 #' Los datos representan la cantidad de agua aplicada (cm^3) y el rendimiento de una especie forrajera (tn MS/ha), en un establecimiento de la provincia de Santa Fe.
 #' @docType data
+#' @keywords internal
 #' @usage data(agua_forrajera)
 #' @format A data frame with 5 rows and 2 columns:
 #'   * `agua`: cantidad de agua aplicada (cm^3)
@@ -752,6 +807,7 @@
 #' @details
 #' A continuación se detallan los datos de una muestra de 12 explotaciones agrícolas donde se registra el tamaño de las mismas y el área sembrada con trigo (ambas variables en hectáreas o unidades de superficie correspondientes).
 #' @docType data
+#' @keywords internal
 #' @usage data(area_trigo)
 #' @format A data frame with 12 rows and 2 columns:
 #'   * `sup_total`: superficie o tamaño total de la explotación agrícola
@@ -765,6 +821,7 @@
 #' @details
 #' Los datos proceden de un estudio de pérdida de agua en el coleóptero de la harina (\emph{Tribolium confusum}). Se pesaron 9 lotes de 25 coleópteros cada uno, se guardaron a diferente humedad relativa (HR) y se pesaron nuevamente a los 6 días. Se calculó la pérdida de peso (mg) para cada lote.
 #' @docType data
+#' @keywords internal
 #' @usage data(coleoptero)
 #' @format A data frame with 9 rows and 2 columns:
 #'   * `HR`: humedad relativa a la que fueron expuestos los coleópteros (%)
@@ -778,6 +835,7 @@
 #' @details
 #' Se realizó un experimento para determinar la relación entre la cantidad de P inorgánico en el suelo (ppm) al inicio del cultivo de maíz y la cantidad de P que es recuperada por la planta (en ppm) a los 30 días. Se prepararon macetas con distintas concentraciones de P inicial, se sembró el mismo híbrido de maíz y luego de 30 días se determinó el contenido de P en la planta.
 #' @docType data
+#' @keywords internal
 #' @usage data(P_maiz)
 #' @format A data frame with 9 rows and 2 columns:
 #'   * `P_suelo`: cantidad de fósforo inorgánico inicial en el suelo (ppm)
@@ -791,6 +849,7 @@
 #' @details
 #' Los datos representan el rendimiento en toneladas de forraje y la lluvia caída en mm durante los meses de julio y agosto en 10 establecimientos elegidos al azar en una determinada región.
 #' @docType data
+#' @keywords internal
 #' @usage data(lluvia_forraje)
 #' @format A data frame with 10 rows and 2 columns:
 #'   * `rend`: rendimiento de forraje obtenido (toneladas)
@@ -804,6 +863,7 @@
 #' @details
 #' Un estudio sobre maíz busca determinar la relación entre el peso de la espiga (en gramos u otra unidad de peso) y el número de hileras de grano en la misma.
 #' @docType data
+#' @keywords internal
 #' @usage data(hileras_maiz)
 #' @format A data frame with 18 rows and 2 columns:
 #'   * `Hileras`: número de hileras de grano en la espiga
@@ -817,6 +877,7 @@
 #' @details
 #' La tabla detalla las calificaciones en Física y Matemática de una muestra de 12 alumnos seleccionados al azar.
 #' @docType data
+#' @keywords internal
 #' @usage data(calificaciones)
 #' @format A data frame with 12 rows and 2 columns:
 #'   * `Fisica`: calificación obtenida en la asignatura de Física
@@ -830,6 +891,7 @@
 #' @details
 #' Con el objeto de identificar variables asociadas con las diferencias de peso de semillas de trigo diploide (\emph{Triticum monococcum}), Jing et al. (2007) estudiaron varios caracteres (peso, longitud, diámetro, dureza) de 190 semillas obtenidas al azar.
 #' @docType data
+#' @keywords internal
 #' @usage data(semilla_trigo)
 #' @format A data frame with 190 rows and 6 columns:
 #'   * `ID`: identificador numérico de la semilla
@@ -847,6 +909,7 @@
 #' @details
 #' En un estudio sobre el éxito reproductivo de langostas, un entomólogo busca ajustar y modelar la relación entre el peso de las hembras y el número de huevos que produce. Selecciona 30 langostas de diferentes pesos (en gramos) y registra el número de huevos producidos.
 #' @docType data
+#' @keywords internal
 #' @usage data(huevos)
 #' @format A data frame with 30 rows and 2 columns:
 #'   * `Huevos`: número de huevos producidos por la hembra
@@ -860,6 +923,7 @@
 #' @details
 #' Un investigador condujo un experimento para modelar la relación entre la ganancia de peso en pollos cuyas dietas fueron suplementadas con distintas cantidades de lisina (aminoácido) y la cantidad de lisina consumida. Dado que el porcentaje de lisina del alimento es conocido, la cantidad de lisina consumida se estima a partir de la cantidad de alimento consumida. Se seleccionó una muestra aleatoria de 12 pollos los cuales fueron alojados en jaulas individuales y alimentados a voluntad con el alimento más el suplemento.
 #' @docType data
+#' @keywords internal
 #' @usage data(pollos)
 #' @format A data frame with 12 rows and 2 columns:
 #'   * `ganancia`: ganancia de peso acumulada del pollo (en gramos)
@@ -873,6 +937,7 @@
 #' @details
 #' Se desea probar la efectividad de un nuevo fungicida para el control de roya en trigo. Se probaron distintas dosis en gramos de principio activo por hectárea (gr.p.a./ha) en 13 parcelas de 100 plantas cada una. A los 15 días de la aplicación se realizó una evaluación del daño, registrada como el tamaño promedio de las manchas en la hoja bandera.
 #' @docType data
+#' @keywords internal
 #' @usage data(fungicida)
 #' @format A data frame with 13 rows and 2 columns:
 #'   * `Dosis`: dosis de principio activo del fungicida aplicada (gr.p.a./ha)
@@ -886,6 +951,7 @@
 #' @details
 #' Los datos se refieren al contenido de proteína bruta (PB) y caseína (CA) en leche medido en una muestra de 23 tambos de la cuenca lechera del centro del país.
 #' @docType data
+#' @keywords internal
 #' @usage data(proteina_caseina)
 #' @format A data frame with 23 rows and 2 columns:
 #'   * `PB`: porcentaje de proteína bruta en leche (%)
@@ -899,6 +965,7 @@
 #' @details
 #' Se realizó un análisis de crecimiento de tomate en invernadero y se midieron distintas variables como rendimiento de fruto en kg/ha y la cantidad de tallos por m2. Las plantas fueron establecidas en macetas, se utilizó un sistema de riego dirigido y se les aplicaron diferentes dosis de fertilizante. Al momento de la cosecha se contabilizaron los tallos y se pesaron los frutos.
 #' @docType data
+#' @keywords internal
 #' @usage data(dosis_tomate)
 #' @format A data frame with 11 rows and 3 columns:
 #'   * `dosis`: dosis de fertilizante aplicada (ml/ha)

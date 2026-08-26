@@ -20,4 +20,4 @@ Datos de peso de la espiga y el número de hileras de granos correspondientes, m
 \details{
 Un estudio sobre maíz busca determinar la relación entre el peso de la espiga (en gramos u otra unidad de peso) y el número de hileras de grano en la misma.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Datos de rendimiento (en kg por parcela) obtenidos al comparar una máquina semb
 \details{
 Para contrastar la efectividad del uso de una nueva máquina sembradora con respecto a una tradicional se seleccionaron 10 parcelas. Cada una de ellas se dividió en dos sectores, asignándose al azar a cada uno de los mismos las distintas máquinas, utilizando el mismo cultivo. El rendimiento en kg/parcela se detalla en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

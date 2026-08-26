@@ -33,4 +33,4 @@ Se presentan los datos de los 3 tratamientos
 Los tratamientos fueron asignados al azar dentro de 5 bloques
 }
 }
-\keyword{datasets}
+\keyword{internal}

@@ -20,4 +20,4 @@ Frecuencias observadas de textura y color en 556 arvejas clasificadas según fen
 \details{
 En una variedad de arvejas, la textura y color de la semilla se rigen por caracteres mendelianos, siendo "lisas" (L) y "amarillas" (A) fenotipos dominantes, mientras que "rugosas" (R) y "verdes" (V) son recesivos. La proporción teórica del número de arvejas LA, LV, RA y RV es 9:3:3:1. Se clasificaron 556 arvejas según su fenotipo y se obtuvieron los resultados registrados.
 }
-\keyword{datasets}
+\keyword{internal}

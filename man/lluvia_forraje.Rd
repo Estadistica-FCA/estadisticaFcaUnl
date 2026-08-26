@@ -20,4 +20,4 @@ Datos de rendimiento de forraje y la lluvia caída durante los meses de julio y 
 \details{
 Los datos representan el rendimiento en toneladas de forraje y la lluvia caída en mm durante los meses de julio y agosto en 10 establecimientos elegidos al azar en una determinada región.
 }
-\keyword{datasets}
+\keyword{internal}

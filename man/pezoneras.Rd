@@ -19,4 +19,4 @@ Datos de duración (en horas) de una muestra de 20 pezoneras de ordeño, utiliza
 \details{
 Un fabricante de pezoneras sostiene que la duración media de las mismas es superior a 1400 h. Se tomó una muestra de 20 pezoneras y se detalla su duración en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

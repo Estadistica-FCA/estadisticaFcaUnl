@@ -18,4 +18,4 @@ data(especies)
 \description{
 Datos de cantidad de hojas sanas y enfermas según especie.
 }
-\keyword{datasets}
+\keyword{internal}

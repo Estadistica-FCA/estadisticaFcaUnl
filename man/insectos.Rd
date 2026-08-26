@@ -20,4 +20,4 @@ Distribución de frecuencia del número de insectos observados por planta en una
 \details{
 Datos correspondientes a la distribución del número de insectos en una muestra de 400 plantas de cultivo.
 }
-\keyword{datasets}
+\keyword{internal}

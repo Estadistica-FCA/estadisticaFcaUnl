@@ -26,4 +26,4 @@ corderos y novillos.
 Se seleccionaron 7 corderos y 6 novillos a los cuales se les suministró el
 ensilaje y se midió la digestibilidad de lo consumido.
 }
-\keyword{datasets}
+\keyword{internal}

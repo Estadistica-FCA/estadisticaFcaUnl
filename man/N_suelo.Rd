@@ -21,4 +21,4 @@ Datos de contenido de nitrógeno nítrico (N-NO3) en partes por millón (ppm) pa
 \details{
 El contenido de N-NO3 (ppm) en diferentes suelos del norte de la provincia de Santa Fe fue medido y clasificado según el tipo de suelo (Bueno y Pobre).
 }
-\keyword{datasets}
+\keyword{internal}

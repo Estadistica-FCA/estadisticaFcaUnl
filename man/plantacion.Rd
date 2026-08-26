@@ -16,4 +16,4 @@ data(plantacion)
 \description{
 Datos de altura en metros de una muestra de 10 ejemplares de árboles \emph{Eucalyptus} en su segundo año de plantación de un predio de San Agustín (Santa Fe).
 }
-\keyword{datasets}
+\keyword{internal}

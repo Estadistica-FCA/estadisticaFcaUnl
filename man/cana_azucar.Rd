@@ -26,4 +26,4 @@ un diseño en cuadrado latino.
 \details{
 Resultados de producción en kilos por parcela.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -26,4 +26,4 @@ Las 6 soluciones y un tratamiento control se asignaron por cuadriplicado a
 ratones hembra.
 Se registró el peso (PE) del útero como medida de la actividad estrogénica.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -19,4 +19,4 @@ Datos de duración (en miles de kilómetros) de una muestra de 15 neumáticos de
 \details{
 Un fabricante de neumáticos de tractores mide en miles de km la duración de los mismos. En un ensayo de 15 neumáticos la duración de los mismos fue registrada en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

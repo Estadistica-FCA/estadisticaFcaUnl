@@ -1,4 +1,12 @@
+# estadisticaFcaUnl 0.4.2
+
+*   Updated `z_score()` with default `NULL` parameters, improved error handling, and listing available columns when `col` is missing or invalid.
+*   Updated `z_score()` console output formatting to display $\pm 2\sigma$ and $\pm 3\sigma$ using unicode escape characters.
+*   Added `@keywords internal` to individual datasets in `R/datasets_estb.R` and `R/datasets_estex.R` to keep R-Universe web reference index clean while maintaining full help support (`?dataset`) in RStudio.
+
+
 # estadisticaFcaUnl 0.4.1
+
 
 *   Added `_pkgdown.yml` configuration to organize and categorize package documentation reference sections on R-Universe.
 

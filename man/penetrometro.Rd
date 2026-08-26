@@ -21,4 +21,4 @@ Datos de resistencia mecánica a la penetración (RP) en megapascales (MPa) medi
 \details{
 Datos correspondientes a mediciones de resistencia mecánica a la penetración (RP) de un suelo, expresadas en megapascales (MPa). La resistencia mecánica es una propiedad del suelo crítica para el desarrollo radical, existiendo un umbral de 2 MPa que puede limitar el cultivo y requerir labranza. El set de datos incluye determinaciones de RP en diferentes muestras (ubicaciones) tomadas antes y después de realizar una labor de labranza vertical.
 }
-\keyword{datasets}
+\keyword{internal}

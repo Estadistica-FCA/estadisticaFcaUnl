@@ -24,4 +24,4 @@ Datos de varios caracteres físicos (peso, longitud, diámetro, humedad, dureza)
 \details{
 Con el objeto de identificar variables asociadas con las diferencias de peso de semillas de trigo diploide (\emph{Triticum monococcum}), Jing et al. (2007) estudiaron varios caracteres (peso, longitud, diámetro, dureza) de 190 semillas obtenidas al azar.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Frecuencias de estudiantes universitarios según su estado civil y su permanenci
 \details{
 Los datos corresponden al número de estudiantes universitarios hombres, casados y solteros, que aún estaban en el establecimiento educacional tres años más tarde del ingreso. Diseñado para contrastar si la proporción difiere entre grupos.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Datos de peso de empaques de cajas de Glifosato (herbicida granulado soluble) re
 \details{
 Datos correspondientes a mediciones de control de calidad del peso de empaque para cajas de Glifosato (un herbicida granulado soluble que se comercializa en paquetes de 15 kg). Incluye registros de múltiples meses y envases con el objetivo de evaluar el funcionamiento de la maquinaria de empaque y controlar la variabilidad y desviaciones en los pesos de carga de los envases.
 }
-\keyword{datasets}
+\keyword{internal}

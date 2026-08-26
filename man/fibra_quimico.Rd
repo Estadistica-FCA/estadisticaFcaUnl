@@ -27,4 +27,4 @@ Se seleccionaron cinco muestras de fibra, y un diseño de bloque aleatorio. Se
 ejecutó probando cada tipo de compuesto químico en orden aleatorio en cada
 muestra de fibra.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Datos de ganancia de peso diaria promedio por animal (en kg) en novillos sometid
 \details{
 En un ensayo de engorde de novillos se utilizaron dos raciones (A y B) en dos lotes de 12 animales cada uno. La variable respuesta fue la ganancia de peso por animal por día (kg). Por información previa se consideró que las varianzas poblacionales eran iguales, con un valor de 0.65.
 }
-\keyword{datasets}
+\keyword{internal}

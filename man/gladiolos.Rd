@@ -32,4 +32,4 @@ El experimento se realizó en un diseño de bloques completos al azar con cuatro
 Luego se midió el peso promedio por inflorescencia en onzas.
 }
 }
-\keyword{datasets}
+\keyword{internal}

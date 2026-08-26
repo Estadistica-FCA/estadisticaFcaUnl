@@ -30,4 +30,4 @@ aleatoria a una de las 4 raciones evaluadas.
 Luego de un cierto período se midió el aumento de peso (en kg) de cada uno de
 los animales.
 }
-\keyword{datasets}
+\keyword{internal}

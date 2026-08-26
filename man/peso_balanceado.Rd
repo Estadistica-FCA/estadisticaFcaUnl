@@ -21,4 +21,4 @@ Datos de pesos netos (en kg) de bolsas de alimento balanceado para cerdos tomada
 \details{
 Se sabe que una máquina de empacar balanceado para cerdos vierte el balanceado en bolsas de 20 kg, con una desviación estándar de 3.8 kg. Se llevan a cabo verificaciones constantes de los pesos netos de las bolsas para mantener el ajuste de la maquinaria que controla el peso. Dos muestras tomadas en dos días presentan la información registrada en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

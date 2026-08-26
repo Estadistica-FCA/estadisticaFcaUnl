@@ -12,6 +12,7 @@
 #'  Al final del ensayo se registró el peso final y se calculó la ganancia
 #'  diaria de peso vivo (GDPV) en g/día/animal.
 #' @docType data
+#' @keywords internal
 #' @usage data(vitA_vaquillas)
 #' @format
 #' A data frame with 28 rows and 2 columns:
@@ -30,6 +31,7 @@
 #' Se seleccionaron 7 corderos y 6 novillos a los cuales se les suministró el
 #' ensilaje y se midió la digestibilidad de lo consumido.
 #' @docType data
+#' @keywords internal
 #' @usage data(dms_ensilaje)
 #' @format
 #' A data frame with 13 rows and 2 columns:
@@ -49,6 +51,7 @@
 #'
 #' A cada individuo de estos grupos se le midió el contenido de caucho.
 #' @docType data
+#' @keywords internal
 #' @usage data(guayule)
 #' @format
 #' A data frame with 27 rows and 2 columns:
@@ -74,6 +77,7 @@
 #'
 #' En ambos grupos se midió los niveles de ACE.
 #' @docType data
+#' @keywords internal
 #' @usage data(ace_codornices)
 #' @format
 #' A data frame with 10 rows and 2 columns:
@@ -93,6 +97,7 @@
 #' Cada mitad fue sometida a una presión de vapor (4.4 o 9.9 mmHg) y luego se
 #' midió la concentración de azúcares del néctar.
 #' @docType data
+#' @keywords internal
 #' @usage data(nectar_trebol_rojo)
 #' @format
 #' A data frame with 20 rows and 3 columns:
@@ -116,6 +121,7 @@
 #' Los tratamientos fueron asignados por quintuplicado a macetas donde se dejó
 #' crecer una planta de trébol rojo sobre la cual se midió el contenido de N (en mg).
 #' @docType data
+#' @keywords internal
 #' @usage data(trebol_rizhobium)
 #' @format
 #' A data frame with 30 rows and 2 columns:
@@ -143,6 +149,7 @@
 #' No obstante, durante el experimento algunas de las repeticiones tuvieron que
 #' ser descartadas quedaron 26 datos en total.
 #' @docType data
+#' @keywords internal
 #' @usage data(dieta_cerdos)
 #' @format
 #' A data frame with 26 rows and 2 columns:
@@ -163,6 +170,7 @@
 #' La respuesta se midió registrando los tiempos (TI) en segundos empleados en
 #' una corrida de 300 metros en pista normal.
 #' @docType data
+#' @keywords internal
 #' @usage data(caballos)
 #' @format
 #' A data frame with 12 rows and 2 columns:
@@ -185,6 +193,7 @@
 #' * 4- Control (sin azúcar).
 #' El resultado de crecimiento de tejidos (CR), se midió en mm X 10.
 #' @docType data
+#' @keywords internal
 #' @usage data(tomate)
 #' @format
 #' A data frame with 20 rows and 3 columns:
@@ -211,6 +220,7 @@
 #' Durante el experimento, una de las vaquillonas del tratamiento 2 tuvo que ser
 #' descartada del ensayo.
 #' @docType data
+#' @keywords internal
 #' @usage data(peso_vaquillonas)
 #' @format
 #' A data frame with 28 rows and 2 columns:
@@ -229,6 +239,7 @@
 #' ratones hembra.
 #' Se registró el peso (PE) del útero como medida de la actividad estrogénica.
 #' @docType data
+#' @keywords internal
 #' @usage data(estrogeno)
 #' @format
 #' A data frame with 28 rows and 2 columns:
@@ -248,6 +259,7 @@
 #'
 #' Se registró el número de lechugas cosechadas de la parcela.
 #' @docType data
+#' @keywords internal
 #' @usage data(lechuga)
 #' @format
 #' A data frame with 20 rows and 24 columns:
@@ -279,6 +291,7 @@
 #' la tabla son las medidas de suero T3 en las cinco gallinas sacrificadas al
 #' final de cada etapa del régimen.
 #' @docType data
+#' @keywords internal
 #' @usage data(gallinas)
 #' @format
 #' A data frame with 25 rows and 2 columns:
@@ -299,6 +312,7 @@
 #' analizada y se registra la diferencia entre el valor que lee el pH-metro y
 #' el valor conocido de pH de la muestra.
 #' @docType data
+#' @keywords internal
 #' @usage data(pH_laboratorio)
 #' @format
 #' A data frame with 24 rows and 3 columns:
@@ -323,6 +337,7 @@
 #' período las muestras fueron descongeladas y se realizó una evaluación de
 #' decoloración en una escala de 1 a 10 (a mayor numero mayor decoloración).
 #' @docType data
+#' @keywords internal
 #' @usage data(conservante_frutilla)
 #' @format
 #' A data frame with 32 rows and 2 columns:
@@ -339,6 +354,7 @@
 #' Se evaluaron 4 híbridos: A, B, C y D los cuales fueron asignados
 #' aleatoriamente a cada una de las 32 parcelas disponibles para el estudio.
 #' @docType data
+#' @keywords internal
 #' @usage data(hibridos_maiz)
 #' @format
 #' A data frame with 32 rows and 2 columns:
@@ -358,6 +374,7 @@
 #'
 #' Luego se midió la ganancia de peso (GP) de cada pavo.
 #' @docType data
+#' @keywords internal
 #' @usage data(dieta_pavos)
 #' @format
 #' A data frame with 30 rows and 2 columns:
@@ -387,6 +404,7 @@
 #'
 #' Al final del estudio, registraron la altura (en cm) de cada plantin.
 #' @docType data
+#' @keywords internal
 #' @usage data(nematodes_durazno)
 #' @format
 #' A data frame with 18 rows and 2 columns:
@@ -408,6 +426,7 @@
 #' Luego de un cierto período se midió el aumento de peso (en kg) de cada uno de
 #' los animales.
 #' @docType data
+#' @keywords internal
 #' @usage data(dietas_novillos)
 #' @format
 #' A data frame with 20 rows and 3 columns:
@@ -435,6 +454,7 @@
 #' * 4- N50P75: 50 lb de N + 75 lb de P~2~O~5~.
 #' * 5- N100P75: 100 lb de N + 75 lb de P~2~O~5~.
 #' @docType data
+#' @keywords internal
 #' @usage data(fertilizante_pastizal)
 #' @format
 #' A data frame with 25 rows and 3 columns:
@@ -454,6 +474,7 @@
 #' ejecutó probando cada tipo de compuesto químico en orden aleatorio en cada
 #' muestra de fibra.
 #' @docType data
+#' @keywords internal
 #' @usage data(fibra_quimico)
 #' @format
 #' A data frame with 20 rows and 3 columns:
@@ -476,6 +497,7 @@
 #' * 4- SESIN.
 #' Luego se midió el peso promedio por inflorescencia en onzas.
 #' @docType data
+#' @keywords internal
 #' @usage data(gladiolos)
 #' @format
 #' A data frame with 16 rows and 3 columns:
@@ -499,6 +521,7 @@
 #' Cada tratamiento (TR) son diferentes combinaciones de salinidad, el nitrógeno
 #' y aireación, con un total de 12 tratamientos.
 #' @docType data
+#' @keywords internal
 #' @usage data(invernadero_spartina)
 #' @format
 #' A data frame with 48 rows and 3 columns:
@@ -526,6 +549,7 @@
 #'
 #' Los siguientes datos se refieren al peso en libras de la fruta cosechada en cada parcela.
 #' @docType data
+#' @keywords internal
 #' @usage data(irrigacion_naranjo)
 #' @format
 #' A data frame with 48 rows and 2 columns:
@@ -549,6 +573,7 @@
 #' * LSC = lavado y secado con corriente de aire.
 #' Los tratamientos fueron asignados al azar dentro de 5 bloques
 #' @docType data
+#' @keywords internal
 #' @usage data(nabos)
 #' @format
 #' A data frame with 15 rows and 3 columns:
@@ -568,6 +593,7 @@
 #' Para ello se emplean cinco niveles de porcentaje de algodón (AL), y se
 #' ejecutan cinco réplicas en orden aleatorio (bloques).
 #' @docType data
+#' @keywords internal
 #' @usage data(resist_algodon)
 #' @format
 #' A data frame with 25 rows and 3 columns:
@@ -589,6 +615,7 @@
 #'
 #' Se proporcionan los resultados de la resistencia a la tensión (RT).
 #' @docType data
+#' @keywords internal
 #' @usage data(rollos_tela)
 #' @format
 #' A data frame with 20 rows and 3 columns:
@@ -607,6 +634,7 @@
 #' Se estudiaron 3 dosis de urea (DO en kg/ha) con un testigo, obteniéndose
 #' siguientes rendimientos de grano en Kg por parcela de 20 m^2.
 #' @docType data
+#' @keywords internal
 #' @usage data(sorgo_urea)
 #' @format
 #' A data frame with 16 rows and 4 columns:
@@ -635,6 +663,7 @@
 #'
 #' Luego de un tiempo se registró el número de plántulas emergidas por fila.
 #' @docType data
+#' @keywords internal
 #' @usage data(insecticida_poroto)
 #' @format
 #' A data frame with 12 rows and 3 columns:
@@ -662,6 +691,7 @@
 #' A la semana siguiente se contó el número de larvas en tres sectores de cada
 #' parcela y se registro el promedio de sobrevivientes de cada parcela.
 #' @docType data
+#' @keywords internal
 #' @usage data(larvas_cesped)
 #' @format
 #' A data frame with 60 rows and 5 columns:
@@ -681,6 +711,7 @@
 #' @details
 #' Resultados de producción en kilos por parcela.
 #' @docType data
+#' @keywords internal
 #' @usage data(cana_azucar)
 #' @format
 #' A data frame with 25 rows and 4 columns:
@@ -706,6 +737,7 @@
 #' Las hormonas fueron inyectadas a las ratas y luego de un período de tiempo se
 #' midió el peso del ovario.
 #' @docType data
+#' @keywords internal
 #' @usage data(hormona_ovario)
 #' @format
 #' A data frame with 16 rows and 4 columns:
@@ -736,6 +768,7 @@
 #' * C: 4 ml
 #' * D: 6 ml
 #' @docType data
+#' @keywords internal
 #' @usage data(inyeccion_vaquillas)
 #' @format
 #' A data frame with 16 rows and 6 columns:
@@ -757,6 +790,7 @@
 #' Se utilizaron 3 dosis de la hormona: A = 50 μg, B = 100 μg y C = 150 μg en
 #' un DCL. Los factores de bloqueo fueron genética (columnas) y el peso (filas).
 #' @docType data
+#' @keywords internal
 #' @usage data(prolactina_vacas)
 #' @format
 #' A data frame with 9 rows and 6 columns:
@@ -776,6 +810,7 @@
 #' diferentes en un diseño en cuadrado latino.
 #' @details --
 #' @docType data
+#' @keywords internal
 #' @usage data(tiempo_reaccion)
 #' @format
 #' A data frame with 25 rows and 5 columns:
@@ -794,6 +829,7 @@
 #' @details
 #' Se evaluaron cuatro variedades en un DCL.
 #' @docType data
+#' @keywords internal
 #' @usage data(variedad_trigo)
 #' @format
 #' A data frame with 16 rows and 4 columns:
@@ -812,6 +848,7 @@
 #' latino.
 #' @details --
 #' @docType data
+#' @keywords internal
 #' @usage data(labores_remolacha)
 #' @format
 #' A data frame with 9 rows and 4 columns:
@@ -829,6 +866,7 @@
 #' @details
 #' La variable analizada fué: peso del pollo (kg) a las 8 semanas de edad.
 #' @docType data
+#' @keywords internal
 #' @usage data(raciones_pollos)
 #' @format
 #' A data frame with 16 rows and 4 columns:
@@ -856,6 +894,7 @@
 #'   \item Insecticida: (i1, i2, i3, i4)
 #' }
 #' @docType data
+#' @keywords internal
 #' @usage data(semillas_trigo)
 #' @format
 #' A data frame with 16 rows and 4 columns:
@@ -875,6 +914,7 @@
 #' Se aplicaron las combinaciones de método y nivel de glucosa por triplicado a
 #' muestras de suero.
 #' @docType data
+#' @keywords internal
 #' @usage data(conc_glucosa)
 #' @format
 #' A data frame with 18 rows and 4 columns:
@@ -897,6 +937,7 @@
 #'
 #' El entomólogo registró la energía gastada por las abejas en J/s.
 #' @docType data
+#' @keywords internal
 #' @usage data(energia_abejas)
 #' @format
 #' A data frame with 27 rows and 6 columns:
@@ -924,6 +965,7 @@
 #' bacteria en la relación simbiótica con la planta (a mayor reducción, mayor
 #' actividad).
 #' @docType data
+#' @keywords internal
 #' @usage data(fijacion_N)
 #' @format
 #' A data frame with 48 rows and 5 columns:
@@ -945,6 +987,7 @@
 #' plantas en ambientes que contienen distintas dosis de lodo (bioensayos) en
 #' diferentes ciudades.
 #' @docType data
+#' @keywords internal
 #' @usage data(met_pesados)
 #' @format
 #' A data frame with 36 rows and 5 columns:
@@ -969,6 +1012,7 @@
 #' experimento, expresada en milímetros de agua por cada 100 gramos de peso de
 #' la planta seca.
 #' @docType data
+#' @keywords internal
 #' @usage data(sal_cebada)
 #' @format
 #' A data frame with 18 rows and 6 columns:
@@ -991,6 +1035,7 @@
 #' barro), tres niveles de salinidad del agua (2, 8 y 16 dS/m) y tres niveles de
 #' contenido de agua en el suelo (0\%, 5\% y 15\%).
 #' @docType data
+#' @keywords internal
 #' @usage data(sal_suelo)
 #' @format
 #' A data frame with 54 rows and 7 columns:
@@ -1020,6 +1065,7 @@
 #' * T3: en banda fert A
 #' * T4: en banda fert B
 #' @docType data
+#' @keywords internal
 #' @usage data(fert_melon)
 #' @format
 #' A data frame with 16 rows and 4 columns:
@@ -1041,6 +1087,7 @@
 #'
 #' La respuesta es el porcentaje de N que absorbieron las plantas de maíz dulce.
 #' @docType data
+#' @keywords internal
 #' @usage data(inhibidor_N)
 #' @format
 #' A data frame with 18 rows and 4 columns:
@@ -1063,6 +1110,7 @@
 #'
 #' La respuesta es el rendimiento en bushels por acre.
 #' @docType data
+#' @keywords internal
 #' @usage data(soja_pd)
 #' @format
 #' A data frame with 60 rows and 5 columns:
@@ -1091,6 +1139,7 @@
 #' * Clinton: resistentes a H. victoriae.
 #' * Branch: resistentes a H. victoriae.
 #' @docType data
+#' @keywords internal
 #' @usage data(semillas_pd)
 #' @format
 #' A data frame with 64 rows and 4 columns:

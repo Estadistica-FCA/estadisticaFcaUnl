@@ -20,4 +20,4 @@ Datos sobre el peso de hembras de langostas y el número de huevos producidos.
 \details{
 En un estudio sobre el éxito reproductivo de langostas, un entomólogo busca ajustar y modelar la relación entre el peso de las hembras y el número de huevos que produce. Selecciona 30 langostas de diferentes pesos (en gramos) y registra el número de huevos producidos.
 }
-\keyword{datasets}
+\keyword{internal}

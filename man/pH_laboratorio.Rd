@@ -29,4 +29,4 @@ aleatoriamente seis muestras a cada pH-metro. Cada muestra de suelo es
 analizada y se registra la diferencia entre el valor que lee el pH-metro y
 el valor conocido de pH de la muestra.
 }
-\keyword{datasets}
+\keyword{internal}

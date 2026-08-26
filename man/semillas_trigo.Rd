@@ -35,4 +35,4 @@ cada una de las variables de bloque:
 \item Insecticida: (i1, i2, i3, i4)
 }
 }
-\keyword{datasets}
+\keyword{internal}

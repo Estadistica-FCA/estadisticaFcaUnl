@@ -19,4 +19,4 @@ Datos de superficie (en hectáreas) de una muestra de 12 establecimientos agrope
 \details{
 Un estudio económico desea probar si la superficie media de los establecimientos de una región es mayor a 135 ha. Para ello se tomó una muestra de 12 establecimientos agropecuarios y se obtuvieron los siguientes datos de superficie en ha.
 }
-\keyword{datasets}
+\keyword{internal}

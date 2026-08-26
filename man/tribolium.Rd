@@ -20,4 +20,4 @@ Estudio de pérdida de agua en el coleóptero de la harina (\emph{Tribolium conf
 \details{
 Se pesaron 9 lotes de 25 coleópteros cada uno, se guardaron a diferente humedad relativa y se pesaron nuevamente a los 6 días. Se calculó la pérdida de peso (mg) para cada lote.
 }
-\keyword{datasets}
+\keyword{internal}

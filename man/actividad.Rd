@@ -21,4 +21,4 @@ Frecuencias de la actividad económica predominante de explotaciones agropecuari
 \details{
 En una encuesta socioeconómica efectuada en el área rural de cuatro localidades se obtuvieron los valores para la variable actividad predominante de la explotación (agrícola, ganadera, etc.).
 }
-\keyword{datasets}
+\keyword{internal}

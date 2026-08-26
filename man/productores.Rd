@@ -18,4 +18,4 @@ data(productores)
 \description{
 Datos de 320 lotes clasificados por producción de tres grupos de productores (A, B y C). Las clasificaciones se realizaron según el nivel de la producción de cada lote (Alto, Medio y Bajo).
 }
-\keyword{datasets}
+\keyword{internal}

@@ -20,4 +20,4 @@ Datos de concentraciones de fósforo (P) inorgánico en suelo al inicio del cult
 \details{
 Se realizó un experimento para determinar la relación entre la cantidad de P inorgánico en el suelo (ppm) al inicio del cultivo de maíz y la cantidad de P que es recuperada por la planta (en ppm) a los 30 días. Se prepararon macetas con distintas concentraciones de P inicial, se sembró el mismo híbrido de maíz y luego de 30 días se determinó el contenido de P en la planta.
 }
-\keyword{datasets}
+\keyword{internal}

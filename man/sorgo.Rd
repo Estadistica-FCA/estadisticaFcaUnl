@@ -19,4 +19,4 @@ Datos de alturas de una muestra de 16 plantas de sorgo forrajero.
 \details{
 Las siguientes son las alturas de una muestra de 16 plantas de sorgo forrajero.
 }
-\keyword{datasets}
+\keyword{internal}

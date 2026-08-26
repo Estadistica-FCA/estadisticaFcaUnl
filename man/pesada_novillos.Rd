@@ -31,4 +31,4 @@ data(pesada_novillos)
 \description{
 Datos del pesaje de dos tropas de novillos extraídos del sistema de registros del establecimiento "La Escondida S.A."
 }
-\keyword{datasets}
+\keyword{internal}

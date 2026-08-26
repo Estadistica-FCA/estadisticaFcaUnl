@@ -20,4 +20,4 @@ Distribución de frecuencia del número de insectos capturados en un lote durant
 \details{
 El número observado de insectos capturados en un lote en 1000 intervalos de un minuto se describe en esta tabla de frecuencias.
 }
-\keyword{datasets}
+\keyword{internal}

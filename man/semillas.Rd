@@ -21,4 +21,4 @@ Frecuencias de clasificación por tamaño de semillas de maíz tomadas de tres p
 \details{
 Se quiere saber si la proporción de los tamaños de semilla de maíz son similares en 3 partidas de semillas. De cada partida se toma una muestra y se clasifica la semilla según su tamaño en chico, normal y grande.
 }
-\keyword{datasets}
+\keyword{internal}

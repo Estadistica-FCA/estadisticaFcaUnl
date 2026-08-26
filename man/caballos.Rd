@@ -28,4 +28,4 @@ triplicado de manera individual dejando un grupo de animales testigo sin medicar
 La respuesta se midió registrando los tiempos (TI) en segundos empleados en
 una corrida de 300 metros en pista normal.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Datos de peso (en kg) medidos en 10 búfalos antes y después de ser sometidos a
 \details{
 Se estudió el efecto en la pérdida de peso (kg) en 10 búfalos sometidos a una dieta hipocalórica. Los datos registran el peso de cada animal en el momento inicial y en el momento final del tratamiento.
 }
-\keyword{datasets}
+\keyword{internal}

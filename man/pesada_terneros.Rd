@@ -26,4 +26,4 @@ data(pesada_terneros)
 \description{
 Pesaje de 1598 terneros que ingresaron al sistema de engorde de la estancia "La Escondida S.A."
 }
-\keyword{datasets}
+\keyword{internal}

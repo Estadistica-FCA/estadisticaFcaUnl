@@ -19,4 +19,4 @@ Datos de ganancia en peso (en kg) de una muestra de 25 ovejas sometidas a una ra
 \details{
 La ganancia en peso de 25 ovejas sometidas a una ración alimenticia durante un cierto período fue registrada en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

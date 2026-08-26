@@ -20,4 +20,4 @@ Resultados de variación de planta a planta en la forma de la semilla (redonda o
 \details{
 Mendel, en uno de sus clásicos estudios genéticos, observó la variación de planta a planta en una serie de experimentos sobre la forma de la semilla. Las primeras diez plantas dieron los resultados registrados en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

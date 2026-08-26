@@ -27,4 +27,4 @@ Se tomó 10 cabezas (inflorescencias) de trébol rojo y las dividió a la mitad.
 Cada mitad fue sometida a una presión de vapor (4.4 o 9.9 mmHg) y luego se
 midió la concentración de azúcares del néctar.
 }
-\keyword{datasets}
+\keyword{internal}

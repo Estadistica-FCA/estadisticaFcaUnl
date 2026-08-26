@@ -29,4 +29,4 @@ data(lotes_BA)
 \description{
 Datos de fertilidad 0-15 y 15-30 cm de Argiudoles en 39 pares de lotes y  bajo alambrado del departamento Las Colonias.
 }
-\keyword{datasets}
+\keyword{internal}

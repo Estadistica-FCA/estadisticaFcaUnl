@@ -30,4 +30,4 @@ completamente al azar.
 Al final del ensayo se registró el peso final y se calculó la ganancia
 diaria de peso vivo (GDPV) en g/día/animal.
 }
-\keyword{datasets}
+\keyword{internal}

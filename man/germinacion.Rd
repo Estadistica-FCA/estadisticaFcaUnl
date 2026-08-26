@@ -21,4 +21,4 @@ Datos sobre los resultados de germinación en semillas sometidas a tres tratamie
 \details{
 Un experimentador efectuó pruebas de germinación de tres tratamientos químicos aplicados a cada una de 200 semillas elegidas al azar.
 }
-\keyword{datasets}
+\keyword{internal}

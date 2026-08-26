@@ -32,4 +32,4 @@ que otras 4 vaquillonas recibieron el otro tipo de anabólico. Adicionalmente,
 Durante el experimento, una de las vaquillonas del tratamiento 2 tuvo que ser
 descartada del ensayo.
 }
-\keyword{datasets}
+\keyword{internal}

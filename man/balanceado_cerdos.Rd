@@ -19,4 +19,4 @@ Datos de aumentos de peso (en gramos) de una muestra de 20 cerdos tomados al aza
 \details{
 Un fabricante dedicado a la elaboración de alimento balanceado para cerdos afirma que su producto aumenta el peso promedio en 200 gr. En una muestra de 20 cerdos tomados al azar se obtuvieron los siguientes aumentos de peso (en gramos).
 }
-\keyword{datasets}
+\keyword{internal}

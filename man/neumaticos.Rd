@@ -21,4 +21,4 @@ Datos de duración (en miles de kilómetros) de dos marcas de neumáticos (A y B
 \details{
 Una cooperativa agrícola debe decidir cuál de dos tipos de neumáticos (A y B) va a comprar para sus camiones. Los neumáticos se prueban bajo condiciones semejantes hasta que se desgastan. Se emplean 15 de cada marca, registrándose la duración en miles de km.
 }
-\keyword{datasets}
+\keyword{internal}

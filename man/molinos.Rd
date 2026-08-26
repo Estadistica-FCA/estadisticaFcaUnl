@@ -19,4 +19,4 @@ Datos de resistencia al viento (en km/h) de una muestra aleatoria de 15 torres d
 \details{
 Una empresa mayorista solicita al fabricante torres de molinos que puedan soportar vientos de 80 \eqn{km~h^{-1}}. La misma quiere determinar si las torres se ajustan a estas especificaciones solicitadas, para lo cual selecciona una muestra aleatoria de 15 molinos y los somete a pruebas de viento.
 }
-\keyword{datasets}
+\keyword{internal}

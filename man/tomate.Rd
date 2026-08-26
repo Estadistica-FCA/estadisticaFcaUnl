@@ -34,4 +34,4 @@ Se evaluaron 4 tratamientos con 4 repeticiones cada uno:
 El resultado de crecimiento de tejidos (CR), se midió en mm X 10.
 }
 }
-\keyword{datasets}
+\keyword{internal}

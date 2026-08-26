@@ -27,4 +27,4 @@ experimento se utilizaron pavos con similar peso inicial.
 
 Luego se midió la ganancia de peso (GP) de cada pavo.
 }
-\keyword{datasets}
+\keyword{internal}

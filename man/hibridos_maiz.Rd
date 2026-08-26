@@ -24,4 +24,4 @@ Ensayo comparativo de rendimiento de maíz.
 Se evaluaron 4 híbridos: A, B, C y D los cuales fueron asignados
 aleatoriamente a cada una de las 32 parcelas disponibles para el estudio.
 }
-\keyword{datasets}
+\keyword{internal}

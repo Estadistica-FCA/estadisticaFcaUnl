@@ -21,4 +21,4 @@ Datos de ganancia de peso (en kg) de novillos de raza Holando sometidos a un tra
 \details{
 Se realizó un ensayo con novillos de raza Holando. A un grupo de animales se le dio un mineral y al otro grupo un placebo. Se detalla la ganancia de peso (kg) acumulada por cada animal durante el ensayo.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Datos sobre el control del barrenador del brote de soja (\emph{Epinotia aporema}
 \details{
 Datos correspondientes a un experimento realizado para evaluar la eficacia de un insecticida destinado al control del barrenador del brote de soja (\emph{Epinotia aporema}). Se seleccionaron plantas afectadas por la plaga en dos lotes experimentales diferentes (Lote 1 y Lote 2) y se les aplicó la dosis de producto recomendada, registrando de forma binaria si la plaga fue controlada eficazmente en cada planta.
 }
-\keyword{datasets}
+\keyword{internal}

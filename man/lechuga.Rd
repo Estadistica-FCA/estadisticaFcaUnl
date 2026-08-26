@@ -29,4 +29,4 @@ por cuadruplicado a parcelas siguiendo un diseño completamente aleatorizado.
 
 Se registró el número de lechugas cosechadas de la parcela.
 }
-\keyword{datasets}
+\keyword{internal}

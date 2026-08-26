@@ -27,4 +27,4 @@ de glucosa y 3 niveles de glucosa aplicados al suero.
 Se aplicaron las combinaciones de método y nivel de glucosa por triplicado a
 muestras de suero.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -29,4 +29,4 @@ vaquillas Holstein ante la aplicacion de distintas dosis de la hormona TRH.
 Se utilizaron 3 dosis de la hormona: A = 50 μg, B = 100 μg y C = 150 μg en
 un DCL. Los factores de bloqueo fueron genética (columnas) y el peso (filas).
 }
-\keyword{datasets}
+\keyword{internal}

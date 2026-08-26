@@ -27,4 +27,4 @@ ejemplares los cuales se clasificaron en \code{atípicos} y \code{aberrantes}.
 
 A cada individuo de estos grupos se le midió el contenido de caucho.
 }
-\keyword{datasets}
+\keyword{internal}

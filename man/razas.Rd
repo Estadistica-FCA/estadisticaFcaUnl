@@ -21,4 +21,4 @@ Frecuencias observadas de tipo de parto (normal o anormal) según la raza en una
 \details{
 Para estudiar la relación entre el tipo de parto y la raza en vacas lecheras se tomó una muestra de 300 vacas de una cuenca lechera y se las clasificó según dichos atributos.
 }
-\keyword{datasets}
+\keyword{internal}

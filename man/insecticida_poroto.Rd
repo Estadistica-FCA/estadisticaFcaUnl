@@ -35,4 +35,4 @@ aleatoriamente a cada fila dentro de la parcela.
 
 Luego de un tiempo se registró el número de plántulas emergidas por fila.
 }
-\keyword{datasets}
+\keyword{internal}

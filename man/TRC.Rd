@@ -21,4 +21,4 @@ Datos de tasa de recuperación cardíaca (TRC) medida a través del tiempo regis
 \details{
 Los participantes de un programa de salud miden su progreso mediante el tiempo que les toma correr determinada distancia. Un índice del progreso lo constituye la tasa de recuperación cardíaca (TRC). Los datos corresponden a tiempos (minutos y segundos) registrados para una carrera de 2.5 km. Los participantes pertenecen a dos grupos etarios: hombres entre 40 y 49 años (Grupo 1) y hombres entre 50 y 59 años (Grupo 2).
 }
-\keyword{datasets}
+\keyword{internal}

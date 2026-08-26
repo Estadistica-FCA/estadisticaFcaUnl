@@ -16,4 +16,4 @@ data(plantacion_dap)
 \description{
 Datos de DAP (diámetro a la altura del pecho) expresados en centímetros de los árboles de la plantación de \emph{Eucalyptus} de San Agustín (Santa Fe) en su segundo año.
 }
-\keyword{datasets}
+\keyword{internal}

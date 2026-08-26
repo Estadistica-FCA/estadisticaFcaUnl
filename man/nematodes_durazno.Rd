@@ -39,4 +39,4 @@ crecimiento con el tratamiento asignado.
 
 Al final del estudio, registraron la altura (en cm) de cada plantin.
 }
-\keyword{datasets}
+\keyword{internal}

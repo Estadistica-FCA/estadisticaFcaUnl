@@ -16,4 +16,4 @@ data(pulsaciones_caballos)
 \description{
 Datos de pulsaciones del corazón por minuto de una muestra de 15 caballos de carrera registrados en un estudio.
 }
-\keyword{datasets}
+\keyword{internal}

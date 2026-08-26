@@ -20,4 +20,4 @@ Datos de frecuencia del número de plantas por metro cuadrado nacidas en sectore
 \details{
 Las observaciones corresponden al número de plantas \eqn{m^{-2}} nacidas en 20 sectores dentro de un lote de maíz.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Datos del porcentaje de materia seca en plantas normales y anormales de un culti
 \details{
 En un cultivo de girasol se seleccionaron 30 plantas al azar de las cuales 16 eran normales y 14 anormales. Los porcentajes de materia seca para cada grupo fueron registrados en este set de datos.
 }
-\keyword{datasets}
+\keyword{internal}

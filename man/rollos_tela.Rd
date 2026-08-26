@@ -28,4 +28,4 @@ aleatoria.
 
 Se proporcionan los resultados de la resistencia a la tensión (RT).
 }
-\keyword{datasets}
+\keyword{internal}

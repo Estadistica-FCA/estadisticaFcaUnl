@@ -33,4 +33,4 @@ categorías de peso corporal.
 Las hormonas fueron inyectadas a las ratas y luego de un período de tiempo se
 midió el peso del ovario.
 }
-\keyword{datasets}
+\keyword{internal}

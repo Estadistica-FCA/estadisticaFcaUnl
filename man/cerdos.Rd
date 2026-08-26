@@ -21,4 +21,4 @@ Datos de ganancia en peso (en kg) de cerdos sometidos a dos tipos de alimentaci�
 \details{
 En un ensayo de engorde de cerdos se utilizaron dos tipos de alimentación diferentes, D y M, en dos lotes de 8 cerdos. Al mes de iniciado el ensayo se registró la ganancia en peso (kg) por animal.
 }
-\keyword{datasets}
+\keyword{internal}

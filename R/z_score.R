@@ -3,10 +3,10 @@
 #' agregando una columna `z` con los resultados e informando por consola la cantidad de valores
 #' que superan 2 y 3 desviaciones estándar.
 #'
-#' @param data Un data.frame o grouped_df que contiene la columna a analizar.
-#' @param col Nombre de la columna (carácter o nombre sin comillas) de la cual se desea obtener el z-score.
+#' @param data Un data.frame o grouped_df que contiene la columna a analizar (por defecto NULL).
+#' @param col Nombre de la columna (carácter o nombre sin comillas) de la cual se desea obtener el z-score (por defecto NULL).
 #'
-#' @return El mismo data.frame (o grouped_df) recibido con una columna extra `z` que contiene los z-scores calculados.
+#' @return Retorna de manera invisible el data.frame (o grouped_df) recibido con una columna extra `z` que contiene los z-scores calculados.
 #'
 #' @examples
 #' library(estadisticaFcaUnl)
@@ -22,20 +22,29 @@
 #' @importFrom cli cli_abort cli_h1 cli_bullets
 #' @importFrom dplyr mutate %>%
 #' @export
-z_score <- function(data, col) {
+z_score <- function(data = NULL, col = NULL) {
+  if (is.null(data)) {
+    cli::cli_abort("Se requiere un data.frame en el argumento {.arg data}.")
+  }
   if (!is.data.frame(data)) {
     cli::cli_abort("El argumento {.arg data} debe ser un data.frame.")
   }
 
-  # Determinar el nombre de la columna soportando escribirla sin comillas dobles
   col_sub <- substitute(col)
+  if (missing(col) || is.null(col_sub) || identical(col_sub, quote(NULL)) || identical(col_sub, NULL)) {
+    cli::cli_abort(c(
+      "Se debe especificar la columna para calcular el z-score.",
+      "i" = "Columnas disponibles en {.arg data}: {.val {names(data)}}"
+    ))
+  }
+
   col_name <- tryCatch({
-    if (is.character(col)) {
-      col
-    } else if (is.symbol(col_sub)) {
+    if (is.symbol(col_sub)) {
       as.character(col_sub)
+    } else if (is.character(col)) {
+      col
     } else {
-      as.character(col)
+      as.character(col_sub)
     }
   }, error = function(e) {
     as.character(col_sub)

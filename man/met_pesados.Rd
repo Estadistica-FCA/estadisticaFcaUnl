@@ -29,4 +29,4 @@ Los niveles de metales en los lodos se probaron según el crecimiento de
 plantas en ambientes que contienen distintas dosis de lodo (bioensayos) en
 diferentes ciudades.
 }
-\keyword{datasets}
+\keyword{internal}

@@ -21,4 +21,4 @@ Frecuencias de cruzamiento en trigo clasificadas según la longitud de la semill
 \details{
 Se realizó una experiencia en trigo a fin de establecer si existe relación entre los caracteres largo de semilla y susceptibilidad a roya. Se obtuvieron los valores para un cruzamiento entre un padre de semilla larga y resistente y otro de semilla corta y susceptible.
 }
-\keyword{datasets}
+\keyword{internal}

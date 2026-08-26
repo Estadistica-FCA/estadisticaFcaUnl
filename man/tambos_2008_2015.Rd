@@ -22,4 +22,4 @@ data(tambos_2008_2015)
 \description{
 Datos sobre numero de establecimientos lecheros y composición de rodeo en la provincia de Santa Fe durante el período 2008-2015.
 }
-\keyword{datasets}
+\keyword{internal}

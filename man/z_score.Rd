@@ -4,15 +4,15 @@
 \alias{z_score}
 \title{Calcular z-scores para determinar Outliers}
 \usage{
-z_score(data, col)
+z_score(data = NULL, col = NULL)
 }
 \arguments{
-\item{data}{Un data.frame o grouped_df que contiene la columna a analizar.}
+\item{data}{Un data.frame o grouped_df que contiene la columna a analizar (por defecto NULL).}
 
-\item{col}{Nombre de la columna (carácter o nombre sin comillas) de la cual se desea obtener el z-score.}
+\item{col}{Nombre de la columna (carácter o nombre sin comillas) de la cual se desea obtener el z-score (por defecto NULL).}
 }
 \value{
-El mismo data.frame (o grouped_df) recibido con una columna extra \code{z} que contiene los z-scores calculados.
+Retorna de manera invisible el data.frame (o grouped_df) recibido con una columna extra \code{z} que contiene los z-scores calculados.
 }
 \description{
 Calcula los valores estandarizados (z-scores) para una columna de un data.frame,

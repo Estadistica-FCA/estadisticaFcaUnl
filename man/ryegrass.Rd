@@ -20,4 +20,4 @@ En un estudio de mejoramiento se midió la longitud de 75 espigas de ryegrass.
 \details{
 La variable en estudio es la longitud de espigas (cm).
 }
-\keyword{datasets}
+\keyword{internal}
