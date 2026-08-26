@@ -1,4 +1,9 @@
+# estadisticaFcaUnl 0.4.1
+
+*   Added `_pkgdown.yml` configuration to organize and categorize package documentation reference sections on R-Universe.
+
 # estadisticaFcaUnl 0.4.0
+
 
 *   Added new function `z_score()` to compute standardized z-scores and report counts of mild ($\pm 2\sigma$) and severe ($\pm 3\sigma$) outliers.
 *   Updated `vallas_outliers()` to report counts of mild and severe outliers when a dataset is provided.
