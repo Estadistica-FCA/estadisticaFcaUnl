@@ -2,12 +2,12 @@
 % Please edit documentation in R/vallas_outliers.R
 \name{vallas_outliers}
 \alias{vallas_outliers}
-\title{Calcular Vallas para Outliers}
+\title{Calcular Vallas para determinar Outliers}
 \usage{
 vallas_outliers(data = NULL, Q1 = NULL, Q3 = NULL)
 }
 \arguments{
-\item{data}{Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él.}
+\item{data}{Vector numérico de datos. Si se proporciona, se calculan Q1 y Q3 a partir de él (si no fueron especificados) y se cuentan los outliers.}
 
 \item{Q1}{Numerico. Valor del primer cuartil (25\%). Opcional si se proporciona \code{data}.}
 
@@ -25,6 +25,7 @@ Retorna invisiblemente un data frame con los valores de las vallas:
 \description{
 Función que calcula las vallas internas y externas para la detección de valores atípicos (outliers).
 Permite ingresar los cuartiles Q1 y Q3 directamente o un vector de datos para calcularlos.
+Si se proporciona un vector de datos, también contabiliza e informa la cantidad de outliers leves y severos.
 }
 \examples{
 # Usando cuartiles directamente

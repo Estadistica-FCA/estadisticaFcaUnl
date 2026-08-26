@@ -11,6 +11,7 @@ export(mkminiCRAN)
 export(vallas_outliers)
 export(verificar_ortogonalidad)
 export(z.test)
+export(z_score)
 importFrom(cli,
   cli_abort,
   cli_alert_danger,

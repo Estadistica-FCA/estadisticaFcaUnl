@@ -1,4 +1,11 @@
+# estadisticaFcaUnl 0.4.0
+
+*   Added new function `z_score()` to compute standardized z-scores and report counts of mild ($\pm 2\sigma$) and severe ($\pm 3\sigma$) outliers.
+*   Updated `vallas_outliers()` to report counts of mild and severe outliers when a dataset is provided.
+*   Cleaned up unused local variables in `vallas_outliers()`.
+
 # estadisticaFcaUnl 0.3.3
+
 
 *   Converted code string literals to unicode escape sequences to eliminate R CMD check non-ASCII warnings.
 *   Added `.n_cell` and `.target_media` to global variables list in `R/globals.R` and formatted example line lengths to achieve 100% OK status in `R CMD check`.

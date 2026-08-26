@@ -8,7 +8,9 @@
 #' Universidad Nacional del Litoral.
 #'
 #' @section Funciones:
-#' * [vallas_outliers]: Detección de outliers.
+#' * [vallas_outliers]: Detección de outliers mediante vallas.
+#' * [z_score]: Cálculo de z-scores para determinar outliers.
+#' * [er_bloqueo]: Eficiencia relativa en DBCA y DCL.
 #' * [z.test]: Test Z.
 #' * [verificar_ortogonalidad]: Verificar ortogonalidad de matrices de contraste.
 #'
