@@ -30,4 +30,4 @@ proveedor en proveedor, por lo tanto la mezcla es un factor anidado dentro
 del proveedor. De cada partida se tomaron 2 muestras para las determinaciones
 (identificadas en el factor \code{partida}).
 }
-\keyword{datasets}
+\keyword{internal}

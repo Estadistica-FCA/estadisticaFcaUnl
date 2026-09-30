@@ -1,3 +1,7 @@
+# estadisticaFcaUnl 0.5.0
+
+*   Added new function `chi.test()` to perform hypothesis testing and confidence intervals for a single population variance using the Chi-squared distribution. Supports raw data vectors (`x`) or sample summary statistics (`s2`, `n`).
+
 # estadisticaFcaUnl 0.4.2
 
 *   Updated `z_score()` with default `NULL` parameters, improved error handling, and listing available columns when `col` is missing or invalid.

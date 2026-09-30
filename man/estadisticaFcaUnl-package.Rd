@@ -19,6 +19,7 @@ Universidad Nacional del Litoral.
 \item \link{z_score}: Cálculo de z-scores para determinar outliers.
 \item \link{er_bloqueo}: Eficiencia relativa en DBCA y DCL.
 \item \link{z.test}: Test Z.
+\item \link{chi.test}: Test Chi-cuadrado para una varianza.
 \item \link{verificar_ortogonalidad}: Verificar ortogonalidad de matrices de contraste.
 }
 }

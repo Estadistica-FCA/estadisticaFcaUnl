@@ -39,4 +39,4 @@ Los manejos de suelo evaluados fueron:
 \item \code{T}: Tratado, con subsolado a 60 cm de profundidad.
 }
 }
-\keyword{datasets}
+\keyword{internal}

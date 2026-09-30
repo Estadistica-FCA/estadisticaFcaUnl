@@ -30,4 +30,4 @@ Se evaluaron barros provenientes de tres ciudades (niveles A, B y C) aplicados
 en tres dosis. Se midió el contenido de cinc (Zn) acumulado en la planta de
 cebada.
 }
-\keyword{datasets}
+\keyword{internal}

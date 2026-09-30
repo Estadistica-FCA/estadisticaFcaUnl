@@ -25,4 +25,4 @@ Para el estudio, se seleccionaron 6 sitios costeros. En cada uno de ellos
 se trazaron transectas y se registró y contabilizó la cantidad de cangrejos
 ermitaños presentes en cada una de ellas.
 }
-\keyword{datasets}
+\keyword{internal}

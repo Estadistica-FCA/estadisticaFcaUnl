@@ -26,4 +26,4 @@ crecimiento bacteriano de cortes en góndola.
 Cortes de carne envasados con diferentes tratamientos (al vacío, CO2,
 comercial y mezcla de gases) para evaluar el crecimiento bacteriano.
 }
-\keyword{datasets}
+\keyword{internal}

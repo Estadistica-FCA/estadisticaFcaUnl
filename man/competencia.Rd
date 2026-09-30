@@ -27,4 +27,4 @@ Se usaron 5 densidades de plantas (10, 20, 30, 40 y 50) las que se asignaron
 por triplicado a parcelas experimentales siguiendo un diseño completamente
 al azar (DCA). A cosecha se determinó el rendimiento por parcela.
 }
-\keyword{datasets}
+\keyword{internal}

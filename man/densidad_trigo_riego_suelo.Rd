@@ -33,4 +33,4 @@ de cuadrado latino (DCL).
 
 En cada parcela el rendimiento fue registrado en lb/acre x 10^2^.
 }
-\keyword{datasets}
+\keyword{internal}

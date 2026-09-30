@@ -12,6 +12,7 @@
 #' * [z_score]: Cálculo de z-scores para determinar outliers.
 #' * [er_bloqueo]: Eficiencia relativa en DBCA y DCL.
 #' * [z.test]: Test Z.
+#' * [chi.test]: Test Chi-cuadrado para una varianza.
 #' * [verificar_ortogonalidad]: Verificar ortogonalidad de matrices de contraste.
 #'
 #' @section Datasets:

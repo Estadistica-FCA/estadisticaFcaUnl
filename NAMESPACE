@@ -4,6 +4,7 @@ export(StatVallasOnlyLabels)
 export(StatVallasOnlyLines)
 export(ajustar_significancia)
 export(ajustar_variables)
+export(chi.test)
 export(er_bloqueo)
 export(geom_vallas)
 export(install.local_repo)
@@ -64,14 +65,17 @@ importFrom(stats,
   as.formula,
   model.frame,
   optim,
+  pchisq,
   pnorm,
+  qchisq,
   qnorm,
   quantile,
   rnorm,
   runif,
   sd,
   setNames,
-  terms
+  terms,
+  var
 )
 importFrom(utils,
   available.packages,

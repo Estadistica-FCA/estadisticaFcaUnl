@@ -32,4 +32,4 @@ transversales sobre las variedades.
 La variable de respuesta registrada fue la cantidad de materia seca (MS) en
 cada subunidad.
 }
-\keyword{datasets}
+\keyword{internal}

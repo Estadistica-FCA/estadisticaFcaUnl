@@ -28,4 +28,4 @@ Diseño en parcelas divididas en bloques completamente al azar. Las fechas se
 asignaron aleatoriamente a las tres parcelas principales de cada bloque, y
 los 3 métodos se asignaron aleatoriamente a las subparcelas.
 }
-\keyword{datasets}
+\keyword{internal}

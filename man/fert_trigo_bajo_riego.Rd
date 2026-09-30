@@ -30,4 +30,4 @@ perpendiculares a dicho gradiente.
 
 Los datos de nitrógeno se registran en ppm x 10^-1^.
 }
-\keyword{datasets}
+\keyword{internal}

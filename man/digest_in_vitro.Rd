@@ -30,4 +30,4 @@ asignaron al azar a cada tubo por quintuplicado.
 
 Se midió la digestibilidad a las 48 hs.
 }
-\keyword{datasets}
+\keyword{internal}

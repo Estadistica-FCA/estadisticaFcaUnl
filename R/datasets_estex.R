@@ -1160,6 +1160,7 @@
 #' Luego, se dividió cada parcela en cuatro subparcelas para dar cabida a 4
 #' variedades de arroz.
 #' @docType data
+#' @keywords internal
 #' @usage data(arroz_pd)
 #' @format
 #' A data frame with 24 rows and 4 columns:
@@ -1180,6 +1181,7 @@
 #' asignaron aleatoriamente a las tres parcelas principales de cada bloque, y
 #' los 3 métodos se asignaron aleatoriamente a las subparcelas.
 #' @docType data
+#' @keywords internal
 #' @usage data(cana_pd)
 #' @format
 #' A data frame with 45 rows and 4 columns:
@@ -1200,6 +1202,7 @@
 #' las variantes de aplicación se asignaron a las parcelas (principal) y los
 #' abonos a las subparcelas.
 #' @docType data
+#' @keywords internal
 #' @usage data(maiz2_pd)
 #' @format
 #' A data frame with 36 rows and 4 columns:
@@ -1223,6 +1226,7 @@
 #' * Centro: intermedio–largo
 #' * Sur: intermedio–largo
 #' @docType data
+#' @keywords internal
 #' @usage data(trigo_zona_ciclo)
 #' @format
 #' A data frame with 27 rows and 4 columns:
@@ -1248,6 +1252,7 @@
 #' * F2: Z2, Z3, Z4
 #' * F3: Z5, Z6
 #' @docType data
+#' @keywords internal
 #' @usage data(trigo_fungicidas_momentos)
 #' @format
 #' A data frame with 84 rows and 4 columns:
@@ -1270,6 +1275,7 @@
 #'
 #' Se midió la digestibilidad a las 48 hs.
 #' @docType data
+#' @keywords internal
 #' @usage data(digest_in_vitro)
 #' @format
 #' A data frame with 20 rows and 4 columns:
@@ -1289,6 +1295,7 @@
 #' Cortes de carne envasados con diferentes tratamientos (al vacío, CO2,
 #' comercial y mezcla de gases) para evaluar el crecimiento bacteriano.
 #' @docType data
+#' @keywords internal
 #' @usage data(almacenamiento_carne)
 #' @format
 #' A data frame with 12 rows and 3 columns:
@@ -1307,6 +1314,7 @@
 #' se trazaron transectas y se registró y contabilizó la cantidad de cangrejos
 #' ermitaños presentes en cada una de ellas.
 #' @docType data
+#' @keywords internal
 #' @usage data(cangrejo_ermitanio)
 #' @format
 #' A data frame with 150 rows and 2 columns:
@@ -1325,6 +1333,7 @@
 #' por triplicado a parcelas experimentales siguiendo un diseño completamente
 #' al azar (DCA). A cosecha se determinó el rendimiento por parcela.
 #' @docType data
+#' @keywords internal
 #' @usage data(competencia)
 #' @format
 #' A data frame with 15 rows and 3 columns:
@@ -1347,6 +1356,7 @@
 #' 
 #' Los datos de nitrógeno se registran en ppm x 10^-1^.
 #' @docType data
+#' @keywords internal
 #' @usage data(fert_trigo_bajo_riego)
 #' @format
 #' A data frame with 24 rows and 3 columns:
@@ -1369,6 +1379,7 @@
 #' 
 #' En cada parcela el rendimiento fue registrado en lb/acre x 10^2^.
 #' @docType data
+#' @keywords internal
 #' @usage data(densidad_trigo_riego_suelo)
 #' @format
 #' A data frame with 25 rows and 6 columns:
@@ -1392,6 +1403,7 @@
 #' dos momentos del día (AM y PM). Para ello, se seleccionaron 20 corderos los
 #' que se asignaron a los tratamientos por quintuplicado siguiendo un DCA.
 #' @docType data
+#' @keywords internal
 #' @usage data(corderos_des)
 #' @format
 #' A data frame with 20 rows and 3 columns:
@@ -1414,6 +1426,7 @@
 #' 
 #' Un bushel equivale aproximadamente a 18.14 kg.
 #' @docType data
+#' @keywords internal
 #' @usage data(citricos)
 #' @format
 #' A data frame with 24 rows and 4 columns:
@@ -1435,6 +1448,7 @@
 #' en tres dosis. Se midió el contenido de cinc (Zn) acumulado en la planta de
 #' cebada.
 #' @docType data
+#' @keywords internal
 #' @usage data(lodos)
 #' @format
 #' A data frame with 36 rows and 5 columns:
@@ -1457,6 +1471,7 @@
 #' salinidad y días de desarrollo fueron asignados al azar a las unidades
 #' experimentales siguiendo un diseño completamente al azar (DCA).
 #' @docType data
+#' @keywords internal
 #' @usage data(cebada_salinidad)
 #' @format
 #' A data frame with 18 rows and 5 columns:
@@ -1479,6 +1494,7 @@
 #' de manera conjunta (interacciones) o independiente sobre la tasa de
 #' crecimiento de los camarones criados en condiciones controladas de acuarios.
 #' @docType data
+#' @keywords internal
 #' @usage data(camarones)
 #' @format
 #' A data frame with 36 rows and 5 columns:
@@ -1502,6 +1518,7 @@
 #' del proveedor. De cada partida se tomaron 2 muestras para las determinaciones
 #' (identificadas en el factor `partida`).
 #' @docType data
+#' @keywords internal
 #' @usage data(cemento)
 #' @format
 #' A data frame with 24 rows and 4 columns:
@@ -1529,6 +1546,7 @@
 #'   * `C`: Control, sin subsolado.
 #'   * `T`: Tratado, con subsolado a 60 cm de profundidad.
 #' @docType data
+#' @keywords internal
 #' @usage data(forestal_alt)
 #' @format
 #' A data frame with 40 rows and 4 columns:
@@ -1553,6 +1571,7 @@
 #' La variable de respuesta registrada fue la cantidad de materia seca (MS) en
 #' cada subunidad.
 #' @docType data
+#' @keywords internal
 #' @usage data(cesped_compactacion)
 #' @format
 #' A data frame with 54 rows and 4 columns:
@@ -1581,6 +1600,7 @@
 #' Al final del experimento se midió el contenido de clorofila (mg/g) en muestras
 #' de césped.
 #' @docType data
+#' @keywords internal
 #' @usage data(cesped_golf)
 #' @format
 #' A data frame with 24 rows and 5 columns:

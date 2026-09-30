@@ -1,7 +1,7 @@
 Package: estadisticaFcaUnl
 Type: Package
 Title: Herramientas y Datos para Estadística en FCA-UNL
-Version: 0.4.2
+Version: 0.5.0
 Authors@R: c(
     person(
       given = "Alejandro",

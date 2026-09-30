@@ -28,4 +28,4 @@ Cada lámina (parcelas principales) se repitió tres veces en orden aleatorio.
 Luego, se dividió cada parcela en cuatro subparcelas para dar cabida a 4
 variedades de arroz.
 }
-\keyword{datasets}
+\keyword{internal}

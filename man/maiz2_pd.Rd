@@ -28,4 +28,4 @@ Diseño en parcelas divididas (DPD) en bloques completamente al azar en donde
 las variantes de aplicación se asignaron a las parcelas (principal) y los
 abonos a las subparcelas.
 }
-\keyword{datasets}
+\keyword{internal}

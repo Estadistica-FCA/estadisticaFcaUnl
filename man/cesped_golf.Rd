@@ -37,4 +37,4 @@ que se asignaron al azar los niveles de acumulación de biomasa: 2, 5 y 8 años.
 Al final del experimento se midió el contenido de clorofila (mg/g) en muestras
 de césped.
 }
-\keyword{datasets}
+\keyword{internal}

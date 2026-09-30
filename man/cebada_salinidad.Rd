@@ -30,4 +30,4 @@ Los 9 tratamientos resultantes de la combinación de los factores de
 salinidad y días de desarrollo fueron asignados al azar a las unidades
 experimentales siguiendo un diseño completamente al azar (DCA).
 }
-\keyword{datasets}
+\keyword{internal}

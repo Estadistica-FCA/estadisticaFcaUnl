@@ -28,4 +28,4 @@ Se condujo un experimento para determinar los efectos del dietilestilbestrol
 dos momentos del día (AM y PM). Para ello, se seleccionaron 20 corderos los
 que se asignaron a los tratamientos por quintuplicado siguiendo un DCA.
 }
-\keyword{datasets}
+\keyword{internal}

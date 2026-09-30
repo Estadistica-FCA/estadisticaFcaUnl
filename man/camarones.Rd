@@ -30,4 +30,4 @@ Se evalúa si la densidad de población, la temperatura y la salinidad influyen
 de manera conjunta (interacciones) o independiente sobre la tasa de
 crecimiento de los camarones criados en condiciones controladas de acuarios.
 }
-\keyword{datasets}
+\keyword{internal}
